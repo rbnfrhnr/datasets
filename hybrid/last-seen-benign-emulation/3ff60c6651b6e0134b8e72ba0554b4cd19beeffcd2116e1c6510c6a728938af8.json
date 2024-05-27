@@ -1,0 +1,107 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140004fe0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "9b3896c5337d29108f1448ca0f0763f5f2649b3fa0cc835289abaf97714a4faa",
+        "apis": [
+            {
+                "pc": "0x1400052db",
+                "api_name": "api-ms-win-core-sysinfo-l1-1-0.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400052e9",
+                "api_name": "api-ms-win-core-processthreads-l1-1-0.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x505c"
+            },
+            {
+                "pc": "0x1400052f5",
+                "api_name": "api-ms-win-core-processthreads-l1-1-0.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x5048"
+            },
+            {
+                "pc": "0x140005305",
+                "api_name": "api-ms-win-core-profile-l1-1-0.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140004eb0",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x140009930",
+                    "0x140009958"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140004ed1",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x140009918",
+                    "0x140009928"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x14000e898",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf02c",
+            "address": "0xfeedf02c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211f70",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf02c",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x000000014000e898",
+                "rbx": "0x000000014000e898",
+                "rcx": "0x0000000140009900",
+                "rdx": "0x0000000001212000",
+                "r8": "0x0000000000000000",
+                "r9": "0x0000000000000002",
+                "r10": "0x000000003d3b350f",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140004f3e -> emu.module.3ff60c6651b6e0134b8e72ba0554b4cd19beeffcd2116e1c6510c6a728938af8.0x140000000",
+                "sp+0x08: 0x0000000001211fd8 -> emu.stack.0x1200000",
+                "sp+0x10: 0x0000000140004fe9 -> emu.module.3ff60c6651b6e0134b8e72ba0554b4cd19beeffcd2116e1c6510c6a728938af8.0x140000000",
+                "sp+0x18: 0x0000005fd27d571f",
+                "sp+0x20: 0x01dab006fc4c4480",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x00000000feedf000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x00000000feedf000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "api-ms-win-crt-private-l1-1-0._o__get_initial_wide_environment"
+        },
+        "dynamic_code_segments": []
+    }
+]

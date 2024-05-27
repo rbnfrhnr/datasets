@@ -1,0 +1,131 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401280",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "2e882ca2f27a667a473a7354072d57b455cd153266c0a31d9b75c4eae9e40e19",
+        "apis": [
+            {
+                "pc": "0x401293",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x401163",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x401000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4011a3",
+                "api_name": "msvcrt.__getmainargs",
+                "args": [
+                    "0x41a004",
+                    "0x41a000",
+                    "0x1211fc8",
+                    "0xffffffff",
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401215",
+                "api_name": "msvcrt.__p__fmode",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x40f8bd",
+                "api_name": "KERNEL32.FindAtomA",
+                "args": [
+                    "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-LIBGCCW32-EH-3-SJLJ-GTHR-MINGW32"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40f8d7",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x54"
+                ],
+                "ret_val": "0x4600"
+            },
+            {
+                "pc": "0x40f8f8",
+                "api_name": "msvcrt.memset",
+                "args": [
+                    "0x4600",
+                    "0x0",
+                    "0x54"
+                ],
+                "ret_val": "0x4600"
+            },
+            {
+                "pc": "0x40fa15",
+                "api_name": "KERNEL32.AddAtomA",
+                "args": [
+                    "aaaaaaaaaaaaaaaaaAaaaAAaaaaaaaaa-LIBGCCW32-EH-3-SJLJ-GTHR-MINGW32"
+                ],
+                "ret_val": "0xc000"
+            },
+            {
+                "pc": "0x40f795",
+                "api_name": "KERNEL32.GetAtomNameA",
+                "args": [
+                    "0xc000",
+                    "aaaaaaaaaaaaaaaaaAaaaAAaaaaaaaaa-LIBGCCW32-EH-3-SJLJ-GTHR-MINGW32",
+                    "0x42"
+                ],
+                "ret_val": "0x41"
+            }
+        ],
+        "ret_val": "0x4608",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0dc",
+            "address": "0xfeedf0dc",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211fac",
+                "ebp": "0x01211fb8",
+                "eip": "0xfeedf0dc",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x00004608",
+                "ebx": "0x00000000",
+                "ecx": "0xfeedf0dc",
+                "edx": "0x0000c000"
+            },
+            "stack": [
+                "sp+0x00: 0x0040f5d6 -> emu.module.44cecbf02b79dc9d9799b6ef76104bc1b57e2faa32ca118f2703e8f3e0466153.0x400000",
+                "sp+0x04: 0x0040f570 -> emu.module.44cecbf02b79dc9d9799b6ef76104bc1b57e2faa32ca118f2703e8f3e0466153.0x400000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x01211fd4 -> emu.stack.0x1200000",
+                "sp+0x10: 0x0040122a -> emu.module.44cecbf02b79dc9d9799b6ef76104bc1b57e2faa32ca118f2703e8f3e0466153.0x400000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x01211fe4 -> emu.stack.0x1200000",
+                "sp+0x2c: 0x00401298 -> emu.module.44cecbf02b79dc9d9799b6ef76104bc1b57e2faa32ca118f2703e8f3e0466153.0x400000",
+                "sp+0x30: 0x00000001",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x01212000",
+                "sp+0x3c: 0xfeedf000"
+            ],
+            "api_name": "msvcrt.atexit"
+        },
+        "dynamic_code_segments": []
+    }
+]

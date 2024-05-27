@@ -1,0 +1,109 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4163c4",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "9aced12e13b3a51cf9adca9e8cfca8cd90ae9460cfe63d68dfee72b0af3ae686",
+        "apis": [
+            {
+                "pc": "0x406875",
+                "api_name": "kernel32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x4066f1",
+                "api_name": "kernel32.GetSystemInfo",
+                "args": [
+                    "0x1211f20"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x40370e",
+                "api_name": "user32.GetKeyboardType",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x4"
+            },
+            {
+                "pc": "0x41607b",
+                "api_name": "kernel32.GetCommandLineW",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x4011f6",
+                "api_name": "kernel32.GetStartupInfoA",
+                "args": [
+                    "0x1211efc"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x41608f",
+                "api_name": "kernel32.GetACP",
+                "args": [],
+                "ret_val": "0x4e4"
+            },
+            {
+                "pc": "0x4160a3",
+                "api_name": "kernel32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xf3cc"
+            },
+            {
+                "pc": "0x406701",
+                "api_name": "kernel32.GetVersion",
+                "args": [],
+                "ret_val": "0x1db10106"
+            }
+        ],
+        "ret_val": "0x41555c",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf1fc",
+            "address": "0xfeedf1fc",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f44",
+                "ebp": "0x01211f68",
+                "eip": "0xfeedf1fc",
+                "esi": "0x004160c4",
+                "edi": "0x00000026",
+                "eax": "0x0041555c",
+                "ebx": "0x00000008",
+                "ecx": "0x000000d8",
+                "edx": "0x00000006"
+            },
+            "stack": [
+                "sp+0x00: 0x004160d2 -> emu.module.b05baccc5dd0e93cb36c1ef7eed6f60eac5a55bce246bc6eb7fa42d2b8cd6708.0x400000",
+                "sp+0x04: 0x004043cf -> emu.module.b05baccc5dd0e93cb36c1ef7eed6f60eac5a55bce246bc6eb7fa42d2b8cd6708.0x400000",
+                "sp+0x08: 0x01211fd4 -> emu.stack.0x1200000",
+                "sp+0x0c: 0x004043dd -> emu.module.b05baccc5dd0e93cb36c1ef7eed6f60eac5a55bce246bc6eb7fa42d2b8cd6708.0x400000",
+                "sp+0x10: 0x01211f68 -> emu.stack.0x1200000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00415554 -> emu.module.b05baccc5dd0e93cb36c1ef7eed6f60eac5a55bce246bc6eb7fa42d2b8cd6708.0x400000",
+                "sp+0x20: 0x0041555c -> emu.module.b05baccc5dd0e93cb36c1ef7eed6f60eac5a55bce246bc6eb7fa42d2b8cd6708.0x400000",
+                "sp+0x24: 0x01211fe4 -> emu.stack.0x1200000",
+                "sp+0x28: 0x0040443c -> emu.module.b05baccc5dd0e93cb36c1ef7eed6f60eac5a55bce246bc6eb7fa42d2b8cd6708.0x400000",
+                "sp+0x2c: 0x004068a3 -> emu.module.b05baccc5dd0e93cb36c1ef7eed6f60eac5a55bce246bc6eb7fa42d2b8cd6708.0x400000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x004163f4 -> emu.module.b05baccc5dd0e93cb36c1ef7eed6f60eac5a55bce246bc6eb7fa42d2b8cd6708.0x400000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "comctl32.InitCommonControls"
+        },
+        "dynamic_code_segments": []
+    }
+]

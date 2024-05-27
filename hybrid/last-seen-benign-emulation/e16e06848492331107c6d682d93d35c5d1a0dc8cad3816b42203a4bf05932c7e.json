@@ -1,0 +1,91 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1401050bb",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "60ba1aea4f7c653d9a833d9935f0022c7501205ea20adeba89b89598535b56dc",
+        "apis": [
+            {
+                "pc": "0x14010a470",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x14010a470",
+                "api_name": "kernel32.VirtualProtect",
+                "args": [
+                    "0x140001000",
+                    "0x1fd50",
+                    "0x40",
+                    "0x1211f18"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14010a470",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x0",
+                    "0xd0"
+                ],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x14010a470",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "WINTRUST.dll"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14010a470",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "user32.dll"
+                ],
+                "ret_val": "0x77d10000"
+            },
+            {
+                "pc": "0x14010a470",
+                "api_name": "KERNEL32.GetModuleFileNameW",
+                "args": [
+                    "0x140000000",
+                    "C:\\Windows\\system32\\e16e06848492331107c6d682d93d35c5d1a0dc8cad3816b42203a4bf05932c7e",
+                    "0x104"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x14010a470",
+                "api_name": "user32.MessageBoxW",
+                "args": [
+                    "0x0",
+                    "The procedure entry point CryptCATAdminReleaseContext could not be located in the dynamic link library WINTRUST.dll",
+                    "e16e06848492331107c6d682d93d35c5d1a0dc8cad3816b42203a4bf05932c7e",
+                    "0x10"
+                ],
+                "ret_val": "0x2"
+            },
+            {
+                "pc": "0x14010a470",
+                "api_name": "KERNEL32.ExitProcess",
+                "args": [
+                    "0xdeadc0de"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0xfeedf038",
+        "error": {},
+        "dynamic_code_segments": []
+    }
+]

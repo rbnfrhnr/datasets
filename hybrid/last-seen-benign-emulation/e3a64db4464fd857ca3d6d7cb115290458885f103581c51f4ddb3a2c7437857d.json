@@ -1,0 +1,103 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x45b6d0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "e63840564e4f5fc5d7a2f785b51b85c900ea8e27a8b6f1fce5c5b90b88e1065c",
+        "apis": [
+            {
+                "pc": "0x45b6eb",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x45b6f4",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetDefaultDllDirectories"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x45b705",
+                "api_name": "KERNEL32.SetDllDirectoryW",
+                "args": [
+                    ""
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x45b70c",
+                "api_name": "kernel32.SetDefaultDllDirectories",
+                "args": [
+                    "0x800"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x45b718",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x45b71b",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetProcessMitigationPolicy"
+                ],
+                "ret_val": "0xfeee0001"
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0001",
+            "address": "0xfeee0001",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211fbc",
+                "ebp": "0x01211fe4",
+                "eip": "0xfeee0001",
+                "esi": "0xfeee0001",
+                "edi": "0xfeedf04c",
+                "eax": "0x00000001",
+                "ebx": "0xfeedf014",
+                "ecx": "0x01211fe0",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0045b73c -> emu.module.e3a64db4464fd857ca3d6d7cb115290458885f103581c51f4ddb3a2c7437857d.0x400000",
+                "sp+0x04: 0x00000001",
+                "sp+0x08: 0x01211fe0 -> emu.stack.0x1200000",
+                "sp+0x0c: 0x00000004",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000001",
+                "sp+0x20: 0x00000001",
+                "sp+0x24: 0x00000007",
+                "sp+0x28: 0x01212000",
+                "sp+0x2c: 0xfeedf000",
+                "sp+0x30: 0x00004000 -> emu.module_arg_0.0x4000",
+                "sp+0x34: 0x00004010 -> emu.module_arg_1.0x4010",
+                "sp+0x38: 0x00004020 -> emu.module_arg_2.0x4020",
+                "sp+0x3c: 0x00004030 -> emu.module_arg_3.0x4030"
+            ],
+            "api_name": "kernel32.SetProcessMitigationPolicy"
+        },
+        "dynamic_code_segments": []
+    }
+]

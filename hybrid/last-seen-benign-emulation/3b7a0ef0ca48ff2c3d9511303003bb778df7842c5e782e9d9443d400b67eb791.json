@@ -1,0 +1,140 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401280",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "2b34f55fe7639d7ee7927cc8bdfe00731747b7a6d9480c0f88554af75b519343",
+        "apis": [
+            {
+                "pc": "0x401293",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x401163",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x401000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4011a3",
+                "api_name": "msvcrt.__getmainargs",
+                "args": [
+                    "0x435004",
+                    "0x435000",
+                    "0x1211fc8",
+                    "0xffffffff",
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401215",
+                "api_name": "msvcrt.__p__fmode",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x426d3d",
+                "api_name": "KERNEL32.FindAtomA",
+                "args": [
+                    "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-LIBGCCW32-EH-3-SJLJ-GTHR-MINGW32"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x426d57",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x54"
+                ],
+                "ret_val": "0x4600"
+            },
+            {
+                "pc": "0x426d78",
+                "api_name": "msvcrt.memset",
+                "args": [
+                    "0x4600",
+                    "0x0",
+                    "0x54"
+                ],
+                "ret_val": "0x4600"
+            },
+            {
+                "pc": "0x426e95",
+                "api_name": "KERNEL32.AddAtomA",
+                "args": [
+                    "aaaaaaaaaaaaaaaaaAaaaAAaaaaaaaaa-LIBGCCW32-EH-3-SJLJ-GTHR-MINGW32"
+                ],
+                "ret_val": "0xc000"
+            },
+            {
+                "pc": "0x426c15",
+                "api_name": "KERNEL32.GetAtomNameA",
+                "args": [
+                    "0xc000",
+                    "aaaaaaaaaaaaaaaaaAaaaAAaaaaaaaaa-LIBGCCW32-EH-3-SJLJ-GTHR-MINGW32",
+                    "0x42"
+                ],
+                "ret_val": "0x41"
+            },
+            {
+                "pc": "0x417d2b",
+                "api_name": "msvcrt.strchr",
+                "args": [
+                    "[External compressor:tempfile]",
+                    "\u0000"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf1d4",
+            "address": "0xfeedf1d4",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01210448",
+                "ebp": "0x01210464",
+                "eip": "0xfeedf1d4",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x00000000",
+                "ebx": "0x00000000",
+                "ecx": "0x0121179e",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x004010f4 -> emu.module.3b7a0ef0ca48ff2c3d9511303003bb778df7842c5e782e9d9443d400b67eb791.0x400000",
+                "sp+0x04: 0x0000000b",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x0a000000",
+                "sp+0x14: 0x01211780 -> emu.stack.0x1200000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x0000000a",
+                "sp+0x20: 0xfeedf000",
+                "sp+0x24: 0x00004660 -> emu.struct.EXCEPTION_POINTERS.0x4660",
+                "sp+0x28: 0x01211780 -> emu.stack.0x1200000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x01211460 -> emu.stack.0x1200000",
+                "sp+0x34: 0x000000c8",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "msvcrt.signal"
+        },
+        "dynamic_code_segments": []
+    }
+]

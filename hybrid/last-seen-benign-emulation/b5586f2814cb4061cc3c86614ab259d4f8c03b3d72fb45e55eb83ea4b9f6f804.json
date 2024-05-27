@@ -1,0 +1,131 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1002723",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "85088af7c8455cd3f57dccc7e2352982f4fff45d8e683fbdbf8f0dbe1916976d",
+        "apis": [
+            {
+                "pc": "0x1002730",
+                "api_name": "KERNEL32.GetCommandLineA",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x1002771",
+                "api_name": "KERNEL32.GetStartupInfoA",
+                "args": [
+                    "0x1211fa0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x100278c",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x1000000"
+            },
+            {
+                "pc": "0x1003d93",
+                "api_name": "KERNEL32.FindResourceA",
+                "args": [
+                    "0x0",
+                    "0x10013a4",
+                    "0xa"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1003d9b",
+                "api_name": "KERNEL32.SizeofResource",
+                "args": [
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1003e10",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x1000000",
+                    "0x4b1",
+                    "A required resource cannot be located.",
+                    "0x200"
+                ],
+                "ret_val": "0x26"
+            },
+            {
+                "pc": "0x1003d25",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "A required resource cannot be located."
+                ],
+                "ret_val": "0x26"
+            },
+            {
+                "pc": "0x1003d2f",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x27"
+                ],
+                "ret_val": "0x4690"
+            },
+            {
+                "pc": "0x1003d48",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x4690",
+                    "A required resource cannot be located."
+                ],
+                "ret_val": "0x4690"
+            }
+        ],
+        "ret_val": "0x4690",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf1d8",
+            "address": "0xfeedf1d8",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211bf4",
+                "ebp": "0x01211e3c",
+                "eip": "0xfeedf1d8",
+                "esi": "0x00004690",
+                "edi": "0x01211e39",
+                "eax": "0x00004690",
+                "ebx": "0x00000000",
+                "ecx": "0x00000000",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x01003d51 -> emu.module.b5586f2814cb4061cc3c86614ab259d4f8c03b3d72fb45e55eb83ea4b9f6f804.0x1000000",
+                "sp+0x04: 0x00000010",
+                "sp+0x08: 0x00000001",
+                "sp+0x0c: 0x0100adf4 -> emu.module.b5586f2814cb4061cc3c86614ab259d4f8c03b3d72fb45e55eb83ea4b9f6f804.0x1000000",
+                "sp+0x10: 0x65722041",
+                "sp+0x14: 0x72697571",
+                "sp+0x18: 0x72206465",
+                "sp+0x1c: 0x756f7365",
+                "sp+0x20: 0x20656372",
+                "sp+0x24: 0x6e6e6163",
+                "sp+0x28: 0x6220746f",
+                "sp+0x2c: 0x6f6c2065",
+                "sp+0x30: 0x65746163",
+                "sp+0x34: 0x00002e64 -> emu.segment.gdt.0x2000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "USER32.MessageBeep"
+        },
+        "dynamic_code_segments": []
+    }
+]

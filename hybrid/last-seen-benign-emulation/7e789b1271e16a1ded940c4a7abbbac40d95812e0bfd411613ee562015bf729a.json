@@ -1,0 +1,158 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x419b64",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "c26aec1aa23a0610d509e1b1770509201f227546a66628fca969770631be9d23",
+        "apis": [
+            {
+                "pc": "0x40473d",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x402c12",
+                "api_name": "user32.GetKeyboardType",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x4"
+            },
+            {
+                "pc": "0x404600",
+                "api_name": "kernel32.GetCommandLineA",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x401123",
+                "api_name": "kernel32.GetStartupInfoA",
+                "args": [
+                    "0x1211f50"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x404614",
+                "api_name": "kernel32.GetVersion",
+                "args": [],
+                "ret_val": "0x1db10106"
+            },
+            {
+                "pc": "0x404625",
+                "api_name": "kernel32.GetVersion",
+                "args": [],
+                "ret_val": "0x1db10106"
+            },
+            {
+                "pc": "0x404661",
+                "api_name": "kernel32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x12b18"
+            },
+            {
+                "pc": "0x40199c",
+                "api_name": "kernel32.InitializeCriticalSection",
+                "args": [
+                    "0x41b5b8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4019d9",
+                "api_name": "kernel32.LocalAlloc",
+                "args": [
+                    "0x0",
+                    "0xff8"
+                ],
+                "ret_val": "0x7000"
+            },
+            {
+                "pc": "0x401414",
+                "api_name": "kernel32.VirtualAlloc",
+                "args": [
+                    "0x0",
+                    "0x100000",
+                    "0x2000",
+                    "PAGE_NOACCESS"
+                ],
+                "ret_val": "0x50000"
+            },
+            {
+                "pc": "0x401192",
+                "api_name": "kernel32.LocalAlloc",
+                "args": [
+                    "0x0",
+                    "0x644"
+                ],
+                "ret_val": "0x8000"
+            },
+            {
+                "pc": "0x401622",
+                "api_name": "kernel32.VirtualAlloc",
+                "args": [
+                    "0x50000",
+                    "0x4000",
+                    "0x1000",
+                    "PAGE_READWRITE"
+                ],
+                "ret_val": "0x50000"
+            },
+            {
+                "pc": "0x4084b7",
+                "api_name": "user32.LoadCursorA",
+                "args": [
+                    "0x0",
+                    "0x7f00"
+                ],
+                "ret_val": "0x4"
+            }
+        ],
+        "ret_val": "0x1211f30",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf2f0",
+            "address": "0xfeedf2f0",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211eb0",
+                "ebp": "0x01211f58",
+                "eip": "0xfeedf2f0",
+                "esi": "0x00050750",
+                "edi": "0x00050004",
+                "eax": "0x01211f30",
+                "ebx": "0x00050004",
+                "ecx": "0x0041a3f8",
+                "edx": "0x80000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0040856b -> emu.module.7e789b1271e16a1ded940c4a7abbbac40d95812e0bfd411613ee562015bf729a.0x400000",
+                "sp+0x04: 0x00400000 -> emu.module.7e789b1271e16a1ded940c4a7abbbac40d95812e0bfd411613ee562015bf729a.0x400000",
+                "sp+0x08: 0x0041a3f8 -> emu.module.7e789b1271e16a1ded940c4a7abbbac40d95812e0bfd411613ee562015bf729a.0x400000",
+                "sp+0x0c: 0x01211f30 -> emu.stack.0x1200000",
+                "sp+0x10: 0x00040000",
+                "sp+0x14: 0x01211ef0 -> emu.stack.0x1200000",
+                "sp+0x18: 0x00050714 -> api.VirtualAlloc.0x50000",
+                "sp+0x1c: 0x80ca0000",
+                "sp+0x20: 0x80000000",
+                "sp+0x24: 0x80000000",
+                "sp+0x28: 0x80000000",
+                "sp+0x2c: 0x80000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00400000 -> emu.module.7e789b1271e16a1ded940c4a7abbbac40d95812e0bfd411613ee562015bf729a.0x400000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "user32.GetClassInfoA"
+        },
+        "dynamic_code_segments": []
+    }
+]

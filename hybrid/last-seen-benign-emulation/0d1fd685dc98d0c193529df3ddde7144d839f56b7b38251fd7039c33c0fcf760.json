@@ -1,0 +1,119 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x140024000",
+        "ep_args": [
+            "0x7eb980",
+            "0x7ebb70"
+        ],
+        "apihash": "9dee6871623c6593e0d6ece6d5b7b77cdbe92a8e5859bd8951dddaee5e1a665f",
+        "apis": [
+            {
+                "pc": "0x14000b858",
+                "api_name": "ntoskrnl.PsGetVersion",
+                "args": [
+                    "0x1200f18",
+                    "0x1200f08",
+                    "0x1200f10",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14000c790",
+                "api_name": "ntoskrnl.ExAllocatePoolWithTag",
+                "args": [
+                    "0x0",
+                    "0x10000",
+                    "1zhx"
+                ],
+                "ret_val": "0x21000"
+            },
+            {
+                "pc": "0x14000c7d4",
+                "api_name": "ntoskrnl.ZwQuerySystemInformation",
+                "args": [
+                    "0xb",
+                    "0x21000",
+                    "0x10000",
+                    "0x1200c48"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14000c16c",
+                "api_name": "ntoskrnl.ExFreePoolWithTag",
+                "args": [
+                    "0x21000",
+                    "1zhx"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14000c219",
+                "api_name": "ntoskrnl.RtlInitAnsiString",
+                "args": [
+                    "0x1200cf8",
+                    "\\??\\C:\\Windows\\system32\\ntoskrnl.exe"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14000c234",
+                "api_name": "ntoskrnl.RtlAnsiStringToUnicodeString",
+                "args": [
+                    "0x1200ce8",
+                    "\\??\\C:\\Windows\\system32\\ntoskrnl.exe",
+                    "0x1"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf16c",
+            "address": "0xfeedf16c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200e40",
+                "rbp": "0x0000000001200e88",
+                "rip": "0x00000000feedf16c",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x00000000007eb980",
+                "rax": "0x0000000000000000",
+                "rbx": "0x00000000007ebb70",
+                "rcx": "0x00000000803d0000",
+                "rdx": "0x0000000001200cf8",
+                "r8": "0x0000000000000001",
+                "r9": "0x0000000001200c48",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014000bdaa -> emu.module.0d1fd685dc98d0c193529df3ddde7144d839f56b7b38251fd7039c33c0fcf760.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000480048",
+                "sp+0x40: 0x0000000000bd4000 -> api.struct.STRING.____C__Windows_system32_ntoskrnl.exe.0xbd4000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x00000000007ebb70 -> emu.object._Driver_0d1fd685dc98d0c193529df3ddde7144d839f56b7b38251fd7039c33c0fcf760.reg_path.0x7ebb70",
+                "sp+0x58: 0x0000000001200f78 -> emu.stack.0x1200000",
+                "sp+0x60: 0x000000014000bd35 -> emu.module.0d1fd685dc98d0c193529df3ddde7144d839f56b7b38251fd7039c33c0fcf760.0x140000000",
+                "sp+0x68: 0x00000000803d0000 -> emu.module.ntoskrnl.0x803d0000",
+                "sp+0x70: 0x0000000000001eb0 -> emu.gdt.0x1000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ntoskrnl.RtlImageNtHeader"
+        },
+        "dynamic_code_segments": []
+    }
+]

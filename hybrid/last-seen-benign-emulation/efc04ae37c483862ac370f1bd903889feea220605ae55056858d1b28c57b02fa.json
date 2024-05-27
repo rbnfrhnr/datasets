@@ -1,0 +1,130 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x145c9083",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "6b7a7e50e0d1dcdf3b540bd093851653e7033a09fe341b7a6a4ed3406e1b6c93",
+        "apis": [
+            {
+                "pc": "0x1452b43e",
+                "api_name": "kernel32.LocalAlloc",
+                "args": [
+                    "0x0",
+                    "0xb0"
+                ],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x1465078b",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x1465078b",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "ntdll.dll"
+                ],
+                "ret_val": "0x7c000000"
+            },
+            {
+                "pc": "0x146d33c8",
+                "api_name": "kernel32.IsWow64Process",
+                "args": [
+                    "0xffffffff",
+                    "0x1211f78"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x13dbb9a9",
+                "api_name": "kernel32.IsDebuggerPresent",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x146ddcec",
+                "api_name": "kernel32.CheckRemoteDebuggerPresent",
+                "args": [
+                    "0xffffffff",
+                    "0x1211e54"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14506a17",
+                "api_name": "kernel32.GetModuleFileNameW",
+                "args": [
+                    "0x13140000",
+                    "C:\\Windows\\system32\\efc04ae37c483862ac370f1bd903889feea220605ae55056858d1b28c57b02fa",
+                    "0x104"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x1452d474",
+                "api_name": "user32.GetProcessWindowStation",
+                "args": [],
+                "ret_val": "0x1db8c"
+            },
+            {
+                "pc": "0x14506bd6",
+                "api_name": "user32.GetUserObjectInformationW",
+                "args": [
+                    "0x1db8c",
+                    "0x1",
+                    "0x1211b24",
+                    "0xc",
+                    "0x1211b34"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1458d200",
+                "api_name": "kernel32.LoadLibraryA",
+                "args": [
+                    "user32.dll"
+                ],
+                "ret_val": "0x77d10000"
+            },
+            {
+                "pc": "0x145283ff",
+                "api_name": "user32.MessageBoxW",
+                "args": [
+                    "0x0",
+                    "A debugger has been found running in your system.\nPlease, unload it from memory and restart your program.",
+                    "efc04ae37c483862ac370f1bd903889feea220605ae55056858d1b28c57b02fa",
+                    "0x10"
+                ],
+                "ret_val": "0x2"
+            },
+            {
+                "pc": "0x146dde8d",
+                "api_name": "kernel32.FreeLibrary",
+                "args": [
+                    "0x77d10000"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1463f5fe",
+                "api_name": "kernel32.ExitProcess",
+                "args": [
+                    "0xdeadc0de"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0xfeedf0b0",
+        "error": {},
+        "dynamic_code_segments": []
+    }
+]

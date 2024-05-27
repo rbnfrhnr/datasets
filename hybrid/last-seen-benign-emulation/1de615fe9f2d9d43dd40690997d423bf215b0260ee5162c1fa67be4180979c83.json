@@ -1,0 +1,107 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401570",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "e240f1218fc339e996c1276e7b807bc7bd9359f6a4d161791b13161b2e85ac8e",
+        "apis": [
+            {
+                "pc": "0x40158e",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffff5"
+                ],
+                "ret_val": "0xf002"
+            },
+            {
+                "pc": "0x40159b",
+                "api_name": "KERNEL32.GetCommandLineA",
+                "args": [],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x4015fb",
+                "api_name": "ADVAPI32.RegGetValueA",
+                "args": [
+                    "0xffffffff80000002",
+                    "SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\helpDeskButtons.com_main_is1",
+                    "InstallLocation",
+                    "0xffff",
+                    "REG_NONE",
+                    "0x1211d58",
+                    "0x1211d38"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401611",
+                "api_name": "msvcrt.strcat",
+                "args": [
+                    "SI",
+                    "myarg1"
+                ],
+                "ret_val": "0x1211d58"
+            },
+            {
+                "pc": "0x40161e",
+                "api_name": "msvcrt.strcat",
+                "args": [
+                    "SImyarg1",
+                    ".lnk"
+                ],
+                "ret_val": "0x1211d58"
+            }
+        ],
+        "ret_val": "0x1211d58",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf05c",
+            "address": "0xfeedf05c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211cf0",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf05c",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000001211d58",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000001211d58",
+                "rdx": "0x0000000000000000",
+                "r8": "0x00000000004020ae",
+                "r9": "0x000000000000ffff",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000001211d58",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000000040162d -> emu.module.1de615fe9f2d9d43dd40690997d423bf215b0260ee5162c1fa67be4180979c83.0x400000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000001211d58 -> emu.stack.0x1200000",
+                "sp+0x38: 0x0000000001211d38 -> emu.stack.0x1200000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000002000 -> emu.segment.gdt.0x2000",
+                "sp+0x50: 0x006b6e6c2e000000",
+                "sp+0x58: 0x0000000000004940 -> api.command_line.KERNEL32.GetCommandLineA.0x4940",
+                "sp+0x60: 0x0000000001211d58 -> emu.stack.0x1200000",
+                "sp+0x68: 0x31677261796d4953",
+                "sp+0x70: 0x000000006b6e6c2e",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "msvcrt._access"
+        },
+        "dynamic_code_segments": []
+    }
+]

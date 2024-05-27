@@ -1,0 +1,181 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x140008900",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "4062ca44909cac0c36c7e84cc54323538de1970cb157f155c1d6f4ca8c9f7daa",
+        "apis": [
+            {
+                "pc": "0x140008984",
+                "api_name": "ntoskrnl.RtlCopyUnicodeString",
+                "args": [
+                    "0x14002b728",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\37f16c8232ec679ee400c76272fc9b56977524e70cfd5cce375ab79f4750bf64"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400089a6",
+                "api_name": "WDFLDR.WdfVersionBind",
+                "args": [
+                    "0x7eb870",
+                    "0x14002b728",
+                    "0x14000b440",
+                    "0x14002b740"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140004437",
+                "api_name": "ntoskrnl.DbgPrint",
+                "args": [
+                    "!!!RMDriver::DriverEntry(): Entering.\n"
+                ],
+                "ret_val": "0x26"
+            },
+            {
+                "pc": "0x140004449",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f18",
+                    "\\Device\\AMDRyzenMasterDriverV17"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14000445e",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f38",
+                    "\\DosDevices\\AMDRyzenMasterDriverV17"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140004470",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f28",
+                    "D:P(A;;GW;;;BA)(A;;GR;;;BA)"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14002d016",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200e38",
+                    "IoCreateDeviceSecure"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14002d021",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "IoCreateDeviceSecure"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x14002d04d",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200e38",
+                    "IoValidateDeviceIoControlAccess"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14002d058",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "IoValidateDeviceIoControlAccess"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x1400044b4",
+                "api_name": "ntoskrnl.IoCreateDeviceSecure",
+                "args": [
+                    "0x7eb870",
+                    "0x0",
+                    "\\Device\\AMDRyzenMasterDriverV17",
+                    "0x8111",
+                    "0x100",
+                    "0x0",
+                    "0x1200f28",
+                    "0x0",
+                    "0x1200f10"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400044d6",
+                "api_name": "ntoskrnl.IoCreateSymbolicLink",
+                "args": [
+                    "\\DosDevices\\AMDRyzenMasterDriverV17",
+                    "\\Device\\AMDRyzenMasterDriverV17"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140004a5c",
+                "api_name": "ntoskrnl.RtlGetVersion",
+                "args": [
+                    "0x1200d78"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x1ffff",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf02c",
+            "address": "0xfeedf02c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200d80",
+                "rbp": "0x0000000000000000",
+                "rip": "0x00000000feedf02c",
+                "rsi": "0x00000000007eba60",
+                "rdi": "0x00000000007eb870",
+                "rax": "0x000000000001ffff",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x00000000000e0000",
+                "rdx": "0x000000000001ffff",
+                "r8": "0x0000000000000000",
+                "r9": "0x0000000000008111",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014000617a -> emu.module.37f16c8232ec679ee400c76272fc9b56977524e70cfd5cce375ab79f4750bf64.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x00000000000e0000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000140001121 -> emu.module.37f16c8232ec679ee400c76272fc9b56977524e70cfd5cce375ab79f4750bf64.0x140000000",
+                "sp+0x58: 0x00000000000e0000",
+                "sp+0x60: 0x000000000001ffff",
+                "sp+0x68: 0x000000014000b4d0 -> emu.module.37f16c8232ec679ee400c76272fc9b56977524e70cfd5cce375ab79f4750bf64.0x140000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ntoskrnl.MmMapIoSpace"
+        },
+        "dynamic_code_segments": []
+    }
+]

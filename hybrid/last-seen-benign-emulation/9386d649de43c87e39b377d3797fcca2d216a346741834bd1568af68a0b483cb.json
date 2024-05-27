@@ -1,0 +1,134 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x41638f",
+        "ep_args": [
+            "0x4020",
+            "0x4030",
+            "0x4040",
+            "0x4050"
+        ],
+        "apihash": "f4b7b96c549c78ee27580380c3d8cb63119201e0349fa3bc8add2cc90a1c8703",
+        "apis": [
+            {
+                "pc": "0x4163c2",
+                "api_name": "MSVCRT.__set_app_type",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4163d7",
+                "api_name": "MSVCRT.__p__fmode",
+                "args": [],
+                "ret_val": "0x4610"
+            },
+            {
+                "pc": "0x4163e5",
+                "api_name": "MSVCRT.__p__commode",
+                "args": [],
+                "ret_val": "0x4620"
+            },
+            {
+                "pc": "0x416515",
+                "api_name": "MSVCRT._controlfp",
+                "args": [
+                    "0x10000",
+                    "0x30000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x416426",
+                "api_name": "MSVCRT._initterm",
+                "args": [
+                    "0x41b060",
+                    "0x41b064"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x41644a",
+                "api_name": "MSVCRT.__getmainargs",
+                "args": [
+                    "0x1211f84",
+                    "0x1211f74",
+                    "0x1211f80",
+                    "0x0",
+                    "0x1211f78"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x416459",
+                "api_name": "MSVCRT._initterm",
+                "args": [
+                    "0x41b000",
+                    "0x41b05c"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x416499",
+                "api_name": "KERNEL32.GetStartupInfoA",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4164bd",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x4074df",
+                "api_name": "MSVCRT._EH_prolog",
+                "args": [],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x416a30",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf334",
+            "address": "0xfeedf334",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211c08",
+                "ebp": "0x01211ec0",
+                "eip": "0xfeedf334",
+                "esi": "0x00004010",
+                "edi": "0x00000000",
+                "eax": "0x00416a30",
+                "ebx": "0x00000000",
+                "ecx": "0x00030000",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00405c49 -> emu.module.9386d649de43c87e39b377d3797fcca2d216a346741834bd1568af68a0b483cb.0x400000",
+                "sp+0x04: 0x004048de -> emu.module.9386d649de43c87e39b377d3797fcca2d216a346741834bd1568af68a0b483cb.0x400000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00004010 -> api.msvcrt._acmdln.0x4000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "MSVCRT.?_set_new_handler@@YAP6AHI@ZP6AHI@Z@Z"
+        },
+        "dynamic_code_segments": []
+    }
+]

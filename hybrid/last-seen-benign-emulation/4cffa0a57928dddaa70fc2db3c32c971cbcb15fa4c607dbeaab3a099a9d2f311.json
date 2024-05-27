@@ -1,0 +1,152 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140011420",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "c689ebae87d40e5d7b334693f22b6439e05104f6ce35be1f4822308c9f67116f",
+        "apis": [
+            {
+                "pc": "0x140011d16",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140011d24",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x2bb4"
+            },
+            {
+                "pc": "0x140011d30",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x2ba0"
+            },
+            {
+                "pc": "0x140011d40",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140017e2d",
+                "api_name": "KERNEL32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x140038c10",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140014731",
+                "api_name": "KERNEL32.FlsAlloc",
+                "args": [
+                    "0x140014580"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14001474b",
+                "api_name": "KERNEL32.FlsSetValue",
+                "args": [
+                    "0x0",
+                    "0x140038b90"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140011270",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x1400234f0",
+                    "0x140023508"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140011291",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x1400234d0",
+                    "0x1400234e8"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400112ff",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_wide_environment",
+                "args": [],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x140011307",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___wargv",
+                "args": [],
+                "ret_val": "0x4b30"
+            },
+            {
+                "pc": "0x14001130f",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4ba0"
+            }
+        ],
+        "ret_val": "0x1211e40",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf114",
+            "address": "0xfeedf114",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211d60",
+                "rbp": "0x0000000001211e68",
+                "rip": "0x00000000feedf114",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x00000001400380d0",
+                "rax": "0x0000000001211e40",
+                "rbx": "0x00000001400380d0",
+                "rcx": "0x00000001400089a0",
+                "rdx": "0x00000001400380d0",
+                "r8": "0x0000000140024878",
+                "r9": "0x0000000000000001",
+                "r10": "0x0000000001211ee8",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000001211ee8",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140007b65 -> emu.module.4cffa0a57928dddaa70fc2db3c32c971cbcb15fa4c607dbeaab3a099a9d2f311.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000001211e40 -> emu.stack.0x1200000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x00000001400380d8 -> emu.module.4cffa0a57928dddaa70fc2db3c32c971cbcb15fa4c607dbeaab3a099a9d2f311.0x140000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ADVAPI32.RegisterTraceGuidsW"
+        },
+        "dynamic_code_segments": []
+    }
+]

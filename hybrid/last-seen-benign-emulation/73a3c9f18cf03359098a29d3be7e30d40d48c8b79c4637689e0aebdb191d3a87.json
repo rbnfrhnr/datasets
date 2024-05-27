@@ -1,0 +1,79 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x140080a70",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "f4dfc60c77bc6cbf657297a5263d5de1c6d15a9cc3616934bd34c8c8ca2fbc32",
+        "apis": [
+            {
+                "pc": "0x140080afc",
+                "api_name": "ntoskrnl.RtlCopyUnicodeString",
+                "args": [
+                    "0x14014b908",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\73a3c9f18cf03359098a29d3be7e30d40d48c8b79c4637689e0aebdb191d3a87"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140080b1a",
+                "api_name": "WDFLDR.WdfVersionBind",
+                "args": [
+                    "0x7eb870",
+                    "0x14014b908",
+                    "0x14014b5e0",
+                    "0x14014b918"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0d0",
+            "address": "0xfeedf0d0",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200d00",
+                "rbp": "0x0000000000000000",
+                "rip": "0x00000000feedf0d0",
+                "rsi": "0x00000000007eba60",
+                "rdi": "0x0000000001200f1c",
+                "rax": "0x0000000000000000",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000000000000",
+                "rdx": "0x00000000007eba60",
+                "r8": "0x000000014014b5e0",
+                "r9": "0x000000014014b660",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x000000014014b908",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014014f089 -> emu.module.73a3c9f18cf03359098a29d3be7e30d40d48c8b79c4637689e0aebdb191d3a87.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ntoskrnl.KeGetCurrentIrql"
+        },
+        "dynamic_code_segments": []
+    }
+]

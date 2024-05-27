@@ -1,0 +1,196 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x9df87e",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "a1907a90a3c68bc036d93cd0a56adb835cc40aa4298962151c658d71c9fd1a61",
+        "apis": [
+            {
+                "pc": "0x9dfe9b",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fc8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x9dfeaa",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x1d038"
+            },
+            {
+                "pc": "0x9dfeb3",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x1d024"
+            },
+            {
+                "pc": "0x9dfec0",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fc0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x9dfaf1",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x9df752",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x9fa834",
+                    "0x9fa844"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x9df778",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x9fa680",
+                    "0x9fa830"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x9df7df",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_narrow_environment",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x9df7e6",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argv",
+                "args": [],
+                "ret_val": "0x47a0"
+            },
+            {
+                "pc": "0x9df7ed",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x47e0"
+            },
+            {
+                "pc": "0x9098de",
+                "api_name": "VCRUNTIME140.memset",
+                "args": [
+                    "0xbdfff8",
+                    "0x0",
+                    "0x400"
+                ],
+                "ret_val": "0xbdfff8"
+            },
+            {
+                "pc": "0x9098ef",
+                "api_name": "VCRUNTIME140.memset",
+                "args": [
+                    "0xbe03f8",
+                    "0x0",
+                    "0x400"
+                ],
+                "ret_val": "0xbe03f8"
+            },
+            {
+                "pc": "0x909900",
+                "api_name": "VCRUNTIME140.memset",
+                "args": [
+                    "0xbe07f8",
+                    "0x0",
+                    "0x400"
+                ],
+                "ret_val": "0xbe07f8"
+            },
+            {
+                "pc": "0x90990e",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "userenv"
+                ],
+                "ret_val": "0x76500000"
+            },
+            {
+                "pc": "0x90991c",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x76500000",
+                    "GetUserProfileDirectoryA"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x90992c",
+                "api_name": "KERNEL32.GetCurrentProcess",
+                "args": [],
+                "ret_val": "0xffffffff"
+            },
+            {
+                "pc": "0x909946",
+                "api_name": "ADVAPI32.OpenProcessToken",
+                "args": [
+                    "0xffffffff",
+                    "0x8",
+                    "0x1211204"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x9ded52",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0x400"
+                ],
+                "ret_val": "0x47f0"
+            }
+        ],
+        "ret_val": "0x1211200",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0000",
+            "address": "0xfeee0000",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x012111e0",
+                "ebp": "0x01211b40",
+                "eip": "0xfeee0000",
+                "esi": "0x000047f0",
+                "edi": "0x76500000",
+                "eax": "0x01211200",
+                "ebx": "0x00000000",
+                "ecx": "0x00000400",
+                "edx": "0x01212000"
+            },
+            "stack": [
+                "sp+0x00: 0x00909977 -> emu.module.d8ad893f181c063da3333d320d743b4846a1c38e6cb323fdeae4e460e5dab423.0x400000",
+                "sp+0x04: 0x00000580",
+                "sp+0x08: 0x000047f0 -> api.heap.HeapAlloc.0x47f0",
+                "sp+0x0c: 0x01211200 -> emu.stack.0x1200000",
+                "sp+0x10: 0x06a69252",
+                "sp+0x14: 0x000045f0 -> api.envp.0x45f0",
+                "sp+0x18: 0x000047a4 -> api.argv.0x47a0",
+                "sp+0x1c: 0xfeee0000",
+                "sp+0x20: 0x00000400",
+                "sp+0x24: 0x00000580",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "userenv.GetUserProfileDirectoryA"
+        },
+        "dynamic_code_segments": []
+    }
+]

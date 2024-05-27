@@ -1,0 +1,194 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x1400aa8a0",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1400abf48",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "079d2771f85b2bcd39757de7d1b8f0f92436e524620769803ab2b2b1449f0e23",
+        "apis": [
+            {
+                "pc": "0x1400ac682",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400ac690",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x141a0"
+            },
+            {
+                "pc": "0x1400ac69c",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x1418c"
+            },
+            {
+                "pc": "0x1400ac6ac",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400abdb8",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x1400c6f78",
+                    "0x1400c6fa0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400abdd9",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x1400c6c38",
+                    "0x1400c6f70"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400abe47",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argv",
+                "args": [],
+                "ret_val": "0x4950"
+            },
+            {
+                "pc": "0x1400abe4f",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x49a0"
+            },
+            {
+                "pc": "0x1400abe57",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_narrow_environment",
+                "args": [],
+                "ret_val": "0x49b0"
+            },
+            {
+                "pc": "0x1400aa980",
+                "api_name": "KERNEL32.SetErrorMode",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400aa98b",
+                "api_name": "KERNEL32.SetErrorMode",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400ab4be",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x14010c5a0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14001ed81",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x14010c5a0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400ab617",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0x18"
+                ],
+                "ret_val": "0x4b00"
+            },
+            {
+                "pc": "0x1400ab45e",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x14010c5a0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400ab49e",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x14010c5a0"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1cec2f8eba9760",
+        "error": {
+            "type": "invalid_fetch",
+            "pc": "0x1cec2f8eba9760",
+            "address": "0x1cec2f8eba9760",
+            "instr": "add byte ptr [rax], al",
+            "regs": {
+                "rsp": "0x0000000001211e40",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x001cec2f8eba9760",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000400",
+                "rax": "0x001cec2f8eba9760",
+                "rbx": "0x0000000000004900",
+                "rcx": "0x000000014010c5c8",
+                "rdx": "0x0000000000000000",
+                "r8": "0x00000001400e1358",
+                "r9": "0x0000000000000004",
+                "r10": "0x000000002828350d",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000003",
+                "r15": "0x0000000000004958"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014001edb5 -> emu.module.a8366992edf5a21c3c2e459d1031c96dd4db8da86b4724840a5670648566027b.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0xfffffffffffffffe",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x000000014001f262 -> emu.module.a8366992edf5a21c3c2e459d1031c96dd4db8da86b4724840a5670648566027b.0x140000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0xfffffffffffffffe",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ]
+        },
+        "dynamic_code_segments": []
+    }
+]

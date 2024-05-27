@@ -1,0 +1,195 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x1404a4620",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "12a71e17890b2d0279b5e67591e74e3f3f63f6b6434f76d3a8a7e14cf0c9b1f0",
+        "apis": [
+            {
+                "pc": "0x1404a518d",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x140e11640"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x1404a45f0",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_2",
+        "start_addr": "0x1404b9350",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "afda4e5038488c380fb6c8402021ab3e2a9947a6274db734fd1d45a26bbfc0c4",
+        "apis": [
+            {
+                "pc": "0x1404b9482",
+                "api_name": "KERNEL32.AddVectoredExceptionHandler",
+                "args": [
+                    "0x1",
+                    "0x1404b8680"
+                ],
+                "ret_val": "0x1404b8680"
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1400014d0",
+        "ep_args": [
+            "0x4030",
+            "0x4040",
+            "0x4050",
+            "0x4060"
+        ],
+        "apihash": "3d088ce056e19f7e7324f768dffef5b1b84f30bc3959ace7836a9450f485a8a6",
+        "apis": [
+            {
+                "pc": "0x140001499",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x140e17018",
+                    "0x140e17028"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001437",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x140e17000",
+                    "0x140e17010"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14000125e",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x1404a4d50"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001328",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x8"
+                ],
+                "ret_val": "0x49a0"
+            },
+            {
+                "pc": "0x1400014f9",
+                "api_name": "msvcrt._onexit",
+                "args": [
+                    "0x140001520"
+                ],
+                "ret_val": "0x140001520"
+            },
+            {
+                "pc": "0x14093727a",
+                "api_name": "ADVAPI32.CryptAcquireContextA",
+                "args": [
+                    "0x1211e60",
+                    "0x0",
+                    "0x0",
+                    "0x1",
+                    "0xf0000040"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1409372a7",
+                "api_name": "ADVAPI32.CryptGenRandom",
+                "args": [
+                    "0x684",
+                    "0x8",
+                    "0x140e11550"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1409372ca",
+                "api_name": "ADVAPI32.CryptReleaseContext",
+                "args": [
+                    "0x684",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0x14094eea0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf31c",
+            "address": "0xfeedf31c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211da0",
+                "rbp": "0x0000000000000000",
+                "rip": "0x00000000feedf31c",
+                "rsi": "0x0000000140937330",
+                "rdi": "0x00000001404b52c0",
+                "rax": "0x000000014094eea0",
+                "rbx": "0x0000000000000001",
+                "rcx": "0x0000000000000001",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000140e11550",
+                "r9": "0x0000000000000001",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000008",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001404b52cc -> emu.module.12142bceeeb913a1adf8a7f3fbf96bf35908e25817a8aa723dc407774deb7b9e.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000140937b58 -> emu.module.12142bceeeb913a1adf8a7f3fbf96bf35908e25817a8aa723dc407774deb7b9e.0x140000000",
+                "sp+0x30: 0x00000001408f1628 -> emu.module.12142bceeeb913a1adf8a7f3fbf96bf35908e25817a8aa723dc407774deb7b9e.0x140000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000140937b58 -> emu.module.12142bceeeb913a1adf8a7f3fbf96bf35908e25817a8aa723dc407774deb7b9e.0x140000000",
+                "sp+0x68: 0x0000000140937330 -> emu.module.12142bceeeb913a1adf8a7f3fbf96bf35908e25817a8aa723dc407774deb7b9e.0x140000000",
+                "sp+0x70: 0x00000000000049a0 -> api.heap.HeapAlloc.0x49a0",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "msvcrt.__iob_func"
+        },
+        "dynamic_code_segments": []
+    }
+]

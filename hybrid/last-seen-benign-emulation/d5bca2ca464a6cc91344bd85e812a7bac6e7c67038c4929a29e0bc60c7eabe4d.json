@@ -1,0 +1,77 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x1400011a0",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "d5cf7775403a560aa0c2a99e5d0140c6bdaa56316a171a607dc68f72a77c46a2",
+        "apis": [
+            {
+                "pc": "0x1400010d2",
+                "api_name": "ntoskrnl.RtlCopyUnicodeString",
+                "args": [
+                    "0x140003cf8",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\d5bca2ca464a6cc91344bd85e812a7bac6e7c67038c4929a29e0bc60c7eabe4d"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400010ef",
+                "api_name": "WDFLDR.WdfVersionBind",
+                "args": [
+                    "0x7eb870",
+                    "0x140003cf8",
+                    "0x140003000",
+                    "0x140003d18"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001371",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f58",
+                    "\\Device\\WinRing0_1_2_0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400013a1",
+                "api_name": "ntoskrnl.IoCreateDevice",
+                "args": [
+                    "0x7eb870",
+                    "0x0",
+                    "\\Device\\WinRing0_1_2_0",
+                    "0x9c40",
+                    "0x100",
+                    "0x0",
+                    "0x1200f98"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400013eb",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f68",
+                    "\\DosDevices\\WinRing0_1_2_0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400013fb",
+                "api_name": "ntoskrnl.IoCreateSymbolicLink",
+                "args": [
+                    "\\DosDevices\\WinRing0_1_2_0",
+                    "\\Device\\WinRing0_1_2_0"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    }
+]

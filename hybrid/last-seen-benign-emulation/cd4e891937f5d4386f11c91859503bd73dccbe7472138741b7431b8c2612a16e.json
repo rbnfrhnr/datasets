@@ -1,0 +1,76 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x7f064",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "e67acc67121b2f8b4931363fa3fb35b3263a81bd4d285e9647c9852f0dab8324",
+        "apis": [
+            {
+                "pc": "0x6fa7f",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200d88",
+                    "RtlIsNtDdiVersionAvailable"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x6fa89",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "RtlIsNtDdiVersionAvailable"
+                ],
+                "ret_val": "0xfeee0000"
+            }
+        ],
+        "ret_val": "0xfeee0000",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0000",
+            "address": "0xfeee0000",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200d60",
+                "rbp": "0x0000000001200fc8",
+                "rip": "0x00000000feee0000",
+                "rsi": "0x00000000007eb870",
+                "rdi": "0x00000000007eba60",
+                "rax": "0x00000000feee0000",
+                "rbx": "0x000000000a000000",
+                "rcx": "0x000000000a000000",
+                "rdx": "0x0000000000070150",
+                "r8": "0x0000000000075db0",
+                "r9": "0x0000000001200fc8",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x00000000007eb870",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000000006fa92 -> emu.module.cd4e891937f5d4386f11c91859503bd73dccbe7472138741b7431b8c2612a16e.0x10000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000340034",
+                "sp+0x30: 0x0000000000070150 -> emu.module.cd4e891937f5d4386f11c91859503bd73dccbe7472138741b7431b8c2612a16e.0x10000",
+                "sp+0x38: 0x000000000a000000",
+                "sp+0x40: 0x0000000000015ab7 -> emu.module.cd4e891937f5d4386f11c91859503bd73dccbe7472138741b7431b8c2612a16e.0x10000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ntoskrnl.RtlIsNtDdiVersionAvailable"
+        },
+        "dynamic_code_segments": []
+    }
+]

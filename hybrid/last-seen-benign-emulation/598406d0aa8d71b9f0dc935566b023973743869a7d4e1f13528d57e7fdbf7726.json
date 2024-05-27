@@ -1,0 +1,78 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x14004d7c0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "add9e103dbfa2dd504dcd9d565dd9902f73c48cfa903ebe4f288546cac7b2b6d",
+        "apis": [
+            {
+                "pc": "0x14004d45b",
+                "api_name": "api-ms-win-core-errorhandling-l1-1-0.GetLastError",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14004d48a",
+                "api_name": "api-ms-win-core-memory-l1-1-0.VirtualAlloc",
+                "args": [
+                    "0x0",
+                    "0x10000",
+                    "0x3000",
+                    "PAGE_READWRITE"
+                ],
+                "ret_val": "0x50000"
+            }
+        ],
+        "ret_val": "0x14004cd30",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf268",
+            "address": "0xfeedf268",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211eb0",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf268",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x000000014004cd30",
+                "rbx": "0x0000000000050000",
+                "rcx": "0x000000000005fbe0",
+                "rdx": "0x0000000000000001",
+                "r8": "0x0000000000050000",
+                "r9": "0x0000000001212000",
+                "r10": "0x0000000001211000",
+                "r11": "0x0000000000060000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000001000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014004d54e -> emu.module.598406d0aa8d71b9f0dc935566b023973743869a7d4e1f13528d57e7fdbf7726.0x140000000",
+                "sp+0x08: 0x0000000000050000 -> api.VirtualAlloc.0x50000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x4e50b9af01776df3",
+                "sp+0x48: 0x04d71631e9561c9b",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x00002b992cfebc8a",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x000000014004d645 -> emu.module.598406d0aa8d71b9f0dc935566b023973743869a7d4e1f13528d57e7fdbf7726.0x140000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "api-ms-win-core-rtlsupport-l1-1-0.RtlAddFunctionTable"
+        },
+        "dynamic_code_segments": []
+    }
+]

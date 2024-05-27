@@ -1,0 +1,79 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x140002bf8",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "f4dfc60c77bc6cbf657297a5263d5de1c6d15a9cc3616934bd34c8c8ca2fbc32",
+        "apis": [
+            {
+                "pc": "0x140002c7b",
+                "api_name": "ntoskrnl.RtlCopyUnicodeString",
+                "args": [
+                    "0x140006118",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\f77696ae55b992154a3b35f7660bd73e0ab35a6eceec1931c0d35748cfa605c0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140002c98",
+                "api_name": "WDFLDR.WdfVersionBind",
+                "args": [
+                    "0x7eb870",
+                    "0x140006118",
+                    "0x140005060",
+                    "0x140005ef0"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf034",
+            "address": "0xfeedf034",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200f50",
+                "rbp": "0x0000000000000000",
+                "rip": "0x00000000feedf034",
+                "rsi": "0x00000001400050f0",
+                "rdi": "0x0000000140005060",
+                "rax": "0x0000000000000000",
+                "rbx": "0x00000001400050a0",
+                "rcx": "0x0000000140005060",
+                "rdx": "0x0000000000bd4d40",
+                "r8": "0x00000001400050a0",
+                "r9": "0x0000000140005ef0",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140002e59 -> emu.module.f77696ae55b992154a3b35f7660bd73e0ab35a6eceec1931c0d35748cfa605c0.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x00000000007eb870 -> emu.object._Driver_f77696ae55b992154a3b35f7660bd73e0ab35a6eceec1931c0d35748cfa605c0.0x7eb870",
+                "sp+0x30: 0x0000000140002cac -> emu.module.f77696ae55b992154a3b35f7660bd73e0ab35a6eceec1931c0d35748cfa605c0.0x140000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x00000000007eba60 -> emu.object._Driver_f77696ae55b992154a3b35f7660bd73e0ab35a6eceec1931c0d35748cfa605c0.reg_path.0x7eba60",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x00000000feedf000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000001200fd8 -> emu.stack.0x1200000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "WDFLDR.WdfVersionBindClass"
+        },
+        "dynamic_code_segments": []
+    }
+]
