@@ -1,0 +1,128 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1001910",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "59724d34d58e7fc9ed211d583fddbcb00795e3884056b703597ae84affc2c5aa",
+        "apis": [
+            {
+                "pc": "0x1001dad",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1001db8",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xb7a4"
+            },
+            {
+                "pc": "0x1001dc4",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xb7b8"
+            },
+            {
+                "pc": "0x1001dd0",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x1001de1",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1001d34",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x1000000"
+            },
+            {
+                "pc": "0x10018b5",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1001b9d",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x1001b44"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1001767",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x1001150",
+                    "0x1001160"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x1211c18",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0a0",
+            "address": "0xfeedf0a0",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211bd0",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf0a0",
+                "rsi": "0x0000000001001180",
+                "rdi": "0x0000000000000001",
+                "rax": "0x0000000001211c18",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000000000000",
+                "rdx": "0x00000000010012b0",
+                "r8": "0x00000000010012a0",
+                "r9": "0x0000000000000001",
+                "r10": "0x0000000000000000",
+                "r11": "0xffffffffffffffff",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000001001180",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000001001471 -> emu.module.61e8b34b243ab64c107639328de2f2210e26c70c167185e23e2b9ad53005da8e.0x1000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000001211c18 -> emu.stack.0x1200000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "newdev.UpdateDriverForPlugAndPlayDevicesA"
+        },
+        "dynamic_code_segments": []
+    }
+]

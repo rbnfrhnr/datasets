@@ -1,0 +1,273 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x40efa0",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "12a71e17890b2d0279b5e67591e74e3f3f63f6b6434f76d3a8a7e14cf0c9b1f0",
+        "apis": [
+            {
+                "pc": "0x41058e",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x41da40"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x40ef70",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4014b0",
+        "ep_args": [
+            "0x4030",
+            "0x4040",
+            "0x4050",
+            "0x4060"
+        ],
+        "apihash": "1328e2837c05e09ab203469202e7fabbc2e0c7917ec42cb018df54a2a744a8d2",
+        "apis": [
+            {
+                "pc": "0x4101eb",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f38"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4101f6",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xe580"
+            },
+            {
+                "pc": "0x4101fe",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xe594"
+            },
+            {
+                "pc": "0x410206",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x410213",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f48"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40147b",
+                "api_name": "KERNEL32.GetStartupInfoA",
+                "args": [
+                    "0x1211ee8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x40149d",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x421018",
+                    "0x421030"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401463",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x421000",
+                    "0x421010"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401272",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x40f3d0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40fd71",
+                "api_name": "msvcrt.strlen",
+                "args": [
+                    ".pdata"
+                ],
+                "ret_val": "0x6"
+            },
+            {
+                "pc": "0x40fdda",
+                "api_name": "msvcrt.strncmp",
+                "args": [
+                    ".text",
+                    ".pdata",
+                    "0x8"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40fdda",
+                "api_name": "msvcrt.strncmp",
+                "args": [
+                    ".data",
+                    ".pdata",
+                    "0x8"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40fdda",
+                "api_name": "msvcrt.strncmp",
+                "args": [
+                    ".rdata",
+                    ".pdata",
+                    "0x8"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40fdda",
+                "api_name": "msvcrt.strncmp",
+                "args": [
+                    ".pdata",
+                    ".pdata",
+                    "0x8"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x41009d",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "msvcrt.dll"
+                ],
+                "ret_val": "0x77f10000"
+            },
+            {
+                "pc": "0x401293",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77f10000",
+                    "_set_invalid_parameter_handler"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x4012a1",
+                "api_name": "msvcrt._set_invalid_parameter_handler",
+                "args": [
+                    "0x401000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401334",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x8"
+                ],
+                "ret_val": "0x4a10"
+            },
+            {
+                "pc": "0x40f079",
+                "api_name": "msvcrt._lock",
+                "args": [
+                    "0x8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x40f0ad",
+                "api_name": "msvcrt.__dllonexit",
+                "args": [
+                    "0x4100e0",
+                    "0x1211e78",
+                    "0x1211e80"
+                ],
+                "ret_val": "0x4100e0"
+            },
+            {
+                "pc": "0x40f0dc",
+                "api_name": "msvcrt._unlock",
+                "args": [
+                    "0x8"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0xfeedf238",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf060",
+            "address": "0xfeedf060",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211ec0",
+                "rbp": "0x0000000000004a10",
+                "rip": "0x00000000feedf060",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x00000000feedf238",
+                "rbx": "0x0000000001212000",
+                "rcx": "0x0000000000417060",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000000000000",
+                "r9": "0x0000000000400430",
+                "r10": "0x0000000000000001",
+                "r11": "0x0000000000000001",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000000004013ce -> emu.module.131fa87a02fe746de5aecbe24accb5df2ce57a1f23be12d59ebb5634fe456cad.0x400000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000068",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000004990 -> api.struct.STARTUPINFOA.lpDesktop.0x4990",
+                "sp+0x40: 0x00000000000049b0 -> api.struct.STARTUPINFOA.lpTitle.0x49b0",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "libgimp-2.0-0.gimp_main"
+        },
+        "dynamic_code_segments": []
+    }
+]

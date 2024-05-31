@@ -1,0 +1,149 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x403ee0",
+        "ep_args": [
+            "0x4020",
+            "0x4030",
+            "0x4040",
+            "0x4050"
+        ],
+        "apihash": "ef6a987fdcccb203165e8e6ed906220c74531d341bd9c099842fb20565db6278",
+        "apis": [
+            {
+                "pc": "0x40485e",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x40486d",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x7f24"
+            },
+            {
+                "pc": "0x404876",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x7f38"
+            },
+            {
+                "pc": "0x40487f",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x404894",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x403f0b",
+                "api_name": "KERNEL32.GetStartupInfoW",
+                "args": [
+                    "0x1211f7c"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x404677",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x403e48",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x403e5e",
+                "api_name": "msvcrt.__p__fmode",
+                "args": [],
+                "ret_val": "0x46f0"
+            },
+            {
+                "pc": "0x403e6c",
+                "api_name": "msvcrt.__p__commode",
+                "args": [],
+                "ret_val": "0x4700"
+            },
+            {
+                "pc": "0x4048d9",
+                "api_name": "msvcrt._controlfp",
+                "args": [
+                    "0x10000",
+                    "0x30000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4045db",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x404580"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x403fa8",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x401858",
+                    "0x401870"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x73",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0b0",
+            "address": "0xfeedf0b0",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f64",
+                "ebp": "0x01211fe4",
+                "eip": "0xfeedf0b0",
+                "esi": "0x00004004",
+                "edi": "0x00000000",
+                "eax": "0x00000073",
+                "ebx": "0x00000000",
+                "ecx": "0x00405573",
+                "edx": "0x000000e8"
+            },
+            "stack": [
+                "sp+0x00: 0x00404066 -> emu.module.1b517af11cea304e65d7faa80a83366f9b014eef87b64bfb154a34c9a0e09730.0x400000",
+                "sp+0x04: 0x00000073",
+                "sp+0x08: 0xb2a77e3c",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000044",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00004610 -> api.struct.STARTUPINFOW.lpDesktop.0x4610",
+                "sp+0x24: 0x00004640 -> api.struct.STARTUPINFOW.lpTitle.0x4640",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "msvcrt._ismbblead"
+        },
+        "dynamic_code_segments": []
+    }
+]

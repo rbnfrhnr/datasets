@@ -1,0 +1,107 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x41f447",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "973ee5c5d84aa72aa7d67f5d92d46e9de781c1562668444e73f7cdd3012db03b",
+        "apis": [
+            {
+                "pc": "0x92ae0e",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x92ae1d",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xdbc0"
+            },
+            {
+                "pc": "0x92ae26",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xdbac"
+            },
+            {
+                "pc": "0x92ae33",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x929e38",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x9291f8",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x99062c",
+                    "0x990a3c"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x92921e",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x990000",
+                    "0x990528"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0xa7184c",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf240",
+            "address": "0xfeedf240",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211fa8",
+                "ebp": "0x01211fe4",
+                "eip": "0xfeedf240",
+                "esi": "0x00a7184c",
+                "edi": "0x00000000",
+                "eax": "0x00a7184c",
+                "ebx": "0x00000000",
+                "ecx": "0x01211f00",
+                "edx": "0x01212000"
+            },
+            "stack": [
+                "sp+0x00: 0x00929285 -> emu.module.68acb6783281f44f204b196bd6fef65a80fff15cbf9d24a2ca4c397456d06392.0x400000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0xa1a90e21",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x01211f00 -> emu.stack.0x1200000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x01211fb0 -> emu.stack.0x1200000",
+                "sp+0x28: 0x0000005f",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x0092b261 -> emu.module.68acb6783281f44f204b196bd6fef65a80fff15cbf9d24a2ca4c397456d06392.0x400000",
+                "sp+0x34: 0xa02c157d",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x01212000"
+            ],
+            "api_name": "VCRUNTIME140.__telemetry_main_invoke_trigger"
+        },
+        "dynamic_code_segments": []
+    }
+]

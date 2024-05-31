@@ -1,0 +1,167 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1400111a0",
+        "ep_args": [
+            "0x4030",
+            "0x4040",
+            "0x4050",
+            "0x4060"
+        ],
+        "apihash": "d31c0d9d50bd0c2b45bca7a3314597216d61a03333b515090a1052dc0f07045b",
+        "apis": [
+            {
+                "pc": "0x1400111bc",
+                "api_name": "KERNEL32.GetStartupInfoA",
+                "args": [
+                    "0x1211f38"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140011276",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400112d8",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x1400126d8",
+                    "0x1400126e0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140011310",
+                "api_name": "msvcrt.__getmainargs",
+                "args": [
+                    "0x1211f24",
+                    "0x1211f30",
+                    "0x1211f28",
+                    "0x0",
+                    "0x1211fc0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140011323",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x1400126a8",
+                    "0x1400126d0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14000ec6b",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "comctl32.dll"
+                ],
+                "ret_val": "0x5f500000"
+            },
+            {
+                "pc": "0x14000ec83",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x5f500000",
+                    "InitCommonControlsEx"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x14000ec94",
+                "api_name": "comctl32.InitCommonControlsEx",
+                "args": [
+                    "0x1210b38"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14000ec9f",
+                "api_name": "KERNEL32.FreeLibrary",
+                "args": [
+                    "0x5f500000"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14000ecf0",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "shell32.dll"
+                ],
+                "ret_val": "0x69000000"
+            },
+            {
+                "pc": "0x14000ed0c",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x69000000",
+                    "SHGetSpecialFolderPathA"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x14000e6aa",
+                "api_name": "msvcrt.memset",
+                "args": [
+                    "0x1210e78",
+                    "0x0",
+                    "0x10"
+                ],
+                "ret_val": "0x1210e78"
+            }
+        ],
+        "ret_val": "0x1210e78",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf088",
+            "address": "0xfeedf088",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001210a90",
+                "rbp": "0x0000000000004014",
+                "rip": "0x00000000feedf088",
+                "rsi": "0x0000000000000001",
+                "rdi": "0x0000000001210b78",
+                "rax": "0x0000000001210e78",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000000001028",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000000000010",
+                "r9": "0x000000000000000a",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000004000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014000e6e5 -> emu.module.681d9d7a1793cf0bce7743f0edd2724691df270b80867477a5ec3217a57ae634.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x000000005f500000",
+                "sp+0x30: 0x000000014000ed6a -> emu.module.681d9d7a1793cf0bce7743f0edd2724691df270b80867477a5ec3217a57ae634.0x140000000",
+                "sp+0x38: 0x0000000000000001",
+                "sp+0x40: 0x0000000000000001",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000010000000400"
+            ],
+            "api_name": "msvcrt.??2@YAPEAX_K@Z"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,129 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1399001",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "fe7a38dc8c609d6e407d896a9dc3e673523114ea46e228df8e10889e441a0bf1",
+        "apis": [
+            {
+                "pc": "0x1399045",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x139905b",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "VirtualAlloc"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x139906f",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "VirtualFree"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x13990c2",
+                "api_name": "kernel32.VirtualAlloc",
+                "args": [
+                    "0x0",
+                    "0x1800",
+                    "0x1000",
+                    "PAGE_READWRITE"
+                ],
+                "ret_val": "0x50000"
+            },
+            {
+                "pc": "0x13990e0",
+                "api_name": "kernel32.VirtualAlloc",
+                "args": [
+                    "0x0",
+                    "0x15610e",
+                    "0x1000",
+                    "PAGE_READWRITE"
+                ],
+                "ret_val": "0x1a7000"
+            },
+            {
+                "pc": "0x1399196",
+                "api_name": "kernel32.VirtualFree",
+                "args": [
+                    "0x1a7000",
+                    "0x0",
+                    "0x8000"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x13990e0",
+                "api_name": "kernel32.VirtualAlloc",
+                "args": [
+                    "0x0",
+                    "0x7f0e",
+                    "0x1000",
+                    "PAGE_READWRITE"
+                ],
+                "ret_val": "0x58000"
+            },
+            {
+                "pc": "0x1399196",
+                "api_name": "kernel32.VirtualFree",
+                "args": [
+                    "0x58000",
+                    "0x0",
+                    "0x8000"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x13990e0",
+                "api_name": "kernel32.VirtualAlloc",
+                "args": [
+                    "0x0",
+                    "0x310e",
+                    "0x1000",
+                    "PAGE_READWRITE"
+                ],
+                "ret_val": "0x54000"
+            },
+            {
+                "pc": "0x1399196",
+                "api_name": "kernel32.VirtualFree",
+                "args": [
+                    "0x54000",
+                    "0x0",
+                    "0x8000"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x13990e0",
+                "api_name": "kernel32.VirtualAlloc",
+                "args": [
+                    "0x0",
+                    "0xdc089e",
+                    "0x1000",
+                    "PAGE_READWRITE"
+                ],
+                "ret_val": "0x1bd2000"
+            }
+        ],
+        "ret_val": null,
+        "error": {},
+        "dynamic_code_segments": []
+    }
+]

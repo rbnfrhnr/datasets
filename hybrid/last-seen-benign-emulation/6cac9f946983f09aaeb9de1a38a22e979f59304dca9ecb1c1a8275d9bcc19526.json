@@ -1,0 +1,81 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401280",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "77b5f143b3061977ed547b6396c153a41fca35ba643d87c0af4e1819a5a62dbd",
+        "apis": [
+            {
+                "pc": "0x401293",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x401163",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x401000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4011a3",
+                "api_name": "msvcrt.__getmainargs",
+                "args": [
+                    "0x67b004",
+                    "0x67b000",
+                    "0x1211fc8",
+                    "0xffffffff",
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf100",
+            "address": "0xfeedf100",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211fbc",
+                "ebp": "0x01211fd4",
+                "eip": "0xfeedf100",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x00000000",
+                "ebx": "0x00000000",
+                "ecx": "0x000001bb",
+                "edx": "0xfeedf0ec"
+            },
+            "stack": [
+                "sp+0x00: 0x00401274 -> emu.module.6cac9f946983f09aaeb9de1a38a22e979f59304dca9ecb1c1a8275d9bcc19526.0x400000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x00008000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x01211fe4 -> emu.stack.0x1200000",
+                "sp+0x1c: 0x00401298 -> emu.module.6cac9f946983f09aaeb9de1a38a22e979f59304dca9ecb1c1a8275d9bcc19526.0x400000",
+                "sp+0x20: 0x00000001",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x01212000",
+                "sp+0x2c: 0xfeedf000",
+                "sp+0x30: 0x00004000 -> emu.module_arg_0.0x4000",
+                "sp+0x34: 0x00004010 -> emu.module_arg_1.0x4010",
+                "sp+0x38: 0x00004020 -> emu.module_arg_2.0x4020",
+                "sp+0x3c: 0x00004030 -> emu.module_arg_3.0x4030"
+            ],
+            "api_name": "msvcrt._setmode"
+        },
+        "dynamic_code_segments": []
+    }
+]

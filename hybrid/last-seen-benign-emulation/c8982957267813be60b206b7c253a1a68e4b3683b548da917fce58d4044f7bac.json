@@ -1,0 +1,89 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140522dac",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "3f0242e5510e50736d7b46949b989f9c95cac972ebd57b6b85bf0af03ceac66f",
+        "apis": [
+            {
+                "pc": "0x140524116",
+                "api_name": "api-ms-win-core-sysinfo-l1-1-0.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140524124",
+                "api_name": "api-ms-win-core-processthreads-l1-1-0.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x1a5f8"
+            },
+            {
+                "pc": "0x140524130",
+                "api_name": "api-ms-win-core-processthreads-l1-1-0.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x1a5e4"
+            },
+            {
+                "pc": "0x140524140",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf064",
+            "address": "0xfeedf064",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211e60",
+                "rbp": "0x000000014070ad88",
+                "rip": "0x00000000feedf064",
+                "rsi": "0x0000000000000001",
+                "rdi": "0x0000000000000004",
+                "rax": "0x0000000000000000",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x000000014070acc8",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000000000800",
+                "r9": "0x000000014070ad90",
+                "r10": "0x000000003d3b350f",
+                "r11": "0x0000000000000000",
+                "r12": "0x000000014070ad90",
+                "r13": "0x000000014070ad90",
+                "r14": "0xffffffffffffffff",
+                "r15": "0x000000014070acc8"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140535b17 -> emu.module.c8982957267813be60b206b7c253a1a68e4b3683b548da917fce58d4044f7bac.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000140932ab0 -> emu.module.c8982957267813be60b206b7c253a1a68e4b3683b548da917fce58d4044f7bac.0x140000000",
+                "sp+0x50: 0x0000000140535f8a -> emu.module.c8982957267813be60b206b7c253a1a68e4b3683b548da917fce58d4044f7bac.0x140000000",
+                "sp+0x58: 0x0000000000000fa0",
+                "sp+0x60: 0x0000000001211fd8 -> emu.stack.0x1200000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "api-ms-win-core-libraryloader-l1-2-0.LoadLibraryExW"
+        },
+        "dynamic_code_segments": []
+    }
+]

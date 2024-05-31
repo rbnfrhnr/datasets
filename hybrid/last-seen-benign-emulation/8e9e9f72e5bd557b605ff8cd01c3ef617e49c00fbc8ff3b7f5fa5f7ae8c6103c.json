@@ -1,0 +1,147 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1400016e0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "e74b7e8a6ba775df7ffd9e96fe95ff519a7622fdd4258f061f391cf07abc3676",
+        "apis": [
+            {
+                "pc": "0x140001b01",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140001b0c",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x5b4c"
+            },
+            {
+                "pc": "0x140001b18",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x5b60"
+            },
+            {
+                "pc": "0x140001b24",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x140001b35",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400014f7",
+                "api_name": "MSVCR90._initterm_e",
+                "args": [
+                    "0x140002198",
+                    "0x1400021b0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001528",
+                "api_name": "MSVCR90._initterm",
+                "args": [
+                    "0x140002180",
+                    "0x140002190"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001046",
+                "api_name": "ADVAPI32.RegOpenKeyExW",
+                "args": [
+                    "0xffffffff80000002",
+                    "SOFTWARE\\Adobe\\After Effects\\10.0",
+                    "0x0",
+                    "0x1",
+                    "0x1210ef8"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x140001094",
+                "api_name": "ADVAPI32.RegOpenKeyExW",
+                "args": [
+                    "0xffffffff80000002",
+                    "SOFTWARE\\Adobe\\After Effects\\10.5",
+                    "0x0",
+                    "0x20019",
+                    "0x1210ef8"
+                ],
+                "ret_val": "0x3"
+            }
+        ],
+        "ret_val": "0x3",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf080",
+            "address": "0xfeedf080",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001210ea0",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf080",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000001",
+                "rax": "0x0000000000000003",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000140002310",
+                "rdx": "0x00000001400022c0",
+                "r8": "0x0000000000000000",
+                "r9": "0x0000000000020019",
+                "r10": "0x0000000000000000",
+                "r11": "0xffff4f0d7f75f958",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001400010a5 -> emu.module.8e9e9f72e5bd557b605ff8cd01c3ef617e49c00fbc8ff3b7f5fa5f7ae8c6103c.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000001210ef8 -> emu.stack.0x1200000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "MSVCR90.printf"
+        },
+        "registry_access": [
+            {
+                "event": "open_key",
+                "path": "SOFTWARE\\Adobe\\After Effects\\10.0"
+            },
+            {
+                "event": "open_key",
+                "path": "SOFTWARE\\Adobe\\After Effects\\10.5"
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

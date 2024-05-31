@@ -1,0 +1,124 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x8aec55",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "db3bb81f28ade0daaf2682ebccac95b06e58ea9e869bd0638c54fef3276d66e2",
+        "apis": [
+            {
+                "pc": "0x8af15c",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x169bfd8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x8af168",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xb0d8"
+            },
+            {
+                "pc": "0x8af170",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xb0ec"
+            },
+            {
+                "pc": "0x8af178",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x8af184",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x169bfd0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x8aea28",
+                "api_name": "KERNEL32.InterlockedCompareExchange",
+                "args": [
+                    "0x13721bc",
+                    "0x169c000",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x8aea79",
+                "api_name": "MSVCR80._initterm_e",
+                "args": [
+                    "0xbd8dbc",
+                    "0xbd8dcc"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x8aeaae",
+                "api_name": "MSVCR80._initterm",
+                "args": [
+                    "0xbd6710",
+                    "0xbd8db8"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x8aeac7",
+                "api_name": "KERNEL32.InterlockedExchange",
+                "args": [
+                    "0x13721bc",
+                    "0x0"
+                ],
+                "ret_val": "0x169c000"
+            }
+        ],
+        "ret_val": "0x169bb20",
+        "error": {
+            "type": "Invalid memory write (UC_ERR_WRITE_UNMAPPED)",
+            "pc": "0xfeedf058",
+            "address": "0xfeedf058",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x0169bb14",
+                "ebp": "0x0169bfe4",
+                "eip": "0xfeedf058",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x0169bb20",
+                "ebx": "0x00000000",
+                "ecx": "0xfeedf544",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00757cc9 -> emu.module.84eb1e91aba1b2c7bdacd41f42d5384cd24c5c43abc21eaa353d28493c08695b.0x400000",
+                "sp+0x04: 0x0169bb20 -> emu.stack.0x168a000",
+                "sp+0x08: 0x00000400",
+                "sp+0x0c: 0x6c707865",
+                "sp+0x10: 0x7265726f",
+                "sp+0x14: 0x6578652e",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 1169, in handle_import_func\n    rv = self.api.call_api_func(mod, func, argv, ctx=default_ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/winapi.py\", line 77, in call_api_func\n    return func(mod, self.emu, argv, ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/usermode/kernel32.py\", line 5820, in GetConsoleTitle\n    self.mem_write(nSize, (len(temp_title)).to_bytes(4, 'little'))\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/api.py\", line 306, in mem_write\n    return self.emu.mem_write(addr, data)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/memmgr.py\", line 244, in mem_write\n    self.emu_eng.mem_write(addr, data)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/engines/unicorn_eng.py\", line 167, in mem_write\n    return self.emu.mem_write(addr, data)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/unicorn/unicorn.py\", line 443, in mem_write\n    raise UcError(status)\nunicorn.unicorn.UcError: Invalid memory write (UC_ERR_WRITE_UNMAPPED)\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

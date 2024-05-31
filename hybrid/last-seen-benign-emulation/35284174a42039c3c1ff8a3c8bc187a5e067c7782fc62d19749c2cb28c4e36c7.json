@@ -1,0 +1,89 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x1f51b",
+        "ep_args": [
+            "0x7e5da0",
+            "0x7e5ee0"
+        ],
+        "apihash": "2260046626100023180c41e1b00ee3ad9c0a8e54672924842e4c1e5228e5ba35",
+        "apis": [
+            {
+                "pc": "0x1f1e4",
+                "api_name": "ntoskrnl.ExAllocatePoolWithTag",
+                "args": [
+                    "0x0",
+                    "0x102",
+                    "Wrps"
+                ],
+                "ret_val": "0x7e80f0"
+            },
+            {
+                "pc": "0x1f1ff",
+                "api_name": "ntoskrnl.memset",
+                "args": [
+                    "0x7e80f0",
+                    "0x0",
+                    "0x102"
+                ],
+                "ret_val": "0x7e80f0"
+            },
+            {
+                "pc": "0x1f216",
+                "api_name": "ntoskrnl.RtlCopyUnicodeString",
+                "args": [
+                    "0x1200fcc",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\35284174a42039c3c1ff8a3c8bc187a5e067c7782fc62d19749c2cb28c4e36c7"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1f227",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200fc0",
+                    "\\Parameters"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1200fcc",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf02c",
+            "address": "0xfeedf02c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01200fa4",
+                "ebp": "0x01200ff0",
+                "eip": "0xfeedf02c",
+                "esi": "0xfeedf078",
+                "edi": "0x007e80f0",
+                "eax": "0x01200fcc",
+                "ebx": "0x00000000",
+                "ecx": "0x007e5ee0",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0001f235 -> emu.module.35284174a42039c3c1ff8a3c8bc187a5e067c7782fc62d19749c2cb28c4e36c7.0x10000",
+                "sp+0x04: 0x01200fcc -> emu.stack.0x1200000",
+                "sp+0x08: 0x01200fc0 -> emu.stack.0x1200000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00160016",
+                "sp+0x20: 0x0001f5ca -> emu.module.35284174a42039c3c1ff8a3c8bc187a5e067c7782fc62d19749c2cb28c4e36c7.0x10000",
+                "sp+0x24: 0x007e5da0 -> emu.object._Driver_35284174a42039c3c1ff8a3c8bc187a5e067c7782fc62d19749c2cb28c4e36c7.0x7e5da0",
+                "sp+0x28: 0x01020000",
+                "sp+0x2c: 0x007e80f0 -> api.pool.NonPagedPool.Wrps.0x7e80f0",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x007e5ee0 -> emu.object._Driver_35284174a42039c3c1ff8a3c8bc187a5e067c7782fc62d19749c2cb28c4e36c7.reg_path.0x7e5ee0",
+                "sp+0x38: 0x4d36e975",
+                "sp+0x3c: 0x11cee325"
+            ],
+            "api_name": "ntoskrnl.RtlAppendUnicodeStringToString"
+        },
+        "dynamic_code_segments": []
+    }
+]

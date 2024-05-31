@@ -1,0 +1,60 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x6c42b",
+        "ep_args": [
+            "0x7e5da0",
+            "0x7e5ee0"
+        ],
+        "apihash": "0f9f85c57effa6b9bd64bc284dfd82a35013ad460b5545a3fbf9aa80baca324a",
+        "apis": [
+            {
+                "pc": "0x6cede",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f34",
+                    "Microsoft-Windows-OfflineFiles-Core-FeatureEnabled"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1200f34",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf168",
+            "address": "0xfeedf168",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01200f1c",
+                "ebp": "0x01200f44",
+                "eip": "0xfeedf168",
+                "esi": "0x00000000",
+                "edi": "0x01200fee",
+                "eax": "0x01200f34",
+                "ebx": "0x00000000",
+                "ecx": "0xbb40e64e",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0006cef5 -> emu.module.98575cbd0664586e6211d02e71bdd52cbaa149a1658573550e29e74e5f7b1553.0x10000",
+                "sp+0x04: 0x01200f34 -> emu.stack.0x1200000",
+                "sp+0x08: 0x01200f3c -> emu.stack.0x1200000",
+                "sp+0x0c: 0x01200f9c -> emu.stack.0x1200000",
+                "sp+0x10: 0x00000004",
+                "sp+0x14: 0x01200f40 -> emu.stack.0x1200000",
+                "sp+0x18: 0x00640064",
+                "sp+0x1c: 0x0006cd70 -> emu.module.98575cbd0664586e6211d02e71bdd52cbaa149a1658573550e29e74e5f7b1553.0x10000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x01200ff0 -> emu.stack.0x1200000",
+                "sp+0x2c: 0x0006c47a -> emu.module.98575cbd0664586e6211d02e71bdd52cbaa149a1658573550e29e74e5f7b1553.0x10000",
+                "sp+0x30: 0x0006cd70 -> emu.module.98575cbd0664586e6211d02e71bdd52cbaa149a1658573550e29e74e5f7b1553.0x10000",
+                "sp+0x34: 0x01200f9c -> emu.stack.0x1200000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "ntoskrnl.ZwQueryLicenseValue"
+        },
+        "dynamic_code_segments": []
+    }
+]

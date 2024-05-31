@@ -1,0 +1,172 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x18158",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "9d9e0ccb3480d1e6adf00a34e2b35fcf9c52794ec7f2930b905e983ecf2fa6ba",
+        "apis": [
+            {
+                "pc": "0x1802f",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f98",
+                    "\\Device\\SpeedFan"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1805d",
+                "api_name": "ntoskrnl.IoCreateDevice",
+                "args": [
+                    "0x7eb870",
+                    "0x15a",
+                    "\\Device\\SpeedFan",
+                    "0x9c40",
+                    "0x0",
+                    "0x0",
+                    "0x1200fc0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x175d6",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200ee8",
+                    "KdRefreshDebuggerNotPresent"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x175e8",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200ef8",
+                    "KdDebuggerNotPresent"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x175fa",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f08",
+                    "IoGetDeviceAttachmentBaseRef"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1760c",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f18",
+                    "IoGetLowerDeviceObject"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1761e",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f28",
+                    "IoGetDiskDeviceObject"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x17630",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f38",
+                    "IoEnumerateDeviceObjectList"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1763b",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "KdRefreshDebuggerNotPresent"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x1764a",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "KdDebuggerNotPresent"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x1768f",
+                "api_name": "ntoskrnl.PsGetVersion",
+                "args": [
+                    "0x400124",
+                    "0x400128",
+                    "0x40012c",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x176ae",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x4000f8",
+                    "\\DosDevices\\Global\\SpeedFan"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x400120",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf030",
+            "address": "0xfeedf030",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200e30",
+                "rbp": "0x0000000001200fd8",
+                "rip": "0x00000000feedf030",
+                "rsi": "0x00000000007eba60",
+                "rdi": "0x000000000040011c",
+                "rax": "0x0000000000400120",
+                "rbx": "0x00000000004000f8",
+                "rcx": "0x0000000000000000",
+                "rdx": "0x0000000000400168",
+                "r8": "0x0000000001200e68",
+                "r9": "0x0000000000000000",
+                "r10": "0x0033006200320033",
+                "r11": "0x0000000000000020",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000000000177a6 -> emu.module.f4ee803eefdb4eaeedb3024c3516f1f9a202c77f4870d6b74356bbde32b3b560.0x10000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000020",
+                "sp+0x48: 0x0000000000017bb0 -> emu.module.f4ee803eefdb4eaeedb3024c3516f1f9a202c77f4870d6b74356bbde32b3b560.0x10000",
+                "sp+0x50: 0x0000000000400118 -> api.object._Device_SpeedFan.0x3ff000",
+                "sp+0x58: 0x0000000000000004",
+                "sp+0x60: 0x0000000000400118 -> api.object._Device_SpeedFan.0x3ff000",
+                "sp+0x68: 0x0000000000000004",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000020"
+            ],
+            "api_name": "ntoskrnl.RtlQueryRegistryValues"
+        },
+        "dynamic_code_segments": []
+    }
+]

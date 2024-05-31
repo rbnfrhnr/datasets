@@ -1,0 +1,155 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x316e4",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "3dd122080897abbff7304e56883a39f766fbb5aceb85f38630eed5fb9c8cb726",
+        "apis": [
+            {
+                "pc": "0x10719",
+                "api_name": "NTOSKRNL.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f88",
+                    "PsGetVersion"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x10724",
+                "api_name": "NTOSKRNL.MmGetSystemRoutineAddress",
+                "args": [
+                    "PsGetVersion"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x1073d",
+                "api_name": "NTOSKRNL.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f88",
+                    "WmiTraceMessage"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x10748",
+                "api_name": "NTOSKRNL.MmGetSystemRoutineAddress",
+                "args": [
+                    "WmiTraceMessage"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x10786",
+                "api_name": "NTOSKRNL.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f88",
+                    "WmiQueryTraceInformation"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x10791",
+                "api_name": "NTOSKRNL.MmGetSystemRoutineAddress",
+                "args": [
+                    "WmiQueryTraceInformation"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x107bd",
+                "api_name": "ntoskrnl.PsGetVersion",
+                "args": [
+                    "0x1200fc0",
+                    "0x0",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x107dc",
+                "api_name": "NTOSKRNL.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f88",
+                    "EtwRegisterClassicProvider"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x107e7",
+                "api_name": "NTOSKRNL.MmGetSystemRoutineAddress",
+                "args": [
+                    "EtwRegisterClassicProvider"
+                ],
+                "ret_val": "0xfeee0003"
+            },
+            {
+                "pc": "0x10805",
+                "api_name": "NTOSKRNL.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f88",
+                    "EtwUnregister"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x10810",
+                "api_name": "NTOSKRNL.MmGetSystemRoutineAddress",
+                "args": [
+                    "EtwUnregister"
+                ],
+                "ret_val": "0xfeee0004"
+            }
+        ],
+        "ret_val": "0x305f8",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0003",
+            "address": "0xfeee0003",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200f40",
+                "rbp": "0x00000000007eba60",
+                "rip": "0x00000000feee0003",
+                "rsi": "0x00000000007eb870",
+                "rdi": "0x00000000000305c0",
+                "rax": "0x00000000000305f8",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x000000000002f7e0",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000000010590",
+                "r9": "0x00000000000305c0",
+                "r10": "0x00000000feee0000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000002",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000000001086c -> emu.module.486e1eaf66737dd98dd2f88e09ce358a4c70342d80790d6209c02704f0a47369.0x10000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x00000000000305f8 -> emu.module.486e1eaf66737dd98dd2f88e09ce358a4c70342d80790d6209c02704f0a47369.0x10000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x00000000000316f3 -> emu.module.486e1eaf66737dd98dd2f88e09ce358a4c70342d80790d6209c02704f0a47369.0x10000",
+                "sp+0x48: 0x00000000001a001a",
+                "sp+0x50: 0x0000000000031660 -> emu.module.486e1eaf66737dd98dd2f88e09ce358a4c70342d80790d6209c02704f0a47369.0x10000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x00000000feedf000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ntoskrnl.EtwRegisterClassicProvider"
+        },
+        "dynamic_code_segments": []
+    }
+]

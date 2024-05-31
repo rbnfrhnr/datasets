@@ -1,0 +1,166 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x10000bd14",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "63af0fb4fc8beaffd685418923648376ae7f9eaa5bdfa5c052245e95ace1674f",
+        "apis": [
+            {
+                "pc": "0x10000c2cd",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x10000c2d8",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x58b8"
+            },
+            {
+                "pc": "0x10000c2e4",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x58cc"
+            },
+            {
+                "pc": "0x10000c2f0",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x10000c301",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x10000c254",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x100000000"
+            },
+            {
+                "pc": "0x10000bcb9",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x10000c0c5",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x10000c06c"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x10000bb6b",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x1000013a0",
+                    "0x1000013b0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x100007dad",
+                "api_name": "KERNEL32.GetModuleFileNameW",
+                "args": [
+                    "0x0",
+                    "C:\\Windows\\system32\\44f6a4a6b40416fdb8d642af0c36a44d70ef25a5b87f4e9a9bb4dbe0c1cee653",
+                    "0x106"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x1000095a1",
+                "api_name": "msvcrt.memset",
+                "args": [
+                    "0x12116b8",
+                    "0x0",
+                    "0x11c"
+                ],
+                "ret_val": "0x12116b8"
+            },
+            {
+                "pc": "0x1000095b4",
+                "api_name": "KERNEL32.GetVersionExW",
+                "args": [
+                    "0x12116b8"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x100009ae0",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "C:\\Windows\\system32\\44f6a4a6b40416fdb8d642af0c36a44d70ef25a5b87f4e9a9bb4dbe0c1cee653",
+                    "0x0",
+                    "LOAD_LIBRARY_AS_DATAFILE | LOAD_LIBRARY_AS_IMAGE_RESOURCE"
+                ],
+                "ret_val": "0x100000000"
+            }
+        ],
+        "ret_val": "0x100000000",
+        "error": {
+            "type": "Unsupported information class: 0x5a",
+            "pc": "0xfeedf1b4",
+            "address": "0xfeedf1b4",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211cd0",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf1b4",
+                "rsi": "0x00000000c0000001",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000100000000",
+                "rbx": "0x0000000000000106",
+                "rcx": "0x000000000000005a",
+                "rdx": "0x0000000001211d08",
+                "r8": "0x0000000000000014",
+                "r9": "0x0000000000000000",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000001211ca8",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000100007dde -> emu.module.44f6a4a6b40416fdb8d642af0c36a44d70ef25a5b87f4e9a9bb4dbe0c1cee653.0x100000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000106",
+                "sp+0x18: 0x0000000001211fd8 -> emu.stack.0x1200000",
+                "sp+0x20: 0x00000000c0000001",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0057005c003a0043",
+                "sp+0x60: 0x006f0064006e0069",
+                "sp+0x68: 0x0073005c00730077",
+                "sp+0x70: 0x0065007400730079",
+                "sp+0x78: 0x005c00320033006d"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 1169, in handle_import_func\n    rv = self.api.call_api_func(mod, func, argv, ctx=default_ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/winapi.py\", line 77, in call_api_func\n    return func(mod, self.emu, argv, ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/kernelmode/ntoskrnl.py\", line 637, in ZwQuerySystemInformation\n    % (sysclass))\nspeakeasy.errors.ApiEmuError: Unsupported information class: 0x5a\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

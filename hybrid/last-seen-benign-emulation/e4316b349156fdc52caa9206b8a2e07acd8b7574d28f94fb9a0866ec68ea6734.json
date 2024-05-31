@@ -1,0 +1,164 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x41a670",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "c5e82a5b1036c95d536f2f0f50e0ac3fb792026779a2fab4f7456bfd5bbec0d9",
+        "apis": [
+            {
+                "pc": "0x419d59",
+                "api_name": "kernel32.AddVectoredExceptionHandler",
+                "args": [
+                    "0x1",
+                    "0x419a40"
+                ],
+                "ret_val": "0x419a40"
+            },
+            {
+                "pc": "0x41a77a",
+                "api_name": "kernel32.GetStartupInfoA",
+                "args": [
+                    "0xc4ff00"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x41a7a0",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x419fc2",
+                "api_name": "kernel32.GetStdHandle",
+                "args": [
+                    "0xfffffff6"
+                ],
+                "ret_val": "0xf001"
+            },
+            {
+                "pc": "0x419fd6",
+                "api_name": "kernel32.GetStdHandle",
+                "args": [
+                    "0xfffffff5"
+                ],
+                "ret_val": "0xf002"
+            },
+            {
+                "pc": "0x419fea",
+                "api_name": "kernel32.GetStdHandle",
+                "args": [
+                    "0xfffffff4"
+                ],
+                "ret_val": "0xf003"
+            },
+            {
+                "pc": "0x41925b",
+                "api_name": "kernel32.GetModuleFileNameA",
+                "args": [
+                    "0x0",
+                    "C:\\Windows\\system32\\e4316b349156fdc52caa9206b8a2e07acd8b7574d28f94fb9a0866ec68ea6734",
+                    "0x104"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x412d81",
+                "api_name": "kernel32.GetProcessHeap",
+                "args": [],
+                "ret_val": "0x49c0"
+            },
+            {
+                "pc": "0x412d92",
+                "api_name": "kernel32.HeapAlloc",
+                "args": [
+                    "0x49c0",
+                    "0x0",
+                    "0x8000"
+                ],
+                "ret_val": "0x9000"
+            },
+            {
+                "pc": "0x41929d",
+                "api_name": "kernel32.GetCommandLineA",
+                "args": [],
+                "ret_val": "0x49e0"
+            },
+            {
+                "pc": "0x412d92",
+                "api_name": "kernel32.HeapAlloc",
+                "args": [
+                    "0x49c0",
+                    "0x0",
+                    "0x8000"
+                ],
+                "ret_val": "0x11000"
+            },
+            {
+                "pc": "0x41a803",
+                "api_name": "kernel32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x13e94"
+            },
+            {
+                "pc": "0x41598d",
+                "api_name": "kernel32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x13ea8"
+            }
+        ],
+        "ret_val": "0xc0f904",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf6f8",
+            "address": "0xfeedf6f8",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211c40",
+                "rbp": "0x0000000001211c78",
+                "rip": "0x00000000feedf6f8",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000000c0f904",
+                "rbx": "0x0000000000000001",
+                "rcx": "0x0000000000c0f940",
+                "rdx": "0x0000000000c0f904",
+                "r8": "0x0000000000000017",
+                "r9": "0x0101010101010101",
+                "r10": "0x6638326434373537",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000000040b50a -> emu.module.e4316b349156fdc52caa9206b8a2e07acd8b7574d28f94fb9a0866ec68ea6734.0x400000",
+                "sp+0x08: 0x0000000001211c88 -> emu.stack.0x1200000",
+                "sp+0x10: 0x00000000004150e2 -> emu.module.e4316b349156fdc52caa9206b8a2e07acd8b7574d28f94fb9a0866ec68ea6734.0x400000",
+                "sp+0x18: 0x0000000001211c98 -> emu.stack.0x1200000",
+                "sp+0x20: 0x0000000000416a5c -> emu.module.e4316b349156fdc52caa9206b8a2e07acd8b7574d28f94fb9a0866ec68ea6734.0x400000",
+                "sp+0x28: 0x0000000000c0f904 -> emu.module.e4316b349156fdc52caa9206b8a2e07acd8b7574d28f94fb9a0866ec68ea6734.0x400000",
+                "sp+0x30: 0x0000000000c0f940 -> emu.module.e4316b349156fdc52caa9206b8a2e07acd8b7574d28f94fb9a0866ec68ea6734.0x400000",
+                "sp+0x38: 0x0000000001211cc8 -> emu.stack.0x1200000",
+                "sp+0x40: 0x000000000041a5dc -> emu.module.e4316b349156fdc52caa9206b8a2e07acd8b7574d28f94fb9a0866ec68ea6734.0x400000",
+                "sp+0x48: 0x0000000001211cc8 -> emu.stack.0x1200000",
+                "sp+0x50: 0x0000000000415e75 -> emu.module.e4316b349156fdc52caa9206b8a2e07acd8b7574d28f94fb9a0866ec68ea6734.0x400000",
+                "sp+0x58: 0x0000000001211c20 -> emu.stack.0x1200000",
+                "sp+0x60: 0x000000000040c1f4 -> emu.module.e4316b349156fdc52caa9206b8a2e07acd8b7574d28f94fb9a0866ec68ea6734.0x400000",
+                "sp+0x68: 0x00000000000049f9 -> api.command_line.kernel32.GetCommandLineA.0x49e0",
+                "sp+0x70: 0x0000000000000f28",
+                "sp+0x78: 0x0000000000c0f8e0 -> emu.module.e4316b349156fdc52caa9206b8a2e07acd8b7574d28f94fb9a0866ec68ea6734.0x400000"
+            ],
+            "api_name": "oleaut32.SysReAllocStringLen"
+        },
+        "dynamic_code_segments": []
+    }
+]

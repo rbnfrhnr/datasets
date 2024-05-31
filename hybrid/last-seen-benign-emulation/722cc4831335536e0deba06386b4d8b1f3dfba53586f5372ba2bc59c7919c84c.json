@@ -1,0 +1,195 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x14034a890",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "12a71e17890b2d0279b5e67591e74e3f3f63f6b6434f76d3a8a7e14cf0c9b1f0",
+        "apis": [
+            {
+                "pc": "0x14034b3ad",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x140563000"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x14034a860",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1400014f0",
+        "ep_args": [
+            "0x4030",
+            "0x4040",
+            "0x4050",
+            "0x4060"
+        ],
+        "apihash": "76c244797d78e0921bdf0d737dda8fb5c406cc0cd99e23d7ea22ef5c2eecc678",
+        "apis": [
+            {
+                "pc": "0x1400014b9",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x140567018",
+                    "0x140567030"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14000144f",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x140567000",
+                    "0x140567010"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14000126e",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x14034b020"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001337",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x8"
+                ],
+                "ret_val": "0x4990"
+            },
+            {
+                "pc": "0x140001519",
+                "api_name": "msvcrt._onexit",
+                "args": [
+                    "0x140001540"
+                ],
+                "ret_val": "0x140001540"
+            },
+            {
+                "pc": "0x140001519",
+                "api_name": "msvcrt._onexit",
+                "args": [
+                    "0x140463060"
+                ],
+                "ret_val": "0x140463060"
+            },
+            {
+                "pc": "0x140001519",
+                "api_name": "msvcrt._onexit",
+                "args": [
+                    "0x140463070"
+                ],
+                "ret_val": "0x140463070"
+            },
+            {
+                "pc": "0x14034b8e3",
+                "api_name": "KERNEL32.TlsAlloc",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14034b26f",
+                "api_name": "msvcrt.calloc",
+                "args": [
+                    "0x1",
+                    "0x18"
+                ],
+                "ret_val": "0x49a0"
+            },
+            {
+                "pc": "0x14034b28a",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x140563000"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14034b2a9",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x140563000"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140001519",
+                "api_name": "msvcrt._onexit",
+                "args": [
+                    "0x140462fb0"
+                ],
+                "ret_val": "0x140462fb0"
+            }
+        ],
+        "ret_val": "0x2",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0e0",
+            "address": "0xfeedf0e0",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211e10",
+                "rbp": "0x0000000000000000",
+                "rip": "0x00000000feedf0e0",
+                "rsi": "0x000000014046ad40",
+                "rdi": "0x0000000000004990",
+                "rax": "0x0000000000000002",
+                "rbx": "0x0000000140470100",
+                "rcx": "0x0000000000000000",
+                "rdx": "0x0000000000000000",
+                "r8": "0x000000000000ffff",
+                "r9": "0x0000000000000000",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000008",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014034b9d1 -> emu.module.722cc4831335536e0deba06386b4d8b1f3dfba53586f5372ba2bc59c7919c84c.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x00000000000001c0",
+                "sp+0x18: 0x000000014046aef0 -> emu.module.722cc4831335536e0deba06386b4d8b1f3dfba53586f5372ba2bc59c7919c84c.0x140000000",
+                "sp+0x20: 0x000000014046ad40 -> emu.module.722cc4831335536e0deba06386b4d8b1f3dfba53586f5372ba2bc59c7919c84c.0x140000000",
+                "sp+0x28: 0x000000014046aee8 -> emu.module.722cc4831335536e0deba06386b4d8b1f3dfba53586f5372ba2bc59c7919c84c.0x140000000",
+                "sp+0x30: 0x000000014046a1a4 -> emu.module.722cc4831335536e0deba06386b4d8b1f3dfba53586f5372ba2bc59c7919c84c.0x140000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x000000014034a7e2 -> emu.module.722cc4831335536e0deba06386b4d8b1f3dfba53586f5372ba2bc59c7919c84c.0x140000000",
+                "sp+0x68: 0x0000000140563aa8 -> emu.module.722cc4831335536e0deba06386b4d8b1f3dfba53586f5372ba2bc59c7919c84c.0x140000000",
+                "sp+0x70: 0x0000000140562f80 -> emu.module.722cc4831335536e0deba06386b4d8b1f3dfba53586f5372ba2bc59c7919c84c.0x140000000",
+                "sp+0x78: 0x00000000feedf22c"
+            ],
+            "api_name": "KERNEL32.CreateSemaphoreW"
+        },
+        "dynamic_code_segments": []
+    }
+]

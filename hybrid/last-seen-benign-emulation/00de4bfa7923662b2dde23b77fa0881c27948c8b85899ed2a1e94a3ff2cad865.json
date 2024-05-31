@@ -1,0 +1,147 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140010950",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "ca15812a442282fa025de332a80dad6341fa502c23c06d125612c4c161a335b6",
+        "apis": [
+            {
+                "pc": "0x1400127b9",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400127c4",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x3484"
+            },
+            {
+                "pc": "0x1400127d0",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x3498"
+            },
+            {
+                "pc": "0x1400127dc",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x1400127ed",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140012744",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x140000000"
+            },
+            {
+                "pc": "0x1400108fd",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400125f5",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x1400125a0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400107b3",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x140013648",
+                    "0x140013658"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140002401",
+                "api_name": "KERNEL32.GetSystemInfo",
+                "args": [
+                    "0x14001f018"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140002419",
+                "api_name": "KERNEL32.VirtualAlloc",
+                "args": [
+                    "0x0",
+                    "0x0",
+                    "0x2000",
+                    "PAGE_NOACCESS"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "Invalid memory read (UC_ERR_READ_UNMAPPED)",
+            "pc": "0x1400125a0",
+            "address": "0x1400125a0",
+            "instr": "sub rsp, 0x28",
+            "regs": {
+                "rsp": "0x0000000001211e90",
+                "rbp": "0x0000000000000000",
+                "rip": "0x00000001400125a0",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000001",
+                "rax": "0x0000000000000000",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000000004940",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000000002000",
+                "r9": "0x0000000000000001",
+                "r10": "0x0000000000000000",
+                "r11": "0xffffffffffffffff",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000000feedf000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000140002419 -> emu.module.00de4bfa7923662b2dde23b77fa0881c27948c8b85899ed2a1e94a3ff2cad865.0x140000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000140013678 -> emu.module.00de4bfa7923662b2dde23b77fa0881c27948c8b85899ed2a1e94a3ff2cad865.0x140000000",
+                "sp+0x70: 0x000000014000fe2c -> emu.module.00de4bfa7923662b2dde23b77fa0881c27948c8b85899ed2a1e94a3ff2cad865.0x140000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 437, in start\n    count=self.max_instructions)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/engines/unicorn_eng.py\", line 203, in start\n    return self.emu.emu_start(addr, 0xFFFFFFFF, timeout=timeout, count=count)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/unicorn/unicorn.py\", line 318, in emu_start\n    raise UcError(status)\nunicorn.unicorn.UcError: Invalid memory read (UC_ERR_READ_UNMAPPED)\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

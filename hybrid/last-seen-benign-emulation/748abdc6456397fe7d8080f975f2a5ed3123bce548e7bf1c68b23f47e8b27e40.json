@@ -1,0 +1,156 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x145ab2b46",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x147544b1d",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "29543bb0815029a1abb954152c34115c9c6dc07e86dbf28ca735a49ae18c38cf",
+        "apis": [
+            {
+                "pc": "0x147799dd9",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x147799dd9",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "ntdll.dll"
+                ],
+                "ret_val": "0x7c000000"
+            },
+            {
+                "pc": "0x147799dd9",
+                "api_name": "kernel32.IsDebuggerPresent",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x147799dd9",
+                "api_name": "kernel32.CheckRemoteDebuggerPresent",
+                "args": [
+                    "0xffffffffffffffff",
+                    "0x1211f18"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x147799dd9",
+                "api_name": "ntdll.ZwQueryInformationProcess",
+                "args": [
+                    "0xffffffffffffffff",
+                    "0x1e",
+                    "0x1211f18",
+                    "0x8",
+                    "0x0"
+                ],
+                "ret_val": "0xc0000353"
+            },
+            {
+                "pc": "0x147799dd9",
+                "api_name": "ntdll.ZwSetInformationThread",
+                "args": [
+                    "0xfffffffffffffffe",
+                    "0x11",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x147799dd9",
+                "api_name": "KERNEL32.GetModuleFileNameW",
+                "args": [
+                    "0x140000000",
+                    "C:\\Windows\\system32\\748abdc6456397fe7d8080f975f2a5ed3123bce548e7bf1c68b23f47e8b27e40",
+                    "0x104"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x147799dd9",
+                "api_name": "kernel32.CreateFileW",
+                "args": [
+                    "C:\\Windows\\system32\\748abdc6456397fe7d8080f975f2a5ed3123bce548e7bf1c68b23f47e8b27e40",
+                    "GENERIC_READ",
+                    "0x3",
+                    "0x0",
+                    "OPEN_EXISTING",
+                    "0x80",
+                    "0x0"
+                ],
+                "ret_val": "0x80"
+            },
+            {
+                "pc": "0x147799dd9",
+                "api_name": "kernel32.GetFileSize",
+                "args": [
+                    "0x80",
+                    "0x0"
+                ],
+                "ret_val": "0x1d79cd8"
+            },
+            {
+                "pc": "0x147799dd9",
+                "api_name": "kernel32.CreateFileMappingW",
+                "args": [
+                    "0x80",
+                    "0x0",
+                    "0x2",
+                    "0x0",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x280"
+            },
+            {
+                "pc": "0x147799dd9",
+                "api_name": "kernel32.MapViewOfFile",
+                "args": [
+                    "0x280",
+                    "0x4",
+                    "0x0",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x1d7b000"
+            }
+        ],
+        "ret_val": null,
+        "error": {},
+        "file_access": [
+            {
+                "event": "open",
+                "path": "C:\\Windows\\system32\\748abdc6456397fe7d8080f975f2a5ed3123bce548e7bf1c68b23f47e8b27e40",
+                "open_flags": [
+                    "OPEN_EXISTING"
+                ],
+                "access_flags": [
+                    "GENERIC_READ"
+                ]
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

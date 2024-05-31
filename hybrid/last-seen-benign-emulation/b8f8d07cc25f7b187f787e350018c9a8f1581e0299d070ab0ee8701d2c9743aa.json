@@ -1,0 +1,74 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x14000c000",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "e35b64fa5a9a32ff2ad5d0e388c63544f5871df7205205fb47f40efddcf01faa",
+        "apis": [
+            {
+                "pc": "0x14000158c",
+                "api_name": "ntoskrnl.RtlGetVersion",
+                "args": [
+                    "0x1200e48"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400015ea",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200e20",
+                    "\\Device\\Asusgio3"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140001617",
+                "api_name": "ntoskrnl.IoCreateDevice",
+                "args": [
+                    "0x7eb870",
+                    "0x38",
+                    "\\Device\\Asusgio3",
+                    "0xa040",
+                    "0x0",
+                    "0x0",
+                    "0x1200e18"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001666",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200e30",
+                    "\\DosDevices\\Asusgio3"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140001676",
+                "api_name": "ntoskrnl.IoCreateSymbolicLink",
+                "args": [
+                    "\\DosDevices\\Asusgio3",
+                    "\\Device\\Asusgio3"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001694",
+                "api_name": "ntoskrnl.PsSetCreateProcessNotifyRoutineEx",
+                "args": [
+                    "0x1400038b0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    }
+]

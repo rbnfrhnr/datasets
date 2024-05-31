@@ -1,0 +1,126 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x409a58",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "1d04c189522c771edcc5a41cb6410a6fbb758e4021247b8bc830d66a5a204ceb",
+        "apis": [
+            {
+                "pc": "0x4030e8",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x4030f3",
+                "api_name": "kernel32.GetCommandLineA",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x401933",
+                "api_name": "kernel32.InitializeCriticalSection",
+                "args": [
+                    "0x40c41c"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x401970",
+                "api_name": "kernel32.LocalAlloc",
+                "args": [
+                    "0x0",
+                    "0xff8"
+                ],
+                "ret_val": "0x7000"
+            },
+            {
+                "pc": "0x401464",
+                "api_name": "kernel32.VirtualAlloc",
+                "args": [
+                    "0x0",
+                    "0x100000",
+                    "0x2000",
+                    "PAGE_NOACCESS"
+                ],
+                "ret_val": "0x50000"
+            },
+            {
+                "pc": "0x4012a4",
+                "api_name": "kernel32.LocalAlloc",
+                "args": [
+                    "0x0",
+                    "0x644"
+                ],
+                "ret_val": "0x8000"
+            },
+            {
+                "pc": "0x401636",
+                "api_name": "kernel32.VirtualAlloc",
+                "args": [
+                    "0x50000",
+                    "0x4000",
+                    "0x1000",
+                    "PAGE_READWRITE"
+                ],
+                "ret_val": "0x50000"
+            },
+            {
+                "pc": "0x404c4e",
+                "api_name": "user32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0xff87",
+                    "Out of memory",
+                    "0x400"
+                ],
+                "ret_val": "0xd"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0fc",
+            "address": "0xfeedf0fc",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f48",
+                "ebp": "0x01211f74",
+                "eip": "0xfeedf0fc",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x00000000",
+                "ebx": "0x00000000",
+                "ecx": "0x00000000",
+                "edx": "0x0005001c"
+            },
+            "stack": [
+                "sp+0x00: 0x004051f4 -> emu.module.f39aab387ff12c3e0c9dd0e641cf606fe0c2e1ce67d363af2f4f593a543efce3.0x400000",
+                "sp+0x04: 0x01211f7c -> emu.stack.0x1200000",
+                "sp+0x08: 0x00405306 -> emu.module.f39aab387ff12c3e0c9dd0e641cf606fe0c2e1ce67d363af2f4f593a543efce3.0x400000",
+                "sp+0x0c: 0x01211f74 -> emu.stack.0x1200000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x01211f94 -> emu.stack.0x1200000",
+                "sp+0x2c: 0x01211f94 -> emu.stack.0x1200000",
+                "sp+0x30: 0x00406536 -> emu.module.f39aab387ff12c3e0c9dd0e641cf606fe0c2e1ce67d363af2f4f593a543efce3.0x400000",
+                "sp+0x34: 0x01211fd8 -> emu.stack.0x1200000",
+                "sp+0x38: 0x0040654e -> emu.module.f39aab387ff12c3e0c9dd0e641cf606fe0c2e1ce67d363af2f4f593a543efce3.0x400000",
+                "sp+0x3c: 0x01211f94 -> emu.stack.0x1200000"
+            ],
+            "api_name": "kernel32.GetSystemDefaultLCID"
+        },
+        "dynamic_code_segments": []
+    }
+]

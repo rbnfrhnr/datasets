@@ -1,0 +1,116 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1406e7016",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "384399fe38e0eb54b1d0c611fa08eb543c4ae7e8e69c948d83027ae17d9af95a",
+        "apis": [
+            {
+                "pc": "0x140858601",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x0",
+                    "0x150"
+                ],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x140719733",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x140719733",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "ntdll.dll"
+                ],
+                "ret_val": "0x7c000000"
+            },
+            {
+                "pc": "0x1407fc0b1",
+                "api_name": "KERNEL32.GetModuleFileNameW",
+                "args": [
+                    "0x140000000",
+                    "C:\\Windows\\system32\\7696f0db12027252ddb6b8871c487a724e4df4a3859c63148d47aab1626d2c1f",
+                    "0xfe"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x140794233",
+                "api_name": "KERNEL32.GetModuleFileNameW",
+                "args": [
+                    "0x140000000",
+                    "C:\\Windows\\system32\\7696f0db12027252ddb6b8871c487a724e4df4a3859c63148d47aab1626d2c1f",
+                    "0x104"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x140863937",
+                "api_name": "USER32.GetProcessWindowStation",
+                "args": [],
+                "ret_val": "0x184a0"
+            },
+            {
+                "pc": "0x140763e12",
+                "api_name": "USER32.GetUserObjectInformationW",
+                "args": [
+                    "0x184a0",
+                    "0x1",
+                    "0x1210e08",
+                    "0xc",
+                    "0x1211880"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1406f3229",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "user32.dll"
+                ],
+                "ret_val": "0x77d10000"
+            },
+            {
+                "pc": "0x140842e89",
+                "api_name": "user32.MessageBoxW",
+                "args": [
+                    "0x0",
+                    "File corrupted! This program has been manipulated and maybe\nit's infected by a Virus or cracked. This file won't work anymore.",
+                    "7696f0db12027252ddb6b8871c487a724e4df4a3859c63148d47aab1626d2c1f",
+                    "0x10"
+                ],
+                "ret_val": "0x2"
+            },
+            {
+                "pc": "0x1407c737e",
+                "api_name": "KERNEL32.FreeLibrary",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140763e73",
+                "api_name": "KERNEL32.ExitProcess",
+                "args": [
+                    "0xdeadc0de"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0xfeedf03c",
+        "error": {},
+        "dynamic_code_segments": []
+    }
+]

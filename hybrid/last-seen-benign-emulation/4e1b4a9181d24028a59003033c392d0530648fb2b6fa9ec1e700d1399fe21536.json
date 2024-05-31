@@ -1,0 +1,85 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x404095",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "34e1f74b5b5acfa47455323f2d5ebbfd4b1ca1b08185e8caf69e76d4d8dabb60",
+        "apis": [
+            {
+                "pc": "0x4040ab",
+                "api_name": "KERNEL32.SetErrorMode",
+                "args": [
+                    "0x4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4040d4",
+                "api_name": "KERNEL32.GetCommandLineA",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x4041d7",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x4041f0",
+                "api_name": "KERNEL32.GetModuleFileNameA",
+                "args": [
+                    "0x400000",
+                    "C:\\Windows\\system32\\4e1b4a9181d24028a59003033c392d0530648fb2b6fa9ec1e700d1399fe21536",
+                    "0x100"
+                ],
+                "ret_val": "0x54"
+            }
+        ],
+        "ret_val": "0x7163db4",
+        "error": {
+            "type": "Failed to get character width from function: KERNEL32._lopen",
+            "pc": "0xfeedf0e8",
+            "address": "0xfeedf0e8",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x07162fe0",
+                "ebp": "0x07163f6c",
+                "eip": "0xfeedf0e8",
+                "esi": "0x00000100",
+                "edi": "0x00000000",
+                "eax": "0x07163db4",
+                "ebx": "0x00409500",
+                "ecx": "0x07163db4",
+                "edx": "0x0000002f"
+            },
+            "stack": [
+                "sp+0x00: 0x004041fe -> emu.module.4e1b4a9181d24028a59003033c392d0530648fb2b6fa9ec1e700d1399fe21536.0x400000",
+                "sp+0x04: 0x07163db4 -> emu.stack.0x7152000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 1169, in handle_import_func\n    rv = self.api.call_api_func(mod, func, argv, ctx=default_ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/winapi.py\", line 77, in call_api_func\n    return func(mod, self.emu, argv, ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/usermode/kernel32.py\", line 5774, in _lopen\n    cw = self.get_char_width(ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/api.py\", line 343, in get_char_width\n    raise ApiEmuError('Failed to get character width from function: %s' % (name))\nspeakeasy.errors.ApiEmuError: Failed to get character width from function: KERNEL32._lopen\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,211 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x8261d0",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "ad78d9308fdf0fc9224d47f188673d93dfebf05469c049c02d23d350e022e42a",
+        "apis": [
+            {
+                "pc": "0x8261f4",
+                "api_name": "KERNEL32.TlsAlloc",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x826204",
+                "api_name": "KERNEL32.TlsAlloc",
+                "args": [],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x826231",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x3028"
+                ],
+                "ret_val": "0x9000"
+            },
+            {
+                "pc": "0x826248",
+                "api_name": "KERNEL32.TlsSetValue",
+                "args": [
+                    "0x0",
+                    "0x9000"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x82625d",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x22c"
+                ],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x82626e",
+                "api_name": "KERNEL32.TlsSetValue",
+                "args": [
+                    "0x1",
+                    "0x45f0"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x4fa9a0",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "12a71e17890b2d0279b5e67591e74e3f3f63f6b6434f76d3a8a7e14cf0c9b1f0",
+        "apis": [
+            {
+                "pc": "0x4fb32d",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x2b5b680"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_2",
+        "start_addr": "0x4fa950",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_3",
+        "start_addr": "0xaaee80",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "afda4e5038488c380fb6c8402021ab3e2a9947a6274db734fd1d45a26bbfc0c4",
+        "apis": [
+            {
+                "pc": "0xaaefa5",
+                "api_name": "KERNEL32.AddVectoredExceptionHandler",
+                "args": [
+                    "0x1",
+                    "0xaae490"
+                ],
+                "ret_val": "0xaae490"
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4014e0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "d7f638ae248fb6c93acffbb4379c538a18f4bacdb78110737899c3744790c4f3",
+        "apis": [
+            {
+                "pc": "0x401479",
+                "api_name": "KERNEL32.GetStartupInfoW",
+                "args": [
+                    "0x31d7f7c"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4014be",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x2e3900c",
+                    "0x2e39018"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401451",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x2e39000",
+                    "0x2e39008"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40124e",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x4fafa0"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf624",
+            "address": "0xfeedf624",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x031d7f4c",
+                "ebp": "0x031d7fd8",
+                "eip": "0xfeedf624",
+                "esi": "0xfeedf56c",
+                "edi": "0x031d8000",
+                "eax": "0x00000000",
+                "ebx": "0x031d8000",
+                "ecx": "0x00000000",
+                "edx": "0x031d7f7c"
+            },
+            "stack": [
+                "sp+0x00: 0x00401276 -> emu.module.d47e0d22fa157ee4492bb3c6a2623cba855a669d2b1e52a049a69705c12e46c8.0x400000",
+                "sp+0x04: 0x00401000 -> emu.module.d47e0d22fa157ee4492bb3c6a2623cba855a669d2b1e52a049a69705c12e46c8.0x400000",
+                "sp+0x08: 0x00000002",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000044",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00004860 -> api.struct.STARTUPINFOW.lpDesktop.0x4860",
+                "sp+0x3c: 0x00004890 -> api.struct.STARTUPINFOW.lpTitle.0x4890"
+            ],
+            "api_name": "msvcrt.__p__wcmdln"
+        },
+        "dynamic_code_segments": []
+    }
+]

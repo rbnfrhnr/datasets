@@ -1,0 +1,103 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x140031504",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "b40d9c2eea19c64a5915872ce807ecee058639e61bc81ab67b6eb21db53a2d6f",
+        "apis": [
+            {
+                "pc": "0x14000a77e",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "ExAllocatePoolWithTag"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x14000a7ad",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "ExInitializeNPagedLookasideList"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x14000a7dc",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "MmMapLockedPagesSpecifyCache"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x14000a7fc",
+                "api_name": "ntoskrnl.PsGetVersion",
+                "args": [
+                    "0x1200fa0",
+                    "0x1200e20",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14000a850",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200e98",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\PrlNP\\Parameters"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1200e98",
+        "error": {
+            "type": "'NoneType' object has no attribute 'to_bytes'",
+            "pc": "0xfeedf084",
+            "address": "0xfeedf084",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200dd0",
+                "rbp": "0x0000000001200fd8",
+                "rip": "0x00000000feedf084",
+                "rsi": "0x00000000007eba60",
+                "rdi": "0x00000000007eb870",
+                "rax": "0x0000000001200e98",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000001200e48",
+                "rdx": "0x0000000000020019",
+                "r8": "0x0000000001200f18",
+                "r9": "0x0000000000000000",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x00000000007eb870",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014000a8a2 -> emu.module.667c95765e79ad63f37b86a919f2dcadd1b06857ec43c8c3938213cb09b7283b.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000001",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 1169, in handle_import_func\n    rv = self.api.call_api_func(mod, func, argv, ctx=default_ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/winapi.py\", line 77, in call_api_func\n    return func(mod, self.emu, argv, ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/kernelmode/ntoskrnl.py\", line 2633, in ZwOpenKey\n    self.mem_write(phnd, hnd.to_bytes(self.get_ptr_size(), 'little'))\nAttributeError: 'NoneType' object has no attribute 'to_bytes'\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

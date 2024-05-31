@@ -1,0 +1,158 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x1200044a0",
+        "ep_args": [
+            "0x120000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "12a71e17890b2d0279b5e67591e74e3f3f63f6b6434f76d3a8a7e14cf0c9b1f0",
+        "apis": [
+            {
+                "pc": "0x120004fdd",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x1203b4120"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x120004470",
+        "ep_args": [
+            "0x120000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1200014b0",
+        "ep_args": [
+            "0x4030",
+            "0x4040",
+            "0x4050",
+            "0x4060"
+        ],
+        "apihash": "102220df233e10380c7e691d1a9650291540dfc0293a50b5368383faee722eff",
+        "apis": [
+            {
+                "pc": "0x120001459",
+                "api_name": "KERNEL32.GetStartupInfoA",
+                "args": [
+                    "0x1211ee8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x120001499",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x1203dd018",
+                    "0x1203dd028"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x12000142f",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x1203dd000",
+                    "0x1203dd010"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x120004771",
+                "api_name": "KERNEL32.VirtualQuery",
+                "args": [
+                    "0x120304000",
+                    "0x1211c08",
+                    "0x30"
+                ],
+                "ret_val": "0x30"
+            },
+            {
+                "pc": "0x12000125e",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x120004be0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x120001327",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x8"
+                ],
+                "ret_val": "0x4a10"
+            },
+            {
+                "pc": "0x1200014f9",
+                "api_name": "msvcrt._onexit",
+                "args": [
+                    "0x120001520"
+                ],
+                "ret_val": "0x120001520"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee162c",
+            "address": "0xfeee162c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211e50",
+                "rbp": "0x0000000000004a10",
+                "rip": "0x00000000feee162c",
+                "rsi": "0x00000001202fd180",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000000000000",
+                "rbx": "0x00000001202fd560",
+                "rcx": "0x00000001203034b0",
+                "rdx": "0x00000001202fd180",
+                "r8": "0x000000000000007e",
+                "r9": "0x0000000000000000",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000008",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001202fd120 -> emu.module.f23586077288f615dbc1bacf7b1ebbe4ae266d2e0e1e2b4bc2961762102719f7.0x120000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000120004402 -> emu.module.f23586077288f615dbc1bacf7b1ebbe4ae266d2e0e1e2b4bc2961762102719f7.0x120000000",
+                "sp+0x38: 0x00000001203b4058 -> emu.module.f23586077288f615dbc1bacf7b1ebbe4ae266d2e0e1e2b4bc2961762102719f7.0x120000000",
+                "sp+0x40: 0x00000001203b40a0 -> emu.module.f23586077288f615dbc1bacf7b1ebbe4ae266d2e0e1e2b4bc2961762102719f7.0x120000000",
+                "sp+0x48: 0x00000000feee13d8",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000004a10 -> api.heap.HeapAlloc.0x4a10",
+                "sp+0x68: 0x00000001203b4058 -> emu.module.f23586077288f615dbc1bacf7b1ebbe4ae266d2e0e1e2b4bc2961762102719f7.0x120000000",
+                "sp+0x70: 0x0000000120001388 -> emu.module.f23586077288f615dbc1bacf7b1ebbe4ae266d2e0e1e2b4bc2961762102719f7.0x120000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "libstdc++-6._ZNSt8ios_base4InitC1Ev"
+        },
+        "dynamic_code_segments": []
+    }
+]

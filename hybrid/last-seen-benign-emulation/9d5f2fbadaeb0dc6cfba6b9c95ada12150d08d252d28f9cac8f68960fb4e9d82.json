@@ -1,0 +1,148 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x406664",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "acc6feab5afd7f325e2aede80032f47a51e9ee326c7404ac9445453a0cf23cd6",
+        "apis": [
+            {
+                "pc": "0x4023c1",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x401852",
+                "api_name": "user32.GetKeyboardType",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x4"
+            },
+            {
+                "pc": "0x4022d1",
+                "api_name": "kernel32.GetCommandLineA",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x40107f",
+                "api_name": "kernel32.GetStartupInfoA",
+                "args": [
+                    "0x1211f54"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4022e5",
+                "api_name": "kernel32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x13e98"
+            },
+            {
+                "pc": "0x40668f",
+                "api_name": "kernel32.GetModuleFileNameA",
+                "args": [
+                    "0x400000",
+                    "C:\\Windows\\system32\\9d5f2fbadaeb0dc6cfba6b9c95ada12150d08d252d28f9cac8f68960fb4e9d82",
+                    "0xff"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x405d10",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x405d25",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "user32.dll"
+                ],
+                "ret_val": "0x77d10000"
+            },
+            {
+                "pc": "0x405a8d",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "IsWow64Process"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x405a99",
+                "api_name": "kernel32.GetCurrentProcess",
+                "args": [],
+                "ret_val": "0xffffffff"
+            },
+            {
+                "pc": "0x405a9c",
+                "api_name": "kernel32.IsWow64Process",
+                "args": [
+                    "0xffffffff",
+                    "0x1211b58"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x405adb",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77d10000",
+                    "SetProcessDPIAware"
+                ],
+                "ret_val": "0xfeee0001"
+            }
+        ],
+        "ret_val": "0xfeee0001",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0001",
+            "address": "0xfeee0001",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211900",
+                "ebp": "0x01211fe4",
+                "eip": "0xfeee0001",
+                "esi": "0xfeee0001",
+                "edi": "0x00000000",
+                "eax": "0xfeee0001",
+                "ebx": "0xfeee0001",
+                "ecx": "0x00000013",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00405ae5 -> emu.module.9d5f2fbadaeb0dc6cfba6b9c95ada12150d08d252d28f9cac8f68960fb4e9d82.0x400000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "user32.SetProcessDPIAware"
+        },
+        "dynamic_code_segments": []
+    }
+]

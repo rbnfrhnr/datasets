@@ -1,0 +1,57 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x16008",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "6a3327359470514f9cd01e84386897cff42c267c229e3d86163d065054599125",
+        "apis": [
+            {
+                "pc": "0x11845",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x14160",
+                    "\\Device\\PartitionWizardDiskAccesser"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x11859",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x14170",
+                    "\\DosDevices\\PartitionWizardDiskAccesser"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x11887",
+                "api_name": "ntoskrnl.IoCreateDevice",
+                "args": [
+                    "0x7eb870",
+                    "0x0",
+                    "\\Device\\PartitionWizardDiskAccesser",
+                    "0x22",
+                    "0x0",
+                    "0x0",
+                    "0x14180"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x118a5",
+                "api_name": "ntoskrnl.IoCreateSymbolicLink",
+                "args": [
+                    "\\DosDevices\\PartitionWizardDiskAccesser",
+                    "\\Device\\PartitionWizardDiskAccesser"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    }
+]

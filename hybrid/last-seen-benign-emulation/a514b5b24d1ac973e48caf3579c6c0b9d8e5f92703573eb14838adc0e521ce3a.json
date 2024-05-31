@@ -1,0 +1,129 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401c40",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "3e693d2a3d981d6a59b7ca375e5fe116cfc0dd6d5c3e1acfdf2fd66acfa80f2f",
+        "apis": [
+            {
+                "pc": "0x402119",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x402124",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x5538"
+            },
+            {
+                "pc": "0x402130",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x554c"
+            },
+            {
+                "pc": "0x40213c",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x40214d",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401a23",
+                "api_name": "MSVCR100._initterm_e",
+                "args": [
+                    "0x403298",
+                    "0x4032b0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401a54",
+                "api_name": "MSVCR100._initterm",
+                "args": [
+                    "0x403230",
+                    "0x403290"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4014c0",
+                "api_name": "KERNEL32.SetErrorMode",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4014cb",
+                "api_name": "KERNEL32.SetErrorMode",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf00c",
+            "address": "0xfeedf00c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211f10",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf00c",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000000000000",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000001211f40",
+                "rdx": "0x0000000000403958",
+                "r8": "0x0000000000000000",
+                "r9": "0x0000000000004030",
+                "r10": "0x0000000000000000",
+                "r11": "0xffff4cee7f079980",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000000004014dd -> emu.module.a514b5b24d1ac973e48caf3579c6c0b9d8e5f92703573eb14838adc0e521ce3a.0x400000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0xfffffffffffffffe",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x000000000040214d -> emu.module.a514b5b24d1ac973e48caf3579c6c0b9d8e5f92703573eb14838adc0e521ce3a.0x400000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000b31181d97967",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000401abe -> emu.module.a514b5b24d1ac973e48caf3579c6c0b9d8e5f92703573eb14838adc0e521ce3a.0x400000",
+                "sp+0x78: 0x0000000000000001"
+            ],
+            "api_name": "dvacore.?AsciiToUTF16@utility@dvacore@@YA?AV?$basic_string@GU?$char_traits@G@std@@V?$STLAllocator@G@SmallBlockAllocator@utility@dvacore@@@std@@PEBD@Z"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,124 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x41ebc7",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "db3bb81f28ade0daaf2682ebccac95b06e58ea9e869bd0638c54fef3276d66e2",
+        "apis": [
+            {
+                "pc": "0x41f0bb",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x41f0c7",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xd59c"
+            },
+            {
+                "pc": "0x41f0cf",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xd5b0"
+            },
+            {
+                "pc": "0x41f0d7",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x41f0e3",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fd0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x41e99a",
+                "api_name": "KERNEL32.InterlockedCompareExchange",
+                "args": [
+                    "0x42d35c",
+                    "0x1212000",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x41e9eb",
+                "api_name": "MSVCR80._initterm_e",
+                "args": [
+                    "0x42216c",
+                    "0x42217c"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x41ea20",
+                "api_name": "MSVCR80._initterm",
+                "args": [
+                    "0x422160",
+                    "0x422168"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x41ea39",
+                "api_name": "KERNEL32.InterlockedExchange",
+                "args": [
+                    "0x42d35c",
+                    "0x0"
+                ],
+                "ret_val": "0x1212000"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0b4",
+            "address": "0xfeedf0b4",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f50",
+                "ebp": "0x00000001",
+                "eip": "0xfeedf0b4",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x00000000",
+                "ebx": "0x00000000",
+                "ecx": "0xfeedf0d4",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0041e0cf -> emu.module.a4a79683143e4a2789e959b5c58c4745954c174ac9f0785df3cedb526708ac33.0x400000",
+                "sp+0x04: 0x00426ce8 -> emu.module.a4a79683143e4a2789e959b5c58c4745954c174ac9f0785df3cedb526708ac33.0x400000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x01211fa0 -> emu.stack.0x1200000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x0040110e -> emu.module.a4a79683143e4a2789e959b5c58c4745954c174ac9f0785df3cedb526708ac33.0x400000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x0042d35c -> emu.module.a4a79683143e4a2789e959b5c58c4745954c174ac9f0785df3cedb526708ac33.0x400000",
+                "sp+0x34: 0x00000001",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "MSVCR80.getenv"
+        },
+        "dynamic_code_segments": []
+    }
+]

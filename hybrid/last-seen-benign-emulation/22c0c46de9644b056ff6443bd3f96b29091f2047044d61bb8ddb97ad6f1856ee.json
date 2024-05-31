@@ -1,0 +1,195 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x501eec",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "293858c881d796ba11e06991337b1c229eeeca108fd2a7880f23de46f650f690",
+        "apis": [
+            {
+                "pc": "0x540cdf",
+                "api_name": "KERNEL32.GetVersion",
+                "args": [],
+                "ret_val": "0x1db10106"
+            },
+            {
+                "pc": "0x540d19",
+                "api_name": "KERNEL32.GetSystemInfo",
+                "args": [
+                    "0x1211fb0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x540dee",
+                "api_name": "KERNEL32.VirtualProtect",
+                "args": [
+                    "0x780000",
+                    "0xa000",
+                    "0x40",
+                    "0x1211fd4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x5832c2",
+                "api_name": "KERNEL32.InterlockedCompareExchange",
+                "args": [
+                    "0x7bfe44",
+                    "0x1212000",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x583361",
+                "api_name": "KERNEL32.InterlockedExchange",
+                "args": [
+                    "0x7bfe44",
+                    "0x0"
+                ],
+                "ret_val": "0x1212000"
+            },
+            {
+                "pc": "0x502f3c",
+                "api_name": "KERNEL32.HeapSetInformation",
+                "args": [
+                    "0x0",
+                    "0x1",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x502edb",
+                "api_name": "KERNEL32.GetProcessHeap",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x502efe",
+                "api_name": "KERNEL32.HeapSetInformation",
+                "args": [
+                    "0x45f0",
+                    "0x0",
+                    "0x1211f5c",
+                    "0x4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x502fde",
+                "api_name": "KERNEL32.InterlockedIncrement",
+                "args": [
+                    "0x7a39c8"
+                ],
+                "ret_val": "0x2"
+            },
+            {
+                "pc": "0x503011",
+                "api_name": "msvcrt.memset",
+                "args": [
+                    "0x1211e34",
+                    "0x0",
+                    "0x110"
+                ],
+                "ret_val": "0x1211e34"
+            },
+            {
+                "pc": "0x50302d",
+                "api_name": "KERNEL32.GetVersionExW",
+                "args": [
+                    "0x1211e30"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x5045a0",
+                "api_name": "KERNEL32.LoadLibraryW",
+                "args": [
+                    "advapi32.dll"
+                ],
+                "ret_val": "0x78000000"
+            },
+            {
+                "pc": "0x5045d4",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x78000000",
+                    "EventRegister"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x5045e5",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x78000000",
+                    "EventUnregister"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x5045fa",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x78000000",
+                    "EventEnabled"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x50460f",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x78000000",
+                    "EventWrite"
+                ],
+                "ret_val": "0xfeee0003"
+            }
+        ],
+        "ret_val": "0x1211f58",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0000",
+            "address": "0xfeee0000",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f3c",
+                "ebp": "0x01211f5c",
+                "eip": "0xfeee0000",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x01211f58",
+                "ebx": "0x00000001",
+                "ecx": "0x01211f44",
+                "edx": "0x0000000a"
+            },
+            "stack": [
+                "sp+0x00: 0x00504a22 -> emu.module.22c0c46de9644b056ff6443bd3f96b29091f2047044d61bb8ddb97ad6f1856ee.0x4d0000",
+                "sp+0x04: 0x004d1f04 -> emu.module.22c0c46de9644b056ff6443bd3f96b29091f2047044d61bb8ddb97ad6f1856ee.0x4d0000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x007a3888 -> emu.module.22c0c46de9644b056ff6443bd3f96b29091f2047044d61bb8ddb97ad6f1856ee.0x4d0000",
+                "sp+0x14: 0x01211f58 -> emu.stack.0x1200000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x01211f80 -> emu.stack.0x1200000",
+                "sp+0x24: 0x00505434 -> emu.module.22c0c46de9644b056ff6443bd3f96b29091f2047044d61bb8ddb97ad6f1856ee.0x4d0000",
+                "sp+0x28: 0x004d1f04 -> emu.module.22c0c46de9644b056ff6443bd3f96b29091f2047044d61bb8ddb97ad6f1856ee.0x4d0000",
+                "sp+0x2c: 0x007bfe44 -> emu.module.22c0c46de9644b056ff6443bd3f96b29091f2047044d61bb8ddb97ad6f1856ee.0x4d0000",
+                "sp+0x30: 0x00000001",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x01211f8c -> emu.stack.0x1200000"
+            ],
+            "api_name": "advapi32.EventRegister"
+        },
+        "dynamic_code_segments": []
+    }
+]

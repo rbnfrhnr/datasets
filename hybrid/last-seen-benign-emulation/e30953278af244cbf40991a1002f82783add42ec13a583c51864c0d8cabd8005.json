@@ -1,0 +1,117 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140006120",
+        "ep_args": [
+            "0x4030",
+            "0x4040",
+            "0x4050",
+            "0x4060"
+        ],
+        "apihash": "e96630d4269910253d581c7322d1acb7a9dad6fc1482c2792767aaaed110bfad",
+        "apis": [
+            {
+                "pc": "0x140006130",
+                "api_name": "api-ms-win-core-heap-l1-2-0.GetProcessHeap",
+                "args": [],
+                "ret_val": "0x4970"
+            },
+            {
+                "pc": "0x140006146",
+                "api_name": "api-ms-win-core-heap-l1-2-0.HeapAlloc",
+                "args": [
+                    "0x4970",
+                    "0x0",
+                    "0x8"
+                ],
+                "ret_val": "0x4990"
+            },
+            {
+                "pc": "0x14000acb3",
+                "api_name": "api-ms-win-core-sysinfo-l1-2-1.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f60"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14000acc1",
+                "api_name": "api-ms-win-core-processthreads-l1-1-2.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xd290"
+            },
+            {
+                "pc": "0x14000accd",
+                "api_name": "api-ms-win-core-processthreads-l1-1-2.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xd2a4"
+            },
+            {
+                "pc": "0x14000acd9",
+                "api_name": "api-ms-win-core-sysinfo-l1-2-1.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x14000ace9",
+                "api_name": "api-ms-win-core-sysinfo-l1-2-1.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c28"
+            },
+            {
+                "pc": "0x14000ad04",
+                "api_name": "api-ms-win-core-profile-l1-1-0.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f68"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0x1211f80",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf110",
+            "address": "0xfeedf110",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211ec0",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf110",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000001211f80",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000001211f08",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000000000008",
+                "r9": "0x0000000000004060",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001400061bf -> emu.module.e30953278af244cbf40991a1002f82783add42ec13a583c51864c0d8cabd8005.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x000000014000ad04 -> emu.module.e30953278af244cbf40991a1002f82783add42ec13a583c51864c0d8cabd8005.0x140000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "api-ms-win-core-processthreads-l1-1-2.GetStartupInfoW"
+        },
+        "dynamic_code_segments": []
+    }
+]

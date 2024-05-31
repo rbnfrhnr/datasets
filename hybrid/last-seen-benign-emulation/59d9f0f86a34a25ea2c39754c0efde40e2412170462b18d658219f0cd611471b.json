@@ -1,0 +1,118 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4c1a5a",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "3f6e7fad00d8c42cd81a584d0c924f5417e641a840c95c6ef527e4770ea1b777",
+        "apis": [
+            {
+                "pc": "0x4c1ddb",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4c1dea",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x1e9c"
+            },
+            {
+                "pc": "0x4c1df3",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x1e88"
+            },
+            {
+                "pc": "0x4c1e00",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4c195f",
+                "api_name": "MSVCR120._initterm_e",
+                "args": [
+                    "0x4c87ec",
+                    "0x4c8800"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4c1993",
+                "api_name": "MSVCR120._initterm",
+                "args": [
+                    "0x4c8768",
+                    "0x4c87e8"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x9533d105",
+        "error": {
+            "type": "Invalid memory read (UC_ERR_READ_UNMAPPED)",
+            "pc": "0x4c17ce",
+            "address": "0x4c17ce",
+            "instr": "push ebp",
+            "regs": {
+                "esp": "0x01211774",
+                "ebp": "0x01211fa4",
+                "eip": "0x004c17ce",
+                "esi": "0x00000001",
+                "edi": "0x00000000",
+                "eax": "0x9533d105",
+                "ebx": "0xffffffff",
+                "ecx": "0x00000000",
+                "edx": "0x01212000"
+            },
+            "stack": [
+                "sp+0x00: 0xfeedf004",
+                "sp+0x04: 0x00004600 -> emu.struct.EXCEPTION_RECORD.0x4600",
+                "sp+0x08: 0x01211fd4 -> emu.stack.0x1200000",
+                "sp+0x0c: 0x00004660 -> emu.struct.EXCEPTION_CONTEXT.0x4660",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000001",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 437, in start\n    count=self.max_instructions)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/engines/unicorn_eng.py\", line 203, in start\n    return self.emu.emu_start(addr, 0xFFFFFFFF, timeout=timeout, count=count)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/unicorn/unicorn.py\", line 318, in emu_start\n    raise UcError(status)\nunicorn.unicorn.UcError: Invalid memory read (UC_ERR_READ_UNMAPPED)\n"
+        },
+        "handled_exceptions": [
+            {
+                "pc": "0x422a48",
+                "instr": "push dword ptr [ebx]",
+                "exception_code": "0xc0000005",
+                "handler_address": "0x4c17ce",
+                "registers": {
+                    "esp": "0x01211774",
+                    "ebp": "0x01211fa4",
+                    "eip": "0x00422a48",
+                    "esi": "0x00000001",
+                    "edi": "0x00000000",
+                    "eax": "0x9533d105",
+                    "ebx": "0x00000000",
+                    "ecx": "0x00000000",
+                    "edx": "0x01212000"
+                }
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

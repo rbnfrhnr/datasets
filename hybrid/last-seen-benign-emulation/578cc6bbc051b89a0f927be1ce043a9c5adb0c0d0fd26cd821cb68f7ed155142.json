@@ -1,0 +1,359 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140001000",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "4c4fc539f42a10365123944e3e5b9b5daedc3f6ab2cb645e3a80b18cb0b7a76f",
+        "apis": [
+            {
+                "pc": "0x140001032",
+                "api_name": "KERNEL32.GetTempPathW",
+                "args": [
+                    "0x104",
+                    "C:\\Windows\\temp\\"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x14000109b",
+                "api_name": "KERNEL32.CreateFileW",
+                "args": [
+                    "C:\\Windows\\temp\\ghost_mini_installer.log",
+                    "GENERIC_WRITE",
+                    "0x1",
+                    "0x0",
+                    "CREATE_ALWAYS",
+                    "0x80",
+                    "0x0"
+                ],
+                "ret_val": "0xd4"
+            },
+            {
+                "pc": "0x1400010d9",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0xd4",
+                    "0x1400051e0 (6d696e695f696e7374616c6c65725f65)",
+                    "0x23",
+                    "0x1211d1c",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14000171f",
+                "api_name": "KERNEL32.FindResourceW",
+                "args": [
+                    "0x140000000",
+                    "0x1",
+                    "0xa"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140003fb8",
+                "api_name": "KERNEL32.LoadLibraryExA",
+                "args": [
+                    "ADVAPI32.dll",
+                    "0x0",
+                    ""
+                ],
+                "ret_val": "0x78000000"
+            },
+            {
+                "pc": "0x140004094",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x78000000",
+                    "RegOpenKeyExW"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x14000394d",
+                "api_name": "advapi32.RegOpenKeyExW",
+                "args": [
+                    "0xffffffff80000001",
+                    "Software\\GhostBrowser",
+                    "0x0",
+                    "0x1",
+                    "0x1211598"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x1400016e9",
+                "api_name": "KERNEL32.GetCommandLineW",
+                "args": [],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x1400017a1",
+                "api_name": "SHELL32.CommandLineToArgvW",
+                "args": [
+                    "0x4940",
+                    "0x1211670"
+                ],
+                "ret_val": "0x4980"
+            },
+            {
+                "pc": "0x1400017e0",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg1",
+                    "--force-install"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400017f1",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg1",
+                    "--unpack-only"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400017e0",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg2",
+                    "--force-install"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400017f1",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg2",
+                    "--unpack-only"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140001840",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "GoogleUpdateIsMachine",
+                    "0x121156a",
+                    "0x2"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14000330f",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xc464"
+            },
+            {
+                "pc": "0x140003327",
+                "api_name": "USER32.SetWindowsHookExW",
+                "args": [
+                    "WH_CBT",
+                    "0x140003270",
+                    "0x0",
+                    "0xc464"
+                ],
+                "ret_val": "0x4"
+            },
+            {
+                "pc": "0x140003340",
+                "api_name": "USER32.MessageBoxW",
+                "args": [
+                    "0x0",
+                    "Would you like to Install Ghost Browser?\n",
+                    "Ghost installer",
+                    "0x1"
+                ],
+                "ret_val": "0x2"
+            },
+            {
+                "pc": "0x14000334f",
+                "api_name": "USER32.UnhookWindowsHookEx",
+                "args": [
+                    "0x4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140001652",
+                "api_name": "KERNEL32.LocalFree",
+                "args": [
+                    "0x4980"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001374",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0xd4",
+                    "0x140005210 (6d696e695f696e7374616c6c65725f65)",
+                    "0x29",
+                    "0x1211d1c",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140001380",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "SUCCESS_EXIT_CODE"
+                ],
+                "ret_val": "0x11"
+            },
+            {
+                "pc": "0x140001394",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0xd4",
+                    "0x1400056b1 (535543434553535f455849545f434f44)",
+                    "0x11",
+                    "0x1211d1c",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400013b2",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0xd4",
+                    "0x14000523a (203d3d20)",
+                    "0x4",
+                    "0x1211d1c",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400013b7",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400013cb",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0xd4",
+                    "0x1211d28 (30)",
+                    "0x1",
+                    "0x1211d1c",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400013e6",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0xd4",
+                    "0x140005240 (2e2057696e646f7773206572726f72)",
+                    "0xf",
+                    "0x1211d1c",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400013fd",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0xd4",
+                    "0x14000523a (203d3d20)",
+                    "0x4",
+                    "0x1211d1c",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140001402",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140001416",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0xd4",
+                    "0x1211d48 (30)",
+                    "0x1",
+                    "0x1211d1c",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140001431",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0xd4",
+                    "0x140005250 (0a)",
+                    "0x1",
+                    "0x1211d1c",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14000114c",
+                "api_name": "KERNEL32.ExitProcess",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "file_access": [
+            {
+                "event": "create",
+                "path": "C:\\Windows\\temp\\ghost_mini_installer.log",
+                "open_flags": [
+                    "CREATE_ALWAYS"
+                ],
+                "access_flags": [
+                    "GENERIC_WRITE"
+                ]
+            },
+            {
+                "event": "write",
+                "path": "C:\\Windows\\temp\\ghost_mini_installer.log",
+                "data": "bWluaV9pbnN0YWxsZXJfZXhlX21haW4uY2Mgc3RhcnRlZAo=bWluaV9pbnN0YWxsZXJfZXhlX21haW4uY2MgZmluaXNoZWQgd2l0aCA=U1VDQ0VTU19FWElUX0NPREU=ID09IA==MA==LiBXaW5kb3dzIGVycm9yID09IA==MA==Cg==",
+                "size": 119,
+                "buffer": "0x1400051e0"
+            }
+        ],
+        "registry_access": [
+            {
+                "event": "open_key",
+                "path": "Software\\GhostBrowser"
+            }
+        ],
+        "dynamic_code_segments": [],
+        "dropped_files": [
+            {
+                "path": "C:\\Windows\\temp\\ghost_mini_installer.log",
+                "size": 119,
+                "sha256": "30b71ddbd9a8ce49cae33ee243f67403f72a424ef41a8b4b73a86816e48e0d73"
+            }
+        ]
+    }
+]

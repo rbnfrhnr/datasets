@@ -1,0 +1,67 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401188",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "f19653aabe21a80cdd24d61fa3f78dcfb1be07dfb016cd6ab011be4c5051b4c4",
+        "apis": [
+            {
+                "pc": "0x40105c",
+                "api_name": "KERNEL32.GetCommandLineW",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x40109a",
+                "api_name": "KERNEL32.lstrlenW",
+                "args": [
+                    "myarg1 myarg2"
+                ],
+                "ret_val": "0xd"
+            }
+        ],
+        "ret_val": "0x1211fd8",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf034",
+            "address": "0xfeedf034",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f58",
+                "ebp": "0x01211fdc",
+                "eip": "0xfeedf034",
+                "esi": "0x0000000d",
+                "edi": "0xfeedf034",
+                "eax": "0x01211fd8",
+                "ebx": "0x00000000",
+                "ecx": "0x00000020",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x004010d9 -> emu.module.a2ee6b93a331e5e3ffff9590f7f35648e8b7de9be7ae8b0402a43a757cee84ee.0x400000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x00000002",
+                "sp+0x0c: 0x0040351c -> emu.module.a2ee6b93a331e5e3ffff9590f7f35648e8b7de9be7ae8b0402a43a757cee84ee.0x400000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x01211fd8 -> emu.stack.0x1200000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "SHLWAPI.AssocQueryStringW"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,144 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140001000",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "f46774ee99c8d762bdffedd1c5d7fd7febfb1599ffad15a404ee8319139a8288",
+        "apis": [
+            {
+                "pc": "0x14000101d",
+                "api_name": "msvcrt.memset",
+                "args": [
+                    "0x1400dc420",
+                    "0x0",
+                    "0x420890"
+                ],
+                "ret_val": "0x1400dc420"
+            },
+            {
+                "pc": "0x140001025",
+                "api_name": "kernel32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x140000000"
+            },
+            {
+                "pc": "0x14000103e",
+                "api_name": "kernel32.HeapCreate",
+                "args": [
+                    "0x0",
+                    "0x1000",
+                    "0x0"
+                ],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x1400c1404",
+                "api_name": "kernel32.HeapCreate",
+                "args": [
+                    "0x0",
+                    "0x1000",
+                    "0x0"
+                ],
+                "ret_val": "0x4960"
+            },
+            {
+                "pc": "0x1400c1411",
+                "api_name": "kernel32.TlsAlloc",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400c1b99",
+                "api_name": "kernel32.HeapAlloc",
+                "args": [
+                    "0x4960",
+                    "0x0",
+                    "0x18"
+                ],
+                "ret_val": "0x4980"
+            },
+            {
+                "pc": "0x1400c1bb3",
+                "api_name": "kernel32.HeapAlloc",
+                "args": [
+                    "0x4960",
+                    "0x0",
+                    "0x10"
+                ],
+                "ret_val": "0x49a0"
+            },
+            {
+                "pc": "0x1400c1be6",
+                "api_name": "kernel32.TlsSetValue",
+                "args": [
+                    "0x0",
+                    "0x4980"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400beadd",
+                "api_name": "msvcrt.memset",
+                "args": [
+                    "0x1211f28",
+                    "0x0",
+                    "0x48"
+                ],
+                "ret_val": "0x1211f28"
+            }
+        ],
+        "ret_val": "0x140000000",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf440",
+            "address": "0xfeedf440",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211ec0",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf440",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000140000000",
+                "rbx": "0x00000001400c44d8",
+                "rcx": "0x0000000001211f28",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000000000048",
+                "r9": "0x0000000000004030",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001400beb34 -> emu.module.909e29ceca62ac17ee0b269fa5be138d9e3b597232c7666246d36187f1fc10f0.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x00000001400c1be6 -> emu.module.909e29ceca62ac17ee0b269fa5be138d9e3b597232c7666246d36187f1fc10f0.0x140000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000008",
+                "sp+0x70: 0x00000001400bebfc -> emu.module.909e29ceca62ac17ee0b269fa5be138d9e3b597232c7666246d36187f1fc10f0.0x140000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "user32.RegisterClassW"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,132 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x432970",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "12a71e17890b2d0279b5e67591e74e3f3f63f6b6434f76d3a8a7e14cf0c9b1f0",
+        "apis": [
+            {
+                "pc": "0x433a6d",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x48b544"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x432920",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4014c0",
+        "ep_args": [
+            "0x4020",
+            "0x4030",
+            "0x4040",
+            "0x4050"
+        ],
+        "apihash": "b2f461e5c7ae98ccdb92ed14d69f36dde6f7baf4563487a3d5a5ab053b61a7a3",
+        "apis": [
+            {
+                "pc": "0x43373d",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fb0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x43374e",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xc870"
+            },
+            {
+                "pc": "0x433758",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xc884"
+            },
+            {
+                "pc": "0x433760",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x433771",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fb8"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401489",
+                "api_name": "KERNEL32.GetStartupInfoA",
+                "args": [
+                    "0x1211f8c"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x3000",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf230",
+            "address": "0xfeedf230",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f2c",
+                "ebp": "0x01211fe8",
+                "eip": "0xfeedf230",
+                "esi": "0xfeedf070",
+                "edi": "0x01211fd0",
+                "eax": "0x00003000",
+                "ebx": "0x01212000",
+                "ecx": "0x00000000",
+                "edx": "0x01211f8c"
+            },
+            "stack": [
+                "sp+0x00: 0x0040122c -> emu.module.872e3216d2efb3c1316a030b4d8b051cdccc366d84ac193a4ae3cf69332c9a1b.0x400000",
+                "sp+0x04: 0x0048bf34 -> emu.module.872e3216d2efb3c1316a030b4d8b051cdccc366d84ac193a4ae3cf69332c9a1b.0x400000",
+                "sp+0x08: 0x01212000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0xcccccccc",
+                "sp+0x18: 0xcccccccc",
+                "sp+0x1c: 0xcccccccc",
+                "sp+0x20: 0xcccccccc",
+                "sp+0x24: 0xcccccccc",
+                "sp+0x28: 0xcccccccc",
+                "sp+0x2c: 0xcccccccc",
+                "sp+0x30: 0xcccccccc",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "avcodec-53.InterlockedCompareExchange@12"
+        },
+        "dynamic_code_segments": []
+    }
+]

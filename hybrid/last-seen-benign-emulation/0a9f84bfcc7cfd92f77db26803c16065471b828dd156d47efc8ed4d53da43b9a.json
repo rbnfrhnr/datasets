@@ -1,0 +1,303 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4011d4",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "cf5283438a1bcc29fdff512882f225831046e00ee70367eef2c24267704eae76",
+        "apis": [
+            {
+                "pc": "0x401102",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x401111",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "VerifyVersionInfoA"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x40118f",
+                "api_name": "KERNEL32.VerSetConditionMask",
+                "args": [
+                    "0x0",
+                    "0x0",
+                    "0x2"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401196",
+                "api_name": "KERNEL32.VerSetConditionMask",
+                "args": [
+                    "0x0",
+                    "0x0",
+                    "0x1"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4011a4",
+                "api_name": "kernel32.VerifyVersionInfoA",
+                "args": [
+                    "0x1210410",
+                    "0x3",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40114e",
+                "api_name": "KERNEL32.FreeLibrary",
+                "args": [
+                    "0x77000000"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4011ff",
+                "api_name": "ole32.CoInitializeEx",
+                "args": [
+                    "0x0",
+                    "0x6"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401205",
+                "api_name": "KERNEL32.GetCommandLineW",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x40131b",
+                "api_name": "KERNEL32.GetStartupInfoW",
+                "args": [
+                    "0x1210530"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x401342",
+                "api_name": "KERNEL32.GetTempPathW",
+                "args": [
+                    "0x104",
+                    "C:\\Windows\\temp\\"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x40100a",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x40101b",
+                "api_name": "KERNEL32.FindResourceW",
+                "args": [
+                    "0x400000",
+                    "0x63",
+                    "0x63"
+                ],
+                "ret_val": "0x4041c8"
+            },
+            {
+                "pc": "0x401025",
+                "api_name": "KERNEL32.SizeofResource",
+                "args": [
+                    "0x400000",
+                    "0x4041c8"
+                ],
+                "ret_val": "0xcfc1a"
+            },
+            {
+                "pc": "0x401030",
+                "api_name": "KERNEL32.LoadResource",
+                "args": [
+                    "0x400000",
+                    "0x4041c8"
+                ],
+                "ret_val": "0x440a74"
+            },
+            {
+                "pc": "0x401037",
+                "api_name": "KERNEL32.LockResource",
+                "args": [
+                    "0x440a74"
+                ],
+                "ret_val": "0x440a74"
+            },
+            {
+                "pc": "0x401372",
+                "api_name": "USER32.wsprintfW",
+                "args": [
+                    "n1s",
+                    "n%ds"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x40139e",
+                "api_name": "KERNEL32.CreateDirectoryW",
+                "args": [
+                    "C:\\Windows\\temp\\n1s",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4013e7",
+                "api_name": "KERNEL32.CreateFileW",
+                "args": [
+                    "C:\\Windows\\temp\\n1s\\nchsetup.cab",
+                    "GENERIC_READ | GENERIC_WRITE",
+                    "0x0",
+                    "0x0",
+                    "CREATE_NEW",
+                    "0x80",
+                    "0x0"
+                ],
+                "ret_val": "0xb0"
+            },
+            {
+                "pc": "0x401407",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0xb0",
+                    "0x440a74 (4d534346000000001afc0c0000000000)",
+                    "0xcfc1a",
+                    "0x12104f0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401410",
+                "api_name": "KERNEL32.CloseHandle",
+                "args": [
+                    "0xb0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401429",
+                "api_name": "KERNEL32.CreateFileW",
+                "args": [
+                    "C:\\Windows\\temp\\n1s\\nchsetup.exe",
+                    "GENERIC_WRITE",
+                    "0x0",
+                    "0x0",
+                    "OPEN_EXISTING",
+                    "0x80",
+                    "0x0"
+                ],
+                "ret_val": "0xb4"
+            },
+            {
+                "pc": "0x401454",
+                "api_name": "KERNEL32.CloseHandle",
+                "args": [
+                    "0xb4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401462",
+                "api_name": "KERNEL32.DeleteFileW",
+                "args": [
+                    "C:\\Windows\\temp\\n1s\\nchsetup.exe"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0x12111a8",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf00c",
+            "address": "0xfeedf00c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x012104ac",
+                "ebp": "0x01211fe4",
+                "eip": "0xfeedf00c",
+                "esi": "0xfeedf068",
+                "edi": "0xfeedf06c",
+                "eax": "0x012111a8",
+                "ebx": "0x00000000",
+                "ecx": "0x000000ef",
+                "edx": "0x01210bb8"
+            },
+            "stack": [
+                "sp+0x00: 0x0040147e -> emu.module.0a9f84bfcc7cfd92f77db26803c16065471b828dd156d47efc8ed4d53da43b9a.0x400000",
+                "sp+0x04: 0x012111a8 -> emu.stack.0x1200000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x004010ca -> emu.module.0a9f84bfcc7cfd92f77db26803c16065471b828dd156d47efc8ed4d53da43b9a.0x400000",
+                "sp+0x10: 0x01210b90 -> emu.stack.0x1200000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000001",
+                "sp+0x2c: 0x004020a8 -> emu.module.0a9f84bfcc7cfd92f77db26803c16065471b828dd156d47efc8ed4d53da43b9a.0x400000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00440a74 -> emu.module.0a9f84bfcc7cfd92f77db26803c16065471b828dd156d47efc8ed4d53da43b9a.0x400000"
+            ],
+            "api_name": "SETUPAPI.SetupIterateCabinetW"
+        },
+        "file_access": [
+            {
+                "event": "create",
+                "path": "C:\\Windows\\temp\\n1s\\nchsetup.cab",
+                "open_flags": [
+                    "CREATE_NEW"
+                ],
+                "access_flags": [
+                    "GENERIC_READ",
+                    "GENERIC_WRITE"
+                ]
+            },
+            {
+                "event": "write",
+                "path": "C:\\Windows\\temp\\n1s\\nchsetup.cab",
+                "data": "TVNDRgAAAAAa/AwAAAAAACwAAAAAAAAAAwEBAAEAAAAAAAAARgAAAEkAAxUwAiQAAAAAAAAArlDkuCAAVm94YWwuZXhlAG4HD19QPwCAW4CAjToQMOcAACJSYDQAAG4Au+3bbVtdzKqy5Vy5XY6bKWlSutRUbau/tbuku5CmORIkympPmpKq0V+3sDypCAXlPQHy5CN4DsIWWbusokqCyijR5yHRwSSRZVbGlczMRKbgbAEAHxB9v8/2G+UcTHe+nsPsdd7rdR6TO+SlqZNzsjK5L1/sXpSXL9j2KYZC3lJgO2QHdi0OyJbabL9cNPWFBZuaGc1aaZveMptxBi85Ob5JWcU4tmwzMotmtA7bqJ6qDJGO6VIDFwQ86qwZhZzXfOf/P///hOUIAGiGqogAqtyse+9zzt6brfdrZi8zsTK61bar3eqruup0m6qT/LdNpDKhhJgQAEkQICgQCCAAAgIg8UnGi09In6A+EX5ywf/fFNTQHQQEiJRVtrawCpyPIJqQP5tYiwzcREKk8zaB/6uimwkzWXqivNZBi3qhTY/0Qp1e0hctel13BfV9EaUfoUVrKbqoMdecTqKnf/qsUV36QzZAIelGB8z4p40yZvRJ5fz/Owx0+PGdnYK31U5qEfDlfZNmJv0qeLZO4Gdp0gXdTX93J/yxT5rSDUp18JN/0K2q3kmszCs1qpYhmXqtdkJc4Zy3YjrYDLFJLRTfT77P4aZoRGTiRQJq2PA5aTKREaQzRiBThTqx5iino19ICvsmsH/ppEdUfEhr6IhtLLCan1kU7R6+Ik4loEmDxNEibbkP9/AklpeSdctvq3otu0Qt8f5cPYk+3VS4gYbgbGlaS08oRdsU59zpzdf15QoU4WMdoU0+a6eIBaLSC/WeUN8tGC+83PsmyL3piAw8+DGTtyTuWdBCOlGqOkSb6rWkFzmx5Vy0sSr2R7fmats/w/1g/pFNFoVGTjgWAnke/ISGUyEYdr2vSIZO7uTi04ASk6RUn4pSKE+lqpXHA9eKerj+ZtNT+yA47bQUNY5iSoTJJIIsEXCkpm2lhraBGn6M0UiIFK6mQ1VXIK+Z1KUabVl4K1SmdtCkSnz+UQUqXc6ncRGAiCSuKHGEO4COClXRRKoTRAO4lPeZUUaJPDggKuAA9LUFmMmFNzEuqiKzqBbJnZ/aFgEdOTLTyecSFqdaBVupAzrx5tleVH/H+FZ82Nh59U7n+++QswLajWRCS1ls+Uwch8R0nQdIKWauwFuN+Cu36smVar+FbLGjQSWFiwTra7NtKqBtVSnLTCbXWY2kjLkxmUHX8Bz5UgVUU5HUJvbnm/i0MuwXjtZUWy4RczttRz7A4koju21fg6hE1A==",
+                "size": 850970,
+                "buffer": "0x440a74"
+            },
+            {
+                "event": "open",
+                "path": "C:\\Windows\\temp\\n1s\\nchsetup.exe",
+                "open_flags": [
+                    "OPEN_EXISTING"
+                ],
+                "access_flags": [
+                    "GENERIC_WRITE"
+                ]
+            }
+        ],
+        "dynamic_code_segments": [],
+        "dropped_files": [
+            {
+                "path": "C:\\Windows\\temp\\n1s\\nchsetup.cab",
+                "size": 850970,
+                "sha256": "92ee7c7af8b57e23dbefc7899d99da4f3c596ca05cbb2d43c7c1acdc56524bc4"
+            }
+        ]
+    }
+]

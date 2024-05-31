@@ -1,0 +1,104 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x42aad5",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "97b15150fba961391e5017c230db42044e443888a4bb7837d1251a8c51fd921f",
+        "apis": [
+            {
+                "pc": "0x42ab1c",
+                "api_name": "MSVCRT20.__p__fmode",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x42ab2a",
+                "api_name": "MSVCRT20.__p__commode",
+                "args": [],
+                "ret_val": "0x4600"
+            },
+            {
+                "pc": "0x42ac11",
+                "api_name": "MSVCRT20._controlfp",
+                "args": [
+                    "0x10000",
+                    "0x30000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x42ab57",
+                "api_name": "MSVCRT20._initterm",
+                "args": [
+                    "0x43283c",
+                    "0x432840"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x42ab78",
+                "api_name": "MSVCRT20.__getmainargs",
+                "args": [
+                    "0x1211fc0",
+                    "0x1211fbc",
+                    "0x1211fc4",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x42ab8a",
+                "api_name": "MSVCRT20._initterm",
+                "args": [
+                    "0x432834",
+                    "0x432838"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf05c",
+            "address": "0xfeedf05c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211fb0",
+                "ebp": "0x01211fe4",
+                "eip": "0xfeedf05c",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x00000000",
+                "ebx": "0x00000000",
+                "ecx": "0x00000000",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0042ab93 -> emu.module.00ac8169236b8f9910c661e6d8b82c2f2e5800338a9c7775d691e622f3521ac9.0x400000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x01211fa0 -> emu.stack.0x1200000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x0042ac16 -> emu.module.00ac8169236b8f9910c661e6d8b82c2f2e5800338a9c7775d691e622f3521ac9.0x400000",
+                "sp+0x2c: 0x0042e018 -> emu.module.00ac8169236b8f9910c661e6d8b82c2f2e5800338a9c7775d691e622f3521ac9.0x400000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x01212000",
+                "sp+0x38: 0xfeedf000",
+                "sp+0x3c: 0x00004000 -> emu.module_arg_0.0x4000"
+            ],
+            "api_name": "MSVCRT20.__p___initenv"
+        },
+        "dynamic_code_segments": []
+    }
+]

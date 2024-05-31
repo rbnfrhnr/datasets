@@ -1,0 +1,95 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x1c000aa00",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "7d8c620dfcfb2ea9b82d6ca0f416111cb7af131db274cc9405319761dc64f3ea",
+        "apis": [
+            {
+                "pc": "0x1c000aa85",
+                "api_name": "ntoskrnl.RtlCopyUnicodeString",
+                "args": [
+                    "0x1c003b170",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\f7e1b5b7b5b88ae575f6561fc810bff1f2a33ba257d763a23ab7429a941ba87c"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1c000aaa5",
+                "api_name": "WDFLDR.WdfVersionBind",
+                "args": [
+                    "0x7eb870",
+                    "0x1c003b170",
+                    "0x1c003b010",
+                    "0x1c003b238"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1c00410a6",
+                "api_name": "ntoskrnl.RtlGetVersion",
+                "args": [
+                    "0x1200db8"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1c00410ca",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "NtQuerySystemInformation"
+                ],
+                "ret_val": "0xfeee0000"
+            }
+        ],
+        "ret_val": "0xfeee0000",
+        "error": {
+            "type": "Unsupported information class: 0xe3",
+            "pc": "0xfeee0000",
+            "address": "0xfeee0000",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200d30",
+                "rbp": "0x0000000001200e38",
+                "rip": "0x00000000feee0000",
+                "rsi": "0x00000000007eba60",
+                "rdi": "0x0000000000000001",
+                "rax": "0x00000000feee0000",
+                "rbx": "0x0000000000000006",
+                "rcx": "0x00000000000000e3",
+                "rdx": "0x0000000001200d68",
+                "r8": "0x0000000000000001",
+                "r9": "0x0000000000000000",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x00000000007eb870",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000001",
+                "r15": "0x00000000007eba60"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001c00410f0 -> emu.module.f7e1b5b7b5b88ae575f6561fc810bff1f2a33ba257d763a23ab7429a941ba87c.0x1c0000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000320030",
+                "sp+0x70: 0x00000001c0032fd8 -> emu.module.f7e1b5b7b5b88ae575f6561fc810bff1f2a33ba257d763a23ab7429a941ba87c.0x1c0000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 1169, in handle_import_func\n    rv = self.api.call_api_func(mod, func, argv, ctx=default_ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/winapi.py\", line 77, in call_api_func\n    return func(mod, self.emu, argv, ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/kernelmode/ntoskrnl.py\", line 637, in ZwQuerySystemInformation\n    % (sysclass))\nspeakeasy.errors.ApiEmuError: Unsupported information class: 0xe3\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

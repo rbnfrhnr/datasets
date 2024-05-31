@@ -1,0 +1,206 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4036c0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "a829fb48d9443b3bd6009162cf951169b5b31e1f28a4a27206c2ca96afa68060",
+        "apis": [
+            {
+                "pc": "0x4010ba",
+                "api_name": "KERNEL32.FindResourceW",
+                "args": [
+                    "0x400000",
+                    "0x1",
+                    "0xa"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4034e6",
+                "api_name": "ADVAPI32.RegOpenKeyExW",
+                "args": [
+                    "HKEY_CURRENT_USER",
+                    "Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Vivaldi",
+                    "0x0",
+                    "0x1",
+                    "0x63c570c"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x401133",
+                "api_name": "KERNEL32.GetCommandLineW",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x40116c",
+                "api_name": "SHELL32.CommandLineToArgvW",
+                "args": [
+                    "0x45f0",
+                    "0x63c5f8c"
+                ],
+                "ret_val": "0x4630"
+            },
+            {
+                "pc": "0x4011b8",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg1",
+                    "--system-level"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4011c8",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg1",
+                    "--cleanup"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4011d8",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg1",
+                    "--chrome-frame"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4011e8",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg1",
+                    "--vivaldi-silent"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4011f8",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg1",
+                    "--vivaldi-unpack"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4011b8",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg2",
+                    "--system-level"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4011c8",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg2",
+                    "--cleanup"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4011d8",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg2",
+                    "--chrome-frame"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4011e8",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg2",
+                    "--vivaldi-silent"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4011f8",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg2",
+                    "--vivaldi-unpack"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401245",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "GoogleUpdateIsMachine",
+                    "0x63c571a",
+                    "0x2"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x402aee",
+                "api_name": "KERNEL32.GetModuleFileNameW",
+                "args": [
+                    "0x400000",
+                    "C:\\Windows\\system32\\c9899a718a7f1627a4b757c83597f4992e1a2f830729ff61f7946dd98f4e8c71",
+                    "0x104"
+                ],
+                "ret_val": "0x54"
+            }
+        ],
+        "ret_val": "0x63c552a",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf088",
+            "address": "0xfeedf088",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x063c525c",
+                "ebp": "0x063c54d8",
+                "eip": "0xfeedf088",
+                "esi": "0x063c552a",
+                "edi": "0x063c526e",
+                "eax": "0x063c552a",
+                "ebx": "0x063c5960",
+                "ecx": "0x063c54fc",
+                "edx": "0x000000ed"
+            },
+            "stack": [
+                "sp+0x00: 0x00402801 -> emu.module.c9899a718a7f1627a4b757c83597f4992e1a2f830729ff61f7946dd98f4e8c71.0x400000",
+                "sp+0x04: 0x063c552a -> emu.stack.0x63b4000",
+                "sp+0x08: 0x063c526e -> emu.stack.0x63b4000",
+                "sp+0x0c: 0x00000104",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "KERNEL32.GetVolumePathNameW"
+        },
+        "registry_access": [
+            {
+                "event": "open_key",
+                "path": "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Vivaldi"
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

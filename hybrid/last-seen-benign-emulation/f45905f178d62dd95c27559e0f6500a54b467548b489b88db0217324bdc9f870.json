@@ -1,0 +1,135 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4012b8",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "925f3504985ffe7557c36e8c2724b6c4ba6e3d96e9fd1c0750c925ae22aeff31",
+        "apis": [
+            {
+                "pc": "0x40164d",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fc8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x40165c",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x7878"
+            },
+            {
+                "pc": "0x401665",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x7864"
+            },
+            {
+                "pc": "0x401672",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fc0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401a00",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40118c",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x403130",
+                    "0x40313c"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4011b2",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x403124",
+                    "0x40312c"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401219",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_wide_environment",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x401220",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___wargv",
+                "args": [],
+                "ret_val": "0x47b0"
+            },
+            {
+                "pc": "0x401227",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4810"
+            },
+            {
+                "pc": "0x401d06",
+                "api_name": "KERNEL32.GetModuleFileNameW",
+                "args": [
+                    "0x0",
+                    "C:\\Windows\\system32\\f45905f178d62dd95c27559e0f6500a54b467548b489b88db0217324bdc9f870",
+                    "0x101"
+                ],
+                "ret_val": "0x54"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf00c",
+            "address": "0xfeedf00c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f8c",
+                "ebp": "0x00000000",
+                "eip": "0xfeedf00c",
+                "esi": "0x000047b4",
+                "edi": "0x000045f0",
+                "eax": "0x00000000",
+                "ebx": "0x00000000",
+                "ecx": "0x000000aa",
+                "edx": "0x01212000"
+            },
+            "stack": [
+                "sp+0x00: 0x00401d66 -> emu.module.f45905f178d62dd95c27559e0f6500a54b467548b489b88db0217324bdc9f870.0x400000",
+                "sp+0x04: 0x00404660 -> emu.module.f45905f178d62dd95c27559e0f6500a54b467548b489b88db0217324bdc9f870.0x400000",
+                "sp+0x08: 0x000045f0 -> api.envp.0x45f0",
+                "sp+0x0c: 0x000047b4 -> api.argv.0x47b0",
+                "sp+0x10: 0x01211fe4 -> emu.stack.0x1200000",
+                "sp+0x14: 0x00401230 -> emu.module.f45905f178d62dd95c27559e0f6500a54b467548b489b88db0217324bdc9f870.0x400000",
+                "sp+0x18: 0x00000003",
+                "sp+0x1c: 0x000047b4 -> api.argv.0x47b0",
+                "sp+0x20: 0x000045f0 -> api.envp.0x45f0",
+                "sp+0x24: 0xcaf19baf",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0xd27d5700",
+                "sp+0x38: 0x0000005f",
+                "sp+0x3c: 0x00567f80"
+            ],
+            "api_name": "SHLWAPI.PathRemoveFileSpecW"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,259 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x402c40",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "aa92220a845bf7da9464e4d639893172433bab28ebfc699b0411b102539741aa",
+        "apis": [
+            {
+                "pc": "0x40300f",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fc8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x40301e",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x4a94"
+            },
+            {
+                "pc": "0x403027",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x4a80"
+            },
+            {
+                "pc": "0x403034",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fc0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4033a1",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4051cc",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "api-ms-win-core-synch-l1-2-0",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x405263",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "InitializeCriticalSectionEx"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x40539a",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4094ac",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4051cc",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "api-ms-win-core-fibers-l1-1-1",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x405263",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsAlloc"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x4052a5",
+                "api_name": "kernel32.FlsAlloc",
+                "args": [
+                    "0x4040f0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x405263",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsSetValue"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x405359",
+                "api_name": "kernel32.FlsSetValue",
+                "args": [
+                    "0x0",
+                    "0x409484"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x402b08",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x406160",
+                    "0x40616c"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x402b2e",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x406154",
+                    "0x40615c"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x402b95",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_narrow_environment",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x402b9c",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argv",
+                "args": [],
+                "ret_val": "0x47c0"
+            },
+            {
+                "pc": "0x402ba3",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4800"
+            },
+            {
+                "pc": "0x40139c",
+                "api_name": "api-ms-win-crt-convert-l1-1-0.atoi",
+                "args": [
+                    "myarg1"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40139c",
+                "api_name": "api-ms-win-crt-convert-l1-1-0.atoi",
+                "args": [
+                    "myarg2"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4015f1",
+                "api_name": "api-ms-win-crt-stdio-l1-1-0.__acrt_iob_func",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": "0x2"
+            },
+            {
+                "pc": "0x40102f",
+                "api_name": "api-ms-win-crt-stdio-l1-1-0.__stdio_common_vfprintf",
+                "args": [
+                    "0x0",
+                    "0x2",
+                    "[createdump] "
+                ],
+                "ret_val": "0xd"
+            },
+            {
+                "pc": "0x401605",
+                "api_name": "api-ms-win-crt-stdio-l1-1-0.__acrt_iob_func",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": "0x2"
+            },
+            {
+                "pc": "0x401620",
+                "api_name": "api-ms-win-crt-stdio-l1-1-0.__stdio_common_vfprintf",
+                "args": [
+                    "0x0",
+                    "0x2",
+                    "createdump [options] pid\n-f, --name - dump path and file name. The default is '%TEMP%\\dump.%p.dmp'. These specifiers are substituted with following values:\n   %p  PID of dumped process.\n   %e  The process executable filename.\n   %h  Hostname return by gethostname().\n   %t  Time of dump, expressed as seconds since the Epoch, 1970-01-01 00:00:00 +0000 (UTC).\n-n, --normal - create minidump.\n-h, --withheap - create minidump with heap (default).\n-t, --triage - create triage minidump.\n-u, --full - create full core dump.\n-d, --diag - enable diagnostic messages.\n-v, --verbose - enable verbose diagnostic messages.\n"
+                ],
+                "ret_val": "0x265"
+            },
+            {
+                "pc": "0x401628",
+                "api_name": "api-ms-win-crt-stdio-l1-1-0.__acrt_iob_func",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": "0x2"
+            }
+        ],
+        "ret_val": "0x2",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf09c",
+            "address": "0xfeedf09c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f28",
+                "ebp": "0x01211f50",
+                "eip": "0xfeedf09c",
+                "esi": "0x004070a8",
+                "edi": "0x000047d0",
+                "eax": "0x00000002",
+                "ebx": "0x00000000",
+                "ecx": "0x01211f5c",
+                "edx": "0x0121206d"
+            },
+            "stack": [
+                "sp+0x00: 0x0040162f -> emu.module.eb87aa83d0bb4286d58c6893d666742fa5dfb18d3625c63f97a7e6a07ae3d621.0x400000",
+                "sp+0x04: 0x00000002",
+                "sp+0x08: 0x00000002",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000002",
+                "sp+0x18: 0x004070a8 -> emu.module.eb87aa83d0bb4286d58c6893d666742fa5dfb18d3625c63f97a7e6a07ae3d621.0x400000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x01211f5c -> emu.stack.0x1200000",
+                "sp+0x24: 0x000047ed -> api.argv.0x47c0",
+                "sp+0x28: 0x01211f9c -> emu.stack.0x1200000",
+                "sp+0x2c: 0x0040155a -> emu.module.eb87aa83d0bb4286d58c6893d666742fa5dfb18d3625c63f97a7e6a07ae3d621.0x400000",
+                "sp+0x30: 0x004070a8 -> emu.module.eb87aa83d0bb4286d58c6893d666742fa5dfb18d3625c63f97a7e6a07ae3d621.0x400000",
+                "sp+0x34: 0x00406d40 -> emu.module.eb87aa83d0bb4286d58c6893d666742fa5dfb18d3625c63f97a7e6a07ae3d621.0x400000",
+                "sp+0x38: 0x8d8e0ca6",
+                "sp+0x3c: 0x000045f0 -> api.envp.0x45f0"
+            ],
+            "api_name": "api-ms-win-crt-stdio-l1-1-0.fflush"
+        },
+        "dynamic_code_segments": []
+    }
+]

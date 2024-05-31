@@ -1,0 +1,312 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x7b09a0",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x7b169b",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "4de2ce3f95611db1b43d5b9b890d4c7b139c5029dbcf4af84d9cbd2d63578308",
+        "apis": [
+            {
+                "pc": "0x7b2c15",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x7b2c24",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x28b4"
+            },
+            {
+                "pc": "0x7b2c2d",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x28a0"
+            },
+            {
+                "pc": "0x7b2c3a",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fc4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x7b3064",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x7b1512",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x855264",
+                    "0x855278"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x7b1538",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x854ea8",
+                    "0x855260"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x7b159f",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_narrow_environment",
+                "args": [],
+                "ret_val": "0x4600"
+            },
+            {
+                "pc": "0x7b15a6",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argv",
+                "args": [],
+                "ret_val": "0x4700"
+            },
+            {
+                "pc": "0x7b15ad",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4740"
+            },
+            {
+                "pc": "0x7b16bf",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0x20"
+                ],
+                "ret_val": "0x4750"
+            },
+            {
+                "pc": "0x71760d",
+                "api_name": "ADVAPI32.RegOpenKeyExW",
+                "args": [
+                    "HKEY_LOCAL_MACHINE",
+                    "",
+                    "0x0",
+                    "0x20019",
+                    "0x1211648"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x717651",
+                "api_name": "ADVAPI32.RegQueryValueExW",
+                "args": [
+                    "0x180",
+                    "",
+                    "0x0",
+                    "REG_NONE",
+                    "0x12117c8",
+                    "0x400"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x466490",
+                "api_name": "VCRUNTIME140.memmove",
+                "args": [
+                    "0x12117b0",
+                    "0x12117c8",
+                    "0x0"
+                ],
+                "ret_val": "0x12117b0"
+            },
+            {
+                "pc": "0x466490",
+                "api_name": "VCRUNTIME140.memmove",
+                "args": [
+                    "0x1211798",
+                    "0x12117b0",
+                    "0x0"
+                ],
+                "ret_val": "0x1211798"
+            },
+            {
+                "pc": "0x717dc1",
+                "api_name": "ADVAPI32.RegCloseKey",
+                "args": [
+                    "0x180"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x466490",
+                "api_name": "VCRUNTIME140.memmove",
+                "args": [
+                    "0x1211b38",
+                    "0x1211c20",
+                    "0x0"
+                ],
+                "ret_val": "0x1211b38"
+            },
+            {
+                "pc": "0x7a7b85",
+                "api_name": "KERNEL32.CreateFileW",
+                "args": [
+                    "",
+                    "0x88",
+                    "0x7",
+                    "0x0",
+                    "OPEN_EXISTING",
+                    "0x2200000",
+                    "0x0"
+                ],
+                "ret_val": "0xffffffff"
+            },
+            {
+                "pc": "0x7a7bf1",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x2"
+            },
+            {
+                "pc": "0x7b16bf",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0x20a"
+                ],
+                "ret_val": "0x4780"
+            },
+            {
+                "pc": "0x7185f3",
+                "api_name": "VCRUNTIME140.memset",
+                "args": [
+                    "0x4780",
+                    "0x0",
+                    "0x20a"
+                ],
+                "ret_val": "0x4780"
+            },
+            {
+                "pc": "0x718610",
+                "api_name": "KERNEL32.GetModuleFileNameW",
+                "args": [
+                    "0x0",
+                    "C:\\Windows\\system32\\d8361cab1ee8860b4edbecf06e6c45f31b2f362e4ffa731d8912b363e40430a6",
+                    "0x105"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x71861f",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x7b16bf",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0xb0"
+                ],
+                "ret_val": "0x4990"
+            },
+            {
+                "pc": "0x466508",
+                "api_name": "VCRUNTIME140.memcpy",
+                "args": [
+                    "0x4990",
+                    "0x4780",
+                    "0xa8"
+                ],
+                "ret_val": "0x4990"
+            },
+            {
+                "pc": "0x7b16e0",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.free",
+                "args": [
+                    "0x4780"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x4990",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf7b4",
+            "address": "0xfeedf7b4",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211b9c",
+                "ebp": "0x01211bd8",
+                "eip": "0xfeedf7b4",
+                "esi": "0x01211cc4",
+                "edi": "0x01211dc4",
+                "eax": "0x00004990",
+                "ebx": "0x01211e01",
+                "ecx": "0x15d52d2a",
+                "edx": "0x00004782"
+            },
+            "stack": [
+                "sp+0x00: 0x0071824a -> emu.module.d8361cab1ee8860b4edbecf06e6c45f31b2f362e4ffa731d8912b363e40430a6.0x400000",
+                "sp+0x04: 0x00004990 -> api.heap.HeapAlloc.0x4990",
+                "sp+0x08: 0x15d52d6a",
+                "sp+0x0c: 0x01211cc4 -> emu.stack.0x1200000",
+                "sp+0x10: 0x01211cc4 -> emu.stack.0x1200000",
+                "sp+0x14: 0x00004990 -> api.heap.HeapAlloc.0x4990",
+                "sp+0x18: 0x01211c54 -> emu.stack.0x1200000",
+                "sp+0x1c: 0x00841e25 -> emu.module.d8361cab1ee8860b4edbecf06e6c45f31b2f362e4ffa731d8912b363e40430a6.0x400000",
+                "sp+0x20: 0xffffffff",
+                "sp+0x24: 0x00000054",
+                "sp+0x28: 0x00000057",
+                "sp+0x2c: 0x15d52d6a",
+                "sp+0x30: 0x01211c54 -> emu.stack.0x1200000",
+                "sp+0x34: 0x008311ad -> emu.module.d8361cab1ee8860b4edbecf06e6c45f31b2f362e4ffa731d8912b363e40430a6.0x400000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x01211c60 -> emu.stack.0x1200000"
+            ],
+            "api_name": "SHLWAPI.PathRemoveFileSpecW"
+        },
+        "file_access": [
+            {
+                "event": "create",
+                "path": "",
+                "open_flags": [
+                    "OPEN_EXISTING"
+                ]
+            }
+        ],
+        "registry_access": [
+            {
+                "event": "open_key",
+                "path": "",
+                "handle": "0x180"
+            },
+            {
+                "event": "read_value",
+                "path": "",
+                "size": 1024,
+                "buffer": "0x12117c8"
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

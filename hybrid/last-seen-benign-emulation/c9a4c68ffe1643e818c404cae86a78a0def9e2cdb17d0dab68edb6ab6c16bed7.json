@@ -1,0 +1,112 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x4049b0",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "12a71e17890b2d0279b5e67591e74e3f3f63f6b6434f76d3a8a7e14cf0c9b1f0",
+        "apis": [
+            {
+                "pc": "0x404c6c",
+                "api_name": "kernel32.InitializeCriticalSection",
+                "args": [
+                    "0x40b050"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x404960",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401590",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "5abcac0379b5d406315f4a421d6aed648e7bd33f1af2c2094ece59cc0fe27e26",
+        "apis": [
+            {
+                "pc": "0x4015a0",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4011ba",
+                "api_name": "kernel32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x401000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4011d9",
+                "api_name": "kernel32.GetCommandLineA",
+                "args": [],
+                "ret_val": "0x4610"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf118",
+            "address": "0xfeedf118",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f1c",
+                "ebp": "0x01211fc8",
+                "eip": "0xfeedf118",
+                "esi": "0x00004611",
+                "edi": "0x01211f34",
+                "eax": "0x00000000",
+                "ebx": "0x00000073",
+                "ecx": "0x00000073",
+                "edx": "0x01211f34"
+            },
+            "stack": [
+                "sp+0x00: 0x0040144a -> emu.module.c9a4c68ffe1643e818c404cae86a78a0def9e2cdb17d0dab68edb6ab6c16bed7.0x400000",
+                "sp+0x04: 0x00000073",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000040",
+                "sp+0x3c: 0x0000001a"
+            ],
+            "api_name": "msvcrt.isspace"
+        },
+        "dynamic_code_segments": []
+    }
+]

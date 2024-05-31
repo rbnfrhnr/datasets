@@ -1,0 +1,227 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4071e4",
+        "ep_args": [
+            "0x4020",
+            "0x4030",
+            "0x4040",
+            "0x4050"
+        ],
+        "apihash": "9a8351dbcd7bedb7f6baea37c0e6f77d55bb6c6ed4716ef5cea8f7881afcfc21",
+        "apis": [
+            {
+                "pc": "0x407217",
+                "api_name": "MSVCRT.__set_app_type",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x40722c",
+                "api_name": "MSVCRT.__p__fmode",
+                "args": [],
+                "ret_val": "0x4610"
+            },
+            {
+                "pc": "0x40723a",
+                "api_name": "MSVCRT.__p__commode",
+                "args": [],
+                "ret_val": "0x4620"
+            },
+            {
+                "pc": "0x40735d",
+                "api_name": "MSVCRT._controlfp",
+                "args": [
+                    "0x10000",
+                    "0x30000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40727b",
+                "api_name": "MSVCRT._initterm",
+                "args": [
+                    "0x40a008",
+                    "0x40a00c"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40729f",
+                "api_name": "MSVCRT.__getmainargs",
+                "args": [
+                    "0x1211f84",
+                    "0x1211f74",
+                    "0x1211f80",
+                    "0x0",
+                    "0x1211f78"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4072ae",
+                "api_name": "MSVCRT._initterm",
+                "args": [
+                    "0x40a000",
+                    "0x40a004"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4072ee",
+                "api_name": "KERNEL32.GetStartupInfoA",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x407312",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x405aa0",
+                "api_name": "KERNEL32.GetVersionExW",
+                "args": [
+                    "0x1211e14"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x405ac6",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x405acd",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetDefaultDllDirectories"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x405ad8",
+                "api_name": "kernel32.SetDefaultDllDirectories",
+                "args": [
+                    "0xc00"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40106b",
+                "api_name": "ole32.CoInitialize",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401076",
+                "api_name": "KERNEL32.GetCommandLineW",
+                "args": [],
+                "ret_val": "0x46b0"
+            },
+            {
+                "pc": "0x40112b",
+                "api_name": "ADVAPI32.RegOpenKeyExW",
+                "args": [
+                    "HKEY_CURRENT_USER",
+                    "Software\\7-Zip",
+                    "0x0",
+                    "0x20019",
+                    "0x1211f40"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x401349",
+                "api_name": "ADVAPI32.RegOpenKeyExW",
+                "args": [
+                    "HKEY_LOCAL_MACHINE",
+                    "Software\\Microsoft\\Windows\\CurrentVersion",
+                    "0x0",
+                    "0x20019",
+                    "0x1211f1c"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x401174",
+                "api_name": "KERNEL32.lstrcpyW",
+                "args": [
+                    "0x40a02c",
+                    "C:\\"
+                ],
+                "ret_val": "0x40a02c"
+            },
+            {
+                "pc": "0x4013d2",
+                "api_name": "KERNEL32.lstrcatW",
+                "args": [
+                    "C:\\",
+                    "7-Zip\\"
+                ],
+                "ret_val": "0x40a02c"
+            }
+        ],
+        "ret_val": "0x9",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf02c",
+            "address": "0xfeedf02c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f18",
+                "ebp": "0x00000000",
+                "eip": "0xfeedf02c",
+                "esi": "0x00000001",
+                "edi": "0x0040a02c",
+                "eax": "0x00000009",
+                "ebx": "0x000046e2",
+                "ecx": "0x0040a02c",
+                "edx": "0x00400000"
+            },
+            "stack": [
+                "sp+0x00: 0x004011ae -> emu.module.759aa04d5b03ebeee13ba01df554e8c962ca339c74f56627c8bed6984bb7ef80.0x400000",
+                "sp+0x04: 0x00400000 -> emu.module.759aa04d5b03ebeee13ba01df554e8c962ca339c74f56627c8bed6984bb7ef80.0x400000",
+                "sp+0x08: 0x00000064",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x0040143c -> emu.module.759aa04d5b03ebeee13ba01df554e8c962ca339c74f56627c8bed6984bb7ef80.0x400000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00004010 -> api.msvcrt._acmdln.0x4000",
+                "sp+0x20: 0x01211fe4 -> emu.stack.0x1200000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000001",
+                "sp+0x2c: 0x01211f84 -> emu.stack.0x1200000",
+                "sp+0x30: 0x01211f74 -> emu.stack.0x1200000",
+                "sp+0x34: 0x004072ae -> emu.module.759aa04d5b03ebeee13ba01df554e8c962ca339c74f56627c8bed6984bb7ef80.0x400000",
+                "sp+0x38: 0x0040a000 -> emu.module.759aa04d5b03ebeee13ba01df554e8c962ca339c74f56627c8bed6984bb7ef80.0x400000",
+                "sp+0x3c: 0x0040a004 -> emu.module.759aa04d5b03ebeee13ba01df554e8c962ca339c74f56627c8bed6984bb7ef80.0x400000"
+            ],
+            "api_name": "USER32.CreateDialogParamW"
+        },
+        "registry_access": [
+            {
+                "event": "open_key",
+                "path": "HKEY_CURRENT_USER\\Software\\7-Zip"
+            },
+            {
+                "event": "open_key",
+                "path": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion"
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

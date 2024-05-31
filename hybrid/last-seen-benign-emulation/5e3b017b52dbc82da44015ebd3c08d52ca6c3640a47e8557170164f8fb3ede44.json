@@ -1,0 +1,125 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140044b20",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "6bfecf8c3c3a82ccd3286fe09aa015dfdceffdb36367605ceb703d871f7277b0",
+        "apis": [
+            {
+                "pc": "0x140044dae",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140044dbc",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xafc"
+            },
+            {
+                "pc": "0x140044dc8",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xae8"
+            },
+            {
+                "pc": "0x140044dd8",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400449fc",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x1400468c8",
+                    "0x1400468e0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140044a1d",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x140046898",
+                    "0x1400468c0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140044a8b",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_narrow_environment",
+                "args": [],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x140044a93",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argv",
+                "args": [],
+                "ret_val": "0x4a60"
+            },
+            {
+                "pc": "0x140044a9b",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4ab0"
+            }
+        ],
+        "ret_val": "0x4ab0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf05c",
+            "address": "0xfeedf05c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211ed0",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf05c",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000004940",
+                "rax": "0x0000000000004ab0",
+                "rbx": "0x0000000000004a68",
+                "rcx": "0x0000000000000003",
+                "rdx": "0x0000000001211f80",
+                "r8": "0x0000000000000004",
+                "r9": "0x0000000000000002",
+                "r10": "0x000000002011000c",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000003"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140004399 -> emu.module.5e3b017b52dbc82da44015ebd3c08d52ca6c3640a47e8557170164f8fb3ede44.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000080000000663",
+                "sp+0x60: 0x0708810002182200",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000140044369 -> emu.module.5e3b017b52dbc82da44015ebd3c08d52ca6c3640a47e8557170164f8fb3ede44.0x140000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "VBoxRT.RTR3InitExe"
+        },
+        "dynamic_code_segments": []
+    }
+]

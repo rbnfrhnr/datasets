@@ -1,0 +1,127 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x5f7008",
+        "ep_args": [
+            "0xbdb870",
+            "0xbdba60"
+        ],
+        "apihash": "146d4b7e058cf32c2882d8924e5ccaff16118cb23ef942db86c4d1f6d626eafc",
+        "apis": [
+            {
+                "pc": "0x23562c",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200e58",
+                    "WmiTraceMessage"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x235637",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "WmiTraceMessage"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x235667",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200e58",
+                    "WmiQueryTraceInformation"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x235672",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "WmiQueryTraceInformation"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x2356c7",
+                "api_name": "ntoskrnl.IoWMIRegistrationControl",
+                "args": [
+                    "0x202098",
+                    "0x80010001"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x23570c",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200e68",
+                    "RtlGetVersion"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x235717",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "RtlGetVersion"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x235740",
+                "api_name": "ntoskrnl.RtlGetVersion",
+                "args": [
+                    "0x1200e78"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf288",
+            "address": "0xfeedf288",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200e30",
+                "rbp": "0x0000000001200fd8",
+                "rip": "0x00000000feedf288",
+                "rsi": "0x0000000000bdba60",
+                "rdi": "0x00000000feee0002",
+                "rax": "0x0000000000000000",
+                "rbx": "0x0000000000bdb870",
+                "rcx": "0x0000000000bdb870",
+                "rdx": "0x0000000000bdba60",
+                "r8": "0x0000000000235460",
+                "r9": "0x0000000000000000",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000000235797 -> emu.module.c52f5104f791d3b72ffad9abc13e5b595a20861544f8568d99c1001b39728251.0x10000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000300030 -> emu.module.c52f5104f791d3b72ffad9abc13e5b595a20861544f8568d99c1001b39728251.0x10000",
+                "sp+0x30: 0x00000000005e11b0 -> emu.module.c52f5104f791d3b72ffad9abc13e5b595a20861544f8568d99c1001b39728251.0x10000",
+                "sp+0x38: 0x00000000001a001a -> emu.module.c52f5104f791d3b72ffad9abc13e5b595a20861544f8568d99c1001b39728251.0x10000",
+                "sp+0x40: 0x00000000005e11f0 -> emu.module.c52f5104f791d3b72ffad9abc13e5b595a20861544f8568d99c1001b39728251.0x10000",
+                "sp+0x48: 0x000000060000011c",
+                "sp+0x50: 0x00001db100000001",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "portcls.PcInitializeAdapterDriver"
+        },
+        "dynamic_code_segments": []
+    }
+]

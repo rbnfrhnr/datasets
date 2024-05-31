@@ -1,0 +1,113 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x414840",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "930a100ac404b83b8fb11dac504ed9197943ba029bf7d818301473055fde9cd6",
+        "apis": [
+            {
+                "pc": "0x41451e",
+                "api_name": "KERNEL32.SetDllDirectoryW",
+                "args": [
+                    ""
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x41454e",
+                "api_name": "KERNEL32.GetSystemDirectoryW",
+                "args": [
+                    "C:\\Windows\\system32",
+                    "0x105"
+                ],
+                "ret_val": "0x14"
+            },
+            {
+                "pc": "0x4145d5",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "C:\\Windows\\system32\\kernel32.dll"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x414617",
+                "api_name": "KERNEL32.GetVersionExW",
+                "args": [
+                    "0x1211cb0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4146a3",
+                "api_name": "KERNEL32.GetVersionExW",
+                "args": [
+                    "0x121197c"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4146e1",
+                "api_name": "KERNEL32.GetSystemDirectoryW",
+                "args": [
+                    "C:\\Windows\\system32",
+                    "0x105"
+                ],
+                "ret_val": "0x14"
+            },
+            {
+                "pc": "0x4147cf",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "C:\\Windows\\system32\\gdi32.dll",
+                    "0x0",
+                    "LOAD_WITH_ALTERED_SEARCH_PATH"
+                ],
+                "ret_val": "0x77e10000"
+            }
+        ],
+        "ret_val": "0x56c154",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf018",
+            "address": "0xfeedf018",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211944",
+                "ebp": "0x01211ca0",
+                "eip": "0xfeedf018",
+                "esi": "0x00000009",
+                "edi": "0x00000014",
+                "eax": "0x0056c154",
+                "ebx": "0x00000000",
+                "ecx": "0x01211a90",
+                "edx": "0x0056c3e8"
+            },
+            "stack": [
+                "sp+0x00: 0x004147f5 -> emu.module.f0797d01302744c07cd8ea645a42732dcec9ae9b007df6580e92915751e83955.0x400000",
+                "sp+0x04: 0x0000007f",
+                "sp+0x08: 0x00000001",
+                "sp+0x0c: 0x0056c154 -> emu.module.f0797d01302744c07cd8ea645a42732dcec9ae9b007df6580e92915751e83955.0x400000",
+                "sp+0x10: 0xffffffff",
+                "sp+0x14: 0x0056c04c -> emu.module.f0797d01302744c07cd8ea645a42732dcec9ae9b007df6580e92915751e83955.0x400000",
+                "sp+0x18: 0xffffffff",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x01211fe3 -> emu.stack.0x1200000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x000000f1",
+                "sp+0x2c: 0x000000f0",
+                "sp+0x30: 0x0056c3e8 -> emu.module.f0797d01302744c07cd8ea645a42732dcec9ae9b007df6580e92915751e83955.0x400000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000114",
+                "sp+0x3c: 0x00000006"
+            ],
+            "api_name": "KERNEL32.CompareStringW"
+        },
+        "dynamic_code_segments": []
+    }
+]

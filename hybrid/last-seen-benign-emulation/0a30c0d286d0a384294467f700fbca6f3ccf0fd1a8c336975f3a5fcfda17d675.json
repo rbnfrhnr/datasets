@@ -1,0 +1,452 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x1c74830",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x1c781a0",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_2",
+        "start_addr": "0x3820b70",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_3",
+        "start_addr": "0x1c76850",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x3822bf0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "1c78a1b6c861ad7d37c2ea9ccfa132fbd0783452e69f8789940916617f14cc22",
+        "apis": [
+            {
+                "pc": "0x3822c5d",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x838bfcc"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x3822c6c",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x8838"
+            },
+            {
+                "pc": "0x3822c75",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x8824"
+            },
+            {
+                "pc": "0x3822c82",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x838bfc4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x38217cc",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x385cb1c",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "api-ms-win-core-synch-l1-2-0",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x385cbb3",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "InitializeCriticalSectionEx"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x385cad1",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc328",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x385cb1c",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "api-ms-win-core-fibers-l1-1-1",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x385cbb3",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsAlloc"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x385c9dc",
+                "api_name": "kernel32.FlsAlloc",
+                "args": [
+                    "0x3847660"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x385cbb3",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsSetValue"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x385ca90",
+                "api_name": "kernel32.FlsSetValue",
+                "args": [
+                    "0x0",
+                    "0x7acc2c4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x385008a",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "api-ms-win-core-synch-l1-2-0",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x385015f",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "InitializeCriticalSectionEx"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x384fdc3",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc4b8",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x384fdc3",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc4d0",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x384fdc3",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc4e8",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x384fdc3",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc500",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x384fdc3",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc518",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x384fdc3",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc530",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x384fdc3",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc548",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x384fdc3",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc560",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x384fdc3",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc578",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x384fdc3",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc590",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x384fdc3",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc5a8",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x384fdc3",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc5c0",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x384fdc3",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc5d8",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x384fdc3",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x7acc5f0",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x3836706",
+                "api_name": "KERNEL32.GetProcessHeap",
+                "args": [],
+                "ret_val": "0x4630"
+            },
+            {
+                "pc": "0x385008a",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "api-ms-win-core-fibers-l1-1-1",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x385015f",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsAlloc"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x384fb68",
+                "api_name": "kernel32.FlsAlloc",
+                "args": [
+                    "0x384f660"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x384f5ac",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x385015f",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsGetValue"
+                ],
+                "ret_val": "0xfeee0003"
+            },
+            {
+                "pc": "0x384fbe6",
+                "api_name": "kernel32.FlsGetValue",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x385015f",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsSetValue"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x384fc28",
+                "api_name": "kernel32.FlsSetValue",
+                "args": [
+                    "0x1",
+                    "0xffffffff"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0x1010001",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf810",
+            "address": "0xfeedf810",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x0838bedc",
+                "ebp": "0x0838bef8",
+                "eip": "0xfeedf810",
+                "esi": "0x00000001",
+                "edi": "0x07b00e00",
+                "eax": "0x01010001",
+                "ebx": "0xfeedf810",
+                "ecx": "0x07b00e40",
+                "edx": "0xfeedf810"
+            },
+            "stack": [
+                "sp+0x00: 0x0342d634 -> emu.module.0a30c0d286d0a384294467f700fbca6f3ccf0fd1a8c336975f3a5fcfda17d675.0x400000",
+                "sp+0x04: 0x07b00e40 -> emu.module.0a30c0d286d0a384294467f700fbca6f3ccf0fd1a8c336975f3a5fcfda17d675.0x400000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x07b00e40 -> emu.module.0a30c0d286d0a384294467f700fbca6f3ccf0fd1a8c336975f3a5fcfda17d675.0x400000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000364",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x0838bf40 -> emu.stack.0x837a000",
+                "sp+0x20: 0x0342c5de -> emu.module.0a30c0d286d0a384294467f700fbca6f3ccf0fd1a8c336975f3a5fcfda17d675.0x400000",
+                "sp+0x24: 0x01010001 -> emu.module.0a30c0d286d0a384294467f700fbca6f3ccf0fd1a8c336975f3a5fcfda17d675.0x400000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x0385008a -> emu.module.0a30c0d286d0a384294467f700fbca6f3ccf0fd1a8c336975f3a5fcfda17d675.0x400000",
+                "sp+0x38: 0x067c17c8 -> emu.module.0a30c0d286d0a384294467f700fbca6f3ccf0fd1a8c336975f3a5fcfda17d675.0x400000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "KERNEL32.TryAcquireSRWLockExclusive"
+        },
+        "dynamic_code_segments": []
+    }
+]

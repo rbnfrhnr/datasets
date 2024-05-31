@@ -1,0 +1,151 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x402a50",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "4ff3b8f91af64969753b3f906a80124fb115cefb95e8f7e966695fe0fce0dba4",
+        "apis": [
+            {
+                "pc": "0x402d44",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x402d53",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x97bc"
+            },
+            {
+                "pc": "0x402d5c",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x97d0"
+            },
+            {
+                "pc": "0x402d65",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x402d7a",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x402b6b",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x4027f3",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x402809",
+                "api_name": "msvcrt.__p__fmode",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x402817",
+                "api_name": "msvcrt.__p__commode",
+                "args": [],
+                "ret_val": "0x4600"
+            },
+            {
+                "pc": "0x402dc8",
+                "api_name": "msvcrt._controlfp",
+                "args": [
+                    "0x10000",
+                    "0x30000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x402adb",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x402a80"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x402933",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x401000",
+                    "0x401008"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40268e",
+                "api_name": "ntdll.RtlAllocateHeap",
+                "args": [
+                    "0x0",
+                    "0x0",
+                    "0x4"
+                ],
+                "ret_val": "0x4610"
+            }
+        ],
+        "ret_val": "0x4610",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0bc",
+            "address": "0xfeedf0bc",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211c34",
+                "ebp": "0x01211fa0",
+                "eip": "0xfeedf0bc",
+                "esi": "0x00000001",
+                "edi": "0x00000000",
+                "eax": "0x00004610",
+                "ebx": "0x00000000",
+                "ecx": "0x00004610",
+                "edx": "0x000000f0"
+            },
+            "stack": [
+                "sp+0x00: 0x0040269a -> emu.module.bdf240a0555bad8d250ce21a3ad9ad76c4eb897f931f9ee99c53053a54f63f0c.0x400000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x00000001",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "ulib.??0CLASS_DESCRIPTOR@@QAE@XZ"
+        },
+        "dynamic_code_segments": []
+    }
+]

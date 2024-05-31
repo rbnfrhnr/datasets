@@ -1,0 +1,78 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x1c0007010",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "069a33cbbaeaf052d3a3f182e1fd5bf11283d42cbd225c70647d133f46575ecc",
+        "apis": [
+            {
+                "pc": "0x1c000158d",
+                "api_name": "ntoskrnl.ExAllocatePoolWithTag",
+                "args": [
+                    "0x1",
+                    "0x78",
+                    "Dlmp"
+                ],
+                "ret_val": "0x7ebc80"
+            },
+            {
+                "pc": "0x1c00016df",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x12009f8",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\DXGKrnl"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x7ebc80",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf018",
+            "address": "0xfeedf018",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x00000000012009d0",
+                "rbp": "0x0000000001200f98",
+                "rip": "0x00000000feedf018",
+                "rsi": "0x000000000000000a",
+                "rdi": "0x00000000007ebc80",
+                "rax": "0x00000000007ebc80",
+                "rbx": "0x00000000007eba60",
+                "rcx": "0x00000000012009f8",
+                "rdx": "0x00000000007ebc80",
+                "r8": "0x00000000706d6c44",
+                "r9": "0x0000000000000000",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000001200a78",
+                "r15": "0x00000000007eb870"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001c00016f0 -> emu.module.6281d573d9ad9aa204778c3823737726e882b17657b23cf5458c012ff7990e52.0x1c0000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000760076",
+                "sp+0x30: 0x00000000007ebc80 -> api.pool.PagedPool.Dlmp.0x7ebc80",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x00000000007eb870 -> emu.object._Driver_6281d573d9ad9aa204778c3823737726e882b17657b23cf5458c012ff7990e52.0x7eb870",
+                "sp+0x50: 0x00000000007eba60 -> emu.object._Driver_6281d573d9ad9aa204778c3823737726e882b17657b23cf5458c012ff7990e52.reg_path.0x7eba60",
+                "sp+0x58: 0x00000000007eb870 -> emu.object._Driver_6281d573d9ad9aa204778c3823737726e882b17657b23cf5458c012ff7990e52.0x7eb870",
+                "sp+0x60: 0x00000001c0001496 -> emu.module.6281d573d9ad9aa204778c3823737726e882b17657b23cf5458c012ff7990e52.0x1c0000000",
+                "sp+0x68: 0x00000000007eba60 -> emu.object._Driver_6281d573d9ad9aa204778c3823737726e882b17657b23cf5458c012ff7990e52.reg_path.0x7eba60",
+                "sp+0x70: 0x0000000001200b38 -> emu.stack.0x1200000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ntoskrnl.ZwLoadDriver"
+        },
+        "dynamic_code_segments": []
+    }
+]
