@@ -1,0 +1,103 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x140089070",
+        "ep_args": [
+            "0x7eb980",
+            "0x7ebb70"
+        ],
+        "apihash": "caa48ed27c60cedc2a201b2dd95bb0f638c95d0c4ec53322a8ed624460292af5",
+        "apis": [
+            {
+                "pc": "0x14000ed70",
+                "api_name": "ntoskrnl._vsnprintf",
+                "args": [
+                    "[WARNING] ",
+                    "[%s] ",
+                    "0x140028a60",
+                    "0x1200b10"
+                ],
+                "ret_val": "0xb"
+            },
+            {
+                "pc": "0x14000ed70",
+                "api_name": "ntoskrnl._vsnprintf",
+                "args": [
+                    "DriverEntry():",
+                    "%s():",
+                    "0x140028b00",
+                    "0x1200b10"
+                ],
+                "ret_val": "0xf"
+            },
+            {
+                "pc": "0x14000ed70",
+                "api_name": "ntoskrnl._vsnprintf",
+                "args": [
+                    "ZAM Driver - v410 Loaded :):)",
+                    "ZAM Driver - v%d Loaded :):)",
+                    "0x14002bbb0",
+                    "0x1200df8"
+                ],
+                "ret_val": "0x1e"
+            },
+            {
+                "pc": "0x14000ed70",
+                "api_name": "ntoskrnl._vsnprintf",
+                "args": [
+                    " - :",
+                    " - :",
+                    "0x140028b50",
+                    "0x1200b10"
+                ],
+                "ret_val": "0x5"
+            }
+        ],
+        "ret_val": "0x1c2",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0e4",
+            "address": "0xfeedf0e4",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200af0",
+                "rbp": "0x0000000001200fd8",
+                "rip": "0x00000000feedf0e4",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000140077d38",
+                "rax": "0x00000000000001c2",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000001200b38",
+                "rdx": "0x00000000000001c7",
+                "r8": "0x0000000140028b50",
+                "r9": "0x0000000001200b10",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014000eafb -> emu.module.40b62ba97ba2edd3e01ed62d26ae8c09f36144ab33db18b42e5f1ccf82db1754.0x140000000",
+                "sp+0x08: 0x0000000001200b40 -> emu.stack.0x1200000",
+                "sp+0x10: 0x0000000001200b38 -> emu.stack.0x1200000",
+                "sp+0x18: 0x0000000140028b50 -> emu.module.40b62ba97ba2edd3e01ed62d26ae8c09f36144ab33db18b42e5f1ccf82db1754.0x140000000",
+                "sp+0x20: 0x0000000001200df8 -> emu.stack.0x1200000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x00000000000001c2",
+                "sp+0x50: 0x0000000001200be5 -> emu.stack.0x1200000",
+                "sp+0x58: 0x0000000000000004",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x00000000007eb9b8 -> emu.object._Driver_40b62ba97ba2edd3e01ed62d26ae8c09f36144ab33db18b42e5f1ccf82db1754.0x7eb980",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ntoskrnl.PsGetCurrentThreadId"
+        },
+        "dynamic_code_segments": []
+    }
+]

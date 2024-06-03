@@ -1,0 +1,160 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x40185a",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "a67f3642420d0554d6b110e994b92616c550a8a851337a4f31072a43abbe422a",
+        "apis": [
+            {
+                "pc": "0x401cf6",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x401d02",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x600"
+            },
+            {
+                "pc": "0x401d0a",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x614"
+            },
+            {
+                "pc": "0x401d12",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x401d1e",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fd0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40165c",
+                "api_name": "KERNEL32.InterlockedCompareExchange",
+                "args": [
+                    "0x4330d4",
+                    "0x1212000",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401c8c",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x40180c",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x401822",
+                "api_name": "msvcrt.__p__fmode",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x401830",
+                "api_name": "msvcrt.__p__commode",
+                "args": [],
+                "ret_val": "0x4600"
+            },
+            {
+                "pc": "0x401c1b",
+                "api_name": "msvcrt._controlfp",
+                "args": [
+                    "0x10000",
+                    "0x30000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401c08",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x401bba"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4016e2",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x428220",
+                    "0x428240"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4016fb",
+                "api_name": "KERNEL32.InterlockedExchange",
+                "args": [
+                    "0x4330d4",
+                    "0x0"
+                ],
+                "ret_val": "0x1212000"
+            }
+        ],
+        "ret_val": "0x40ca19",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf194",
+            "address": "0xfeedf194",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f3c",
+                "ebp": "0x01211fa0",
+                "eip": "0xfeedf194",
+                "esi": "0x00000001",
+                "edi": "0x004330d4",
+                "eax": "0x0040ca19",
+                "ebx": "0x00000000",
+                "ecx": "0x00428240",
+                "edx": "0x00000100"
+            },
+            "stack": [
+                "sp+0x00: 0x0040ca28 -> emu.module.019c76ee92024d5b2418484f55736521ecb3944f1d04201e76c6dcf42cb44a72.0x400000",
+                "sp+0x04: 0x004330d4 -> emu.module.019c76ee92024d5b2418484f55736521ecb3944f1d04201e76c6dcf42cb44a72.0x400000",
+                "sp+0x08: 0x00000001",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00401c7c -> emu.module.019c76ee92024d5b2418484f55736521ecb3944f1d04201e76c6dcf42cb44a72.0x400000",
+                "sp+0x1c: 0x0e90b1c7",
+                "sp+0x20: 0x004330d4 -> emu.module.019c76ee92024d5b2418484f55736521ecb3944f1d04201e76c6dcf42cb44a72.0x400000",
+                "sp+0x24: 0x00428248 -> emu.module.019c76ee92024d5b2418484f55736521ecb3944f1d04201e76c6dcf42cb44a72.0x400000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00400100 -> emu.module.019c76ee92024d5b2418484f55736521ecb3944f1d04201e76c6dcf42cb44a72.0x400000",
+                "sp+0x30: 0x01211f58 -> emu.stack.0x1200000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x01211fd4 -> emu.stack.0x1200000",
+                "sp+0x3c: 0x00401b95 -> emu.module.019c76ee92024d5b2418484f55736521ecb3944f1d04201e76c6dcf42cb44a72.0x400000"
+            ],
+            "api_name": "KERNEL32.GetConsoleOutputCP"
+        },
+        "dynamic_code_segments": []
+    }
+]

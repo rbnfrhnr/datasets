@@ -1,0 +1,1294 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x1406c5f00",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "12a71e17890b2d0279b5e67591e74e3f3f63f6b6434f76d3a8a7e14cf0c9b1f0",
+        "apis": [
+            {
+                "pc": "0x1406c698d",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x140fbff40"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x1406c5ed0",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_2",
+        "start_addr": "0x1406c9970",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "afda4e5038488c380fb6c8402021ab3e2a9947a6274db734fd1d45a26bbfc0c4",
+        "apis": [
+            {
+                "pc": "0x1406c9a12",
+                "api_name": "KERNEL32.AddVectoredExceptionHandler",
+                "args": [
+                    "0x1",
+                    "0x1406c6f90"
+                ],
+                "ret_val": "0x1406c6f90"
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1400014e0",
+        "ep_args": [
+            "0x4030",
+            "0x4040",
+            "0x4050",
+            "0x4060"
+        ],
+        "apihash": "d044584cb8bd7880f91319f1cfe3d4833d7bfffe9380afffda5ccc35db2f8618",
+        "apis": [
+            {
+                "pc": "0x1400014a9",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x140fc4018",
+                    "0x140fc4030"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001447",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x140fc4000",
+                    "0x140fc4010"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14000126e",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x1406c6570"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001338",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x8"
+                ],
+                "ret_val": "0x49a0"
+            },
+            {
+                "pc": "0x140001509",
+                "api_name": "msvcrt._onexit",
+                "args": [
+                    "0x140001530"
+                ],
+                "ret_val": "0x140001530"
+            },
+            {
+                "pc": "0x14007471d",
+                "api_name": "KERNEL32.TlsAlloc",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "kernel32.dll",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "AddVectoredContinueHandler"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "advapi32.dll",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x78000000"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x78000000",
+                    "SystemFunction036"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "ntdll.dll",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x7c000000"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x7c000000",
+                    "NtWaitForSingleObject"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x7c000000",
+                    "RtlGetCurrentPeb"
+                ],
+                "ret_val": "0xfeee0003"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x7c000000",
+                    "RtlGetNtVersionNumbers"
+                ],
+                "ret_val": "0xfeee0004"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "winmm.dll",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140900b29",
+                    "0xd",
+                    "0x1211ba8",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x14090601a",
+                    "0x13",
+                    "0x1211ba8",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0aae8",
+                    "0x1",
+                    "0x1211b88",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140921491",
+                    "0x2e",
+                    "0x1211b30",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074638",
+                "api_name": "ntdll.NtWaitForSingleObject",
+                "args": [
+                    "0xffffffffffffffff",
+                    "0x0",
+                    "0x1211b50"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1409034a5",
+                    "0x10",
+                    "0x1211ae8",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a4f5fe",
+                    "0xd",
+                    "0x1211350",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0abe0",
+                    "0x1",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0d6b8",
+                    "0x1",
+                    "0x1211310",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x121138d",
+                    "0xb",
+                    "0x1211298",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0ab70",
+                    "0x1",
+                    "0x12112d8",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f86af",
+                    "0x2",
+                    "0x1211310",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x121138d",
+                    "0xb",
+                    "0x1211298",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0ab70",
+                    "0x1",
+                    "0x12112d8",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0af00",
+                    "0x1",
+                    "0x1211310",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f8707",
+                    "0x2",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0ab38",
+                    "0x1",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140b9932e",
+                    "0x28",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0ae58",
+                    "0x1",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x121143c",
+                    "0x4",
+                    "0x1211340",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f871f",
+                    "0x2",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x121145c",
+                    "0x4",
+                    "0x1211360",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f90e6",
+                    "0x4",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1211457",
+                    "0x9",
+                    "0x1211360",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f90da",
+                    "0x4",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f90a6",
+                    "0x4",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1211455",
+                    "0xb",
+                    "0x1211360",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0aae8",
+                    "0x1",
+                    "0x1211380",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a4ee49",
+                    "0x1c",
+                    "0x1211350",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0abe0",
+                    "0x1",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f8707",
+                    "0x2",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0ab38",
+                    "0x1",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140b987b6",
+                    "0x2d",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0ae58",
+                    "0x1",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x121143d",
+                    "0x3",
+                    "0x1211340",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f871f",
+                    "0x2",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x121145b",
+                    "0x5",
+                    "0x1211360",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f90e6",
+                    "0x4",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1211457",
+                    "0x9",
+                    "0x1211360",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f90da",
+                    "0x4",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f90a6",
+                    "0x4",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1211455",
+                    "0xb",
+                    "0x1211360",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0aae8",
+                    "0x1",
+                    "0x1211380",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a4ef15",
+                    "0xe",
+                    "0x1211350",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0abe0",
+                    "0x1",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f8707",
+                    "0x2",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0ab38",
+                    "0x1",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140b987b6",
+                    "0x2d",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0ae58",
+                    "0x1",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x121143d",
+                    "0x3",
+                    "0x1211340",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f871f",
+                    "0x2",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x121145c",
+                    "0x4",
+                    "0x1211360",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f90e6",
+                    "0x4",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1211457",
+                    "0x9",
+                    "0x1211360",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f90da",
+                    "0x4",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f90a6",
+                    "0x4",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1211455",
+                    "0xb",
+                    "0x1211360",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0aae8",
+                    "0x1",
+                    "0x1211380",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a5500a",
+                    "0xe",
+                    "0x1211350",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0abe0",
+                    "0x1",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f8707",
+                    "0x2",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0ab38",
+                    "0x1",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140b995e5",
+                    "0x2b",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0ae58",
+                    "0x1",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x121143d",
+                    "0x3",
+                    "0x1211340",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f871f",
+                    "0x2",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x121145b",
+                    "0x5",
+                    "0x1211360",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f90e6",
+                    "0x4",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1211457",
+                    "0x9",
+                    "0x1211360",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f90da",
+                    "0x4",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1408f90a6",
+                    "0x4",
+                    "0x12113a0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1211455",
+                    "0xb",
+                    "0x1211360",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x140a0aae8",
+                    "0x1",
+                    "0x1211380",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140074235",
+                "api_name": "KERNEL32.ExitProcess",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x1406c6ee8",
+        "error": {},
+        "dynamic_code_segments": []
+    }
+]

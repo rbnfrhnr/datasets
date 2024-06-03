@@ -1,0 +1,95 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1400f32c0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "da787f6c843fb6eba9b6836f2352bdbf3189e4a2bb44e26a8bed7078fdc4bf0e",
+        "apis": [
+            {
+                "pc": "0x1400f29e3",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400f2a12",
+                "api_name": "KERNEL32.VirtualAlloc",
+                "args": [
+                    "0x0",
+                    "0x10000",
+                    "0x3000",
+                    "PAGE_READWRITE"
+                ],
+                "ret_val": "0x50000"
+            },
+            {
+                "pc": "0x1400f2153",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "ntdll.dll"
+                ],
+                "ret_val": "0x7c000000"
+            },
+            {
+                "pc": "0x1400f2172",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x7c000000",
+                    "RtlAddGrowableFunctionTable"
+                ],
+                "ret_val": "0xfeee0000"
+            }
+        ],
+        "ret_val": "0xfeee0000",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0000",
+            "address": "0xfeee0000",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211e60",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feee0000",
+                "rsi": "0x0000000000050000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x00000000feee0000",
+                "rbx": "0x000000000005fbd8",
+                "rcx": "0x000000000005fbf0",
+                "rdx": "0x000000000005fbe0",
+                "r8": "0x0000000000000001",
+                "r9": "0x0000000000000001",
+                "r10": "0xbe8d1ffc16dc4870",
+                "r11": "0x00000000feee0000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x000000000005fbf0",
+                "r15": "0x000000000005fbe0"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001400f21b0 -> emu.module.af711eace19dfc41f28d941cc0ca9d476f72168c14057c75d900823278b93904.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000050000 -> api.VirtualAlloc.0x50000",
+                "sp+0x30: 0x000000000005fbc0 -> api.VirtualAlloc.0x50000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x00000001400f2a8b -> emu.module.af711eace19dfc41f28d941cc0ca9d476f72168c14057c75d900823278b93904.0x140000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000050000 -> api.VirtualAlloc.0x50000",
+                "sp+0x70: 0x0000000000001000 -> emu.gdt.0x1000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ntdll.RtlAddGrowableFunctionTable"
+        },
+        "dynamic_code_segments": []
+    }
+]

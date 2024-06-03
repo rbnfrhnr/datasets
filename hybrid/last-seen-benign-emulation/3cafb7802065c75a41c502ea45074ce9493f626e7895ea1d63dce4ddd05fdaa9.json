@@ -1,0 +1,145 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401ee9",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "194fcd2ec0728032c454e10b42a07652aba0767d77b06de4a5df512f530125c2",
+        "apis": [
+            {
+                "pc": "0x402476",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x402482",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x1bd0"
+            },
+            {
+                "pc": "0x40248a",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x1be4"
+            },
+            {
+                "pc": "0x402492",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x40249e",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fd0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401cc7",
+                "api_name": "KERNEL32.HeapSetInformation",
+                "args": [
+                    "0x0",
+                    "0x1",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401ce4",
+                "api_name": "KERNEL32.InterlockedCompareExchange",
+                "args": [
+                    "0x404420",
+                    "0x1212000",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401d35",
+                "api_name": "MSVCR100._initterm_e",
+                "args": [
+                    "0x403154",
+                    "0x403160"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401d6a",
+                "api_name": "MSVCR100._initterm",
+                "args": [
+                    "0x40313c",
+                    "0x403150"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401d83",
+                "api_name": "KERNEL32.InterlockedExchange",
+                "args": [
+                    "0x404420",
+                    "0x0"
+                ],
+                "ret_val": "0x1212000"
+            },
+            {
+                "pc": "0x4011bf",
+                "api_name": "KERNEL32.GetModuleFileNameW",
+                "args": [
+                    "0x0",
+                    "C:\\Windows\\system32\\3cafb7802065c75a41c502ea45074ce9493f626e7895ea1d63dce4ddd05fdaa9",
+                    "0x208"
+                ],
+                "ret_val": "0x54"
+            }
+        ],
+        "ret_val": "0x1211d88",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0b0",
+            "address": "0xfeedf0b0",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211d64",
+                "ebp": "0x01211fa0",
+                "eip": "0xfeedf0b0",
+                "esi": "0x00000001",
+                "edi": "0x00404420",
+                "eax": "0x01211d88",
+                "ebx": "0x00000000",
+                "ecx": "0xfeedf0f8",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x004011cc -> emu.module.3cafb7802065c75a41c502ea45074ce9493f626e7895ea1d63dce4ddd05fdaa9.0x400000",
+                "sp+0x04: 0x01211d88 -> emu.stack.0x1200000",
+                "sp+0x08: 0x9eebc393",
+                "sp+0x0c: 0x00404420 -> emu.module.3cafb7802065c75a41c502ea45074ce9493f626e7895ea1d63dce4ddd05fdaa9.0x400000",
+                "sp+0x10: 0x00000001",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x003a0043",
+                "sp+0x28: 0x0057005c",
+                "sp+0x2c: 0x006e0069",
+                "sp+0x30: 0x006f0064",
+                "sp+0x34: 0x00730077",
+                "sp+0x38: 0x0073005c",
+                "sp+0x3c: 0x00730079"
+            ],
+            "api_name": "SHLWAPI.PathRemoveFileSpecW"
+        },
+        "dynamic_code_segments": []
+    }
+]

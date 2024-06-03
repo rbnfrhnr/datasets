@@ -1,0 +1,79 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x14000c000",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "a769dbb40a3fdfe7739f52fde367c5d088a2ebeb6ac1f66c50796f78c061a690",
+        "apis": [
+            {
+                "pc": "0x140015bd9",
+                "api_name": "ntoskrnl.ExAllocatePoolWithTag",
+                "args": [
+                    "0x0",
+                    "0x200",
+                    "TSSC"
+                ],
+                "ret_val": "0x7ebc80"
+            },
+            {
+                "pc": "0x1400157ce",
+                "api_name": "ntoskrnl.ExAllocatePoolWithTag",
+                "args": [
+                    "0x0",
+                    "0x1000",
+                    "TSSC"
+                ],
+                "ret_val": "0xbd4000"
+            }
+        ],
+        "ret_val": "0x7ebc80",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf080",
+            "address": "0xfeedf080",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200eb0",
+                "rbp": "0x0000000001200fd8",
+                "rip": "0x00000000feedf080",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000bd5000",
+                "rax": "0x00000000007ebc80",
+                "rbx": "0x00000000007eba60",
+                "rcx": "0x000000014000a010",
+                "rdx": "0x0000000140001fe0",
+                "r8": "0x0000000000000002",
+                "r9": "0x0000000001200ed8",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001400159e1 -> emu.module.596161e5e379946c82bc6f95f7f41ebeb9ea44183a1752d702ad78f946a3ae4f.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x55422d3436435353",
+                "sp+0x30: 0x00004b4345484347",
+                "sp+0x38: 0x00006e6aba185b15",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x00000000007ebe80 -> api.pool.NonPagedPool.TSSC.0x7ebc80",
+                "sp+0x50: 0x0000000140015c95 -> emu.module.596161e5e379946c82bc6f95f7f41ebeb9ea44183a1752d702ad78f946a3ae4f.0x140000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x00000000007eb870 -> emu.object._Driver_596161e5e379946c82bc6f95f7f41ebeb9ea44183a1752d702ad78f946a3ae4f.0x7eb870"
+            ],
+            "api_name": "ntoskrnl.KeRegisterBugCheckReasonCallback"
+        },
+        "dynamic_code_segments": []
+    }
+]

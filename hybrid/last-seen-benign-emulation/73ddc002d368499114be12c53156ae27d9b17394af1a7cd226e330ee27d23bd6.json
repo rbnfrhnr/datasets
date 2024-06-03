@@ -1,0 +1,176 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140057a90",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "5e1a83b33813eb273c939d36dae7c433c022e7e4d56aaea3f7a822a3a3a63e55",
+        "apis": [
+            {
+                "pc": "0x140057d6a",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140057d78",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xbfc"
+            },
+            {
+                "pc": "0x140057d84",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xbe8"
+            },
+            {
+                "pc": "0x140057d94",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140057974",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x140063580",
+                    "0x1400635a0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140057995",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x140063390",
+                    "0x140063578"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140057a03",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_narrow_environment",
+                "args": [],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x140057a0b",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argv",
+                "args": [],
+                "ret_val": "0x4a60"
+            },
+            {
+                "pc": "0x140057a13",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4ab0"
+            },
+            {
+                "pc": "0x14005030e",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "svchost.exe",
+                    "-quitUpdater"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14005030e",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "myarg1",
+                    "-quitUpdater"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14005030e",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "myarg2",
+                    "-quitUpdater"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140050337",
+                "api_name": "KERNEL32.CreateMutexA",
+                "args": [
+                    "0x0",
+                    "0x1",
+                    "Global\\1306D9EFA84E4131AE34C9381A484516"
+                ],
+                "ret_val": "0x22c"
+            },
+            {
+                "pc": "0x1400572bf",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0x20"
+                ],
+                "ret_val": "0x4ac0"
+            },
+            {
+                "pc": "0x140050367",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x1211cd8",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf460",
+            "address": "0xfeedf460",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211cb0",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf460",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000004940",
+                "rax": "0x0000000001211cd8",
+                "rbx": "0x0000000000004a68",
+                "rcx": "0x0000000001211e50",
+                "rdx": "0x0000000001211cd8",
+                "r8": "0x0000000140069d38",
+                "r9": "0x0000000000000007",
+                "r10": "0x000000002011000c",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140002d17 -> emu.module.73ddc002d368499114be12c53156ae27d9b17394af1a7cd226e330ee27d23bd6.0x140000000",
+                "sp+0x08: 0x0000000001211cd8 -> emu.stack.0x1200000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000140069d38 -> emu.module.73ddc002d368499114be12c53156ae27d9b17394af1a7cd226e330ee27d23bd6.0x140000000",
+                "sp+0x20: 0x0000000000000007",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000140069d38 -> emu.module.73ddc002d368499114be12c53156ae27d9b17394af1a7cd226e330ee27d23bd6.0x140000000",
+                "sp+0x38: 0x0000000000000007",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000140002cc7 -> emu.module.73ddc002d368499114be12c53156ae27d9b17394af1a7cd226e330ee27d23bd6.0x140000000",
+                "sp+0x58: 0x0000000001211e50 -> emu.stack.0x1200000",
+                "sp+0x60: 0x0000000140069d38 -> emu.module.73ddc002d368499114be12c53156ae27d9b17394af1a7cd226e330ee27d23bd6.0x140000000",
+                "sp+0x68: 0x0000000000000007",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "Qt6CoreAEJuice.??0QString@AEJuiceQt@@QEAA@$$QEAU?$QArrayDataPointer@_S@1@@Z"
+        },
+        "dynamic_code_segments": []
+    }
+]

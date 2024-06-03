@@ -1,0 +1,126 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x413635",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "0c66935809edee0e9c77898d0c576c570b36efa572dfce9491a8bb6a960ff1b3",
+        "apis": [
+            {
+                "pc": "0x413b3b",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x413b4a",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x2444"
+            },
+            {
+                "pc": "0x413b53",
+                "api_name": "KERNEL32.GetTickCount64",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x413b60",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x41353a",
+                "api_name": "MSVCR110._initterm_e",
+                "args": [
+                    "0x4163ac",
+                    "0x4163c0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x41356e",
+                "api_name": "MSVCR110._initterm",
+                "args": [
+                    "0x416364",
+                    "0x4163a8"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x407db9",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffff5"
+                ],
+                "ret_val": "0xf002"
+            },
+            {
+                "pc": "0x404028",
+                "api_name": "ADVAPI32.RegQueryInfoKeyW",
+                "args": [
+                    "HKEY_USERS",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x12119b4",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x1211c18",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf11c",
+            "address": "0xfeedf11c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211bfc",
+                "ebp": "0x01211c44",
+                "eip": "0xfeedf11c",
+                "esi": "0x00000001",
+                "edi": "0x00000000",
+                "eax": "0x01211c18",
+                "ebx": "0x00000000",
+                "ecx": "0xd3174e0f",
+                "edx": "0x01212000"
+            },
+            "stack": [
+                "sp+0x00: 0x00408cd9 -> emu.module.e2696b5fef922887d7bde60b3ad4c75c853cf1d7eb003fa88cc5304f1bb5dd8d.0x400000",
+                "sp+0x04: 0x00416ac8 -> emu.module.e2696b5fef922887d7bde60b3ad4c75c853cf1d7eb003fa88cc5304f1bb5dd8d.0x400000",
+                "sp+0x08: 0x01211c18 -> emu.stack.0x1200000",
+                "sp+0x0c: 0x01211c34 -> emu.stack.0x1200000",
+                "sp+0x10: 0xd236524b",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000001",
+                "sp+0x1c: 0x00000035",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x000000c0",
+                "sp+0x28: 0x46000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0xd236524b",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x01211f98 -> emu.stack.0x1200000"
+            ],
+            "api_name": "vccorlib110.?GetActivationFactoryByPCWSTR@@YGJPAXAAVGuid@Platform@@PAPAX@Z"
+        },
+        "dynamic_code_segments": []
+    }
+]

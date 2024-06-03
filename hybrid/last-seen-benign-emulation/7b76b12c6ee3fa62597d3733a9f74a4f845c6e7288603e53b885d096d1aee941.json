@@ -1,0 +1,141 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401331",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "ecf79a270307f88b81b0c68ad140b4e5d1f0c3c3ae0b4b4e478b176c960fdcbd",
+        "apis": [
+            {
+                "pc": "0x4015ee",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4015fd",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x1494"
+            },
+            {
+                "pc": "0x401606",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x1480"
+            },
+            {
+                "pc": "0x401613",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401a8f",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401217",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x4020d8",
+                    "0x4020e4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40123d",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x4020cc",
+                    "0x4020d4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4012a3",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argv",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x4012aa",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4630"
+            },
+            {
+                "pc": "0x4012b1",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_narrow_environment",
+                "args": [],
+                "ret_val": "0x4640"
+            },
+            {
+                "pc": "0x401076",
+                "api_name": "VCRUNTIME140.memset",
+                "args": [
+                    "0x1211d28",
+                    "0x0",
+                    "0x44"
+                ],
+                "ret_val": "0x1211d28"
+            },
+            {
+                "pc": "0x4010ba",
+                "api_name": "KERNEL32.CreateProcessW",
+                "args": [
+                    "yiffalicious.exe",
+                    " -vrmode NONE",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "CREATE_NO_WINDOW",
+                    "0x0",
+                    "0x0",
+                    "0x1211d28",
+                    "0x1211d70"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4017e9",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x4012cf",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.exit",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x400100",
+        "error": {},
+        "process_events": [
+            {
+                "event": "create",
+                "pid": 5332,
+                "path": "yiffalicious.exe",
+                "cmdline": " -vrmode NONE"
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

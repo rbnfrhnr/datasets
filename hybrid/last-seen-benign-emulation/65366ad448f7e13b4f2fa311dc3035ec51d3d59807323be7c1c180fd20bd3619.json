@@ -1,0 +1,121 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x1400614a8",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "a617a3e168c109a4f57076f75dd5177515f1ff22b812430ef4e48724d1cf362d",
+        "apis": [
+            {
+                "pc": "0x140061534",
+                "api_name": "ntoskrnl.RtlCopyUnicodeString",
+                "args": [
+                    "0x140072a88",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\65366ad448f7e13b4f2fa311dc3035ec51d3d59807323be7c1c180fd20bd3619"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140061552",
+                "api_name": "WDFLDR.WdfVersionBind",
+                "args": [
+                    "0x7eb870",
+                    "0x140072a88",
+                    "0x140072790",
+                    "0x140072a98"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400492f9",
+                "api_name": "ntoskrnl.EtwRegister",
+                "args": [
+                    "72a3d767-570e-46b5-baf0-6672cb67c534",
+                    "0x1400491e4",
+                    "0x140070120",
+                    "0x140070120"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140048eb4",
+                "api_name": "ntoskrnl.strrchr",
+                "args": [
+                    "..\\..\\..\\..\\..\\..\\..\\drivers\\acp\\acx\\amdsdwc\\src\\sdwc_main.cpp",
+                    "\\"
+                ],
+                "ret_val": "0x14006afc0"
+            },
+            {
+                "pc": "0x140048ec4",
+                "api_name": "ntoskrnl.strrchr",
+                "args": [
+                    "..\\..\\..\\..\\..\\..\\..\\drivers\\acp\\acx\\amdsdwc\\src\\sdwc_main.cpp",
+                    "\\"
+                ],
+                "ret_val": "0x14006afc0"
+            },
+            {
+                "pc": "0x140048feb",
+                "api_name": "wdfldr.WdfDriverCreate",
+                "args": [
+                    "0xbd4d40",
+                    "0x7eb870",
+                    "0x7eba60",
+                    "0x1200ef0",
+                    "0x1200ed0",
+                    "0x140072848"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x1007f",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf074",
+            "address": "0xfeedf074",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200e70",
+                "rbp": "0x0000000001200ee1",
+                "rip": "0x00000000feedf074",
+                "rsi": "0x0000000000000100",
+                "rdi": "0x0000000054644361",
+                "rax": "0x000000000001007f",
+                "rbx": "0x000000014006af90",
+                "rcx": "0x0000000000000040",
+                "rdx": "0x0000000000000100",
+                "r8": "0x0000000054644361",
+                "r9": "0x0000000001200ef0",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000140070120",
+                "r13": "0x0000000000000000",
+                "r14": "0x000000000000005c",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014004901a -> emu.module.65366ad448f7e13b4f2fa311dc3035ec51d3d59807323be7c1c180fd20bd3619.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000001200ed0 -> emu.stack.0x1200000",
+                "sp+0x30: 0x0000000140072848 -> emu.module.65366ad448f7e13b4f2fa311dc3035ec51d3d59807323be7c1c180fd20bd3619.0x140000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x000000014006afc1 -> emu.module.65366ad448f7e13b4f2fa311dc3035ec51d3d59807323be7c1c180fd20bd3619.0x140000000",
+                "sp+0x50: 0x000000014006af80 -> emu.module.65366ad448f7e13b4f2fa311dc3035ec51d3d59807323be7c1c180fd20bd3619.0x140000000",
+                "sp+0x58: 0x0000000001200f58 -> emu.stack.0x1200000",
+                "sp+0x60: 0x0000000000000020",
+                "sp+0x68: 0x0000000140001c74 -> emu.module.65366ad448f7e13b4f2fa311dc3035ec51d3d59807323be7c1c180fd20bd3619.0x140000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ntoskrnl.ExAllocatePool2"
+        },
+        "dynamic_code_segments": []
+    }
+]

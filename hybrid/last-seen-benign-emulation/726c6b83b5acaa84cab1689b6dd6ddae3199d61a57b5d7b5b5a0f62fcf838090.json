@@ -1,0 +1,74 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x162f1",
+        "ep_args": [
+            "0x7e5da0",
+            "0x7e5ee0"
+        ],
+        "apihash": "5b3dc8a8457d37bbc638782345167263bf134645b10faa75936797e9623bc6d2",
+        "apis": [
+            {
+                "pc": "0x16080",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200fe8",
+                    "\\Device\\RasAcd"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x16098",
+                "api_name": "ntoskrnl.IoCreateDevice",
+                "args": [
+                    "0x7e5da0",
+                    "0x0",
+                    "\\Device\\RasAcd",
+                    "0xf1",
+                    "0x0",
+                    "0x0",
+                    "0x1403c"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x11e7e",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf04c",
+            "address": "0xfeedf04c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01200f74",
+                "ebp": "0x01200ff0",
+                "eip": "0xfeedf04c",
+                "esi": "0x00000000",
+                "edi": "0x007e5e44",
+                "eax": "0x00011e7e",
+                "ebx": "0x007e5da0",
+                "ecx": "0x00000000",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000160e0 -> emu.module.726c6b83b5acaa84cab1689b6dd6ddae3199d61a57b5d7b5b5a0f62fcf838090.0x10000",
+                "sp+0x04: 0x003ff000 -> api.object._Device_RasAcd.0x3ff000",
+                "sp+0x08: 0x00012060 -> emu.module.726c6b83b5acaa84cab1689b6dd6ddae3199d61a57b5d7b5b5a0f62fcf838090.0x10000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "ntoskrnl.IoInitializeTimer"
+        },
+        "dynamic_code_segments": []
+    }
+]
