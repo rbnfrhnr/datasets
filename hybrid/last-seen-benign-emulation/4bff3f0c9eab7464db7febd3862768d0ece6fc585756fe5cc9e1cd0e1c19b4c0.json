@@ -1,0 +1,147 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x41891a",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "849cbb0546885e4b359bc9faf6e36c2cfb815027e5377e614a36fcb15ae6b1d5",
+        "apis": [
+            {
+                "pc": "0x418934",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x418991",
+                "api_name": "MSVCR71.__set_app_type",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4189a6",
+                "api_name": "MSVCR71.__p__fmode",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x4189b4",
+                "api_name": "MSVCR71.__p__commode",
+                "args": [],
+                "ret_val": "0x4600"
+            },
+            {
+                "pc": "0x418c85",
+                "api_name": "MSVCR71._controlfp",
+                "args": [
+                    "0x10000",
+                    "0x30000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4189fa",
+                "api_name": "MSVCR71._initterm",
+                "args": [
+                    "0x425018",
+                    "0x42501c"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4186ec",
+                "api_name": "MSVCR71._onexit",
+                "args": [
+                    "0x418c2c"
+                ],
+                "ret_val": "0x418c2c"
+            },
+            {
+                "pc": "0x418a28",
+                "api_name": "MSVCR71.__getmainargs",
+                "args": [
+                    "0x1211fac",
+                    "0x1211fb0",
+                    "0x1211fb4",
+                    "0x0",
+                    "0x1211fbc"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x418a49",
+                "api_name": "MSVCR71._initterm",
+                "args": [
+                    "0x425000",
+                    "0x425014"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0xfeedf61c",
+        "error": {
+            "type": "Invalid memory read (UC_ERR_READ_UNMAPPED)",
+            "pc": "0x4186fc",
+            "address": "0x4186fc",
+            "instr": "jmp dword ptr [0x41b74c]",
+            "regs": {
+                "esp": "0x01211f54",
+                "ebp": "0x01211fe4",
+                "eip": "0x004186fc",
+                "esi": "0x00000000",
+                "edi": "0xfeedf6f4",
+                "eax": "0xfeedf61c",
+                "ebx": "0xffffffff",
+                "ecx": "0x00425014",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0xfeedf004",
+                "sp+0x04: 0x00004620 -> emu.struct.EXCEPTION_RECORD.0x4620",
+                "sp+0x08: 0x01211fd4 -> emu.stack.0x1200000",
+                "sp+0x0c: 0x00004680 -> emu.struct.EXCEPTION_CONTEXT.0x4680",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 437, in start\n    count=self.max_instructions)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/engines/unicorn_eng.py\", line 203, in start\n    return self.emu.emu_start(addr, 0xFFFFFFFF, timeout=timeout, count=count)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/unicorn/unicorn.py\", line 318, in emu_start\n    raise UcError(status)\nunicorn.unicorn.UcError: Invalid memory read (UC_ERR_READ_UNMAPPED)\n"
+        },
+        "handled_exceptions": [
+            {
+                "pc": "0x418a55",
+                "instr": "mov al, byte ptr [esi]",
+                "exception_code": "0xc0000005",
+                "handler_address": "0x4186fc",
+                "registers": {
+                    "esp": "0x01211f54",
+                    "ebp": "0x01211fe4",
+                    "eip": "0x00418a55",
+                    "esi": "0x00000000",
+                    "edi": "0xfeedf6f4",
+                    "eax": "0xfeedf61c",
+                    "ebx": "0x00000000",
+                    "ecx": "0x00425014",
+                    "edx": "0x00000000"
+                }
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

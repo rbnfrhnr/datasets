@@ -1,0 +1,99 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x402a21",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "3f6e7fad00d8c42cd81a584d0c924f5417e641a840c95c6ef527e4770ea1b777",
+        "apis": [
+            {
+                "pc": "0x402d3b",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x402d4a",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xfc8"
+            },
+            {
+                "pc": "0x402d53",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xfb4"
+            },
+            {
+                "pc": "0x402d60",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x402926",
+                "api_name": "MSVCR120._initterm_e",
+                "args": [
+                    "0x404184",
+                    "0x404194"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40295a",
+                "api_name": "MSVCR120._initterm",
+                "args": [
+                    "0x404178",
+                    "0x404180"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x120df48",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf098",
+            "address": "0xfeedf098",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x0120def8",
+                "ebp": "0x01211fa4",
+                "eip": "0xfeedf098",
+                "esi": "0xfeedf14c",
+                "edi": "0x00000001",
+                "eax": "0x0120df48",
+                "ebx": "0x00000000",
+                "ecx": "0x00000000",
+                "edx": "0x01212000"
+            },
+            "stack": [
+                "sp+0x00: 0x00401c09 -> emu.module.3d879280651b610a5b74576dfff8dcefb7486eb102f3ac9ecd4a2ff010b60f12.0x400000",
+                "sp+0x04: 0x0120df48 -> emu.stack.0x1200000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000002",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000001",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0xffffffff",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "libimobiledevice-win.idevice_new_with_options"
+        },
+        "dynamic_code_segments": []
+    }
+]

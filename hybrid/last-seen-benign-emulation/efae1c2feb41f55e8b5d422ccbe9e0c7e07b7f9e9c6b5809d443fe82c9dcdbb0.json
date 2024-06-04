@@ -1,0 +1,207 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140039040",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "326aef7f2c3e52129a24c53fa0d72b795d56ec95479a0fb5cfba9ce712010024",
+        "apis": [
+            {
+                "pc": "0x1400395d2",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400395e0",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x3b64"
+            },
+            {
+                "pc": "0x1400395ec",
+                "api_name": "KERNEL32.GetTickCount64",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x1400395fa",
+                "api_name": "KERNEL32.GetTickCount64",
+                "args": [],
+                "ret_val": "0x5265c28"
+            },
+            {
+                "pc": "0x140039608",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140038f3c",
+                "api_name": "MSVCR110._initterm_e",
+                "args": [
+                    "0x140046e00",
+                    "0x140046e20"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140038f72",
+                "api_name": "MSVCR110._initterm",
+                "args": [
+                    "0x140046990",
+                    "0x140046df8"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140035038",
+                "api_name": "ADVAPI32.RegOpenKeyExA",
+                "args": [
+                    "0xffffffff80000002",
+                    "SOFTWARE\\Microsoft\\ExchangeServer\\v15",
+                    "0x0",
+                    "0x20019",
+                    "0x1211870"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x140035134",
+                "api_name": "ADVAPI32.RegOpenKeyExW",
+                "args": [
+                    "0xffffffff80000002",
+                    "SOFTWARE\\Microsoft\\ExchangeServer\\v15\\Watson\\FlightOverride",
+                    "0x0",
+                    "0x20019",
+                    "0x1211870"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x140035134",
+                "api_name": "ADVAPI32.RegOpenKeyExW",
+                "args": [
+                    "0xffffffff80000002",
+                    "SOFTWARE\\Microsoft\\ExchangeServer\\v15\\Watson",
+                    "0x0",
+                    "0x20019",
+                    "0x1211870"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x140035134",
+                "api_name": "ADVAPI32.RegOpenKeyExW",
+                "args": [
+                    "0xffffffff80000002",
+                    "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{CD981244-E9B8-405A-9026-6AEB9DCEF1F1}",
+                    "0x0",
+                    "0x20019",
+                    "0x1211870"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x140035038",
+                "api_name": "ADVAPI32.RegOpenKeyExA",
+                "args": [
+                    "0xffffffff80000002",
+                    "SOFTWARE\\Microsoft\\ExchangeServer\\v15",
+                    "0x0",
+                    "0x20019",
+                    "0x1211870"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x140035038",
+                "api_name": "ADVAPI32.RegOpenKeyExA",
+                "args": [
+                    "0xffffffff80000002",
+                    "SOFTWARE\\Microsoft\\ExchangeServer\\v15\\Setup",
+                    "0x0",
+                    "0x20019",
+                    "0x1211870"
+                ],
+                "ret_val": "0x3"
+            }
+        ],
+        "ret_val": "0x14006c404",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf02c",
+            "address": "0xfeedf02c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211890",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf02c",
+                "rsi": "0x0000000001211f50",
+                "rdi": "0x0000000140071c00",
+                "rax": "0x000000014006c404",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x000000014006c404",
+                "rdx": "0x0000000000000032",
+                "r8": "0xffffffffffffffff",
+                "r9": "0x0000000140047570",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014003631f -> emu.module.efae1c2feb41f55e8b5d422ccbe9e0c7e07b7f9e9c6b5809d443fe82c9dcdbb0.0x140000000",
+                "sp+0x08: 0x0000000140047178 -> emu.module.efae1c2feb41f55e8b5d422ccbe9e0c7e07b7f9e9c6b5809d443fe82c9dcdbb0.0x140000000",
+                "sp+0x10: 0x0000000140047370 -> emu.module.efae1c2feb41f55e8b5d422ccbe9e0c7e07b7f9e9c6b5809d443fe82c9dcdbb0.0x140000000",
+                "sp+0x18: 0x000000000121192c -> emu.stack.0x1200000",
+                "sp+0x20: 0x0000000000000208",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "MSVCR110._snwprintf_s"
+        },
+        "registry_access": [
+            {
+                "event": "open_key",
+                "path": "SOFTWARE\\Microsoft\\ExchangeServer\\v15"
+            },
+            {
+                "event": "open_key",
+                "path": "SOFTWARE\\Microsoft\\ExchangeServer\\v15\\Watson\\FlightOverride"
+            },
+            {
+                "event": "open_key",
+                "path": "SOFTWARE\\Microsoft\\ExchangeServer\\v15\\Watson"
+            },
+            {
+                "event": "open_key",
+                "path": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{CD981244-E9B8-405A-9026-6AEB9DCEF1F1}"
+            },
+            {
+                "event": "open_key",
+                "path": "SOFTWARE\\Microsoft\\ExchangeServer\\v15\\Setup"
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

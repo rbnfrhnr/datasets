@@ -1,0 +1,135 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x405bf8",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "1d6069609263d3dd101a7bbdc953f9ebbbd57bdb68ed0306408104079a65e98a",
+        "apis": [
+            {
+                "pc": "0x4060e0",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4060ec",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x2628"
+            },
+            {
+                "pc": "0x4060f4",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x263c"
+            },
+            {
+                "pc": "0x4060fc",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x406108",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fd0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4059d6",
+                "api_name": "KERNEL32.HeapSetInformation",
+                "args": [
+                    "0x0",
+                    "0x1",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4059f3",
+                "api_name": "KERNEL32.InterlockedCompareExchange",
+                "args": [
+                    "0x40ca04",
+                    "0x1212000",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x405a44",
+                "api_name": "MSVCR100._initterm_e",
+                "args": [
+                    "0x40837c",
+                    "0x408388"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x405a79",
+                "api_name": "MSVCR100._initterm",
+                "args": [
+                    "0x408300",
+                    "0x408378"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x405a92",
+                "api_name": "KERNEL32.InterlockedExchange",
+                "args": [
+                    "0x40ca04",
+                    "0x0"
+                ],
+                "ret_val": "0x1212000"
+            }
+        ],
+        "ret_val": "0x1211f94",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0b4",
+            "address": "0xfeedf0b4",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f84",
+                "ebp": "0x01211fa0",
+                "eip": "0xfeedf0b4",
+                "esi": "0x00000001",
+                "edi": "0x0040ca04",
+                "eax": "0x01211f94",
+                "ebx": "0x00000000",
+                "ecx": "0x01211f90",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0040163d -> emu.module.b79f214e89212c250d314888b233f77461d1f9f2f0c323628783d2ec73632164.0x400000",
+                "sp+0x04: 0x2e50da6c",
+                "sp+0x08: 0x00000001",
+                "sp+0x0c: 0xfeedf2a4",
+                "sp+0x10: 0x01211fd4 -> emu.stack.0x1200000",
+                "sp+0x14: 0x004061e8 -> emu.module.b79f214e89212c250d314888b233f77461d1f9f2f0c323628783d2ec73632164.0x400000",
+                "sp+0x18: 0xffffffff",
+                "sp+0x1c: 0x01211fe4 -> emu.stack.0x1200000",
+                "sp+0x20: 0x00405ad7 -> emu.module.b79f214e89212c250d314888b233f77461d1f9f2f0c323628783d2ec73632164.0x400000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x2e50da28",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "ACE.??0ACE_Main_Base@@QAE@XZ"
+        },
+        "dynamic_code_segments": []
+    }
+]

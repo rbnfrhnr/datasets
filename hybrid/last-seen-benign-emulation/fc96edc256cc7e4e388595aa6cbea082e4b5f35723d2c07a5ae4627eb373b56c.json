@@ -1,0 +1,155 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401000",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "d385ab751eb331ca97ae472d0a0b24e49476df08811977b1ad23e4c76f7c0d09",
+        "apis": [
+            {
+                "pc": "0x1c6d7a5",
+                "api_name": "kernel32.VirtualAlloc",
+                "args": [
+                    "0x0",
+                    "0x27a0",
+                    "0x1000",
+                    "PAGE_EXECUTE_READWRITE"
+                ],
+                "ret_val": "0x50000"
+            },
+            {
+                "pc": "0x50c7c",
+                "api_name": "kernel32.LoadLibraryA",
+                "args": [
+                    "kernel32"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x50c9e",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "ExitProcess"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x50c9e",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetModuleHandleA"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x50c9e",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CloseHandle"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x50c9e",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "OpenProcess"
+                ],
+                "ret_val": "0xfeee0003"
+            },
+            {
+                "pc": "0x50c9e",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "VirtualProtect"
+                ],
+                "ret_val": "0xfeee0004"
+            },
+            {
+                "pc": "0x50c7c",
+                "api_name": "kernel32.LoadLibraryA",
+                "args": [
+                    "user32"
+                ],
+                "ret_val": "0x77d10000"
+            },
+            {
+                "pc": "0x50c9e",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77d10000",
+                    "MessageBoxA"
+                ],
+                "ret_val": "0xfeee0005"
+            },
+            {
+                "pc": "0x50c9e",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77d10000",
+                    "wsprintfA"
+                ],
+                "ret_val": "0xfeee0006"
+            },
+            {
+                "pc": "0x50b34",
+                "api_name": "kernel32.VirtualAlloc",
+                "args": [
+                    "0x0",
+                    "0x175560c",
+                    "0x1000",
+                    "PAGE_READWRITE"
+                ],
+                "ret_val": "0x2efc000"
+            },
+            {
+                "pc": "0x508c2",
+                "api_name": "kernel32.VirtualAlloc",
+                "args": [
+                    "0x0",
+                    "0x307360",
+                    "0x1000",
+                    "PAGE_READWRITE"
+                ],
+                "ret_val": "0x2288000"
+            }
+        ],
+        "ret_val": null,
+        "error": {},
+        "handled_exceptions": [
+            {
+                "pc": "0x401000",
+                "instr": "mov eax, 0x1c6d74c",
+                "exception_code": "0xc0000005",
+                "handler_address": "0x1c6d74c",
+                "registers": {
+                    "esp": "0x01faffcc",
+                    "ebp": "0x01fb0000",
+                    "eip": "0x00401000",
+                    "esi": "0x00000000",
+                    "edi": "0x00000000",
+                    "eax": "0x00000000",
+                    "ebx": "0x00000000",
+                    "ecx": "0x00000000",
+                    "edx": "0x00000000"
+                }
+            }
+        ],
+        "dynamic_code_segments": [
+            {
+                "tag": "api.VirtualAlloc.0x50000",
+                "base": "0x50000",
+                "size": "0x3000"
+            }
+        ]
+    }
+]

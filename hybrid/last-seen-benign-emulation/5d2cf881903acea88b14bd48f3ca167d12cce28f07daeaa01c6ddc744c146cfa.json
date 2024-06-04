@@ -1,0 +1,221 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x1400c0d50",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x140018d50",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "2c99c2a6198ba7bc99f16f47fb8e6f6b2ad11a889bb04cdde3f9e54835f37844",
+        "apis": [
+            {
+                "pc": "0x140018d88",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x1465da538"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140018d95",
+                "api_name": "KERNEL32.TlsAlloc",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018db3",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._register_thread_local_exe_atexit_callback",
+                "args": [
+                    "0x140018f10"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1465da408",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_2",
+        "start_addr": "0x140001610",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "12a71e17890b2d0279b5e67591e74e3f3f63f6b6434f76d3a8a7e14cf0c9b1f0",
+        "apis": [
+            {
+                "pc": "0x140019221",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x1465da570"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_3",
+        "start_addr": "0x140001690",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_4",
+        "start_addr": "0x140011770",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140001140",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "58151406aa157f1cd668a6a0d694cfc26029d7a3df943c17e2339edbbd0cc12b",
+        "apis": [
+            {
+                "pc": "0x140001368",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x14640ce20",
+                    "0x14640ce30"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001204",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x14640cdf0",
+                    "0x14640ce08"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001243",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x140001ca0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001259",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._set_invalid_parameter_handler",
+                "args": [
+                    "0x1400013c0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001272",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0x8"
+                ],
+                "ret_val": "0x4990"
+            },
+            {
+                "pc": "0x1400f7199",
+                "api_name": "KERNEL32.AcquireSRWLockExclusive",
+                "args": [
+                    "0x146685f10"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400f71a9",
+                "api_name": "KERNEL32.ReleaseSRWLockExclusive",
+                "args": [
+                    "0x146685f10"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedfa14",
+            "address": "0xfeedfa14",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211d60",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedfa14",
+                "rsi": "0x00000001453fa756",
+                "rdi": "0x0000000001211e18",
+                "rax": "0x0000000000000001",
+                "rbx": "0x0000000001211df8",
+                "rcx": "0x0000000000000000",
+                "rdx": "0x00000001453fa756",
+                "r8": "0x00000001453fa756",
+                "r9": "0x0000000001211df8",
+                "r10": "0x0000000000000002",
+                "r11": "0x0000000000000006",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001401f9b17 -> emu.module.5d2cf881903acea88b14bd48f3ca167d12cce28f07daeaa01c6ddc744c146cfa.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x000000000000002c",
+                "sp+0x38: 0x0000000001211e18 -> emu.stack.0x1200000",
+                "sp+0x40: 0x00000001400559ae -> emu.module.5d2cf881903acea88b14bd48f3ca167d12cce28f07daeaa01c6ddc744c146cfa.0x140000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x00000001400f71a9 -> emu.module.5d2cf881903acea88b14bd48f3ca167d12cce28f07daeaa01c6ddc744c146cfa.0x140000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "api-ms-win-crt-locale-l1-1-0._create_locale"
+        },
+        "dynamic_code_segments": []
+    }
+]

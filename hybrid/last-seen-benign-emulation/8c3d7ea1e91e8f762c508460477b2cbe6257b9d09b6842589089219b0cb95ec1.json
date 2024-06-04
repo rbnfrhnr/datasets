@@ -1,0 +1,117 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140001c10",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "e096376b9dfe37d4207871933e85910a7f7c61793cbc669c53b9ff0e4036afcd",
+        "apis": [
+            {
+                "pc": "0x140002102",
+                "api_name": "api-ms-win-core-sysinfo-l1-1-0.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140002110",
+                "api_name": "api-ms-win-core-processthreads-l1-1-0.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x10b4"
+            },
+            {
+                "pc": "0x14000211c",
+                "api_name": "api-ms-win-core-processthreads-l1-1-0.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x10a0"
+            },
+            {
+                "pc": "0x14000212c",
+                "api_name": "api-ms-win-core-profile-l1-1-0.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140001adb",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x14000d760",
+                    "0x14000d788"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001afc",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x14000d708",
+                    "0x14000d758"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140002393",
+                "api_name": "api-ms-win-crt-string-l1-1-0.memset",
+                "args": [
+                    "0x1211ef8",
+                    "0x0",
+                    "0x68"
+                ],
+                "ret_val": "0x1211ef8"
+            }
+        ],
+        "ret_val": "0x1211ef8",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf144",
+            "address": "0xfeedf144",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211ed0",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf144",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000001211ef8",
+                "rbx": "0x00000001400117c8",
+                "rcx": "0x0000000001211ef8",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000000000068",
+                "r9": "0x0000000000000002",
+                "r10": "0x000000003d3b350f",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014000239e -> emu.module.8c3d7ea1e91e8f762c508460477b2cbe6257b9d09b6842589089219b0cb95ec1.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "api-ms-win-core-processthreads-l1-1-0.GetStartupInfoW"
+        },
+        "dynamic_code_segments": []
+    }
+]

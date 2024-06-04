@@ -1,0 +1,89 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x15566",
+        "ep_args": [
+            "0x7e5da0",
+            "0x7e5ee0"
+        ],
+        "apihash": "efca1ec3adbfa913b0188ea7f282cbdc0470a61d07be7cdc0f90e0b1aab92f31",
+        "apis": [
+            {
+                "pc": "0x15311",
+                "api_name": "ntoskrnl.memset",
+                "args": [
+                    "0x1200edc",
+                    "0x0",
+                    "0x110"
+                ],
+                "ret_val": "0x1200edc"
+            },
+            {
+                "pc": "0x15334",
+                "api_name": "ntoskrnl.RtlGetVersion",
+                "args": [
+                    "0x1200ed8"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1534e",
+                "api_name": "ntoskrnl.memset",
+                "args": [
+                    "0x13020",
+                    "0x0",
+                    "0xe8"
+                ],
+                "ret_val": "0x13020"
+            },
+            {
+                "pc": "0x15372",
+                "api_name": "ntoskrnl.KeInitializeEvent",
+                "args": [
+                    "0x13020",
+                    "0x1",
+                    "0x1"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0xa8",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf09c",
+            "address": "0xfeedf09c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01200eac",
+                "ebp": "0x01200ff0",
+                "eip": "0xfeedf09c",
+                "esi": "0x007e5da0",
+                "edi": "0xfeedf07c",
+                "eax": "0x000000a8",
+                "ebx": "0x00000000",
+                "ecx": "0xbb40e64e",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00015378 -> emu.module.ce8bacb91a5a86cbce82619c6c1873b4d7593b00ced3b522e41b8f7f6258cc65.0x10000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x007e5ee0 -> emu.object._Driver_ce8bacb91a5a86cbce82619c6c1873b4d7593b00ced3b522e41b8f7f6258cc65.reg_path.0x7e5ee0",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000006",
+                "sp+0x34: 0x00000001",
+                "sp+0x38: 0x00001db1 -> emu.gdt.0x1000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "ntoskrnl.PsGetCurrentProcess"
+        },
+        "dynamic_code_segments": []
+    }
+]

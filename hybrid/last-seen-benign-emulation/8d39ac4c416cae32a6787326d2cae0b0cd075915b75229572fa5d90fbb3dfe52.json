@@ -1,0 +1,179 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1001600",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "c9d4db43e649793b75c1aaca61c437afa25343f45f06faa77c3e28fd81484a46",
+        "apis": [
+            {
+                "pc": "0x100192e",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x100193a",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x3740"
+            },
+            {
+                "pc": "0x1001942",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x3754"
+            },
+            {
+                "pc": "0x100194a",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x1001956",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fd0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x10013f8",
+                "api_name": "KERNEL32.InterlockedCompareExchange",
+                "args": [
+                    "0x1002370",
+                    "0x1212000",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x10018bf",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x1000000"
+            },
+            {
+                "pc": "0x10015ad",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x10015c3",
+                "api_name": "msvcrt.__p__fmode",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x10015d1",
+                "api_name": "msvcrt.__p__commode",
+                "args": [],
+                "ret_val": "0x4600"
+            },
+            {
+                "pc": "0x100183c",
+                "api_name": "msvcrt._controlfp",
+                "args": [
+                    "0x10000",
+                    "0x30000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x100166e",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x100161b"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x100147e",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x100109c",
+                    "0x10010a4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1001497",
+                "api_name": "KERNEL32.InterlockedExchange",
+                "args": [
+                    "0x1002370",
+                    "0x0"
+                ],
+                "ret_val": "0x1212000"
+            },
+            {
+                "pc": "0x1001307",
+                "api_name": "KERNEL32.HeapSetInformation",
+                "args": [
+                    "0x0",
+                    "0x1",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x100130e",
+                "api_name": "ole32.CoInitialize",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x1211f9c",
+        "error": {
+            "type": "'NoneType' object has no attribute 'info'",
+            "pc": "0xfeedf088",
+            "address": "0xfeedf088",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f7c",
+                "ebp": "0x01211fa0",
+                "eip": "0xfeedf088",
+                "esi": "0x00000001",
+                "edi": "0x00000000",
+                "eax": "0x01211f9c",
+                "ebx": "0x00000000",
+                "ecx": "0x010010a4",
+                "edx": "0x000000e0"
+            },
+            "stack": [
+                "sp+0x00: 0x01001328 -> emu.module.8d39ac4c416cae32a6787326d2cae0b0cd075915b75229572fa5d90fbb3dfe52.0x1000000",
+                "sp+0x04: 0x01001150 -> emu.module.8d39ac4c416cae32a6787326d2cae0b0cd075915b75229572fa5d90fbb3dfe52.0x1000000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000001",
+                "sp+0x10: 0x01001160 -> emu.module.8d39ac4c416cae32a6787326d2cae0b0cd075915b75229572fa5d90fbb3dfe52.0x1000000",
+                "sp+0x14: 0x01211f9c -> emu.stack.0x1200000",
+                "sp+0x18: 0x01002370 -> emu.module.8d39ac4c416cae32a6787326d2cae0b0cd075915b75229572fa5d90fbb3dfe52.0x1000000",
+                "sp+0x1c: 0x010010a4 -> emu.module.8d39ac4c416cae32a6787326d2cae0b0cd075915b75229572fa5d90fbb3dfe52.0x1000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x01211fe4 -> emu.stack.0x1200000",
+                "sp+0x28: 0x010014cf -> emu.module.8d39ac4c416cae32a6787326d2cae0b0cd075915b75229572fa5d90fbb3dfe52.0x1000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x0770452a",
+                "sp+0x3c: 0x00000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 1169, in handle_import_func\n    rv = self.api.call_api_func(mod, func, argv, ctx=default_ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/winapi.py\", line 77, in call_api_func\n    return func(mod, self.emu, argv, ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/usermode/ole32.py\", line 127, in CoCreateInstance\n    self.emu.logger.info('Unsupported COM CLSID %s', clsid_str)\nAttributeError: 'NoneType' object has no attribute 'info'\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

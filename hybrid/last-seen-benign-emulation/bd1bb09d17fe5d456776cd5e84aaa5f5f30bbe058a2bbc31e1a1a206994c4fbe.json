@@ -1,0 +1,99 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x402a08",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "d44d2e64c2a7c8408384ee16c99bc8de8cdf76a9a106f554c7ab36801c353842",
+        "apis": [
+            {
+                "pc": "0x402bfb",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x402c0a",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x3c00"
+            },
+            {
+                "pc": "0x402c13",
+                "api_name": "KERNEL32.GetTickCount64",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x402c20",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40290d",
+                "api_name": "MSVCR110._initterm_e",
+                "args": [
+                    "0x403174",
+                    "0x403184"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x402941",
+                "api_name": "MSVCR110._initterm",
+                "args": [
+                    "0x403168",
+                    "0x403170"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0xfeedf0d8",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf018",
+            "address": "0xfeedf018",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f90",
+                "ebp": "0x01211fe4",
+                "eip": "0xfeedf018",
+                "esi": "0x00000001",
+                "edi": "0x00000000",
+                "eax": "0xfeedf0d8",
+                "ebx": "0x00000000",
+                "ecx": "0x00000000",
+                "edx": "0x01212000"
+            },
+            "stack": [
+                "sp+0x00: 0x00401cda -> emu.module.bd1bb09d17fe5d456776cd5e84aaa5f5f30bbe058a2bbc31e1a1a206994c4fbe.0x400000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x00000001",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x004029a0 -> emu.module.bd1bb09d17fe5d456776cd5e84aaa5f5f30bbe058a2bbc31e1a1a206994c4fbe.0x400000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x885a2e38",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x01211fb8 -> emu.stack.0x1200000"
+            ],
+            "api_name": "lua51.luaL_newstate"
+        },
+        "dynamic_code_segments": []
+    }
+]

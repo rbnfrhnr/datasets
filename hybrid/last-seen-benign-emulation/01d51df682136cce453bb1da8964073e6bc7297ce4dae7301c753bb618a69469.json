@@ -1,0 +1,150 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x17008",
+        "ep_args": [
+            "0x7eb980",
+            "0x7ebb70"
+        ],
+        "apihash": "6a3327359470514f9cd01e84386897cff42c267c229e3d86163d065054599125",
+        "apis": [
+            {
+                "pc": "0x11a1a",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f88",
+                    "\\Device\\wogui"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x11a2c",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f98",
+                    "\\DosDevices\\wogui"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x11a57",
+                "api_name": "ntoskrnl.IoCreateDevice",
+                "args": [
+                    "0x7eb980",
+                    "0x38",
+                    "\\Device\\wogui",
+                    "0x8080",
+                    "0x0",
+                    "0x0",
+                    "0x1200fb8"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x11aa1",
+                "api_name": "ntoskrnl.IoCreateSymbolicLink",
+                "args": [
+                    "\\DosDevices\\wogui",
+                    "\\Device\\wogui"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x11b0f",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f18",
+                    "\\Device\\wowrt"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x11b21",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f28",
+                    "\\DosDevices\\wowrt"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x11b4e",
+                "api_name": "ntoskrnl.IoCreateDevice",
+                "args": [
+                    "0x7eb980",
+                    "0x38",
+                    "\\Device\\wowrt",
+                    "0x8081",
+                    "0x0",
+                    "0x0",
+                    "0x1200f50"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x11b96",
+                "api_name": "ntoskrnl.IoCreateSymbolicLink",
+                "args": [
+                    "\\DosDevices\\wowrt",
+                    "\\Device\\wowrt"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x124ef",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f28",
+                    "\\Device\\wowreg001"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "'DRIVER_OBJECT' object has no attribute 'NextDevice'",
+            "pc": "0xfeedf080",
+            "address": "0xfeedf080",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200ee0",
+                "rbp": "0x0000000001200fd8",
+                "rip": "0x00000000feedf080",
+                "rsi": "0x00000000007eb980",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000000000000",
+                "rbx": "0x00000000007eb980",
+                "rcx": "0x00000000007eb980",
+                "rdx": "0x0000000000000038",
+                "r8": "0x0000000001200f28",
+                "r9": "0x0000000000000022",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000001200f50",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000000001251b -> emu.module.01d51df682136cce453bb1da8964073e6bc7297ce4dae7301c753bb618a69469.0x10000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000001",
+                "sp+0x38: 0x0000000001200f50 -> emu.stack.0x1200000",
+                "sp+0x40: 0x0000000000012ea0 -> emu.module.01d51df682136cce453bb1da8964073e6bc7297ce4dae7301c753bb618a69469.0x10000",
+                "sp+0x48: 0x0000000000220022",
+                "sp+0x50: 0x0000000000012f00 -> emu.module.01d51df682136cce453bb1da8964073e6bc7297ce4dae7301c753bb618a69469.0x10000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000011ad2 -> emu.module.01d51df682136cce453bb1da8964073e6bc7297ce4dae7301c753bb618a69469.0x10000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000401000 -> api.object._Device_wowrt.0x401000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 1169, in handle_import_func\n    rv = self.api.call_api_func(mod, func, argv, ctx=default_ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/winapi.py\", line 77, in call_api_func\n    return func(mod, self.emu, argv, ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/kernelmode/ntoskrnl.py\", line 398, in IoCreateDevice\n    chars, tag='api.object')\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/kernel.py\", line 418, in create_device_object\n    self.get_object_from_addr(drv.object.NextDevice)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/struct.py\", line 328, in __getattribute__\n    return super(EmuStruct, self).__getattribute__(name)\nAttributeError: 'DRIVER_OBJECT' object has no attribute 'NextDevice'\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,95 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x4233e6",
+        "ep_args": [
+            "0x7e5da0",
+            "0x7e5ee0"
+        ],
+        "apihash": "b40d9c2eea19c64a5915872ce807ecee058639e61bc81ab67b6eb21db53a2d6f",
+        "apis": [
+            {
+                "pc": "0x409383",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "ExAllocatePoolWithTag"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x4093a3",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "ExInitializeNPagedLookasideList"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x4093c3",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "MmMapLockedPagesSpecifyCache"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x4093da",
+                "api_name": "ntoskrnl.PsGetVersion",
+                "args": [
+                    "0x1200f48",
+                    "0x1200f44",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40912a",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f3c",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\PrlNP\\Parameters"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1200f48",
+        "error": {
+            "type": "'NoneType' object has no attribute 'to_bytes'",
+            "pc": "0xfeedf068",
+            "address": "0xfeedf068",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01200f10",
+                "ebp": "0x01200f4c",
+                "eip": "0xfeedf068",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x01200f48",
+                "ebx": "0x00000000",
+                "ecx": "0xbb40e64e",
+                "edx": "0x00004d76"
+            },
+            "stack": [
+                "sp+0x00: 0x0040915c -> emu.module.8ff2d07d2458afedacd5eae7177cf72d6fbdab2909b8bce3f5479eb2b56b2686.0x400000",
+                "sp+0x04: 0x01200f48 -> emu.stack.0x1200000",
+                "sp+0x08: 0x00020019",
+                "sp+0x0c: 0x01200f24 -> emu.stack.0x1200000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000018",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x01200f3c -> emu.stack.0x1200000",
+                "sp+0x20: 0x00000240",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00880088",
+                "sp+0x30: 0x0040a8ce -> emu.module.8ff2d07d2458afedacd5eae7177cf72d6fbdab2909b8bce3f5479eb2b56b2686.0x400000",
+                "sp+0x34: 0x00000001",
+                "sp+0x38: 0x00000006",
+                "sp+0x3c: 0x01200ff0 -> emu.stack.0x1200000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 1169, in handle_import_func\n    rv = self.api.call_api_func(mod, func, argv, ctx=default_ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/winapi.py\", line 77, in call_api_func\n    return func(mod, self.emu, argv, ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/kernelmode/ntoskrnl.py\", line 2633, in ZwOpenKey\n    self.mem_write(phnd, hnd.to_bytes(self.get_ptr_size(), 'little'))\nAttributeError: 'NoneType' object has no attribute 'to_bytes'\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

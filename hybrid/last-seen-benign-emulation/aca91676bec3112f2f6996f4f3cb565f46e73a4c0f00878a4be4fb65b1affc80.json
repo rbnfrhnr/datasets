@@ -1,0 +1,148 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x140219a70",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x14023a920",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "ef2924c9a3e83d63a775b2da5ca5ccd26b6d283605151776add9581590b2514a",
+        "apis": [
+            {
+                "pc": "0x14023abb6",
+                "api_name": "kernel32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14023abc4",
+                "api_name": "kernel32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x69c"
+            },
+            {
+                "pc": "0x14023abd0",
+                "api_name": "kernel32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x688"
+            },
+            {
+                "pc": "0x14023abe0",
+                "api_name": "kernel32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14023a804",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x1402c6d18",
+                    "0x1402c6d30"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14023a825",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x1402c6d00",
+                    "0x1402c6d10"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14023a893",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_narrow_environment",
+                "args": [],
+                "ret_val": "0x4950"
+            },
+            {
+                "pc": "0x14023a89b",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argv",
+                "args": [],
+                "ret_val": "0x4a70"
+            },
+            {
+                "pc": "0x14023a8a3",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4ac0"
+            },
+            {
+                "pc": "0x140129077",
+                "api_name": "kernel32.AddVectoredExceptionHandler",
+                "args": [
+                    "0x0",
+                    "0x140219020"
+                ],
+                "ret_val": "0x140219020"
+            }
+        ],
+        "ret_val": "0x140219020",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0ec",
+            "address": "0xfeedf0ec",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211ee0",
+                "rbp": "0x0000000001211f68",
+                "rip": "0x00000000feedf0ec",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000004950",
+                "rax": "0x0000000140219020",
+                "rbx": "0x0000000000004a78",
+                "rcx": "0x0000000001211f18",
+                "rdx": "0x0000000140219020",
+                "r8": "0x0000000000004950",
+                "r9": "0x0000000000000002",
+                "r10": "0x000000002011000c",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140129091 -> emu.module.aca91676bec3112f2f6996f4f3cb565f46e73a4c0f00878a4be4fb65b1affc80.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000005000 -> emu.struct.ETHREAD.0x5000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000080000000663",
+                "sp+0x50: 0x0708810002182200",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x000000014023aa69 -> emu.module.aca91676bec3112f2f6996f4f3cb565f46e73a4c0f00878a4be4fb65b1affc80.0x140000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0xfffffffffffffffe",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "kernel32.SetThreadStackGuarantee"
+        },
+        "dynamic_code_segments": []
+    }
+]

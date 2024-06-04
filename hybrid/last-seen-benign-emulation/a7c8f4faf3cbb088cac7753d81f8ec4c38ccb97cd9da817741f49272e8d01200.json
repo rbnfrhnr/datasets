@@ -1,0 +1,65 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x401538",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "58ed8d621ff6eafbd618cc5ebcf851c913751a2ee13f11313a04e0d6dc397782",
+        "apis": [
+            {
+                "pc": "0x40154e",
+                "api_name": "ntoskrnl.DbgPrint",
+                "args": [
+                    "GenericDrv.SYS:Inside DriverEntry\n"
+                ],
+                "ret_val": "0x22"
+            },
+            {
+                "pc": "0x401560",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f70",
+                    "\\Device\\ucorew64"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x401590",
+                "api_name": "ntoskrnl.IoCreateDevice",
+                "args": [
+                    "0x7eb870",
+                    "0x40",
+                    "\\Device\\ucorew64",
+                    "0xfa00",
+                    "0x0",
+                    "0x0",
+                    "0x1200f68"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4015ac",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f80",
+                    "\\??\\ucorew64"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4015bc",
+                "api_name": "ntoskrnl.IoCreateSymbolicLink",
+                "args": [
+                    "\\??\\ucorew64",
+                    "\\Device\\ucorew64"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    }
+]

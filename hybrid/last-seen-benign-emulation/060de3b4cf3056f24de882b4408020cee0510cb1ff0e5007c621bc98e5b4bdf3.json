@@ -1,0 +1,159 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x46d700",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "7034f6e3accf488644bbcfa0162222232455f7306db2d3a44e30afe4629cb8f1",
+        "apis": [
+            {
+                "pc": "0x46ddbd",
+                "api_name": "kernel32.TlsAlloc",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x46d8d5",
+                "api_name": "kernel32.LoadLibraryExW",
+                "args": [
+                    "kernel32.dll",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x46d8d5",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "AddVectoredContinueHandler"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x46d8d5",
+                "api_name": "kernel32.LoadLibraryExW",
+                "args": [
+                    "bcryptprimitives.dll",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x46d8d5",
+                "api_name": "kernel32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x46d8d5",
+                "api_name": "kernel32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1ee5965",
+                    "0xd",
+                    "0x3aebcf0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x46d8d5",
+                "api_name": "kernel32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1f1aad1",
+                    "0x1e",
+                    "0x3aebcf0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x46d8d5",
+                "api_name": "kernel32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x22832e0",
+                    "0x1",
+                    "0x3aebcd0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x46d8d5",
+                "api_name": "kernel32.GetStdHandle",
+                "args": [
+                    "0xfffffffffffffff4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x46d8d5",
+                "api_name": "kernel32.WriteFile",
+                "args": [
+                    "0x0",
+                    "0x1f308ef",
+                    "0x2e",
+                    "0x3aebc78",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "invalid_fetch",
+            "pc": "0x0",
+            "address": "0x0",
+            "instr": "add byte ptr [rax], al",
+            "regs": {
+                "rsp": "0x0000000003aebc68",
+                "rbp": "0x0000000003aebca8",
+                "rip": "0x0000000000000000",
+                "rsi": "0x0000000003aebb01",
+                "rdi": "0x000000000043fac0",
+                "rax": "0x0000000000000000",
+                "rbx": "0xffffffffffffd8f0",
+                "rcx": "0xffffffffffffffff",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000003aebc90",
+                "r9": "0x0000000003aebc78",
+                "r10": "0x000000000000005a",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000003aebea0",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000003896320",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000000046dcd8 -> emu.module.060de3b4cf3056f24de882b4408020cee0510cb1ff0e5007c621bc98e5b4bdf3.0x400000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x000000000043d25e -> emu.module.060de3b4cf3056f24de882b4408020cee0510cb1ff0e5007c621bc98e5b4bdf3.0x400000",
+                "sp+0x20: 0x0000000003aebcb0 -> emu.stack.0x3ada000",
+                "sp+0x28: 0xffffffffffffd8f0",
+                "sp+0x30: 0x0000000003aebc78 -> emu.stack.0x3ada000",
+                "sp+0x38: 0x0000000001f308ef -> emu.module.060de3b4cf3056f24de882b4408020cee0510cb1ff0e5007c621bc98e5b4bdf3.0x400000",
+                "sp+0x40: 0x0000000003aebd08 -> emu.stack.0x3ada000",
+                "sp+0x48: 0x000000000043fb79 -> emu.module.060de3b4cf3056f24de882b4408020cee0510cb1ff0e5007c621bc98e5b4bdf3.0x400000",
+                "sp+0x50: 0x00000000ffffd8f0",
+                "sp+0x58: 0x0000000001f308ef -> emu.module.060de3b4cf3056f24de882b4408020cee0510cb1ff0e5007c621bc98e5b4bdf3.0x400000",
+                "sp+0x60: 0x000000000000002e",
+                "sp+0x68: 0x000000000000002e",
+                "sp+0x70: 0x000000000043d25e -> emu.module.060de3b4cf3056f24de882b4408020cee0510cb1ff0e5007c621bc98e5b4bdf3.0x400000",
+                "sp+0x78: 0x0000000003aebd08 -> emu.stack.0x3ada000"
+            ]
+        },
+        "dynamic_code_segments": []
+    }
+]

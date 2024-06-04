@@ -1,0 +1,235 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401370",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "9db13bf3d11f4a5d6651b0d6054b9217a03646f3ca9707f9486a1ca080ea21d3",
+        "apis": [
+            {
+                "pc": "0x40173b",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x401747",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x32ec"
+            },
+            {
+                "pc": "0x40174f",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x3300"
+            },
+            {
+                "pc": "0x401757",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x401763",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fd0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401172",
+                "api_name": "KERNEL32.InterlockedCompareExchange",
+                "args": [
+                    "0x40d2b8",
+                    "0x1212000",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4016d1",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x401322",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x401338",
+                "api_name": "msvcrt.__p__fmode",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x401346",
+                "api_name": "msvcrt.__p__commode",
+                "args": [],
+                "ret_val": "0x4600"
+            },
+            {
+                "pc": "0x401660",
+                "api_name": "msvcrt._controlfp",
+                "args": [
+                    "0x10000",
+                    "0x30000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x407530",
+                "api_name": "KERNEL32.InitializeCriticalSectionAndSpinCount",
+                "args": [
+                    "0x40d1f4",
+                    "0xfa0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40753b",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "api-ms-win-core-synch-l1-2-0.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x40755e",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SleepConditionVariableCS"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x40756c",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "WakeAllConditionVariable"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x40106e",
+                "api_name": "msvcrt._onexit",
+                "args": [
+                    "0x4075a0"
+                ],
+                "ret_val": "0x4075a0"
+            },
+            {
+                "pc": "0x401550",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x401502"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4011f8",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x4092e8",
+                    "0x4092f0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401211",
+                "api_name": "KERNEL32.InterlockedExchange",
+                "args": [
+                    "0x40d2b8",
+                    "0x0"
+                ],
+                "ret_val": "0x1212000"
+            },
+            {
+                "pc": "0x40581a",
+                "api_name": "KERNEL32.CreateFileW",
+                "args": [
+                    "\\\\.\\prl_tg",
+                    "GENERIC_WRITE",
+                    "0x3",
+                    "0x0",
+                    "OPEN_EXISTING",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0xffffffff"
+            },
+            {
+                "pc": "0x405831",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x2"
+            }
+        ],
+        "ret_val": "0x5f9e652",
+        "error": {
+            "type": "Invalid instruction (UC_ERR_INSN_INVALID)",
+            "pc": "0x404e1a",
+            "address": "0x404e1a",
+            "instr": "rdpmc ",
+            "regs": {
+                "esp": "0x012116c8",
+                "ebp": "0x012116e0",
+                "eip": "0x00404e1a",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x05f9e652",
+                "ebx": "0x05f9e652",
+                "ecx": "0x00000000",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x00409590 -> emu.module.2e44f9c5b9e24923ddb5f0a68bf0d966190e47c8d0941c74c34ff241b90c6aa2.0x400000",
+                "sp+0x0c: 0x0121172c -> emu.stack.0x1200000",
+                "sp+0x10: 0x00404f8b -> emu.module.2e44f9c5b9e24923ddb5f0a68bf0d966190e47c8d0941c74c34ff241b90c6aa2.0x400000",
+                "sp+0x14: 0x012116e0 -> emu.stack.0x1200000",
+                "sp+0x18: 0x05f9e652",
+                "sp+0x1c: 0x05f9e652",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00405039 -> emu.module.2e44f9c5b9e24923ddb5f0a68bf0d966190e47c8d0941c74c34ff241b90c6aa2.0x400000",
+                "sp+0x34: 0x0040cc8c -> emu.module.2e44f9c5b9e24923ddb5f0a68bf0d966190e47c8d0941c74c34ff241b90c6aa2.0x400000",
+                "sp+0x38: 0xe59c22ea",
+                "sp+0x3c: 0x00409590 -> emu.module.2e44f9c5b9e24923ddb5f0a68bf0d966190e47c8d0941c74c34ff241b90c6aa2.0x400000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 437, in start\n    count=self.max_instructions)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/engines/unicorn_eng.py\", line 203, in start\n    return self.emu.emu_start(addr, 0xFFFFFFFF, timeout=timeout, count=count)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/unicorn/unicorn.py\", line 318, in emu_start\n    raise UcError(status)\nunicorn.unicorn.UcError: Invalid instruction (UC_ERR_INSN_INVALID)\n"
+        },
+        "file_access": [
+            {
+                "event": "create",
+                "path": "\\\\.\\prl_tg",
+                "open_flags": [
+                    "OPEN_EXISTING"
+                ],
+                "access_flags": [
+                    "GENERIC_WRITE"
+                ]
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

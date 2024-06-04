@@ -1,0 +1,126 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140004728",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "9d478f6d9f2ed8f7df9e4828808f15f8c4e593e059b32bc6c99d187616b514f7",
+        "apis": [
+            {
+                "pc": "0x140004a82",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140004a90",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x51b8"
+            },
+            {
+                "pc": "0x140004a9c",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x51a4"
+            },
+            {
+                "pc": "0x140004aac",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140004624",
+                "api_name": "MSVCR120._initterm_e",
+                "args": [
+                    "0x140005308",
+                    "0x140005328"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14000465a",
+                "api_name": "MSVCR120._initterm",
+                "args": [
+                    "0x1400052b8",
+                    "0x140005300"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001f7e",
+                "api_name": "MSVCR120.memset",
+                "args": [
+                    "0x1211d89",
+                    "0x0",
+                    "0x103"
+                ],
+                "ret_val": "0x1211d89"
+            },
+            {
+                "pc": "0x140001fa5",
+                "api_name": "KERNEL32.GetTempPathA",
+                "args": [
+                    "0x104",
+                    "C:\\Windows\\temp\\"
+                ],
+                "ret_val": "0x10"
+            }
+        ],
+        "ret_val": "0x10",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf09c",
+            "address": "0xfeedf09c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211d30",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf09c",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000000000010",
+                "rbx": "0x0000000001211f28",
+                "rcx": "0x0000000001211d88",
+                "rdx": "0x0000000001211d88",
+                "r8": "0x0000000000000103",
+                "r9": "0x0000000000004030",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140001fb0 -> emu.module.095f2ba7a861e4e22bf7a8e168336308feef7a484eef03b0316bf13e2c98cbf3.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0xfffffffffffffffe",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x000000000000000f",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x6f646e69575c3a43",
+                "sp+0x60: 0x5c706d65745c7377",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "SHLWAPI.PathFileExistsA"
+        },
+        "dynamic_code_segments": []
+    }
+]

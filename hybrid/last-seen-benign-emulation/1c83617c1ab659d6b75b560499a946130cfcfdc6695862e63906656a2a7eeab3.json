@@ -1,0 +1,58 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x1c0020010",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1200f20",
+        "error": {
+            "type": "'NoneType' object has no attribute 'to_bytes'",
+            "pc": "0xfeedf030",
+            "address": "0xfeedf030",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200e80",
+                "rbp": "0x0000000001200f68",
+                "rip": "0x00000000feedf030",
+                "rsi": "0x00000000007eb870",
+                "rdi": "0x00000000007eb870",
+                "rax": "0x0000000001200f20",
+                "rbx": "0x00000000007eba00",
+                "rcx": "0x0000000001200f20",
+                "rdx": "0x0000000000020019",
+                "r8": "0x0000000001200ea8",
+                "r9": "0x0000000000000000",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x00000000007eba60",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001c00159b0 -> emu.module.1c83617c1ab659d6b75b560499a946130cfcfdc6695862e63906656a2a7eeab3.0x1c0000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000030",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x00000001c00230d8 -> emu.module.1c83617c1ab659d6b75b560499a946130cfcfdc6695862e63906656a2a7eeab3.0x1c0000000",
+                "sp+0x40: 0x0000000000000240",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x00000001c0020d36 -> emu.module.1c83617c1ab659d6b75b560499a946130cfcfdc6695862e63906656a2a7eeab3.0x1c0000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 1169, in handle_import_func\n    rv = self.api.call_api_func(mod, func, argv, ctx=default_ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/winapi.py\", line 77, in call_api_func\n    return func(mod, self.emu, argv, ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/kernelmode/ntoskrnl.py\", line 2633, in ZwOpenKey\n    self.mem_write(phnd, hnd.to_bytes(self.get_ptr_size(), 'little'))\nAttributeError: 'NoneType' object has no attribute 'to_bytes'\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

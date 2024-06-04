@@ -1,0 +1,61 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4067f8",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "99c3eaea89534001ed0a6e7e7daf990abe3a12fe64cf2bc6a0aa9d916c100801",
+        "apis": [
+            {
+                "pc": "0x401115",
+                "api_name": "kernel32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            }
+        ],
+        "ret_val": "0x407004",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf018",
+            "address": "0xfeedf018",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211fa4",
+                "ebp": "0x01211fe4",
+                "eip": "0xfeedf018",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x00407004",
+                "ebx": "0x00403d70",
+                "ecx": "0x00000000",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00401102 -> emu.module.b08482472be51161f887f2b2cd31bf536a89fa8b839d04c80d1056550184be1f.0x400000",
+                "sp+0x04: 0x0040113f -> emu.module.b08482472be51161f887f2b2cd31bf536a89fa8b839d04c80d1056550184be1f.0x400000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x0040681d -> emu.module.b08482472be51161f887f2b2cd31bf536a89fa8b839d04c80d1056550184be1f.0x400000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "rtl140.@System@RegisterModule$qqrp17System@TLibModule"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,190 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1400ac0e0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "98f561a11883b566ca831e6b489737024ecbb8636798457251c281c857ee8359",
+        "apis": [
+            {
+                "pc": "0x1400ac706",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400ac714",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x78ec"
+            },
+            {
+                "pc": "0x1400ac720",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x78d8"
+            },
+            {
+                "pc": "0x1400ac730",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400abfc4",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x1400b3d08",
+                    "0x1400b3d20"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400abfe5",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x1400b3c58",
+                    "0x1400b3d00"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400ac053",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_narrow_environment",
+                "args": [],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x1400ac05b",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argv",
+                "args": [],
+                "ret_val": "0x4ad0"
+            },
+            {
+                "pc": "0x1400ac063",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4b20"
+            },
+            {
+                "pc": "0x1400abdfa",
+                "api_name": "KERNEL32.AcquireSRWLockExclusive",
+                "args": [
+                    "0x1400ed370"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140021cf5",
+                "api_name": "KERNEL32.ReleaseSRWLockExclusive",
+                "args": [
+                    "0x1400ed370"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400abd11",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._register_onexit_function",
+                "args": [
+                    "0x1400ed338",
+                    "0x1400b2630"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400abd8e",
+                "api_name": "KERNEL32.AcquireSRWLockExclusive",
+                "args": [
+                    "0x1400ed370"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400abdce",
+                "api_name": "KERNEL32.ReleaseSRWLockExclusive",
+                "args": [
+                    "0x1400ed370"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140021d16",
+                "api_name": "KERNEL32.WakeAllConditionVariable",
+                "args": [
+                    "0x1400ed368"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400ab8a7",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0x70"
+                ],
+                "ret_val": "0x4b30"
+            },
+            {
+                "pc": "0x1400ab8a7",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0x20"
+                ],
+                "ret_val": "0x4bb0"
+            }
+        ],
+        "ret_val": "0x4bb0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf024",
+            "address": "0xfeedf024",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211b20",
+                "rbp": "0x0000000001211be1",
+                "rip": "0x00000000feedf024",
+                "rsi": "0x0000000000004b30",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000000004bb0",
+                "rbx": "0x0000000001211cb8",
+                "rcx": "0x0000000001211bf8",
+                "rdx": "0x0000000001211b98",
+                "r8": "0x00000001400ce8e8",
+                "r9": "0x0000000000000014",
+                "r10": "0x000000003d3b350f",
+                "r11": "0x0000000001211f70",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014004c176 -> emu.module.e2a1dff9bb0ed75631b2b8d0acd174f09a78a3e6d1873296b7b2735bce3b98bc.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000004b30 -> api.heap.HeapAlloc.0x4b30",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000004bb0 -> api.heap.HeapAlloc.0x4bb0"
+            ],
+            "api_name": "foundation.?Utf8ToUtf16@string@c42fl@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z"
+        },
+        "dynamic_code_segments": []
+    }
+]

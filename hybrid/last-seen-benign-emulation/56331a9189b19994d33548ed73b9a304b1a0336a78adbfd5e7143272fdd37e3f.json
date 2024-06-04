@@ -1,0 +1,187 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x3757058",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "9f490156959a508b2728d9923baba548b67a224fd14e9c5ae93494dd45f191d6",
+        "apis": [
+            {
+                "pc": "0xde03e0",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0xde081f",
+                "api_name": "kernel32.LoadLibraryA",
+                "args": [
+                    "user32.dll"
+                ],
+                "ret_val": "0x77d10000"
+            },
+            {
+                "pc": "0xde0b6d",
+                "api_name": "kernel32.LoadLibraryA",
+                "args": [
+                    "advapi32.dll"
+                ],
+                "ret_val": "0x78000000"
+            },
+            {
+                "pc": "0xde0e75",
+                "api_name": "kernel32.LoadLibraryA",
+                "args": [
+                    "ntdll.dll"
+                ],
+                "ret_val": "0x7c000000"
+            },
+            {
+                "pc": "0xde118a",
+                "api_name": "kernel32.LoadLibraryA",
+                "args": [
+                    "shell32.dll"
+                ],
+                "ret_val": "0x69000000"
+            },
+            {
+                "pc": "0xde148b",
+                "api_name": "kernel32.LoadLibraryA",
+                "args": [
+                    "shlwapi.dll"
+                ],
+                "ret_val": "0x67000000"
+            },
+            {
+                "pc": "0xe087ef",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetLastError"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0xe08b12",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetLastError"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0xe0a417",
+                "api_name": "kernel32.InitializeCriticalSection",
+                "args": [
+                    "0xd5c7b4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0xe13596",
+                "api_name": "kernel32.GetUserDefaultUILanguage",
+                "args": [],
+                "ret_val": "0xffff"
+            },
+            {
+                "pc": "0xd681e3",
+                "api_name": "kernel32.GetProcessHeap",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0xd68208",
+                "api_name": "ntdll.RtlAllocateHeap",
+                "args": [
+                    "0x45f0",
+                    "0x8",
+                    "0x1000"
+                ],
+                "ret_val": "0x7000"
+            },
+            {
+                "pc": "0xd68208",
+                "api_name": "ntdll.RtlAllocateHeap",
+                "args": [
+                    "0x45f0",
+                    "0x8",
+                    "0x10"
+                ],
+                "ret_val": "0x4610"
+            },
+            {
+                "pc": "0xe17aaa",
+                "api_name": "kernel32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x4124"
+            },
+            {
+                "pc": "0xe17bce",
+                "api_name": "kernel32.OpenThread",
+                "args": [
+                    "0x1f03ff",
+                    "0x0",
+                    "0x4124"
+                ],
+                "ret_val": "0x248"
+            },
+            {
+                "pc": "0xe19e9d",
+                "api_name": "advapi32.AllocateAndInitializeSid",
+                "args": [
+                    "0xd5eca0",
+                    "0x1",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0xd639c8"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0xd62cfc",
+        "error": {
+            "type": "invalid_fetch",
+            "pc": "0x0",
+            "address": "0x0",
+            "instr": "add byte ptr [eax], al",
+            "regs": {
+                "esp": "0x0519dfd4",
+                "ebp": "0x00a6b000",
+                "eip": "0x00000000",
+                "esi": "0x00d62cfc",
+                "edi": "0x004001b8",
+                "eax": "0x00d62cfc",
+                "ebx": "0x00000000",
+                "ecx": "0x00000001",
+                "edx": "0x00000002"
+            },
+            "stack": [
+                "sp+0x00: 0x00e1a0b1 -> emu.module.56331a9189b19994d33548ed73b9a304b1a0336a78adbfd5e7143272fdd37e3f.0x400000",
+                "sp+0x04: 0x00000001",
+                "sp+0x08: 0x00d62cfc -> emu.module.56331a9189b19994d33548ed73b9a304b1a0336a78adbfd5e7143272fdd37e3f.0x400000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00d5b4e4 -> emu.module.56331a9189b19994d33548ed73b9a304b1a0336a78adbfd5e7143272fdd37e3f.0x400000",
+                "sp+0x14: 0xfeedf000",
+                "sp+0x18: 0x00004000 -> emu.module_arg_0.0x4000",
+                "sp+0x1c: 0x00004010 -> emu.module_arg_1.0x4010",
+                "sp+0x20: 0x00004020 -> emu.module_arg_2.0x4020",
+                "sp+0x24: 0x00004030 -> emu.module_arg_3.0x4030",
+                "sp+0x28: 0xfeedf000"
+            ]
+        },
+        "dynamic_code_segments": []
+    }
+]

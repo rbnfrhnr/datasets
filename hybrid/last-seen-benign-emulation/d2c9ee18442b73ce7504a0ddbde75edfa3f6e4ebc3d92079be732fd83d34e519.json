@@ -1,0 +1,129 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4063a9",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "b6ca0d63e2dfcf9e0a82a63a9f17bdbcd15262acad4a7cc426731da270c941c5",
+        "apis": [
+            {
+                "pc": "0x4063cf",
+                "api_name": "KERNEL32.GetVersionExA",
+                "args": [
+                    "0x1211ed4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40641e",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x40ac55",
+                "api_name": "KERNEL32.HeapCreate",
+                "args": [
+                    "0x0",
+                    "0x1000",
+                    "0x0"
+                ],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x40f8a9",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x40503f",
+                "api_name": "KERNEL32.GetVersion",
+                "args": [],
+                "ret_val": "0x1db10106"
+            },
+            {
+                "pc": "0x405083",
+                "api_name": "KERNEL32.VirtualQuery",
+                "args": [
+                    "0x405020",
+                    "0x1211e44",
+                    "0x1c"
+                ],
+                "ret_val": "0x1c"
+            },
+            {
+                "pc": "0x405105",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x40510b",
+                "api_name": "KERNEL32.InterlockedExchange",
+                "args": [
+                    "0x41b0b4",
+                    "0x77000000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4050d8",
+                "api_name": "KERNEL32.InterlockedExchange",
+                "args": [
+                    "0x41c3f0",
+                    "0x77000d26"
+                ],
+                "ret_val": "0x4131ff"
+            }
+        ],
+        "ret_val": "0x4131ff",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0e0",
+            "address": "0xfeedf0e0",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211e28",
+                "ebp": "0x01211e60",
+                "eip": "0xfeedf0e0",
+                "esi": "0x0041b0b4",
+                "edi": "0x77000000",
+                "eax": "0x004131ff",
+                "ebx": "0xfeedf0cc",
+                "ecx": "0x00001ed0",
+                "edx": "0x00001e00"
+            },
+            "stack": [
+                "sp+0x00: 0x004050e9 -> emu.module.d2c9ee18442b73ce7504a0ddbde75edfa3f6e4ebc3d92079be732fd83d34e519.0x400000",
+                "sp+0x04: 0x00400000 -> emu.module.d2c9ee18442b73ce7504a0ddbde75edfa3f6e4ebc3d92079be732fd83d34e519.0x400000",
+                "sp+0x08: 0x0041c3f0 -> emu.module.d2c9ee18442b73ce7504a0ddbde75edfa3f6e4ebc3d92079be732fd83d34e519.0x400000",
+                "sp+0x0c: 0x00000004",
+                "sp+0x10: 0x0041d2a8 -> emu.module.d2c9ee18442b73ce7504a0ddbde75edfa3f6e4ebc3d92079be732fd83d34e519.0x400000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00400000 -> emu.module.d2c9ee18442b73ce7504a0ddbde75edfa3f6e4ebc3d92079be732fd83d34e519.0x400000",
+                "sp+0x20: 0x00400000 -> emu.module.d2c9ee18442b73ce7504a0ddbde75edfa3f6e4ebc3d92079be732fd83d34e519.0x400000",
+                "sp+0x24: 0x00000040",
+                "sp+0x28: 0x00025000",
+                "sp+0x2c: 0x00001000 -> emu.gdt.0x1000",
+                "sp+0x30: 0x00000040",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x01211eb4 -> emu.stack.0x1200000",
+                "sp+0x3c: 0x0041321e -> emu.module.d2c9ee18442b73ce7504a0ddbde75edfa3f6e4ebc3d92079be732fd83d34e519.0x400000"
+            ],
+            "api_name": "KERNEL32.FlushInstructionCache"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,151 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140001fb0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "d27b736c3072beed2f0ed1eeba390e3213ec4325d4a2e37a5ca30f70b95f0024",
+        "apis": [
+            {
+                "pc": "0x140001ffa",
+                "api_name": "KERNEL32.GetProcessHeap",
+                "args": [],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x14000200d",
+                "api_name": "KERNEL32.HeapSetInformation",
+                "args": [
+                    "0x4940",
+                    "0x1",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140002018",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140002023",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x5134"
+            },
+            {
+                "pc": "0x14000202f",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x5148"
+            },
+            {
+                "pc": "0x14000203b",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x14000204c",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14000206c",
+                "api_name": "KERNEL32.VirtualProtect",
+                "args": [
+                    "0x1400488d0",
+                    "0x8",
+                    "0x40",
+                    "0x1211f88"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140002096",
+                "api_name": "KERNEL32.VirtualProtect",
+                "args": [
+                    "0x1400488d0",
+                    "0x8",
+                    "0x40",
+                    "0x1211f88"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400020fb",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x14000210b",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "WerRegisterMemoryBlock"
+                ],
+                "ret_val": "0xfeee0000"
+            }
+        ],
+        "ret_val": "0xfeee0000",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0000",
+            "address": "0xfeee0000",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211f10",
+                "rbp": "0x0000000001211f38",
+                "rip": "0x00000000feee0000",
+                "rsi": "0x00000001400488d0",
+                "rdi": "0x0000000000000008",
+                "rax": "0x00000000feee0000",
+                "rbx": "0x0000000080004001",
+                "rcx": "0x00000001400488d0",
+                "rdx": "0x0000000000000008",
+                "r8": "0x0000000000000040",
+                "r9": "0x0000000001211f88",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000005265c14",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014000212a -> emu.module.f46a62bc8b0b799e563df1a21c07a8eaab28a7bf20740db8296ef6ffc518284e.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000001211f78 -> emu.stack.0x1200000",
+                "sp+0x30: 0x00000001400020a7 -> emu.module.f46a62bc8b0b799e563df1a21c07a8eaab28a7bf20740db8296ef6ffc518284e.0x140000000",
+                "sp+0x38: 0x01dab64114785577",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x01dab64114785577",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000001211fd8 -> emu.stack.0x1200000",
+                "sp+0x70: 0x0000000140001fb9 -> emu.module.f46a62bc8b0b799e563df1a21c07a8eaab28a7bf20740db8296ef6ffc518284e.0x140000000",
+                "sp+0x78: 0x0000000000000040"
+            ],
+            "api_name": "kernel32.WerRegisterMemoryBlock"
+        },
+        "dynamic_code_segments": []
+    }
+]

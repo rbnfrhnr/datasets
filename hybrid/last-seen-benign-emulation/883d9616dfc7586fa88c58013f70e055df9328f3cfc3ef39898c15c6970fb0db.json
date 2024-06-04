@@ -1,0 +1,95 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x100001c74",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "318bfbd8543bb5494b1855577c7a78541ff961380acf11968db03b27e41995e0",
+        "apis": [
+            {
+                "pc": "0x1000028f4",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1000028ff",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x6be0"
+            },
+            {
+                "pc": "0x10000290b",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x6bf4"
+            },
+            {
+                "pc": "0x100002917",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x100002928",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0xb5813c202c77",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf018",
+            "address": "0xfeedf018",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211c30",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf018",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000b5813c202c77",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000100001270",
+                "rdx": "0x0000000100001788",
+                "r8": "0x00000001000046e0",
+                "r9": "0x00000001000046d8",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000b5813d01301f",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001000017f1 -> emu.module.883d9616dfc7586fa88c58013f70e055df9328f3cfc3ef39898c15c6970fb0db.0x100000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000100001cde -> emu.module.883d9616dfc7586fa88c58013f70e055df9328f3cfc3ef39898c15c6970fb0db.0x100000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ADVAPI32.EventRegister"
+        },
+        "dynamic_code_segments": []
+    }
+]

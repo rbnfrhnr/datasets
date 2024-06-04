@@ -1,0 +1,133 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x40e095",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "a672eeb6701931227b4d43aa338c7f4f90c845da02016cd57eb63606b7e6488d",
+        "apis": [
+            {
+                "pc": "0x40e621",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fc8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x40e630",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x6d4"
+            },
+            {
+                "pc": "0x40e639",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x6c0"
+            },
+            {
+                "pc": "0x40e646",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fc0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40e0ef",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40df69",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x4101f0",
+                    "0x410200"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40df8f",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x4101ac",
+                    "0x4101ec"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40dff6",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_narrow_environment",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x40dffd",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argv",
+                "args": [],
+                "ret_val": "0x46f0"
+            },
+            {
+                "pc": "0x40e004",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4730"
+            },
+            {
+                "pc": "0x4016c3",
+                "api_name": "KERNEL32.SetErrorMode",
+                "args": [
+                    "0x3"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x1211f64",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0b0",
+            "address": "0xfeedf0b0",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f50",
+                "ebp": "0x01211f70",
+                "eip": "0xfeedf0b0",
+                "esi": "0x000046f4",
+                "edi": "0x000045f0",
+                "eax": "0x01211f64",
+                "ebx": "0x00000000",
+                "ecx": "0xd27d5700",
+                "edx": "0x01212000"
+            },
+            "stack": [
+                "sp+0x00: 0x00402706 -> emu.module.0a29cd593101b526eb14863f4e4abfdb24bc0124f639b2598e5f35e175bb95be.0x400000",
+                "sp+0x04: 0x00414548 -> emu.module.0a29cd593101b526eb14863f4e4abfdb24bc0124f639b2598e5f35e175bb95be.0x400000",
+                "sp+0x08: 0xa964be68",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00414548 -> emu.module.0a29cd593101b526eb14863f4e4abfdb24bc0124f639b2598e5f35e175bb95be.0x400000",
+                "sp+0x14: 0x01211f90 -> emu.stack.0x1200000",
+                "sp+0x18: 0x0040eabc -> emu.module.0a29cd593101b526eb14863f4e4abfdb24bc0124f639b2598e5f35e175bb95be.0x400000",
+                "sp+0x1c: 0xffffffff",
+                "sp+0x20: 0x01211f9c -> emu.stack.0x1200000",
+                "sp+0x24: 0x004016cf -> emu.module.0a29cd593101b526eb14863f4e4abfdb24bc0124f639b2598e5f35e175bb95be.0x400000",
+                "sp+0x28: 0xa964be84",
+                "sp+0x2c: 0x000045f0 -> api.envp.0x45f0",
+                "sp+0x30: 0x000046f4 -> api.argv.0x46f0",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x01211f78 -> emu.stack.0x1200000"
+            ],
+            "api_name": "MSVCP140._Mtx_lock"
+        },
+        "dynamic_code_segments": []
+    }
+]

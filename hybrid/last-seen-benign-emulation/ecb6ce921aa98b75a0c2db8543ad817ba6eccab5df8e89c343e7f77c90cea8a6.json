@@ -1,0 +1,115 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x1400366c0",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "072ea71fa7cfb1b4905183e36ec8f199adab70fffedf66deb788eaf9af26f096",
+        "apis": [
+            {
+                "pc": "0x1400366e6",
+                "api_name": "ntoskrnl.RtlGetVersion",
+                "args": [
+                    "0x1200e88"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14003672e",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x140032b70",
+                    "86900"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14003690e",
+                "api_name": "ntoskrnl.PsGetVersion",
+                "args": [
+                    "0x1200e70",
+                    "0x1200e68",
+                    "0x1400326f4",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14000e489",
+                "api_name": "ntoskrnl.ExAllocatePoolWithTag",
+                "args": [
+                    "0x1",
+                    "0x1000",
+                    "sbox"
+                ],
+                "ret_val": "0xbd4000"
+            },
+            {
+                "pc": "0x14000e511",
+                "api_name": "ntoskrnl.ExAllocatePoolWithTag",
+                "args": [
+                    "0x0",
+                    "0x68",
+                    "sbox"
+                ],
+                "ret_val": "0x7ebc80"
+            },
+            {
+                "pc": "0x14000e545",
+                "api_name": "ntoskrnl.ExInitializeResourceLite",
+                "args": [
+                    "0x7ebc80"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x1200dc0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf2ac",
+            "address": "0xfeedf2ac",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200d70",
+                "rbp": "0x0000000000000008",
+                "rip": "0x00000000feedf2ac",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000bd4050",
+                "rax": "0x0000000001200dc0",
+                "rbx": "0x00000000007eb801",
+                "rcx": "0x0000000000bd4050",
+                "rdx": "0x0000000000000008",
+                "r8": "0x0000000000000001",
+                "r9": "0x0000000000000100",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014000e90c -> emu.module.ecb6ce921aa98b75a0c2db8543ad817ba6eccab5df8e89c343e7f77c90cea8a6.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x000000014003690e -> emu.module.ecb6ce921aa98b75a0c2db8543ad817ba6eccab5df8e89c343e7f77c90cea8a6.0x140000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x000000014000e3ce -> emu.module.ecb6ce921aa98b75a0c2db8543ad817ba6eccab5df8e89c343e7f77c90cea8a6.0x140000000",
+                "sp+0x58: 0x00000000007eb801 -> api.struct.SSDT.0x7eb060",
+                "sp+0x60: 0x0000000000000080",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x00000000007eba60 -> emu.object._Driver_ecb6ce921aa98b75a0c2db8543ad817ba6eccab5df8e89c343e7f77c90cea8a6.reg_path.0x7eba60",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ntoskrnl.KeGetCurrentIrql"
+        },
+        "dynamic_code_segments": []
+    }
+]

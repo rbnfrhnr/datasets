@@ -1,0 +1,135 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x1cca0",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "d7393420b7a58cff02b2f9a52277d3c5382d275f197798049f4b6374e45bbe78",
+        "apis": [
+            {
+                "pc": "0x1246b",
+                "api_name": "NTOSKRNL.ExAllocatePoolWithTag",
+                "args": [
+                    "0x0",
+                    "0x10",
+                    "Wdm "
+                ],
+                "ret_val": "0x7ebc80"
+            },
+            {
+                "pc": "0x1c722",
+                "api_name": "NTOSKRNL.RtlInitUnicodeString",
+                "args": [
+                    "0x1200e88",
+                    "Class"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1c781",
+                "api_name": "NTOSKRNL.RtlInitUnicodeString",
+                "args": [
+                    "0x1200e78",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Control"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1c402",
+                "api_name": "NTOSKRNL.ExAllocatePoolWithTag",
+                "args": [
+                    "0x0",
+                    "0x64",
+                    "Wdm "
+                ],
+                "ret_val": "0x7ebca0"
+            },
+            {
+                "pc": "0x1c436",
+                "api_name": "NTOSKRNL.RtlCopyUnicodeString",
+                "args": [
+                    "0x1200f78",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Control"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1c468",
+                "api_name": "NTOSKRNL.ExAllocatePoolWithTag",
+                "args": [
+                    "0x0",
+                    "0xa",
+                    "Wdm "
+                ],
+                "ret_val": "0x7ebd10"
+            },
+            {
+                "pc": "0x1c491",
+                "api_name": "NTOSKRNL.RtlCopyUnicodeString",
+                "args": [
+                    "0x1200f88",
+                    "Class"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1c565",
+                "api_name": "NTOSKRNL.ExAllocatePoolWithTag",
+                "args": [
+                    "0x1",
+                    "0x70",
+                    "Wdm "
+                ],
+                "ret_val": "0x7ebd20"
+            }
+        ],
+        "ret_val": "0x1200da8",
+        "error": {
+            "type": "'NoneType' object has no attribute 'to_bytes'",
+            "pc": "0xfeedf06c",
+            "address": "0xfeedf06c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200d60",
+                "rbp": "0x0000000000000000",
+                "rip": "0x00000000feedf06c",
+                "rsi": "0x0000000001200f01",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000001200da8",
+                "rbx": "0x0000000001200f58",
+                "rcx": "0x0000000001200f60",
+                "rdx": "0x0000000000020019",
+                "r8": "0x0000000001200db8",
+                "r9": "0x0000000000000000",
+                "r10": "0x006700650052005c",
+                "r11": "0x00000000007ebd86",
+                "r12": "0x0000000001200e78",
+                "r13": "0x000000000000000a",
+                "r14": "0x0000000000020019",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000000001c671 -> emu.module.48697a79240f12ac19c3fd02084bd4689418ece2edc6c5b280d8b75a4df9a6eb.0x10000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000700070",
+                "sp+0x50: 0x00000000007ebd20 -> api.pool.PagedPool.Wdm .0x7ebd20",
+                "sp+0x58: 0x0000000000000030",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000001200da8 -> emu.stack.0x1200000",
+                "sp+0x70: 0x0000000000000040",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 1169, in handle_import_func\n    rv = self.api.call_api_func(mod, func, argv, ctx=default_ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/winapi.py\", line 77, in call_api_func\n    return func(mod, self.emu, argv, ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/kernelmode/ntoskrnl.py\", line 2633, in ZwOpenKey\n    self.mem_write(phnd, hnd.to_bytes(self.get_ptr_size(), 'little'))\nAttributeError: 'NoneType' object has no attribute 'to_bytes'\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,129 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x19010",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "58ed8d621ff6eafbd618cc5ebcf851c913751a2ee13f11313a04e0d6dc397782",
+        "apis": [
+            {
+                "pc": "0x13f4d",
+                "api_name": "ntoskrnl.DbgPrint",
+                "args": [
+                    "[CTIA_SYS][DriverEntry]Entering DriverEntry - CtiAIO v1,1,23,0831"
+                ],
+                "ret_val": "0x41"
+            },
+            {
+                "pc": "0x13f5f",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f80",
+                    "\\Device\\CtiAIo"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x13f8c",
+                "api_name": "ntoskrnl.IoCreateDevice",
+                "args": [
+                    "0x7eb870",
+                    "0x0",
+                    "\\Device\\CtiAIo",
+                    "0x8050",
+                    "0x0",
+                    "0x0",
+                    "0x1200f78"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x13fcc",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f90",
+                    "\\DosDevices\\CtiAIo"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x13fdc",
+                "api_name": "ntoskrnl.IoCreateSymbolicLink",
+                "args": [
+                    "\\DosDevices\\CtiAIo",
+                    "\\Device\\CtiAIo"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14362",
+                "api_name": "ntoskrnl.DbgPrint",
+                "args": [
+                    "[CTIA_SYS][DriverEntry]Chipset Vid = 0x0000\n"
+                ],
+                "ret_val": "0x2c"
+            },
+            {
+                "pc": "0x14370",
+                "api_name": "ntoskrnl.DbgPrint",
+                "args": [
+                    "[CTIA_SYS][DriverEntry]X99_X299 Did = 0x0000\n"
+                ],
+                "ret_val": "0x2d"
+            },
+            {
+                "pc": "0x14383",
+                "api_name": "ntoskrnl.DbgPrint",
+                "args": [
+                    "[CTIA_SYS][DriverEntry]McfgBaseAddr = 0x00000000\n"
+                ],
+                "ret_val": "0x31"
+            },
+            {
+                "pc": "0x14396",
+                "api_name": "ntoskrnl.DbgPrint",
+                "args": [
+                    "[CTIA_SYS][DriverEntry]SmbusMemAddres = 0x00000000\n"
+                ],
+                "ret_val": "0x33"
+            },
+            {
+                "pc": "0x143a9",
+                "api_name": "ntoskrnl.DbgPrint",
+                "args": [
+                    "[CTIA_SYS][DriverEntry]SmbusIoAddres = 0x00000000\n"
+                ],
+                "ret_val": "0x32"
+            },
+            {
+                "pc": "0x143cc",
+                "api_name": "ntoskrnl.DbgPrint",
+                "args": [
+                    "[CTIA_SYS][DriverEntry]Bus,Dev,Fn = 0,0,0\n"
+                ],
+                "ret_val": "0x2a"
+            },
+            {
+                "pc": "0x143df",
+                "api_name": "ntoskrnl.DbgPrint",
+                "args": [
+                    "[CTIA_SYS][DriverEntry]SMBusType = 0\n"
+                ],
+                "ret_val": "0x25"
+            },
+            {
+                "pc": "0x143f9",
+                "api_name": "ntoskrnl.DbgPrint",
+                "args": [
+                    "[CTIA_SYS][DriverEntry]Leaving DriverEntry\n"
+                ],
+                "ret_val": "0x2b"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,112 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x1b34b",
+        "ep_args": [
+            "0x7e5da0",
+            "0x7e5ee0"
+        ],
+        "apihash": "a62307c81f911d243fa4a2edc8f00f1a785c53136e7883b45024ab81d2929e1b",
+        "apis": [
+            {
+                "pc": "0x157b1",
+                "api_name": "ntoskrnl.EtwRegister",
+                "args": [
+                    "aabf8b86-7936-4fa2-acb0-63127f879dbf",
+                    "0x15736",
+                    "0x131a8",
+                    "0x131a0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1837d",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f9c",
+                    "IoCreateDeviceSecure"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x18389",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "IoCreateDeviceSecure"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x183a7",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f9c",
+                    "IoValidateDeviceIoControlAccess"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x183ad",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "IoValidateDeviceIoControlAccess"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x1b22b",
+                "api_name": "ntoskrnl.IoCreateDeviceSecure",
+                "args": [
+                    "0x7e5da0",
+                    "0x0",
+                    "\\Device\\PcwDrv",
+                    "0x22",
+                    "0x100",
+                    "0x0",
+                    "0x12458",
+                    "0x0",
+                    "0x1200fec"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x1200fc8",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf08c",
+            "address": "0xfeedf08c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01200f40",
+                "ebp": "0x01200fcc",
+                "eip": "0xfeedf08c",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x01200fc8",
+                "ebx": "0x00000001",
+                "ecx": "0x00000000",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0001b05e -> emu.module.a91f15b133f2619912cf750e6f3662e011cd0fa4b9477ce532ce3196d23307d9.0x10000",
+                "sp+0x04: 0x01200fc8 -> emu.stack.0x1200000",
+                "sp+0x08: 0x00010000 -> emu.module.a91f15b133f2619912cf750e6f3662e011cd0fa4b9477ce532ce3196d23307d9.0x10000",
+                "sp+0x0c: 0x01200fac -> emu.stack.0x1200000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x007e5da0 -> emu.object._Driver_a91f15b133f2619912cf750e6f3662e011cd0fa4b9477ce532ce3196d23307d9.0x7e5da0",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "ntoskrnl.ExRegisterExtension"
+        },
+        "dynamic_code_segments": []
+    }
+]

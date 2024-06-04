@@ -1,0 +1,81 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x161a8",
+        "ep_args": [
+            "0x7e5da0",
+            "0x7e5ee0"
+        ],
+        "apihash": "85d069343cdc597f1dea277d546ce01f4a97ef7a7a190e7b68b177bce69fa472",
+        "apis": [
+            {
+                "pc": "0x1605b",
+                "api_name": "ntoskrnl.ExAllocatePoolWithTag",
+                "args": [
+                    "0x1",
+                    "0xea",
+                    "IrEn"
+                ],
+                "ret_val": "0x7e80f0"
+            },
+            {
+                "pc": "0x16071",
+                "api_name": "ntoskrnl.memcpy",
+                "args": [
+                    "0x7e80f0",
+                    "0x7e5ee8",
+                    "0xe8"
+                ],
+                "ret_val": "0x7e80f0"
+            },
+            {
+                "pc": "0x1608e",
+                "api_name": "ntoskrnl.memset",
+                "args": [
+                    "0x1200f74",
+                    "0x0",
+                    "0x70"
+                ],
+                "ret_val": "0x1200f74"
+            }
+        ],
+        "ret_val": "0x1200f74",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf044",
+            "address": "0xfeedf044",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01200f54",
+                "ebp": "0x01200ff0",
+                "eip": "0xfeedf044",
+                "esi": "0x007e5ee0",
+                "edi": "0x00000000",
+                "eax": "0x01200f74",
+                "ebx": "0x00000000",
+                "ecx": "0x01200fec",
+                "edx": "0x01200fec"
+            },
+            "stack": [
+                "sp+0x00: 0x00016102 -> emu.module.688176dab91be569280e4822e4c5bde755794d293591c53f8047ad59c441751d.0x10000",
+                "sp+0x04: 0x80000000",
+                "sp+0x08: 0x007e80f0 -> api.pool.PagedPool.IrEn.0x7e80f0",
+                "sp+0x0c: 0x01200f74 -> emu.stack.0x1200000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000020",
+                "sp+0x28: 0x000161f0 -> emu.module.688176dab91be569280e4822e4c5bde755794d293591c53f8047ad59c441751d.0x10000",
+                "sp+0x2c: 0x01200fe8 -> emu.stack.0x1200000",
+                "sp+0x30: 0x00000004",
+                "sp+0x34: 0x01200fec -> emu.stack.0x1200000",
+                "sp+0x38: 0x00000004",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "ntoskrnl.RtlQueryRegistryValues"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x140015240",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "7371cc322be2b8b3e2590e7c3bbc9903f8b94eb0072220cdfb173d9b7528e604",
+        "apis": [
+            {
+                "pc": "0x14001503a",
+                "api_name": "ntoskrnl.RtlGetVersion",
+                "args": [
+                    "0x1200e48"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140015071",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200e38",
+                    "ebUniversalProForEthernet"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140015082",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200e18",
+                    "eBUS Universal Pro for Ethernet Filter Driver"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140015093",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200e28",
+                    "{A0B15510-D345-4734-8B12-FC1DEDF5B934}"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14000903a",
+                "api_name": "ntoskrnl.KeInitializeEvent",
+                "args": [
+                    "0x140013198",
+                    "0x1",
+                    "0x0"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x140013160",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0b0",
+            "address": "0xfeedf0b0",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200d10",
+                "rbp": "0x0000000001200e18",
+                "rip": "0x00000000feedf0b0",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x00000000007eb870",
+                "rax": "0x0000000140013160",
+                "rbx": "0x00000000007eb870",
+                "rcx": "0x00000000007eb870",
+                "rdx": "0x00000000007eb870",
+                "r8": "0x0000000001200d38",
+                "r9": "0x0000000140013140",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001400151f0 -> emu.module.3d5535ae1d447cdc07df44b148f7fd53392022a5a9e8e71e3e0a8b380c0f51d5.0x140000000",
+                "sp+0x08: 0x0000000000000002",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0001000600e0018b",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x00000000005a005a",
+                "sp+0x40: 0x0000000140015310 -> emu.module.3d5535ae1d447cdc07df44b148f7fd53392022a5a9e8e71e3e0a8b380c0f51d5.0x140000000",
+                "sp+0x48: 0x00000000004c004c",
+                "sp+0x50: 0x0000000140015370 -> emu.module.3d5535ae1d447cdc07df44b148f7fd53392022a5a9e8e71e3e0a8b380c0f51d5.0x140000000",
+                "sp+0x58: 0x0000000000320032",
+                "sp+0x60: 0x00000001400152d0 -> emu.module.3d5535ae1d447cdc07df44b148f7fd53392022a5a9e8e71e3e0a8b380c0f51d5.0x140000000",
+                "sp+0x68: 0x000000014000f010 -> emu.module.3d5535ae1d447cdc07df44b148f7fd53392022a5a9e8e71e3e0a8b380c0f51d5.0x140000000",
+                "sp+0x70: 0x000000014000f5b0 -> emu.module.3d5535ae1d447cdc07df44b148f7fd53392022a5a9e8e71e3e0a8b380c0f51d5.0x140000000",
+                "sp+0x78: 0x000000014000de80 -> emu.module.3d5535ae1d447cdc07df44b148f7fd53392022a5a9e8e71e3e0a8b380c0f51d5.0x140000000"
+            ],
+            "api_name": "NDIS.NdisFRegisterFilterDriver"
+        },
+        "dynamic_code_segments": []
+    }
+]

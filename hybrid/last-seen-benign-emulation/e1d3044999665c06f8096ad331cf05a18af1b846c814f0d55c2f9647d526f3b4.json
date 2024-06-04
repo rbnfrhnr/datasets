@@ -1,0 +1,41 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x10505",
+        "ep_args": [
+            "0x7e5da0",
+            "0x7e5ee0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1200fec",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf014",
+            "address": "0xfeedf014",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01200fe4",
+                "ebp": "0x01200ff0",
+                "eip": "0xfeedf014",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x01200fec",
+                "ebx": "0x00000000",
+                "ecx": "0x0000bb40",
+                "edx": "0x007e5d90"
+            },
+            "stack": [
+                "sp+0x00: 0x00010495 -> emu.module.e1d3044999665c06f8096ad331cf05a18af1b846c814f0d55c2f9647d526f3b4.0x10000",
+                "sp+0x04: 0x01200fec -> emu.stack.0x1200000",
+                "sp+0x08: 0x0000bb40 -> emu.object._Device_Harddisk0_DR0.0xb000",
+                "sp+0x0c: 0x01201000",
+                "sp+0x10: 0xfeedf000",
+                "sp+0x14: 0x007e5da0 -> emu.object._Driver_e1d3044999665c06f8096ad331cf05a18af1b846c814f0d55c2f9647d526f3b4.0x7e5da0",
+                "sp+0x18: 0x007e5ee0 -> emu.object._Driver_e1d3044999665c06f8096ad331cf05a18af1b846c814f0d55c2f9647d526f3b4.reg_path.0x7e5ee0"
+            ],
+            "api_name": "drmk.DrmGetFilterDescriptor"
+        },
+        "dynamic_code_segments": []
+    }
+]

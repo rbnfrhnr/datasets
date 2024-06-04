@@ -1,0 +1,96 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x12450",
+        "ep_args": [
+            "0x7e5da0",
+            "0x7e5ee0"
+        ],
+        "apihash": "ad0cffa7c14647a88edccbdcf96b3e1100c08d8f4e6b6061a23d4da876f5584a",
+        "apis": [
+            {
+                "pc": "0x12463",
+                "api_name": "ntoskrnl.DbgPrint",
+                "args": [
+                    "This is the vista filter modify 2008-07-15"
+                ],
+                "ret_val": "0x2a"
+            },
+            {
+                "pc": "0x12475",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200fd8",
+                    "NFW"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x12484",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200fe8",
+                    "SecoSpace Firewall"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x12493",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200fe0",
+                    "{ef19862d-07b9-4bc2-bca9-7dd7f64462e4}"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x124ab",
+                "api_name": "ntoskrnl.memset",
+                "args": [
+                    "0x1200f68",
+                    "0x0",
+                    "0x68"
+                ],
+                "ret_val": "0x1200f68"
+            }
+        ],
+        "ret_val": "0x1200f68",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0e4",
+            "address": "0xfeedf0e4",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01200f54",
+                "ebp": "0x01200ff0",
+                "eip": "0xfeedf0e4",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x01200f68",
+                "ebx": "0x00000000",
+                "ecx": "0x007e5da0",
+                "edx": "0x007e5da0"
+            },
+            "stack": [
+                "sp+0x00: 0x000125c8 -> emu.module.5b94106e92c6bd396330b51dc734b86e9e753717cad9c1dbf13fc692758cc454.0x10000",
+                "sp+0x04: 0x007e5da0 -> emu.object._Driver_5b94106e92c6bd396330b51dc734b86e9e753717cad9c1dbf13fc692758cc454.0x7e5da0",
+                "sp+0x08: 0x007e5da0 -> emu.object._Driver_5b94106e92c6bd396330b51dc734b86e9e753717cad9c1dbf13fc692758cc454.0x7e5da0",
+                "sp+0x0c: 0x01200f68 -> emu.stack.0x1200000",
+                "sp+0x10: 0x00033564 -> emu.module.5b94106e92c6bd396330b51dc734b86e9e753717cad9c1dbf13fc692758cc454.0x10000",
+                "sp+0x14: 0x0068018b",
+                "sp+0x18: 0x00010006 -> emu.module.5b94106e92c6bd396330b51dc734b86e9e753717cad9c1dbf13fc692758cc454.0x10000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00240024",
+                "sp+0x24: 0x0001a920 -> emu.module.5b94106e92c6bd396330b51dc734b86e9e753717cad9c1dbf13fc692758cc454.0x10000",
+                "sp+0x28: 0x004c004c",
+                "sp+0x2c: 0x0001a8d0 -> emu.module.5b94106e92c6bd396330b51dc734b86e9e753717cad9c1dbf13fc692758cc454.0x10000",
+                "sp+0x30: 0x00060006",
+                "sp+0x34: 0x0001a950 -> emu.module.5b94106e92c6bd396330b51dc734b86e9e753717cad9c1dbf13fc692758cc454.0x10000",
+                "sp+0x38: 0x00012730 -> emu.module.5b94106e92c6bd396330b51dc734b86e9e753717cad9c1dbf13fc692758cc454.0x10000",
+                "sp+0x3c: 0x000138d0 -> emu.module.5b94106e92c6bd396330b51dc734b86e9e753717cad9c1dbf13fc692758cc454.0x10000"
+            ],
+            "api_name": "NDIS.NdisFRegisterFilterDriver"
+        },
+        "dynamic_code_segments": []
+    }
+]

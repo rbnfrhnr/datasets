@@ -1,0 +1,72 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401000",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "40021597e3e3ddcda64dffa31bba41c1aafa5ff60ae52cde14777bf605fdbca8",
+        "apis": [
+            {
+                "pc": "0x401022",
+                "api_name": "KERNEL32.GetModuleFileNameA",
+                "args": [
+                    "0x0",
+                    "C:\\Windows\\system32\\74323824e113b4cd0750e6c9bb193d91888a3cf77e680ab465e42e5e89c66ae5",
+                    "0x104"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x401037",
+                "api_name": "KERNEL32.GetShortPathNameA",
+                "args": [
+                    "C:\\Windows\\system32\\74323824e113b4cd0750e6c9bb193d91888a3cf77e680ab465e42e5e89c66ae5",
+                    "C:\\WINDOWS\\SYSTEM32\\743238~1",
+                    "0x104"
+                ],
+                "ret_val": "0x1d"
+            },
+            {
+                "pc": "0x401052",
+                "api_name": "KERNEL32.CreateFileA",
+                "args": [
+                    "C:\\WINDOWS\\SYSTEM32\\743238~1e113b4cd0750e6c9bb193d91888a3cf77e680ab465e42e5e89c66ae5",
+                    "GENERIC_READ",
+                    "0x1",
+                    "0x0",
+                    "OPEN_EXISTING",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0xffffffff"
+            },
+            {
+                "pc": "0x4011e6",
+                "api_name": "KERNEL32.DeleteFileA",
+                "args": [
+                    ""
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {},
+        "file_access": [
+            {
+                "event": "create",
+                "path": "C:\\WINDOWS\\SYSTEM32\\743238~1e113b4cd0750e6c9bb193d91888a3cf77e680ab465e42e5e89c66ae5",
+                "open_flags": [
+                    "OPEN_EXISTING"
+                ],
+                "access_flags": [
+                    "GENERIC_READ"
+                ]
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

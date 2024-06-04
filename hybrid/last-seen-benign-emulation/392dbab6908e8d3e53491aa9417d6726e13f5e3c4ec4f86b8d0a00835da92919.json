@@ -1,0 +1,120 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x1c0014010",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "920461b59029ce2fc6a03f371973185d12a38c249cd07f662879270139b1c1cf",
+        "apis": [
+            {
+                "pc": "0x1c00100c4",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200eb8",
+                    "IoCreateDeviceSecure"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1c00100d5",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "IoCreateDeviceSecure"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x1c0010107",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200eb8",
+                    "IoValidateDeviceIoControlAccess"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1c0010118",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "IoValidateDeviceIoControlAccess"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x1c001016f",
+                "api_name": "ntoskrnl.IoCreateDeviceSecure",
+                "args": [
+                    "0x7eb870",
+                    "0x0",
+                    "\\Device\\vmbusproxy",
+                    "0x3e",
+                    "0x0",
+                    "0x0",
+                    "0x1c000b020",
+                    "0x1200f40",
+                    "0x1200f28"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1c00054de",
+                "api_name": "ntoskrnl.EtwRegister",
+                "args": [
+                    "4f542162-e9cf-5eca-7f74-1fb63a59a6c2",
+                    "0x1c0010010",
+                    "0x1c000d008",
+                    "0x1c000d028"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf038",
+            "address": "0xfeedf038",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200ed0",
+                "rbp": "0x0000000001200f21",
+                "rip": "0x00000000feedf038",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000000000000",
+                "rbx": "0x00000000007eb870",
+                "rcx": "0x0000000000000000",
+                "rdx": "0x0000000000000002",
+                "r8": "0x00000001c000bf7e",
+                "r9": "0x0000000000000026",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000001200f80",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001c0005503 -> emu.module.392dbab6908e8d3e53491aa9417d6726e13f5e3c4ec4f86b8d0a00835da92919.0x1c0000000",
+                "sp+0x08: 0x00000000007eb870 -> emu.object._Driver_392dbab6908e8d3e53491aa9417d6726e13f5e3c4ec4f86b8d0a00835da92919.0x7eb870",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000001200f40 -> emu.stack.0x1200000",
+                "sp+0x48: 0x0000000001200f28 -> emu.stack.0x1200000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x00000000003fd000 -> api.object._Device_vmbusproxy.0x3fd000",
+                "sp+0x60: 0x0000000000260024",
+                "sp+0x68: 0x00000001c000b550 -> emu.module.392dbab6908e8d3e53491aa9417d6726e13f5e3c4ec4f86b8d0a00835da92919.0x1c0000000",
+                "sp+0x70: 0x45b8bc60d694af51",
+                "sp+0x78: 0xa86e1769f1b2a08d"
+            ],
+            "api_name": "ntoskrnl.EtwSetInformation"
+        },
+        "dynamic_code_segments": []
+    }
+]

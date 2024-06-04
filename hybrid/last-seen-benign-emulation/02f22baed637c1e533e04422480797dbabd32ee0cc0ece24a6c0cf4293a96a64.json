@@ -1,0 +1,192 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401290",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "13e9c424bc3cbb878bdf72e9d99c715f49ca14e537cf13263757cd0f80012097",
+        "apis": [
+            {
+                "pc": "0x401577",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x401583",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x1a58"
+            },
+            {
+                "pc": "0x40158b",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x1a6c"
+            },
+            {
+                "pc": "0x401593",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x40159f",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fd0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401092",
+                "api_name": "KERNEL32.InterlockedCompareExchange",
+                "args": [
+                    "0x40469c",
+                    "0x1212000",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40150d",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x401242",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x401258",
+                "api_name": "msvcrt.__p__fmode",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x401266",
+                "api_name": "msvcrt.__p__commode",
+                "args": [],
+                "ret_val": "0x4600"
+            },
+            {
+                "pc": "0x401499",
+                "api_name": "msvcrt._controlfp",
+                "args": [
+                    "0x10000",
+                    "0x30000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40133a",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x4012ec"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401118",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x40309c",
+                    "0x4030a4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401131",
+                "api_name": "KERNEL32.InterlockedExchange",
+                "args": [
+                    "0x40469c",
+                    "0x0"
+                ],
+                "ret_val": "0x1212000"
+            },
+            {
+                "pc": "0x40287a",
+                "api_name": "KERNEL32.CreateFileW",
+                "args": [
+                    "\\\\.\\prl_tg",
+                    "GENERIC_WRITE",
+                    "0x3",
+                    "0x0",
+                    "OPEN_EXISTING",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0xffffffff"
+            },
+            {
+                "pc": "0x402891",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x2"
+            }
+        ],
+        "ret_val": "0x5f9e652",
+        "error": {
+            "type": "Invalid instruction (UC_ERR_INSN_INVALID)",
+            "pc": "0x401e8a",
+            "address": "0x401e8a",
+            "instr": "rdpmc ",
+            "regs": {
+                "esp": "0x01211ed8",
+                "ebp": "0x01211ef0",
+                "eip": "0x00401e8a",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x05f9e652",
+                "ebx": "0x05f9e652",
+                "ecx": "0x00000000",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000000",
+                "sp+0x04: 0x00000001",
+                "sp+0x08: 0x0040469c -> emu.module.02f22baed637c1e533e04422480797dbabd32ee0cc0ece24a6c0cf4293a96a64.0x400000",
+                "sp+0x0c: 0x01211f3c -> emu.stack.0x1200000",
+                "sp+0x10: 0x00401ffb -> emu.module.02f22baed637c1e533e04422480797dbabd32ee0cc0ece24a6c0cf4293a96a64.0x400000",
+                "sp+0x14: 0x01211ef0 -> emu.stack.0x1200000",
+                "sp+0x18: 0x05f9e652",
+                "sp+0x1c: 0x05f9e652",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00402099 -> emu.module.02f22baed637c1e533e04422480797dbabd32ee0cc0ece24a6c0cf4293a96a64.0x400000",
+                "sp+0x34: 0x00404338 -> emu.module.02f22baed637c1e533e04422480797dbabd32ee0cc0ece24a6c0cf4293a96a64.0x400000",
+                "sp+0x38: 0x961b7222",
+                "sp+0x3c: 0x0040469c -> emu.module.02f22baed637c1e533e04422480797dbabd32ee0cc0ece24a6c0cf4293a96a64.0x400000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 437, in start\n    count=self.max_instructions)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/engines/unicorn_eng.py\", line 203, in start\n    return self.emu.emu_start(addr, 0xFFFFFFFF, timeout=timeout, count=count)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/unicorn/unicorn.py\", line 318, in emu_start\n    raise UcError(status)\nunicorn.unicorn.UcError: Invalid instruction (UC_ERR_INSN_INVALID)\n"
+        },
+        "file_access": [
+            {
+                "event": "create",
+                "path": "\\\\.\\prl_tg",
+                "open_flags": [
+                    "OPEN_EXISTING"
+                ],
+                "access_flags": [
+                    "GENERIC_WRITE"
+                ]
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

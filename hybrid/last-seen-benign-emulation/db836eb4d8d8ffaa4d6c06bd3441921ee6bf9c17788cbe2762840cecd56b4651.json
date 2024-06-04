@@ -1,0 +1,224 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x403720",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "a829fb48d9443b3bd6009162cf951169b5b31e1f28a4a27206c2ca96afa68060",
+        "apis": [
+            {
+                "pc": "0x4010ba",
+                "api_name": "KERNEL32.FindResourceW",
+                "args": [
+                    "0x400000",
+                    "0x1",
+                    "0xa"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x403552",
+                "api_name": "ADVAPI32.RegOpenKeyExW",
+                "args": [
+                    "HKEY_CURRENT_USER",
+                    "Software\\Google",
+                    "0x0",
+                    "0x1",
+                    "0x684ecd8"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x401136",
+                "api_name": "KERNEL32.GetCommandLineW",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x40116c",
+                "api_name": "SHELL32.CommandLineToArgvW",
+                "args": [
+                    "0x45f0",
+                    "0x684ff98"
+                ],
+                "ret_val": "0x4630"
+            },
+            {
+                "pc": "0x401201",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg1",
+                    "--system-level"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401211",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg1",
+                    "--chrome-beta"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401221",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg1",
+                    "--chrome-dev"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401231",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg1",
+                    "--chrome-sxs"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401241",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg1",
+                    "--cleanup"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401251",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg1",
+                    "--chrome-frame"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401201",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg2",
+                    "--system-level"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401211",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg2",
+                    "--chrome-beta"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401221",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg2",
+                    "--chrome-dev"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401231",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg2",
+                    "--chrome-sxs"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401241",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg2",
+                    "--cleanup"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x401251",
+                "api_name": "KERNEL32.lstrcmpiW",
+                "args": [
+                    "myarg2",
+                    "--chrome-frame"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4011ad",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "GoogleUpdateIsMachine",
+                    "0x684ecde",
+                    "0x2"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x402afa",
+                "api_name": "KERNEL32.GetModuleFileNameW",
+                "args": [
+                    "0x400000",
+                    "C:\\Windows\\system32\\db836eb4d8d8ffaa4d6c06bd3441921ee6bf9c17788cbe2762840cecd56b4651",
+                    "0x104"
+                ],
+                "ret_val": "0x54"
+            }
+        ],
+        "ret_val": "0x684f340",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf098",
+            "address": "0xfeedf098",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x0684ea54",
+                "ebp": "0x0684ecd0",
+                "eip": "0xfeedf098",
+                "esi": "0x0684f340",
+                "edi": "0x0684ea66",
+                "eax": "0x0684f340",
+                "ebx": "0x00000000",
+                "ecx": "0x0684ece8",
+                "edx": "0x0684fb64"
+            },
+            "stack": [
+                "sp+0x00: 0x00402816 -> emu.module.db836eb4d8d8ffaa4d6c06bd3441921ee6bf9c17788cbe2762840cecd56b4651.0x400000",
+                "sp+0x04: 0x0684f340 -> emu.stack.0x683e000",
+                "sp+0x08: 0x0684ea66 -> emu.stack.0x683e000",
+                "sp+0x0c: 0x00000104",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "KERNEL32.GetVolumePathNameW"
+        },
+        "registry_access": [
+            {
+                "event": "open_key",
+                "path": "HKEY_CURRENT_USER\\Software\\Google"
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,125 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4a9456",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "bd0d7f3a47415a31d3ecbe9e10b4155bf086e6d54da2a29856daa06a80f68bb2",
+        "apis": [
+            {
+                "pc": "0x4a994f",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4a995e",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x6bac"
+            },
+            {
+                "pc": "0x4a9967",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x6b98"
+            },
+            {
+                "pc": "0x4a9974",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4a9cbc",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4a933c",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x4bf9e0",
+                    "0x4bf9ec"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4a9362",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x4bf7a0",
+                    "0x4bf9dc"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4a93c8",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___wargv",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x4a93cf",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4650"
+            },
+            {
+                "pc": "0x4a93d6",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_wide_environment",
+                "args": [],
+                "ret_val": "0x4660"
+            }
+        ],
+        "ret_val": "0x1211fd4",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf558",
+            "address": "0xfeedf558",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f74",
+                "ebp": "0x01211f9c",
+                "eip": "0xfeedf558",
+                "esi": "0x00004650",
+                "edi": "0x000045f0",
+                "eax": "0x01211fd4",
+                "ebx": "0x00000000",
+                "ecx": "0x01211f00",
+                "edx": "0x01212000"
+            },
+            "stack": [
+                "sp+0x00: 0x00450637 -> emu.module.c5adce28eb39ec2ae85e6af0b188ce5e5b973b2e2aa2d7f004b1bb5b0fcc20df.0x400000",
+                "sp+0x04: 0x000045f0 -> api.argv.0x45f0",
+                "sp+0x08: 0x00004650 -> api.argc.0x4650",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x07088100",
+                "sp+0x14: 0x02182200",
+                "sp+0x18: 0x01211f78 -> emu.stack.0x1200000",
+                "sp+0x1c: 0x01211fd4 -> emu.stack.0x1200000",
+                "sp+0x20: 0x004b3010 -> emu.module.c5adce28eb39ec2ae85e6af0b188ce5e5b973b2e2aa2d7f004b1bb5b0fcc20df.0x400000",
+                "sp+0x24: 0xffffffff",
+                "sp+0x28: 0x01211fe4 -> emu.stack.0x1200000",
+                "sp+0x2c: 0x004a93e0 -> emu.module.c5adce28eb39ec2ae85e6af0b188ce5e5b973b2e2aa2d7f004b1bb5b0fcc20df.0x400000",
+                "sp+0x30: 0x00000003",
+                "sp+0x34: 0x000045f4 -> api.argv.0x45f0",
+                "sp+0x38: 0x00004660 -> api.envp.0x4660",
+                "sp+0x3c: 0x54c04610"
+            ],
+            "api_name": "FineObj.?HasStaticPartError@FObj@@YA_NXZ"
+        },
+        "dynamic_code_segments": []
+    }
+]

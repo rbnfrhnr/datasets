@@ -1,0 +1,2481 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x408050",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "db0c73dd1e28774d1f25049c46dd2be6e8714b049eea93efec8acf4f3cd44a24",
+        "apis": [
+            {
+                "pc": "0x40807c",
+                "api_name": "KERNEL32.GetVersion",
+                "args": [],
+                "ret_val": "0x1db10106"
+            },
+            {
+                "pc": "0x40a0df",
+                "api_name": "KERNEL32.HeapCreate",
+                "args": [
+                    "0x1",
+                    "0x1000",
+                    "0x0"
+                ],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x40a8a7",
+                "api_name": "KERNEL32.VirtualAlloc",
+                "args": [
+                    "0x0",
+                    "0x400000",
+                    "0x2000",
+                    "PAGE_READWRITE"
+                ],
+                "ret_val": "0x450000"
+            },
+            {
+                "pc": "0x40a8c0",
+                "api_name": "KERNEL32.VirtualAlloc",
+                "args": [
+                    "0x450000",
+                    "0x10000",
+                    "0x1000",
+                    "PAGE_READWRITE"
+                ],
+                "ret_val": "0x450000"
+            },
+            {
+                "pc": "0x409f3b",
+                "api_name": "KERNEL32.GetStartupInfoA",
+                "args": [
+                    "0x1211f28"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x40a06e",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffff6"
+                ],
+                "ret_val": "0xf001"
+            },
+            {
+                "pc": "0x40a07c",
+                "api_name": "KERNEL32.GetFileType",
+                "args": [
+                    "0xf001"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40a06e",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffff5"
+                ],
+                "ret_val": "0xf002"
+            },
+            {
+                "pc": "0x40a07c",
+                "api_name": "KERNEL32.GetFileType",
+                "args": [
+                    "0xf002"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40a06e",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffff4"
+                ],
+                "ret_val": "0xf003"
+            },
+            {
+                "pc": "0x40a07c",
+                "api_name": "KERNEL32.GetFileType",
+                "args": [
+                    "0xf003"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40a0c0",
+                "api_name": "KERNEL32.SetHandleCount",
+                "args": [
+                    "0x20"
+                ],
+                "ret_val": "0x20"
+            },
+            {
+                "pc": "0x4091c1",
+                "api_name": "KERNEL32.GetACP",
+                "args": [],
+                "ret_val": "0x4e4"
+            },
+            {
+                "pc": "0x40921b",
+                "api_name": "KERNEL32.GetCPInfo",
+                "args": [
+                    "0x4e4",
+                    "0x1211f50"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4094c9",
+                "api_name": "KERNEL32.GetCPInfo",
+                "args": [
+                    "0x4e4",
+                    "0x1211a28"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40b22a",
+                "api_name": "KERNEL32.GetStringTypeW",
+                "args": [
+                    "0x1",
+                    "0x40cb70",
+                    "0x1",
+                    "0x12119fa"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40b2a6",
+                "api_name": "KERNEL32.MultiByteToWideChar",
+                "args": [
+                    "0x4e4",
+                    "0x1",
+                    " \u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u001e\u001f !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~\u007f\u0080\u0081\u0082\u0083\u0084\u0085\u0086\u0087\u0088\u0089\u008a\u008b\u008c\u008d\u008e\u008f\u0090\u0091\u0092\u0093\u0094\u0095\u0096\u0097\u0098\u0099\u009a\u009b\u009c\u009d\u009e\u009f\u00a0\u00a1\u00a2\u00a3\u00a4\u00a5\u00a6\u00a7\u00a8\u00a9\u00aa\u00ab\u00ac\u00ad\u00ae\u00af\u00b0\u00b1\u00b2\u00b3\u00b4\u00b5\u00b6\u00b7\u00b8\u00b9\u00ba\u00bb\u00bc\u00bd\u00be\u00bf\u00c0\u00c1\u00c2\u00c3\u00c4\u00c5\u00c6\u00c7\u00c8\u00c9\u00ca\u00cb\u00cc\u00cd\u00ce\u00cf\u00d0\u00d1\u00d2\u00d3\u00d4\u00d5\u00d6\u00d7\u00d8\u00d9\u00da\u00db\u00dc\u00dd\u00de\u00df\u00e0\u00e1\u00e2\u00e3\u00e4\u00e5\u00e6\u00e7\u00e8\u00e9\u00ea\u00eb\u00ec\u00ed\u00ee\u00ef\u00f0\u00f1\u00f2\u00f3\u00f4\u00f5\u00f6\u00f7\u00f8\u00f9\u00fa\u00fb\u00fc\u00fd\u00fe\u00ff",
+                    "0x100",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x101"
+            },
+            {
+                "pc": "0x40b7e0",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x45f0",
+                    "0x8",
+                    "0x210"
+                ],
+                "ret_val": "0x4690"
+            },
+            {
+                "pc": "0x40b2ce",
+                "api_name": "KERNEL32.MultiByteToWideChar",
+                "args": [
+                    "0x4e4",
+                    "0x1",
+                    "0x1211a3c",
+                    "0x100",
+                    "0x4690",
+                    "0x101"
+                ],
+                "ret_val": "0x100"
+            },
+            {
+                "pc": "0x40b2e4",
+                "api_name": "KERNEL32.GetStringTypeW",
+                "args": [
+                    "0x1",
+                    "0x4690",
+                    "0x100",
+                    "0x1211d3c"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x408e07",
+                "api_name": "KERNEL32.HeapFree",
+                "args": [
+                    "0x45f0",
+                    "0x0",
+                    "0x4690"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40afab",
+                "api_name": "KERNEL32.LCMapStringW",
+                "args": [
+                    "0x0",
+                    "0x100",
+                    "0x40cb70",
+                    "0x1",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40b060",
+                "api_name": "KERNEL32.MultiByteToWideChar",
+                "args": [
+                    "0x4e4",
+                    "0x1",
+                    " \u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u001e\u001f !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~\u007f\u0080\u0081\u0082\u0083\u0084\u0085\u0086\u0087\u0088\u0089\u008a\u008b\u008c\u008d\u008e\u008f\u0090\u0091\u0092\u0093\u0094\u0095\u0096\u0097\u0098\u0099\u009a\u009b\u009c\u009d\u009e\u009f\u00a0\u00a1\u00a2\u00a3\u00a4\u00a5\u00a6\u00a7\u00a8\u00a9\u00aa\u00ab\u00ac\u00ad\u00ae\u00af\u00b0\u00b1\u00b2\u00b3\u00b4\u00b5\u00b6\u00b7\u00b8\u00b9\u00ba\u00bb\u00bc\u00bd\u00be\u00bf\u00c0\u00c1\u00c2\u00c3\u00c4\u00c5\u00c6\u00c7\u00c8\u00c9\u00ca\u00cb\u00cc\u00cd\u00ce\u00cf\u00d0\u00d1\u00d2\u00d3\u00d4\u00d5\u00d6\u00d7\u00d8\u00d9\u00da\u00db\u00dc\u00dd\u00de\u00df\u00e0\u00e1\u00e2\u00e3\u00e4\u00e5\u00e6\u00e7\u00e8\u00e9\u00ea\u00eb\u00ec\u00ed\u00ee\u00ef\u00f0\u00f1\u00f2\u00f3\u00f4\u00f5\u00f6\u00f7\u00f8\u00f9\u00fa\u00fb\u00fc\u00fd\u00fe\u00ff",
+                    "0x100",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x101"
+            },
+            {
+                "pc": "0x408fc6",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x45f0",
+                    "0x0",
+                    "0x210"
+                ],
+                "ret_val": "0x48b0"
+            },
+            {
+                "pc": "0x40b093",
+                "api_name": "KERNEL32.MultiByteToWideChar",
+                "args": [
+                    "0x4e4",
+                    "0x1",
+                    "0x1211a3c",
+                    "0x100",
+                    "0x48b0",
+                    "0x101"
+                ],
+                "ret_val": "0x100"
+            },
+            {
+                "pc": "0x40b0b1",
+                "api_name": "KERNEL32.LCMapStringW",
+                "args": [
+                    "0x0",
+                    "0x100",
+                    "0x48b0",
+                    "0x101",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x101"
+            },
+            {
+                "pc": "0x408fc6",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x45f0",
+                    "0x0",
+                    "0x210"
+                ],
+                "ret_val": "0x4ad0"
+            },
+            {
+                "pc": "0x40b130",
+                "api_name": "KERNEL32.LCMapStringW",
+                "args": [
+                    "0x0",
+                    "0x100",
+                    "0x48b0",
+                    "0x101",
+                    "0x4ad0",
+                    "0x101"
+                ],
+                "ret_val": "0x101"
+            },
+            {
+                "pc": "0x40b17e",
+                "api_name": "KERNEL32.WideCharToMultiByte",
+                "args": [
+                    "0x4e4",
+                    "0x220",
+                    "0x4ad0",
+                    "0x101",
+                    "0x1211b3c",
+                    "0x100",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x100"
+            },
+            {
+                "pc": "0x408e07",
+                "api_name": "KERNEL32.HeapFree",
+                "args": [
+                    "0x45f0",
+                    "0x0",
+                    "0x48b0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x408e07",
+                "api_name": "KERNEL32.HeapFree",
+                "args": [
+                    "0x45f0",
+                    "0x0",
+                    "0x4ad0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40b060",
+                "api_name": "KERNEL32.MultiByteToWideChar",
+                "args": [
+                    "0x4e4",
+                    "0x1",
+                    " \u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u001e\u001f !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~\u007f\u0080\u0081\u0082\u0083\u0084\u0085\u0086\u0087\u0088\u0089\u008a\u008b\u008c\u008d\u008e\u008f\u0090\u0091\u0092\u0093\u0094\u0095\u0096\u0097\u0098\u0099\u009a\u009b\u009c\u009d\u009e\u009f\u00a0\u00a1\u00a2\u00a3\u00a4\u00a5\u00a6\u00a7\u00a8\u00a9\u00aa\u00ab\u00ac\u00ad\u00ae\u00af\u00b0\u00b1\u00b2\u00b3\u00b4\u00b5\u00b6\u00b7\u00b8\u00b9\u00ba\u00bb\u00bc\u00bd\u00be\u00bf\u00c0\u00c1\u00c2\u00c3\u00c4\u00c5\u00c6\u00c7\u00c8\u00c9\u00ca\u00cb\u00cc\u00cd\u00ce\u00cf\u00d0\u00d1\u00d2\u00d3\u00d4\u00d5\u00d6\u00d7\u00d8\u00d9\u00da\u00db\u00dc\u00dd\u00de\u00df\u00e0\u00e1\u00e2\u00e3\u00e4\u00e5\u00e6\u00e7\u00e8\u00e9\u00ea\u00eb\u00ec\u00ed\u00ee\u00ef\u00f0\u00f1\u00f2\u00f3\u00f4\u00f5\u00f6\u00f7\u00f8\u00f9\u00fa\u00fb\u00fc\u00fd\u00fe\u00ff \u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u001e\u001f !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~\u007f",
+                    "0x100",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x181"
+            },
+            {
+                "pc": "0x408fc6",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x45f0",
+                    "0x0",
+                    "0x310"
+                ],
+                "ret_val": "0x7000"
+            },
+            {
+                "pc": "0x40b093",
+                "api_name": "KERNEL32.MultiByteToWideChar",
+                "args": [
+                    "0x4e4",
+                    "0x1",
+                    "0x1211a3c",
+                    "0x100",
+                    "0x7000",
+                    "0x181"
+                ],
+                "ret_val": "0x100"
+            },
+            {
+                "pc": "0x40b0b1",
+                "api_name": "KERNEL32.LCMapStringW",
+                "args": [
+                    "0x0",
+                    "0x200",
+                    "0x7000",
+                    "0x181",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x181"
+            },
+            {
+                "pc": "0x408fc6",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x45f0",
+                    "0x0",
+                    "0x310"
+                ],
+                "ret_val": "0x7320"
+            },
+            {
+                "pc": "0x40b130",
+                "api_name": "KERNEL32.LCMapStringW",
+                "args": [
+                    "0x0",
+                    "0x200",
+                    "0x7000",
+                    "0x181",
+                    "0x7320",
+                    "0x181"
+                ],
+                "ret_val": "0x181"
+            },
+            {
+                "pc": "0x40b17e",
+                "api_name": "KERNEL32.WideCharToMultiByte",
+                "args": [
+                    "0x4e4",
+                    "0x220",
+                    "0x7320",
+                    "0x181",
+                    "0x1211c3c",
+                    "0x100",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x100"
+            },
+            {
+                "pc": "0x408e07",
+                "api_name": "KERNEL32.HeapFree",
+                "args": [
+                    "0x45f0",
+                    "0x0",
+                    "0x7000"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x408e07",
+                "api_name": "KERNEL32.HeapFree",
+                "args": [
+                    "0x45f0",
+                    "0x0",
+                    "0x7320"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4080d1",
+                "api_name": "KERNEL32.GetCommandLineA",
+                "args": [],
+                "ret_val": "0x7000"
+            },
+            {
+                "pc": "0x409d8f",
+                "api_name": "KERNEL32.GetEnvironmentStringsW",
+                "args": [],
+                "ret_val": "0x7020"
+            },
+            {
+                "pc": "0x409e00",
+                "api_name": "KERNEL32.WideCharToMultiByte",
+                "args": [
+                    "0x0",
+                    "0x0",
+                    "0x7020",
+                    "0xcd",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0xcd"
+            },
+            {
+                "pc": "0x409e27",
+                "api_name": "KERNEL32.WideCharToMultiByte",
+                "args": [
+                    "0x0",
+                    "0x0",
+                    "0x7020",
+                    "0xcd",
+                    "0x450200",
+                    "0xcd",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0xcd"
+            },
+            {
+                "pc": "0x409e3d",
+                "api_name": "KERNEL32.FreeEnvironmentStringsW",
+                "args": [
+                    "0x7020"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x409ad7",
+                "api_name": "KERNEL32.GetModuleFileNameA",
+                "args": [
+                    "0x0",
+                    "C:\\Windows\\system32\\1e78d9f21e513f77618d5573d84d1b8480fc267a5071f6b4bffff6f61d4b0ec5",
+                    "0x104"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x40a47b",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x40a410"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x408168",
+                "api_name": "KERNEL32.GetStartupInfoA",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x408189",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x1f4",
+                    "Nicht gen\u00fcgend Speicher. Entfernen der Anwendung wird abgebrochen",
+                    "0x202"
+                ],
+                "ret_val": "0x42"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Nicht gen\u00c3\u00bcgend Speicher. Entfernen der Anwendung wird abgebrochen"
+                ],
+                "ret_val": "0x42"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x43"
+                ],
+                "ret_val": "0x7240"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7240",
+                    "Nicht gen\u00c3\u00bcgend Speicher. Entfernen der Anwendung wird abgebrochen"
+                ],
+                "ret_val": "0x7240"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x226",
+                    "Times New Roman",
+                    "0x202"
+                ],
+                "ret_val": "0xf"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Times New Roman Speicher. Entfernen der Anwendung wird abgebrochen"
+                ],
+                "ret_val": "0x42"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x43"
+                ],
+                "ret_val": "0x7290"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7290",
+                    "Times New Roman Speicher. Entfernen der Anwendung wird abgebrochen"
+                ],
+                "ret_val": "0x7290"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x258",
+                    "|1 entfernen",
+                    "0x202"
+                ],
+                "ret_val": "0xc"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "|1 entfernenman Speicher. Entfernen der Anwendung wird abgebrochen"
+                ],
+                "ret_val": "0x42"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x43"
+                ],
+                "ret_val": "0x72e0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x72e0",
+                    "|1 entfernenman Speicher. Entfernen der Anwendung wird abgebrochen"
+                ],
+                "ret_val": "0x72e0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x259",
+                    "Anwendung entfernen",
+                    "0x202"
+                ],
+                "ret_val": "0x13"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Anwendung entfernenicher. Entfernen der Anwendung wird abgebrochen"
+                ],
+                "ret_val": "0x42"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x43"
+                ],
+                "ret_val": "0x7330"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7330",
+                    "Anwendung entfernenicher. Entfernen der Anwendung wird abgebrochen"
+                ],
+                "ret_val": "0x7330"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x25a",
+                    "Alle |1-Komponenten werden von Ihrem Computer entfernt. Bitte warten",
+                    "0x202"
+                ],
+                "ret_val": "0x44"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Alle |1-Komponenten werden von Ihrem Computer entfernt. Bitte warten"
+                ],
+                "ret_val": "0x44"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x45"
+                ],
+                "ret_val": "0x7380"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7380",
+                    "Alle |1-Komponenten werden von Ihrem Computer entfernt. Bitte warten"
+                ],
+                "ret_val": "0x7380"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x25b",
+                    "Sind Sie sicher, da\u00df Sie |1 und alle zugeh\u00f6rigen Komponenten entfernen m\u00f6chten?",
+                    "0x202"
+                ],
+                "ret_val": "0x52"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Sind Sie sicher, da\u00c3\u009f Sie |1 und alle zugeh\u00c3\u00b6rigen Komponenten entfernen m\u00c3\u00b6chten?"
+                ],
+                "ret_val": "0x52"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x53"
+                ],
+                "ret_val": "0x73d0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x73d0",
+                    "Sind Sie sicher, da\u00c3\u009f Sie |1 und alle zugeh\u00c3\u00b6rigen Komponenten entfernen m\u00c3\u00b6chten?"
+                ],
+                "ret_val": "0x73d0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x25c",
+                    "Programminstallation entfernt",
+                    "0x202"
+                ],
+                "ret_val": "0x1d"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Programminstallation entferntund alle zugeh\u00c3\u00b6rigen Komponenten entfernen m\u00c3\u00b6chten?"
+                ],
+                "ret_val": "0x52"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x53"
+                ],
+                "ret_val": "0x7430"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7430",
+                    "Programminstallation entferntund alle zugeh\u00c3\u00b6rigen Komponenten entfernen m\u00c3\u00b6chten?"
+                ],
+                "ret_val": "0x7430"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x25d",
+                    "Protokolldatei '|1' konnte nicht ge\u00f6ffnet werden.",
+                    "0x202"
+                ],
+                "ret_val": "0x32"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Protokolldatei '|1' konnte nicht ge\u00c3\u00b6ffnet werden. Komponenten entfernen m\u00c3\u00b6chten?"
+                ],
+                "ret_val": "0x52"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x53"
+                ],
+                "ret_val": "0x7490"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7490",
+                    "Protokolldatei '|1' konnte nicht ge\u00c3\u00b6ffnet werden. Komponenten entfernen m\u00c3\u00b6chten?"
+                ],
+                "ret_val": "0x7490"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x25e",
+                    "Unerwarteter Fehler beim Bearbeiten der folgenden Zeile in der Protokolldatei:",
+                    "0x202"
+                ],
+                "ret_val": "0x4e"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Unerwarteter Fehler beim Bearbeiten der folgenden Zeile in der Protokolldatei:ten?"
+                ],
+                "ret_val": "0x52"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x53"
+                ],
+                "ret_val": "0x74f0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x74f0",
+                    "Unerwarteter Fehler beim Bearbeiten der folgenden Zeile in der Protokolldatei:ten?"
+                ],
+                "ret_val": "0x74f0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x25f",
+                    "Fehler beim Bearbeiten der folgenden Zeile in der Protokolldatei:",
+                    "0x202"
+                ],
+                "ret_val": "0x41"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Fehler beim Bearbeiten der folgenden Zeile in der Protokolldatei:otokolldatei:ten?"
+                ],
+                "ret_val": "0x52"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x53"
+                ],
+                "ret_val": "0x7550"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7550",
+                    "Fehler beim Bearbeiten der folgenden Zeile in der Protokolldatei:otokolldatei:ten?"
+                ],
+                "ret_val": "0x7550"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x260",
+                    "Fehler beim Bearbeiten der Protokolldatei: Projektname nicht gefunden",
+                    "0x202"
+                ],
+                "ret_val": "0x45"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Fehler beim Bearbeiten der Protokolldatei: Projektname nicht gefundenolldatei:ten?"
+                ],
+                "ret_val": "0x52"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x53"
+                ],
+                "ret_val": "0x75b0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x75b0",
+                    "Fehler beim Bearbeiten der Protokolldatei: Projektname nicht gefundenolldatei:ten?"
+                ],
+                "ret_val": "0x75b0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x261",
+                    "Protokolldatei '|1' m\u00f6glicherweise besch\u00e4digt. Anwendung wird beendet",
+                    "0x202"
+                ],
+                "ret_val": "0x47"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Protokolldatei '|1' m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Anwendung wird beendetldatei:ten?"
+                ],
+                "ret_val": "0x52"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0x53"
+                ],
+                "ret_val": "0x7610"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7610",
+                    "Protokolldatei '|1' m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Anwendung wird beendetldatei:ten?"
+                ],
+                "ret_val": "0x7610"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x262",
+                    "Achtung! Sind Sie sicher, da\u00df Sie den Vorgang jetzt abbrechen m\u00f6chten? Sie k\u00f6nnen dann m\u00f6glicherweise das Entfernen der Anwendung nicht mehr erneut starten.",
+                    "0x202"
+                ],
+                "ret_val": "0xa0"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Achtung! Sind Sie sicher, da\u00c3\u009f Sie den Vorgang jetzt abbrechen m\u00c3\u00b6chten? Sie k\u00c3\u00b6nnen dann m\u00c3\u00b6glicherweise das Entfernen der Anwendung nicht mehr erneut starten."
+                ],
+                "ret_val": "0xa0"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xa1"
+                ],
+                "ret_val": "0x7670"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7670",
+                    "Achtung! Sind Sie sicher, da\u00c3\u009f Sie den Vorgang jetzt abbrechen m\u00c3\u00b6chten? Sie k\u00c3\u00b6nnen dann m\u00c3\u00b6glicherweise das Entfernen der Anwendung nicht mehr erneut starten."
+                ],
+                "ret_val": "0x7670"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x263",
+                    "Ung\u00fcltige Befehlszeilenargumente. Anwendung wird beendet",
+                    "0x202"
+                ],
+                "ret_val": "0x39"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Ung\u00c3\u00bcltige Befehlszeilenargumente. Anwendung wird beendetechen m\u00c3\u00b6chten? Sie k\u00c3\u00b6nnen dann m\u00c3\u00b6glicherweise das Entfernen der Anwendung nicht mehr erneut starten."
+                ],
+                "ret_val": "0xa0"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xa1"
+                ],
+                "ret_val": "0x7720"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7720",
+                    "Ung\u00c3\u00bcltige Befehlszeilenargumente. Anwendung wird beendetechen m\u00c3\u00b6chten? Sie k\u00c3\u00b6nnen dann m\u00c3\u00b6glicherweise das Entfernen der Anwendung nicht mehr erneut starten."
+                ],
+                "ret_val": "0x7720"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x265",
+                    "Starten Sie bitte das Entfernen der Anwendung \u00fcber das Symbol im Programm-Manager (Windows NT) oder \u00fcber die Anwendung 'Software' in der Systemsteuerung (Windows 95)",
+                    "0x202"
+                ],
+                "ret_val": "0xa7"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Starten Sie bitte das Entfernen der Anwendung \u00c3\u00bcber das Symbol im Programm-Manager (Windows NT) oder \u00c3\u00bcber die Anwendung 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0xa7"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xa8"
+                ],
+                "ret_val": "0x77d0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x77d0",
+                    "Starten Sie bitte das Entfernen der Anwendung \u00c3\u00bcber das Symbol im Programm-Manager (Windows NT) oder \u00c3\u00bcber die Anwendung 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0x77d0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x28a",
+                    "Schwerer Setup-Fehler aufgetreten",
+                    "0x202"
+                ],
+                "ret_val": "0x21"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Schwerer Setup-Fehler aufgetretener Anwendung \u00c3\u00bcber das Symbol im Programm-Manager (Windows NT) oder \u00c3\u00bcber die Anwendung 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0xa7"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xa8"
+                ],
+                "ret_val": "0x7880"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7880",
+                    "Schwerer Setup-Fehler aufgetretener Anwendung \u00c3\u00bcber das Symbol im Programm-Manager (Windows NT) oder \u00c3\u00bcber die Anwendung 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0x7880"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x28b",
+                    "Entfernen der aktuellen Installationsdateien",
+                    "0x202"
+                ],
+                "ret_val": "0x2c"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Entfernen der aktuellen Installationsdateieng \u00c3\u00bcber das Symbol im Programm-Manager (Windows NT) oder \u00c3\u00bcber die Anwendung 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0xa7"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xa8"
+                ],
+                "ret_val": "0x7930"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7930",
+                    "Entfernen der aktuellen Installationsdateieng \u00c3\u00bcber das Symbol im Programm-Manager (Windows NT) oder \u00c3\u00bcber die Anwendung 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0x7930"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x28c",
+                    "M\u00f6chten Sie die Installations-Protokolldatei '|1' entfernen? Diese Datei kann bei der Problemdiagnose hilfreich sein.",
+                    "0x202"
+                ],
+                "ret_val": "0x76"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "M\u00c3\u00b6chten Sie die Installations-Protokolldatei '|1' entfernen? Diese Datei kann bei der Problemdiagnose hilfreich sein.ng 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0xa7"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xa8"
+                ],
+                "ret_val": "0x79e0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x79e0",
+                    "M\u00c3\u00b6chten Sie die Installations-Protokolldatei '|1' entfernen? Diese Datei kann bei der Problemdiagnose hilfreich sein.ng 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0x79e0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x2bc",
+                    "Datei '|1' kann nicht entfernt werden",
+                    "0x202"
+                ],
+                "ret_val": "0x25"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Datei '|1' kann nicht entfernt werdenolldatei '|1' entfernen? Diese Datei kann bei der Problemdiagnose hilfreich sein.ng 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0xa7"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xa8"
+                ],
+                "ret_val": "0x7a90"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7a90",
+                    "Datei '|1' kann nicht entfernt werdenolldatei '|1' entfernen? Diese Datei kann bei der Problemdiagnose hilfreich sein.ng 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0x7a90"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x2bd",
+                    "Einige Komponenten konnten nicht von Ihrem Computer entfernt werden",
+                    "0x202"
+                ],
+                "ret_val": "0x43"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Einige Komponenten konnten nicht von Ihrem Computer entfernt werden Datei kann bei der Problemdiagnose hilfreich sein.ng 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0xa7"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xa8"
+                ],
+                "ret_val": "0x7b40"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7b40",
+                    "Einige Komponenten konnten nicht von Ihrem Computer entfernt werden Datei kann bei der Problemdiagnose hilfreich sein.ng 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0x7b40"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x2be",
+                    "Das Entfernen der Anwendung wurde abgebrochen",
+                    "0x202"
+                ],
+                "ret_val": "0x2d"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Das Entfernen der Anwendung wurde abgebrochenmputer entfernt werden Datei kann bei der Problemdiagnose hilfreich sein.ng 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0xa7"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xa8"
+                ],
+                "ret_val": "0x7bf0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7bf0",
+                    "Das Entfernen der Anwendung wurde abgebrochenmputer entfernt werden Datei kann bei der Problemdiagnose hilfreich sein.ng 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0x7bf0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x2bf",
+                    "Verzeichnis '|1' kann nicht entfernt werden",
+                    "0x202"
+                ],
+                "ret_val": "0x2b"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Verzeichnis '|1' kann nicht entfernt werdenenmputer entfernt werden Datei kann bei der Problemdiagnose hilfreich sein.ng 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0xa7"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xa8"
+                ],
+                "ret_val": "0x7ca0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7ca0",
+                    "Verzeichnis '|1' kann nicht entfernt werdenenmputer entfernt werden Datei kann bei der Problemdiagnose hilfreich sein.ng 'Software' in der Systemsteuerung (Windows 95)"
+                ],
+                "ret_val": "0x7ca0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x2c0",
+                    "Protokolldatei hat ein ung\u00fcltiges Format: Datei '|1' wurde registriert, aber nicht kopiert. Die Protokolldatei ist m\u00f6glicherweise besch\u00e4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen.",
+                    "0x202"
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Protokolldatei hat ein ung\u00c3\u00bcltiges Format: Datei '|1' wurde registriert, aber nicht kopiert. Die Protokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x7d50"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7d50",
+                    "Protokolldatei hat ein ung\u00c3\u00bcltiges Format: Datei '|1' wurde registriert, aber nicht kopiert. Die Protokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x7d50"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x2c1",
+                    "Achtung! Wenn Sie fortfahren, werden einige Komponenten m\u00f6glicherweise nicht vollst\u00e4ndig entfernt.",
+                    "0x202"
+                ],
+                "ret_val": "0x64"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Achtung! Wenn Sie fortfahren, werden einige Komponenten m\u00c3\u00b6glicherweise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x7e40"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x7e40",
+                    "Achtung! Wenn Sie fortfahren, werden einige Komponenten m\u00c3\u00b6glicherweise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x7e40"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x2c2",
+                    "Automatisierungs-Server '|1' entfernen",
+                    "0x202"
+                ],
+                "ret_val": "0x26"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Automatisierungs-Server '|1' entferneninige Komponenten m\u00c3\u00b6glicherweise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x8000"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x8000",
+                    "Automatisierungs-Server '|1' entferneninige Komponenten m\u00c3\u00b6glicherweise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x8000"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x2c3",
+                    "Gemeinsame Datei",
+                    "0x202"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Gemeinsame Datei-Server '|1' entferneninige Komponenten m\u00c3\u00b6glicherweise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x80f0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x80f0",
+                    "Gemeinsame Datei-Server '|1' entferneninige Komponenten m\u00c3\u00b6glicherweise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x80f0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x321",
+                    "Registrierung der Datei '|1' kann nicht r\u00fcckg\u00e4ngig gemacht werden",
+                    "0x202"
+                ],
+                "ret_val": "0x43"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Registrierung der Datei '|1' kann nicht r\u00c3\u00bcckg\u00c3\u00a4ngig gemacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x81e0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x81e0",
+                    "Registrierung der Datei '|1' kann nicht r\u00c3\u00bcckg\u00c3\u00a4ngig gemacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x81e0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x322",
+                    "Fehler bei OLE-Initialisierung",
+                    "0x202"
+                ],
+                "ret_val": "0x1e"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Fehler bei OLE-Initialisierungann nicht r\u00c3\u00bcckg\u00c3\u00a4ngig gemacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x82d0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x82d0",
+                    "Fehler bei OLE-Initialisierungann nicht r\u00c3\u00bcckg\u00c3\u00a4ngig gemacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x82d0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x323",
+                    "Fehler beim Laden einer DLL",
+                    "0x202"
+                ],
+                "ret_val": "0x1b"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Fehler beim Laden einer DLLungann nicht r\u00c3\u00bcckg\u00c3\u00a4ngig gemacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x83c0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x83c0",
+                    "Fehler beim Laden einer DLLungann nicht r\u00c3\u00bcckg\u00c3\u00a4ngig gemacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x83c0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x324",
+                    "Fehler beim Entfernen einer DLL aus der Registrierung",
+                    "0x202"
+                ],
+                "ret_val": "0x35"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Fehler beim Entfernen einer DLL aus der Registrierunggemacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x84b0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x84b0",
+                    "Fehler beim Entfernen einer DLL aus der Registrierunggemacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x84b0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x325",
+                    "Fehler beim Entfernen von Gruppen des Programm-Managers",
+                    "0x202"
+                ],
+                "ret_val": "0x37"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Fehler beim Entfernen von Gruppen des Programm-Managersmacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x85a0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x85a0",
+                    "Fehler beim Entfernen von Gruppen des Programm-Managersmacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x85a0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x326",
+                    "Fehler beim Entfernen von Symbolen des Programm-Managers",
+                    "0x202"
+                ],
+                "ret_val": "0x38"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Fehler beim Entfernen von Symbolen des Programm-Managersacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x8690"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x8690",
+                    "Fehler beim Entfernen von Symbolen des Programm-Managersacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x8690"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x327",
+                    "Fehler beim Entfernen von Programmgruppen",
+                    "0x202"
+                ],
+                "ret_val": "0x29"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Fehler beim Entfernen von Programmgruppenogramm-Managersacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x8780"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x8780",
+                    "Fehler beim Entfernen von Programmgruppenogramm-Managersacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x8780"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x328",
+                    "Fehler beim Entfernen vom Programmverkn\u00fcpfungen",
+                    "0x202"
+                ],
+                "ret_val": "0x30"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Fehler beim Entfernen vom Programmverkn\u00c3\u00bcpfungenManagersacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x8870"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x8870",
+                    "Fehler beim Entfernen vom Programmverkn\u00c3\u00bcpfungenManagersacht werdeneise nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x8870"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x329",
+                    "Datei '|1' kann nicht entfernt werden, da sie nicht mehr vorhanden ist.",
+                    "0x202"
+                ],
+                "ret_val": "0x47"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Datei '|1' kann nicht entfernt werden, da sie nicht mehr vorhanden ist. nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x8960"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x8960",
+                    "Datei '|1' kann nicht entfernt werden, da sie nicht mehr vorhanden ist. nicht vollst\u00c3\u00a4ndig entfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x8960"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x32a",
+                    "Datei '|1' kann nicht aus der Registrierung entfernt werden, da sie nicht mehr vorhanden ist.",
+                    "0x202"
+                ],
+                "ret_val": "0x5d"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Datei '|1' kann nicht aus der Registrierung entfernt werden, da sie nicht mehr vorhanden ist.tfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x8a50"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x8a50",
+                    "Datei '|1' kann nicht aus der Registrierung entfernt werden, da sie nicht mehr vorhanden ist.tfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x8a50"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x32b",
+                    "Alle gemeinsamen Dateien, die nicht mehr verwendet werden, werden gel\u00f6scht.",
+                    "0x202"
+                ],
+                "ret_val": "0x4c"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Alle gemeinsamen Dateien, die nicht mehr verwendet werden, werden gel\u00c3\u00b6scht.hr vorhanden ist.tfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x8b40"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x8b40",
+                    "Alle gemeinsamen Dateien, die nicht mehr verwendet werden, werden gel\u00c3\u00b6scht.hr vorhanden ist.tfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x8b40"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x32c",
+                    "Fehler beim Entfernen von einem oder mehreren Eintr\u00e4gen aus der Systemregistrierungsdatenbank",
+                    "0x202"
+                ],
+                "ret_val": "0x5e"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Fehler beim Entfernen von einem oder mehreren Eintr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x8c30"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x8c30",
+                    "Fehler beim Entfernen von einem oder mehreren Eintr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x8c30"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x32d",
+                    "Fehler beim Aktualisieren der Systemregistrierung",
+                    "0x202"
+                ],
+                "ret_val": "0x31"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Fehler beim Aktualisieren der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x8d20"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x8d20",
+                    "Fehler beim Aktualisieren der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x8d20"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x384",
+                    "Programmgruppen",
+                    "0x202"
+                ],
+                "ret_val": "0xf"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Programmgruppenualisieren der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x8e10"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x8e10",
+                    "Programmgruppenualisieren der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x8e10"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x385",
+                    "Programmsymbole",
+                    "0x202"
+                ],
+                "ret_val": "0xf"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Programmsymboleualisieren der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x8f00"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x8f00",
+                    "Programmsymboleualisieren der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x8f00"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x386",
+                    "Programmverkn\u00fcpfungen",
+                    "0x202"
+                ],
+                "ret_val": "0x16"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Programmverkn\u00c3\u00bcpfungenren der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x9000"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x9000",
+                    "Programmverkn\u00c3\u00bcpfungenren der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x9000"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x387",
+                    "Programmordner",
+                    "0x202"
+                ],
+                "ret_val": "0xe"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Programmordner\u00bcpfungenren der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x90f0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x90f0",
+                    "Programmordner\u00bcpfungenren der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x90f0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x388",
+                    "Registrierungseintr\u00e4ge",
+                    "0x202"
+                ],
+                "ret_val": "0x17"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Registrierungseintr\u00c3\u00a4geen der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x91e0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x91e0",
+                    "Registrierungseintr\u00c3\u00a4geen der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x91e0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x389",
+                    "Start",
+                    "0x202"
+                ],
+                "ret_val": "0x5"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Starttrierungseintr\u00c3\u00a4geen der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x92d0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x92d0",
+                    "Starttrierungseintr\u00c3\u00a4geen der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x92d0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x38a",
+                    "Deinstallation gestartet",
+                    "0x202"
+                ],
+                "ret_val": "0x18"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Deinstallation gestartetn der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x93c0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x93c0",
+                    "Deinstallation gestartetn der Systemregistrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x93c0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x38b",
+                    "Deinstallation erfolgreich durchgef\u00fchrt",
+                    "0x202"
+                ],
+                "ret_val": "0x28"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Deinstallation erfolgreich durchgef\u00c3\u00bchrtstrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x94b0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x94b0",
+                    "Deinstallation erfolgreich durchgef\u00c3\u00bchrtstrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x94b0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x32e",
+                    "Kein Zugriff auf Datei m\u00f6glich.  ",
+                    "0x202"
+                ],
+                "ret_val": "0x22"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Kein Zugriff auf Datei m\u00c3\u00b6glich.  f\u00c3\u00bchrtstrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x95a0"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x95a0",
+                    "Kein Zugriff auf Datei m\u00c3\u00b6glich.  f\u00c3\u00bchrtstrierungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x95a0"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x32f",
+                    "Klassenbibliothek kann nicht geladen werden.  ",
+                    "0x202"
+                ],
+                "ret_val": "0x2e"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Klassenbibliothek kann nicht geladen werden.  ungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x9690"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x9690",
+                    "Klassenbibliothek kann nicht geladen werden.  ungtr\u00c3\u00a4gen aus der Systemregistrierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x9690"
+            },
+            {
+                "pc": "0x40568a",
+                "api_name": "USER32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0x330",
+                    "Es k\u00f6nnen keine Informationen aus einer Klassenbibliothek abgerufen werden.  ",
+                    "0x202"
+                ],
+                "ret_val": "0x4e"
+            },
+            {
+                "pc": "0x40563d",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "Es k\u00c3\u00b6nnen keine Informationen aus einer Klassenbibliothek abgerufen werden.  ierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0xe8"
+            },
+            {
+                "pc": "0x4055ed",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe9"
+                ],
+                "ret_val": "0x9780"
+            },
+            {
+                "pc": "0x405655",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x9780",
+                    "Es k\u00c3\u00b6nnen keine Informationen aus einer Klassenbibliothek abgerufen werden.  ierungsdatenbankfernt.tokolldatei ist m\u00c3\u00b6glicherweise besch\u00c3\u00a4digt. Klicken Sie auf 'OK' um fortzufahren, oder auf 'Abbrechen', um den Vorgang abzubrechen."
+                ],
+                "ret_val": "0x9780"
+            },
+            {
+                "pc": "0x405b16",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "myarg1 myarg2"
+                ],
+                "ret_val": "0xd"
+            },
+            {
+                "pc": "0x405b20",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x40",
+                    "0xe"
+                ],
+                "ret_val": "0x9870"
+            },
+            {
+                "pc": "0x405b3a",
+                "api_name": "KERNEL32.lstrcpyA",
+                "args": [
+                    "0x9870",
+                    "myarg1 myarg2"
+                ],
+                "ret_val": "0x9870"
+            },
+            {
+                "pc": "0x402ca7",
+                "api_name": "KERNEL32.lstrlenA",
+                "args": [
+                    "myarg1 myarg2"
+                ],
+                "ret_val": "0xd"
+            },
+            {
+                "pc": "0x40599e",
+                "api_name": "USER32.wvsprintfA",
+                "args": [
+                    "Ung\u00c3\u0083\u00c2\u00bcltige Befehlszeilenargumente. Anwendung wird beendetechen m\u00c3\u0083\u00c2\u00b6chten? Sie k\u00c3\u0083\u00c2\u00b6nnen dann m\u00c3\u0083\u00c2\u00b6glicherweise das Entfernen der Anwendung nicht mehr erneut starten.",
+                    "Ung\u00c3\u0083\u00c2\u00bcltige Befehlszeilenargumente. Anwendung wird beendetechen m\u00c3\u0083\u00c2\u00b6chten? Sie k\u00c3\u0083\u00c2\u00b6nnen dann m\u00c3\u0083\u00c2\u00b6glicherweise das Entfernen der Anwendung nicht mehr erneut starten."
+                ],
+                "ret_val": "0xa8"
+            },
+            {
+                "pc": "0x405a28",
+                "api_name": "USER32.MessageBoxA",
+                "args": [
+                    "0x0",
+                    "\u0010\u001a!\u0001 w",
+                    "Anwendung entfernenicher. Entfernen der Anwendung wird abgebrochen",
+                    "0x405e36"
+                ],
+                "ret_val": "0x2"
+            }
+        ],
+        "ret_val": "0x2",
+        "error": {
+            "type": "Invalid memory read (UC_ERR_READ_UNMAPPED)",
+            "pc": "0x40a118",
+            "address": "0x40a118",
+            "instr": "push ebp",
+            "regs": {
+                "esp": "0x01211bf8",
+                "ebp": "0x00400000",
+                "eip": "0x0040a118",
+                "esi": "0x0000700c",
+                "edi": "0x00000000",
+                "eax": "0x00000002",
+                "ebx": "0xffffffff",
+                "ecx": "0x00000000",
+                "edx": "0x00000001"
+            },
+            "stack": [
+                "sp+0x00: 0xfeedf004",
+                "sp+0x04: 0x00009890 -> emu.struct.EXCEPTION_RECORD.0x9890",
+                "sp+0x08: 0x01211fd4 -> emu.stack.0x1200000",
+                "sp+0x0c: 0x000098f0 -> emu.struct.EXCEPTION_CONTEXT.0x98f0",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000208",
+                "sp+0x18: 0x00405e36 -> emu.module.1e78d9f21e513f77618d5573d84d1b8480fc267a5071f6b4bffff6f61d4b0ec5.0x400000",
+                "sp+0x1c: 0x00405e45 -> emu.module.1e78d9f21e513f77618d5573d84d1b8480fc267a5071f6b4bffff6f61d4b0ec5.0x400000",
+                "sp+0x20: 0x00000001",
+                "sp+0x24: 0x00000030",
+                "sp+0x28: 0x00000001",
+                "sp+0x2c: 0x00007720 -> api.heap.LocalAlloc.0x7720",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x0000700c -> api.command_line.KERNEL32.GetCommandLineA.0x7000",
+                "sp+0x38: 0x01211fe4 -> emu.stack.0x1200000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 437, in start\n    count=self.max_instructions)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/engines/unicorn_eng.py\", line 203, in start\n    return self.emu.emu_start(addr, 0xFFFFFFFF, timeout=timeout, count=count)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/unicorn/unicorn.py\", line 318, in emu_start\n    raise UcError(status)\nunicorn.unicorn.UcError: Invalid memory read (UC_ERR_READ_UNMAPPED)\n"
+        },
+        "handled_exceptions": [
+            {
+                "pc": "0x4118f0",
+                "instr": "add byte ptr [eax], al",
+                "exception_code": "0xc0000005",
+                "handler_address": "0x40a118",
+                "registers": {
+                    "esp": "0x01211bf8",
+                    "ebp": "0x00400000",
+                    "eip": "0x004118f0",
+                    "esi": "0x0000700c",
+                    "edi": "0x00000000",
+                    "eax": "0x00000002",
+                    "ebx": "0x00000000",
+                    "ecx": "0x00000000",
+                    "edx": "0x00000001"
+                }
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

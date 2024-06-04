@@ -1,0 +1,250 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x100220484",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "57f9668aa58b106f4eda9e414d61d5d4c0761a211bcec99bc5c517f3d525101e",
+        "apis": [
+            {
+                "pc": "0x100220a41",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x100220a4c",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x87a0"
+            },
+            {
+                "pc": "0x100220a58",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x87b4"
+            },
+            {
+                "pc": "0x100220a64",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x100220a75",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1002209c8",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x100000000"
+            },
+            {
+                "pc": "0x100220429",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x100220845",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x1002207ec"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1002202db",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x100001f60",
+                    "0x100002108"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x10021f26b",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x28"
+                ],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x10021f26b",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x20a"
+                ],
+                "ret_val": "0x4970"
+            },
+            {
+                "pc": "0x1000d6515",
+                "api_name": "SHELL32.SHGetFolderPathW",
+                "args": [
+                    "0x0",
+                    "CSIDL_WINDOWS",
+                    "0x0",
+                    "0x0",
+                    "0x4970"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1000a740d",
+                "api_name": "msvcrt.memcpy",
+                "args": [
+                    "0x497c",
+                    "0x100028ca0",
+                    "0x24"
+                ],
+                "ret_val": "0x497c"
+            },
+            {
+                "pc": "0x1000a740d",
+                "api_name": "msvcrt.memcpy",
+                "args": [
+                    "0x49a0",
+                    "0x1000359c8",
+                    "0x16"
+                ],
+                "ret_val": "0x49a0"
+            },
+            {
+                "pc": "0x1000cd4e8",
+                "api_name": "KERNEL32.CreateFileW",
+                "args": [
+                    "\u3a43\u575c\u6e69\u6f64\u7377\\Performance\\WinSAT\\winsat.log",
+                    "GENERIC_WRITE",
+                    "0x1",
+                    "0x0",
+                    "OPEN_ALWAYS",
+                    "0x80000000",
+                    "0x0"
+                ],
+                "ret_val": "0xb4"
+            },
+            {
+                "pc": "0x1000cd50a",
+                "api_name": "KERNEL32.GetFileSizeEx",
+                "args": [
+                    "0xb4",
+                    "0x12115a8"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1000cd563",
+                "api_name": "KERNEL32.SetFilePointer",
+                "args": [
+                    "0xb4",
+                    "0x0",
+                    "0x0",
+                    "0x2"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1000cd5ce",
+                "api_name": "KERNEL32.GetLocalTime",
+                "args": [
+                    "0x1211570"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1000cd5f9",
+                "api_name": "KERNEL32.GetTimeFormatW",
+                "args": [
+                    "LOCALE_USER_DEFAULT",
+                    "0x8",
+                    "0x1211570",
+                    "0x0",
+                    "06:29:57",
+                    "0x80"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0x2d",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf038",
+            "address": "0xfeedf038",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211090",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf038",
+                "rsi": "0x000000000000032f",
+                "rdi": "0x0000000000000001",
+                "rax": "0x000000000000002d",
+                "rbx": "0x0000000100035938",
+                "rcx": "0x0000000000000000",
+                "rdx": "0x000000010002a3e0",
+                "r8": "0x00000001000359e8",
+                "r9": "0x00000000000007e8",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000003",
+                "r12": "0x0000000000000001",
+                "r13": "0x0000000100002128",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000001"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001000cdb6a -> emu.module.a6b45db4a9d9a423b85491ffd7686bd2e3baa358d72c1af6494af3069db4c316.0x100000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ADVAPI32.EventEnabled"
+        },
+        "file_access": [
+            {
+                "event": "create",
+                "path": "\u3a43\u575c\u6e69\u6f64\u7377\\Performance\\WinSAT\\winsat.log",
+                "open_flags": [
+                    "OPEN_ALWAYS"
+                ],
+                "access_flags": [
+                    "GENERIC_WRITE"
+                ]
+            }
+        ],
+        "dynamic_code_segments": [],
+        "dropped_files": [
+            {
+                "path": "\u3a43\u575c\u6e69\u6f64\u7377\\Performance\\WinSAT\\winsat.log",
+                "size": 0,
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+        ]
+    }
+]

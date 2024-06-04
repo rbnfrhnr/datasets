@@ -1,0 +1,232 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x14006e310",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "a2107eb001be716944d5be1eb0534713561be87304077f57550e56743d0bf7f8",
+        "apis": [
+            {
+                "pc": "0x14006ea40",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x14006ef7d",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetModuleHandleA"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x14006efc7",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "LoadLibraryA"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x14006f00c",
+                "api_name": "kernel32.LoadLibraryA",
+                "args": [
+                    "msvcrt.dll"
+                ],
+                "ret_val": "0x77f10000"
+            },
+            {
+                "pc": "0x14006f090",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77f10000",
+                    "calloc"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x14006f090",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77f10000",
+                    "free"
+                ],
+                "ret_val": "0xfeee0003"
+            },
+            {
+                "pc": "0x14006f090",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77f10000",
+                    "vsprintf"
+                ],
+                "ret_val": "0xfeee0004"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "TerminateProcess"
+                ],
+                "ret_val": "0xfeee0005"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetLastError"
+                ],
+                "ret_val": "0xfeee0006"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "OpenEventA"
+                ],
+                "ret_val": "0xfeee0007"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "OpenFileMappingA"
+                ],
+                "ret_val": "0xfeee0008"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "MapViewOfFile"
+                ],
+                "ret_val": "0xfeee0009"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "WaitForSingleObject"
+                ],
+                "ret_val": "0xfeee000a"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CreateEventA"
+                ],
+                "ret_val": "0xfeee000b"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "UnmapViewOfFile"
+                ],
+                "ret_val": "0xfeee000c"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CloseHandle"
+                ],
+                "ret_val": "0xfeee000d"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetCurrentProcessId"
+                ],
+                "ret_val": "0xfeee000e"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "VirtualAlloc"
+                ],
+                "ret_val": "0xfeee000f"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "VirtualFree"
+                ],
+                "ret_val": "0xfeee0010"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "VirtualProtect"
+                ],
+                "ret_val": "0xfeee0011"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "IsBadReadPtr"
+                ],
+                "ret_val": "0xfeee0012"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "OutputDebugStringA"
+                ],
+                "ret_val": "0xfeee0013"
+            },
+            {
+                "pc": "0x14006f133",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FreeLibrary"
+                ],
+                "ret_val": "0xfeee0014"
+            },
+            {
+                "pc": "0x14006f28f",
+                "api_name": "msvcrt.calloc",
+                "args": [
+                    "0x1",
+                    "0x2ef68"
+                ],
+                "ret_val": "0x30000"
+            }
+        ],
+        "ret_val": null,
+        "error": {},
+        "dynamic_code_segments": []
+    }
+]

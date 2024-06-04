@@ -1,0 +1,125 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x403b98",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "8ddb5cd3bc1e799a6f5243d458011b4c8e376854a729791a7efbb4f0e7faaa3b",
+        "apis": [
+            {
+                "pc": "0x5916c4",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fc8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x5916d3",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x3658"
+            },
+            {
+                "pc": "0x5916dc",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x3644"
+            },
+            {
+                "pc": "0x5916e9",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fc0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x591410",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x590d79",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x5c06b4",
+                    "0x5c0ac4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x590d9f",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x5c0000",
+                    "0x5c05b0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x591300",
+                "api_name": "VCRUNTIME140.memset",
+                "args": [
+                    "0x1211f64",
+                    "0x0",
+                    "0x44"
+                ],
+                "ret_val": "0x1211f64"
+            },
+            {
+                "pc": "0x59130d",
+                "api_name": "KERNEL32.GetStartupInfoW",
+                "args": [
+                    "0x1211f64"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0xa",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee1808",
+            "address": "0xfeee1808",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211fa8",
+                "ebp": "0x01211fe4",
+                "eip": "0xfeee1808",
+                "esi": "0x0063391c",
+                "edi": "0x00000000",
+                "eax": "0x0000000a",
+                "ebx": "0x00000000",
+                "ecx": "0xd27d5700",
+                "edx": "0x01212000"
+            },
+            "stack": [
+                "sp+0x00: 0x00590e0f -> emu.module.b2fdab7b07e759afec08c3e690cc23604181f4d469bc51ef2a33207623265c16.0x400000",
+                "sp+0x04: 0x0000000a",
+                "sp+0x08: 0xeb9f89e2",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0xd27d5700",
+                "sp+0x1c: 0x0000005f",
+                "sp+0x20: 0x00386880",
+                "sp+0x24: 0x01211fb0 -> emu.stack.0x1200000",
+                "sp+0x28: 0x39e2de96",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00591681 -> emu.module.b2fdab7b07e759afec08c3e690cc23604181f4d469bc51ef2a33207623265c16.0x400000",
+                "sp+0x34: 0xeadf2b96",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x01212000"
+            ],
+            "api_name": "api-ms-win-crt-runtime-l1-1-0._get_narrow_winmain_command_line"
+        },
+        "dynamic_code_segments": []
+    }
+]

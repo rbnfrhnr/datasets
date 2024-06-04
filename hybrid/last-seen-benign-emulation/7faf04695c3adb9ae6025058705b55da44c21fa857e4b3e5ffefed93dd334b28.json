@@ -1,0 +1,148 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x480ea0",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x49e700",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "a24c3f0ca753a65008578045b5468d24ed8df6c5def407887a7029a00e098a63",
+        "apis": [
+            {
+                "pc": "0x49e9be",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x49e9cd",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x3914"
+            },
+            {
+                "pc": "0x49e9d6",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x3900"
+            },
+            {
+                "pc": "0x49e9e3",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fc4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x49ed4b",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x49e5c8",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x519d18",
+                    "0x519d24"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x49e5ee",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x519d0c",
+                    "0x519d14"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x49e655",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_narrow_environment",
+                "args": [],
+                "ret_val": "0x4600"
+            },
+            {
+                "pc": "0x49e65c",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argv",
+                "args": [],
+                "ret_val": "0x4720"
+            },
+            {
+                "pc": "0x49e663",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4760"
+            },
+            {
+                "pc": "0x468d3a",
+                "api_name": "KERNEL32.AddVectoredExceptionHandler",
+                "args": [
+                    "0x0",
+                    "0x482310"
+                ],
+                "ret_val": "0x482310"
+            }
+        ],
+        "ret_val": "0x1211f3c",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf160",
+            "address": "0xfeedf160",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f00",
+                "ebp": "0x01211f80",
+                "eip": "0xfeedf160",
+                "esi": "0x00004724",
+                "edi": "0x00004600",
+                "eax": "0x01211f3c",
+                "ebx": "0x00000000",
+                "ecx": "0x01211fd8",
+                "edx": "0x01211f9c"
+            },
+            "stack": [
+                "sp+0x00: 0x00468d53 -> emu.module.7faf04695c3adb9ae6025058705b55da44c21fa857e4b3e5ffefed93dd334b28.0x400000",
+                "sp+0x04: 0x01211f3c -> emu.stack.0x1200000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00005000 -> emu.struct.ETHREAD.0x5000"
+            ],
+            "api_name": "KERNEL32.SetThreadStackGuarantee"
+        },
+        "dynamic_code_segments": []
+    }
+]

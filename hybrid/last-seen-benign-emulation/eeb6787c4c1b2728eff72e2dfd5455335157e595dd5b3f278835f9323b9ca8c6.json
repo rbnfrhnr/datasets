@@ -1,0 +1,108 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x41c8c92",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "06cf59a3eb5f833ff49ed7a055e62cc1ff5e8995e3c99b6b9cb3638ee9d2f252",
+        "apis": [
+            {
+                "pc": "0x41ca738",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x75edfc8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x41ca747",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x43b0"
+            },
+            {
+                "pc": "0x41ca750",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x439c"
+            },
+            {
+                "pc": "0x41ca75d",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x75edfc0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x41c9fd0",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4258c91",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "api-ms-win-core-synch-l1-2-0",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x4258d60",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "InitializeCriticalSectionEx"
+                ],
+                "ret_val": "0xfeee0000"
+            }
+        ],
+        "ret_val": "0xfeee0000",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0000",
+            "address": "0xfeee0000",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x075edf6c",
+                "ebp": "0x075edf80",
+                "eip": "0xfeee0000",
+                "esi": "0xfeee0000",
+                "edi": "0x05bd2724",
+                "eax": "0xfeee0000",
+                "ebx": "0x00000000",
+                "ecx": "0xfeee0000",
+                "edx": "0x1ba4d49f"
+            },
+            "stack": [
+                "sp+0x00: 0x04258f8f -> emu.module.eeb6787c4c1b2728eff72e2dfd5455335157e595dd5b3f278835f9323b9ca8c6.0x400000",
+                "sp+0x04: 0x05bd2724 -> emu.module.eeb6787c4c1b2728eff72e2dfd5455335157e595dd5b3f278835f9323b9ca8c6.0x400000",
+                "sp+0x08: 0x00000fa0",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x075edfa4 -> emu.stack.0x75dc000",
+                "sp+0x18: 0x042601f4 -> emu.module.eeb6787c4c1b2728eff72e2dfd5455335157e595dd5b3f278835f9323b9ca8c6.0x400000",
+                "sp+0x1c: 0x05bd2724 -> emu.module.eeb6787c4c1b2728eff72e2dfd5455335157e595dd5b3f278835f9323b9ca8c6.0x400000",
+                "sp+0x20: 0x00000fa0",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x0425901b -> emu.module.eeb6787c4c1b2728eff72e2dfd5455335157e595dd5b3f278835f9323b9ca8c6.0x400000",
+                "sp+0x34: 0x041c91a7 -> emu.module.eeb6787c4c1b2728eff72e2dfd5455335157e595dd5b3f278835f9323b9ca8c6.0x400000",
+                "sp+0x38: 0x075edfe4 -> emu.stack.0x75dc000",
+                "sp+0x3c: 0x041c8adf -> emu.module.eeb6787c4c1b2728eff72e2dfd5455335157e595dd5b3f278835f9323b9ca8c6.0x400000"
+            ],
+            "api_name": "USER32.FindWindowExW"
+        },
+        "dynamic_code_segments": []
+    }
+]

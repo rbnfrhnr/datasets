@@ -1,0 +1,81 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x1c0022450",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "1b54a142133531d635235e20b7c88a882cedf9eb4695454d69e4e93b25e27419",
+        "apis": [
+            {
+                "pc": "0x1c0001131",
+                "api_name": "ntoskrnl.EtwRegister",
+                "args": [
+                    "9cc69d1c-7917-4acd-8066-6bf8b63e551b",
+                    "0x1c0001010",
+                    "0x1c001d2a0",
+                    "0x1c001d2a0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1c00220a2",
+                "api_name": "ntoskrnl.EtwRegister",
+                "args": [
+                    "271aebf7-e83b-580f-7525-5e9563fe161a",
+                    "0x1c0021010",
+                    "0x1c001d338",
+                    "0x1c001d358"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf13c",
+            "address": "0xfeedf13c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200e80",
+                "rbp": "0x0000000001200fd8",
+                "rip": "0x00000000feedf13c",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x00000000007eb870",
+                "rax": "0x0000000000000000",
+                "rbx": "0x00000000007eb870",
+                "rcx": "0x0000000000000000",
+                "rdx": "0x0000000000000002",
+                "r8": "0x00000001c001b90b",
+                "r9": "0x0000000000000033",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001c00220c7 -> emu.module.f3bb5a568f9051382aa74af85f47d6e2f2c055a3481e81e389bfa15f9a90d5a1.0x1c0000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x580fe83b271aebf7",
+                "sp+0x48: 0x1a16fe63955e2575",
+                "sp+0x50: 0x00002b992cffacba",
+                "sp+0x58: 0x00000000007eb870 -> emu.object._Driver_f3bb5a568f9051382aa74af85f47d6e2f2c055a3481e81e389bfa15f9a90d5a1.0x7eb870",
+                "sp+0x60: 0x00000001c001274e -> emu.module.f3bb5a568f9051382aa74af85f47d6e2f2c055a3481e81e389bfa15f9a90d5a1.0x1c0000000",
+                "sp+0x68: 0x00000000007eb870 -> emu.object._Driver_f3bb5a568f9051382aa74af85f47d6e2f2c055a3481e81e389bfa15f9a90d5a1.0x7eb870",
+                "sp+0x70: 0x0000000001200fd8 -> emu.stack.0x1200000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ntoskrnl.EtwSetInformation"
+        },
+        "dynamic_code_segments": []
+    }
+]

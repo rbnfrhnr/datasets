@@ -1,0 +1,132 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x419adc",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "29d02ccc63b0df2e9951b2883840dd7e55f576f40f829172e5d167c849546b0f",
+        "apis": [
+            {
+                "pc": "0x419eb5",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x419ec1",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x5568"
+            },
+            {
+                "pc": "0x419ec9",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x557c"
+            },
+            {
+                "pc": "0x419ed1",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x419edd",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fd0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4198b0",
+                "api_name": "KERNEL32.InterlockedCompareExchange",
+                "args": [
+                    "0x429968",
+                    "0x1212000",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x419901",
+                "api_name": "MSVCR90._initterm_e",
+                "args": [
+                    "0x41d278",
+                    "0x41d284"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x419936",
+                "api_name": "MSVCR90._initterm",
+                "args": [
+                    "0x41d244",
+                    "0x41d274"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x41994f",
+                "api_name": "KERNEL32.InterlockedExchange",
+                "args": [
+                    "0x429968",
+                    "0x0"
+                ],
+                "ret_val": "0x1212000"
+            },
+            {
+                "pc": "0x405676",
+                "api_name": "KERNEL32.GetVersionExW",
+                "args": [
+                    "0x1211e88"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf124",
+            "address": "0xfeedf124",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211e1c",
+                "ebp": "0x01211e30",
+                "eip": "0xfeedf124",
+                "esi": "0x01211e74",
+                "edi": "0x00429968",
+                "eax": "0x00000001",
+                "ebx": "0x00000000",
+                "ecx": "0x01211e74",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0040187d -> emu.module.bf9d28e807ab1148079a5762d46d853c79869a7dfe5c38d8b0e4040fe02aabf6.0x400000",
+                "sp+0x04: 0x00401838 -> emu.module.bf9d28e807ab1148079a5762d46d853c79869a7dfe5c38d8b0e4040fe02aabf6.0x400000",
+                "sp+0x08: 0x00000001",
+                "sp+0x0c: 0x00000001",
+                "sp+0x10: 0x01211e74 -> emu.stack.0x1200000",
+                "sp+0x14: 0x01211e88 -> emu.stack.0x1200000",
+                "sp+0x18: 0x0040569d -> emu.module.bf9d28e807ab1148079a5762d46d853c79869a7dfe5c38d8b0e4040fe02aabf6.0x400000",
+                "sp+0x1c: 0x1b75031f",
+                "sp+0x20: 0x00429968 -> emu.module.bf9d28e807ab1148079a5762d46d853c79869a7dfe5c38d8b0e4040fe02aabf6.0x400000",
+                "sp+0x24: 0x00000001",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "KERNEL32.SetConsoleCtrlHandler"
+        },
+        "dynamic_code_segments": []
+    }
+]

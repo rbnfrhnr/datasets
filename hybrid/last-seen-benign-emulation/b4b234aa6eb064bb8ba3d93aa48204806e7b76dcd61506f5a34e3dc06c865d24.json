@@ -1,0 +1,214 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x140001bd0",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "12a71e17890b2d0279b5e67591e74e3f3f63f6b6434f76d3a8a7e14cf0c9b1f0",
+        "apis": [
+            {
+                "pc": "0x140002be9",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x14000b140"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x140001c90",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140001125",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "888a06dda1eac6527a4402febd9b52e565f461a9213cb9064e1caf6951126b7b",
+        "apis": [
+            {
+                "pc": "0x140001230",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x14000d018",
+                    "0x14000d028"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001263",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x14000d000",
+                    "0x14000d010"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400012d7",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x140002750"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400012f0",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._set_invalid_parameter_handler",
+                "args": [
+                    "0x140001000"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400014a2",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0x8"
+                ],
+                "ret_val": "0x4960"
+            },
+            {
+                "pc": "0x1400015fd",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "libgcc_s_dw2-1.dll"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140004468",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._crt_atexit",
+                "args": [
+                    "0x140001690"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140004468",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._crt_atexit",
+                "args": [
+                    "0x140001ae0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140003921",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "POSIXLY_CORRECT",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400016e7",
+                "api_name": "api-ms-win-crt-stdio-l1-1-0.puts",
+                "args": [
+                    "\n############################"
+                ],
+                "ret_val": "0x1d"
+            },
+            {
+                "pc": "0x1400016f6",
+                "api_name": "api-ms-win-crt-stdio-l1-1-0.puts",
+                "args": [
+                    "   V0.0.1 - Made by Gh0st   "
+                ],
+                "ret_val": "0x1c"
+            },
+            {
+                "pc": "0x140001705",
+                "api_name": "api-ms-win-crt-stdio-l1-1-0.puts",
+                "args": [
+                    "############################\n"
+                ],
+                "ret_val": "0x1d"
+            },
+            {
+                "pc": "0x140001a99",
+                "api_name": "api-ms-win-crt-stdio-l1-1-0.puts",
+                "args": [
+                    "[#] Only use for ethical proposals"
+                ],
+                "ret_val": "0x22"
+            },
+            {
+                "pc": "0x140001aa8",
+                "api_name": "api-ms-win-crt-stdio-l1-1-0.puts",
+                "args": [
+                    "[i] Listing Directories and Files...\n"
+                ],
+                "ret_val": "0x25"
+            }
+        ],
+        "ret_val": "0x1211548",
+        "error": {
+            "type": "Invalid memory read (UC_ERR_READ_UNMAPPED)",
+            "pc": "0xfeedf0e0",
+            "address": "0xfeedf0e0",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x00000000012114d0",
+                "rbp": "0x0000000001211518",
+                "rip": "0x00000000feedf0e0",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000001211548",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000000000002",
+                "rdx": "0x0000000001211548",
+                "r8": "0xffffffffffffffff",
+                "r9": "0x00000001400060a9",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140004221 -> emu.module.b4b234aa6eb064bb8ba3d93aa48204806e7b76dcd61506f5a34e3dc06c865d24.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000001211538 -> emu.stack.0x1200000",
+                "sp+0x38: 0x0000000001211538 -> emu.stack.0x1200000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x00000000012115a8 -> emu.stack.0x1200000",
+                "sp+0x50: 0x000000014000174b -> emu.module.b4b234aa6eb064bb8ba3d93aa48204806e7b76dcd61506f5a34e3dc06c865d24.0x140000000",
+                "sp+0x58: 0x0000000001211548 -> emu.stack.0x1200000",
+                "sp+0x60: 0x00000001400060a9 -> emu.module.b4b234aa6eb064bb8ba3d93aa48204806e7b76dcd61506f5a34e3dc06c865d24.0x140000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 1169, in handle_import_func\n    rv = self.api.call_api_func(mod, func, argv, ctx=default_ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/winapi.py\", line 77, in call_api_func\n    return func(mod, self.emu, argv, ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/usermode/msvcrt.py\", line 1379, in __stdio_common_vsprintf\n    fmt_str = self.read_mem_string(_format, 1)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/api.py\", line 158, in read_mem_string\n    string = self.emu.read_mem_string(addr, width=width)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/binemu.py\", line 715, in read_mem_string\n    char = self.mem_read(address, width)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/memmgr.py\", line 250, in mem_read\n    return bytes(self.emu_eng.mem_read(addr, size))\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/engines/unicorn_eng.py\", line 171, in mem_read\n    return self.emu.mem_read(addr, size)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/unicorn/unicorn.py\", line 436, in mem_read\n    raise UcError(status)\nunicorn.unicorn.UcError: Invalid memory read (UC_ERR_READ_UNMAPPED)\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

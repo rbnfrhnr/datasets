@@ -1,0 +1,83 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x11318",
+        "ep_args": [
+            "0x7e5d90",
+            "0x7e5ed0"
+        ],
+        "apihash": "d44317886f1cc9418b2cb6b21b1fe31b148377b0c4efebb20700e96a7a59cf1a",
+        "apis": [
+            {
+                "pc": "0x11343",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200fe4",
+                    "\\Device\\NwLnkFwd"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1135a",
+                "api_name": "ntoskrnl.IoCreateDevice",
+                "args": [
+                    "0x7e5d90",
+                    "0x0",
+                    "\\Device\\NwLnkFwd",
+                    "0x12",
+                    "0x0",
+                    "0x0",
+                    "0x1200fec"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x13809",
+                "api_name": "ntoskrnl.ExAllocatePool",
+                "args": [
+                    "0x0",
+                    "0xea"
+                ],
+                "ret_val": "0x7e80f0"
+            }
+        ],
+        "ret_val": "0x1200e74",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf040",
+            "address": "0xfeedf040",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01200e50",
+                "ebp": "0x01200fa8",
+                "eip": "0xfeedf040",
+                "esi": "0x00016934",
+                "edi": "0x01200fa8",
+                "eax": "0x01200e74",
+                "ebx": "0x00000000",
+                "ecx": "0x00016988",
+                "edx": "0x007e80f0"
+            },
+            "stack": [
+                "sp+0x00: 0x000139ce -> emu.module.69b3f34b979313c249a8e3b6ab11dfa0fee569a1d64cbca71671dd10e831d5ea.0x10000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x007e80f0 -> api.pool.NonPagedPool.None.0x7e80f0",
+                "sp+0x0c: 0x01200e74 -> emu.stack.0x1200000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x007e5d90 -> emu.object._Driver_69b3f34b979313c249a8e3b6ab11dfa0fee569a1d64cbca71671dd10e831d5ea.0x7e5d90",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000001",
+                "sp+0x2c: 0x0001365a -> emu.module.69b3f34b979313c249a8e3b6ab11dfa0fee569a1d64cbca71671dd10e831d5ea.0x10000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "ntoskrnl.RtlQueryRegistryValues"
+        },
+        "dynamic_code_segments": []
+    }
+]

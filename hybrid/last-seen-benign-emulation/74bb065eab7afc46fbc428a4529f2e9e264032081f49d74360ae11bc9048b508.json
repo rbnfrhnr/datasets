@@ -1,0 +1,81 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4355b2",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "af108738b915ed487a420249bf9ae7c9e3952e3b8e604b73c635cea61dd8f7de",
+        "apis": [
+            {
+                "pc": "0x435a2b",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x435a3a",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x6380"
+            },
+            {
+                "pc": "0x435a43",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x636c"
+            },
+            {
+                "pc": "0x435a50",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0x1211fd4",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0f84",
+            "address": "0xfeee0f84",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211fac",
+                "ebp": "0x01211fe4",
+                "eip": "0xfeee0f84",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x01211fd4",
+                "ebx": "0x00000000",
+                "ecx": "0x712070a2",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0043541e -> emu.module.74bb065eab7afc46fbc428a4529f2e9e264032081f49d74360ae11bc9048b508.0x400000",
+                "sp+0x04: 0x8ffe90b9",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x01211fcc -> emu.stack.0x1200000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x01211fb0 -> emu.stack.0x1200000",
+                "sp+0x24: 0x0000005f",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00435b59 -> emu.module.74bb065eab7afc46fbc428a4529f2e9e264032081f49d74360ae11bc9048b508.0x400000",
+                "sp+0x30: 0x8e9b32b5",
+                "sp+0x34: 0xfffffffe",
+                "sp+0x38: 0x01212000",
+                "sp+0x3c: 0xfeedf000"
+            ],
+            "api_name": "MSVCR110.__crtGetShowWindowMode"
+        },
+        "dynamic_code_segments": []
+    }
+]

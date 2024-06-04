@@ -1,0 +1,125 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140008e60",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "6bfecf8c3c3a82ccd3286fe09aa015dfdceffdb36367605ceb703d871f7277b0",
+        "apis": [
+            {
+                "pc": "0x1400092c2",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400092d0",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xabc"
+            },
+            {
+                "pc": "0x1400092dc",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xaa8"
+            },
+            {
+                "pc": "0x1400092ec",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140008d3c",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x14000b5a0",
+                    "0x14000b5b8"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140008d5d",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x14000b580",
+                    "0x14000b598"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140008dcb",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_narrow_environment",
+                "args": [],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x140008dd3",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argv",
+                "args": [],
+                "ret_val": "0x4a60"
+            },
+            {
+                "pc": "0x140008ddb",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4ab0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf094",
+            "address": "0xfeedf094",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x00000000012113c0",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf094",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000003",
+                "rax": "0x0000000000000000",
+                "rbx": "0x0000000000004a68",
+                "rcx": "0x00000000012117e8",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000000000000",
+                "r9": "0x0000000000000002",
+                "r10": "0x000000002011000c",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000004a68",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140001590 -> emu.module.910a4d6c067c3f655f88046369d76a4ccee3a4ebe56d055aab80cd7bff5f6fd0.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000003",
+                "sp+0x58: 0x0000000000004a68 -> api.argv.0x4a60",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "AIDE.??0AIDEDimension@AIDE@@QEAA@II@Z"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,130 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4546e0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "4164992c6022f96a28eceecd1c910e2d3a032d5bc154bb9a399a5425eaf55e71",
+        "apis": [
+            {
+                "pc": "0x45475a",
+                "api_name": "kernel32.LoadLibraryA",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x45475a",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "AddDllDirectory"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x45475a",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "AddVectoredContinueHandler"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x45475a",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetQueuedCompletionStatusEx"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x45475a",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "LoadLibraryExW"
+                ],
+                "ret_val": "0xfeee0003"
+            },
+            {
+                "pc": "0x45475a",
+                "api_name": "kernel32.SetErrorMode",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x45475a",
+                "api_name": "kernel32.SetErrorMode",
+                "args": [
+                    "0x8003"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x45475a",
+                "api_name": "kernel32.AddVectoredExceptionHandler",
+                "args": [
+                    "0x1",
+                    "0x454900"
+                ],
+                "ret_val": "0x454900"
+            }
+        ],
+        "ret_val": "0xfeee0001",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0001",
+            "address": "0xfeee0001",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211d58",
+                "rbp": "0x0000000001211e60",
+                "rip": "0x00000000feee0001",
+                "rsi": "0x0000000001211e98",
+                "rdi": "0x0000000000003000",
+                "rax": "0x00000000feee0001",
+                "rbx": "0x00000000005cfbc0",
+                "rcx": "0x0000000000000001",
+                "rdx": "0x0000000000454910",
+                "r8": "0x0000000000454900",
+                "r9": "0x0000000000504d60",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000000045475a -> emu.module.24e686a7eeb49572ee02c576002aac5f73d543f66ee85c596df7f581c067860f.0x400000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x00000000005cfbc0 -> emu.module.24e686a7eeb49572ee02c576002aac5f73d543f66ee85c596df7f581c067860f.0x400000",
+                "sp+0x20: 0x0000000001211d90 -> emu.stack.0x1200000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x00000000004270c7 -> emu.module.24e686a7eeb49572ee02c576002aac5f73d543f66ee85c596df7f581c067860f.0x400000",
+                "sp+0x40: 0x0000000000454710 -> emu.module.24e686a7eeb49572ee02c576002aac5f73d543f66ee85c596df7f581c067860f.0x400000",
+                "sp+0x48: 0x00000000005cfbc0 -> emu.module.24e686a7eeb49572ee02c576002aac5f73d543f66ee85c596df7f581c067860f.0x400000",
+                "sp+0x50: 0x000000000045475a -> emu.module.24e686a7eeb49572ee02c576002aac5f73d543f66ee85c596df7f581c067860f.0x400000",
+                "sp+0x58: 0x00000000005cf8a0 -> emu.module.24e686a7eeb49572ee02c576002aac5f73d543f66ee85c596df7f581c067860f.0x400000",
+                "sp+0x60: 0x0000000001211dd8 -> emu.stack.0x1200000",
+                "sp+0x68: 0x00000000004271f7 -> emu.module.24e686a7eeb49572ee02c576002aac5f73d543f66ee85c596df7f581c067860f.0x400000",
+                "sp+0x70: 0x00000000feedf07c",
+                "sp+0x78: 0x00000000feee0003"
+            ],
+            "api_name": "kernel32.AddVectoredContinueHandler"
+        },
+        "dynamic_code_segments": []
+    }
+]

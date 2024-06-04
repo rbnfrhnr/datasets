@@ -1,0 +1,146 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x5fa870",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "12a71e17890b2d0279b5e67591e74e3f3f63f6b6434f76d3a8a7e14cf0c9b1f0",
+        "apis": [
+            {
+                "pc": "0x5fb24d",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x8a1868"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x5fa820",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4014b0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "a0a41d51428ae4fe79aa499890a899f72183d9a85395384dba95d9bed9c08973",
+        "apis": [
+            {
+                "pc": "0x40147e",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x8a500c",
+                    "0x8a5014"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401409",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x8a5000",
+                    "0x8a5008"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40123e",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x5fae40"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x401266",
+                "api_name": "msvcrt.__p__acmdln",
+                "args": [],
+                "ret_val": "0x4610"
+            },
+            {
+                "pc": "0x4012f0",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x4"
+                ],
+                "ret_val": "0x4630"
+            },
+            {
+                "pc": "0x4014f6",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "libgcc_s_dw2-1.dll"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4014cf",
+                "api_name": "msvcrt._onexit",
+                "args": [
+                    "0x401590"
+                ],
+                "ret_val": "0x401590"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "Invalid memory read (UC_ERR_READ_UNMAPPED)",
+            "pc": "0x5fae40",
+            "address": "0x5fae40",
+            "instr": "push ebx",
+            "regs": {
+                "esp": "0x01211e5c",
+                "ebp": "0x00874fa0",
+                "eip": "0x005fae40",
+                "esi": "0x00000004",
+                "edi": "0x02182200",
+                "eax": "0x00000000",
+                "ebx": "0x00000800",
+                "ecx": "0x02182200",
+                "edx": "0x07088100"
+            },
+            "stack": [
+                "sp+0x00: 0xfeedf000",
+                "sp+0x04: 0x00004640 -> emu.struct.EXCEPTION_POINTERS.0x4640",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00430587 -> emu.module.623c1af2e441a322155b175ece97ea73f42de273e5b3791dce76dbfe34eae391.0x400000",
+                "sp+0x14: 0x005fb700 -> emu.module.623c1af2e441a322155b175ece97ea73f42de273e5b3791dce76dbfe34eae391.0x400000",
+                "sp+0x18: 0xfffffff4",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x0045174f -> emu.module.623c1af2e441a322155b175ece97ea73f42de273e5b3791dce76dbfe34eae391.0x400000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 437, in start\n    count=self.max_instructions)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/engines/unicorn_eng.py\", line 203, in start\n    return self.emu.emu_start(addr, 0xFFFFFFFF, timeout=timeout, count=count)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/unicorn/unicorn.py\", line 318, in emu_start\n    raise UcError(status)\nunicorn.unicorn.UcError: Invalid memory read (UC_ERR_READ_UNMAPPED)\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

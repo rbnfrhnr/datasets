@@ -1,0 +1,86 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1148410",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "86de258ca6ee9ab8c95b5f9e8cac253638f597d87daf50580687d8ab6a37fb83",
+        "apis": [
+            {
+                "pc": "0x4021c9",
+                "api_name": "kernel32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x4019e0",
+                "api_name": "kernel32.GetModuleHandleW",
+                "args": [
+                    "ntdll.dll"
+                ],
+                "ret_val": "0x7c000000"
+            },
+            {
+                "pc": "0x4019ef",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x7c000000",
+                    "wine_get_version"
+                ],
+                "ret_val": "0xfeee0000"
+            }
+        ],
+        "ret_val": "0x401e60",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee2274",
+            "address": "0xfeee2274",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001b25f20",
+                "rbp": "0x0000000001b25f88",
+                "rip": "0x00000000feee2274",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000000401e60",
+                "rbx": "0x00000000011485a8",
+                "rcx": "0x0000000001169020",
+                "rdx": "0x0000000000401a10",
+                "r8": "0x0000000000004020",
+                "r9": "0x0000000000004030",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000000401a40 -> emu.module.0bbe52be35b0a5a4ed9dbf39f090b98e49be2c7397022a727eab770a362f8808.0x400000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x000000000040221d -> emu.module.0bbe52be35b0a5a4ed9dbf39f090b98e49be2c7397022a727eab770a362f8808.0x400000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000001148425 -> emu.module.0bbe52be35b0a5a4ed9dbf39f090b98e49be2c7397022a727eab770a362f8808.0x400000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "rtl280._ZN6System14RegisterModuleEPNS_10TLibModuleE"
+        },
+        "dynamic_code_segments": []
+    }
+]

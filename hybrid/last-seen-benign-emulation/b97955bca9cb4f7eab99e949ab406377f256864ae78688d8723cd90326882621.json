@@ -1,0 +1,195 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4010e1",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "46e71bd856c7b5f0d7c5a9bf2e4f2c326eb6f1f584f684adc65eabc69fd612ce",
+        "apis": [
+            {
+                "pc": "0x495284",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fc8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x495293",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xe7c"
+            },
+            {
+                "pc": "0x49529c",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xe68"
+            },
+            {
+                "pc": "0x4952a9",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fc0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x494db0",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x49483f",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x4ad638",
+                    "0x4ada48"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x494865",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x4ad000",
+                    "0x4ad534"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4948cc",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_narrow_environment",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x4948d3",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argv",
+                "args": [],
+                "ret_val": "0x46f0"
+            },
+            {
+                "pc": "0x4948da",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4730"
+            },
+            {
+                "pc": "0x493228",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0xc"
+                ],
+                "ret_val": "0x4740"
+            },
+            {
+                "pc": "0x419ce2",
+                "api_name": "VCRUNTIME140.memmove",
+                "args": [
+                    "0x1211e30",
+                    "0x4713",
+                    "0x6"
+                ],
+                "ret_val": "0x1211e30"
+            },
+            {
+                "pc": "0x493228",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0x18"
+                ],
+                "ret_val": "0x4750"
+            },
+            {
+                "pc": "0x419ce2",
+                "api_name": "VCRUNTIME140.memmove",
+                "args": [
+                    "0x1211e30",
+                    "0x471d",
+                    "0x6"
+                ],
+                "ret_val": "0x1211e30"
+            },
+            {
+                "pc": "0x493228",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0x30"
+                ],
+                "ret_val": "0x4770"
+            },
+            {
+                "pc": "0x493255",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.free",
+                "args": [
+                    "0x4750"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x493228",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0x8"
+                ],
+                "ret_val": "0x47b0"
+            },
+            {
+                "pc": "0x4804fd",
+                "api_name": "VCRUNTIME140.memset",
+                "args": [
+                    "0x1211d00",
+                    "0x0",
+                    "0xb0"
+                ],
+                "ret_val": "0x1211d00"
+            }
+        ],
+        "ret_val": "0x1211cc0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf188",
+            "address": "0xfeedf188",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211ca0",
+                "ebp": "0x01211ccc",
+                "eip": "0xfeedf188",
+                "esi": "0x00004770",
+                "edi": "0x01211d00",
+                "eax": "0x01211cc0",
+                "ebx": "0x00000000",
+                "ecx": "0x01211d68",
+                "edx": "0x00000001"
+            },
+            "stack": [
+                "sp+0x00: 0x0040d420 -> emu.module.b97955bca9cb4f7eab99e949ab406377f256864ae78688d8723cd90326882621.0x400000",
+                "sp+0x04: 0xf5823fe0",
+                "sp+0x08: 0x01211e40 -> emu.stack.0x1200000",
+                "sp+0x0c: 0x00004770 -> api.heap.HeapAlloc.0x4770",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x01211d00 -> emu.stack.0x1200000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x01211dcc -> emu.stack.0x1200000",
+                "sp+0x24: 0x00497db7 -> emu.module.b97955bca9cb4f7eab99e949ab406377f256864ae78688d8723cd90326882621.0x400000",
+                "sp+0x28: 0xffffffff",
+                "sp+0x2c: 0x01211dd8 -> emu.stack.0x1200000",
+                "sp+0x30: 0x00480510 -> emu.module.b97955bca9cb4f7eab99e949ab406377f256864ae78688d8723cd90326882621.0x400000",
+                "sp+0x34: 0x00004770 -> api.heap.HeapAlloc.0x4770",
+                "sp+0x38: 0x00000003",
+                "sp+0x3c: 0x00000001"
+            ],
+            "api_name": "MSVCP140.??0?$basic_ios@DU?$char_traits@D@std@@@std@@IAE@XZ"
+        },
+        "dynamic_code_segments": []
+    }
+]

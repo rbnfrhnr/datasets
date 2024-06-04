@@ -1,0 +1,173 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x172e0",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "8fbb1642243fbfabaf0d28d569755431edd76bd372df33b8b798d672d8f79b38",
+        "apis": [
+            {
+                "pc": "0x17076",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f78",
+                    "KeAcquireInStackQueuedSpinLock"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x17081",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "KeAcquireInStackQueuedSpinLock"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x1709a",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f78",
+                    "KeAcquireInStackQueuedSpinLockAtDpcLevel"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x170a5",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "KeAcquireInStackQueuedSpinLockAtDpcLevel"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x170be",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f78",
+                    "KeReleaseInStackQueuedSpinLock"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x170c9",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "KeReleaseInStackQueuedSpinLock"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x170e2",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f78",
+                    "KeReleaseInStackQueuedSpinLockFromDpcLevel"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x170ed",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "KeReleaseInStackQueuedSpinLockFromDpcLevel"
+                ],
+                "ret_val": "0xfeee0003"
+            },
+            {
+                "pc": "0x1717f",
+                "api_name": "ntoskrnl.IoCreateDevice",
+                "args": [
+                    "0x7eb870",
+                    "0x28",
+                    "\\Device\\Interception10",
+                    "0x22",
+                    "0x0",
+                    "0x0",
+                    "0x14180"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1719a",
+                "api_name": "ntoskrnl.IoCreateSymbolicLink",
+                "args": [
+                    "\\DosDevices\\Interception10",
+                    "\\Device\\Interception10"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1717f",
+                "api_name": "ntoskrnl.IoCreateDevice",
+                "args": [
+                    "0x7eb870",
+                    "0x28",
+                    "\\Device\\Interception11",
+                    "0x22",
+                    "0x0",
+                    "0x0",
+                    "0x14188"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1719a",
+                "api_name": "ntoskrnl.IoCreateSymbolicLink",
+                "args": [
+                    "\\DosDevices\\Interception11",
+                    "\\Device\\Interception11"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x14190",
+        "error": {
+            "type": "'DRIVER_OBJECT' object has no attribute 'NextDevice'",
+            "pc": "0xfeedf06c",
+            "address": "0xfeedf06c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200f10",
+                "rbp": "0x00000000007eb870",
+                "rip": "0x00000000feedf06c",
+                "rsi": "0x0000000000014190",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000000014190",
+                "rbx": "0x0000000000000002",
+                "rcx": "0x00000000007eb870",
+                "rdx": "0x0000000000000028",
+                "r8": "0x0000000001200f68",
+                "r9": "0x0000000000000022",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000001200fb0",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000001",
+                "r14": "0x0000000000014180",
+                "r15": "0x0000000000000030"
+            },
+            "stack": [
+                "sp+0x00: 0x000000000001717f -> emu.module.0f12d47d01864ca5e1eb663a52b3d2c060521e57b68ff99d70e7f01506e400f9.0x10000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000014190 -> emu.module.0f12d47d01864ca5e1eb663a52b3d2c060521e57b68ff99d70e7f01506e400f9.0x10000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000360034",
+                "sp+0x50: 0x0000000000014140 -> emu.module.0f12d47d01864ca5e1eb663a52b3d2c060521e57b68ff99d70e7f01506e400f9.0x10000",
+                "sp+0x58: 0x00000000002e002c",
+                "sp+0x60: 0x0000000000014110 -> emu.module.0f12d47d01864ca5e1eb663a52b3d2c060521e57b68ff99d70e7f01506e400f9.0x10000",
+                "sp+0x68: 0x0000000000540054",
+                "sp+0x70: 0x00000000000164f0 -> emu.module.0f12d47d01864ca5e1eb663a52b3d2c060521e57b68ff99d70e7f01506e400f9.0x10000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 1169, in handle_import_func\n    rv = self.api.call_api_func(mod, func, argv, ctx=default_ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/winapi.py\", line 77, in call_api_func\n    return func(mod, self.emu, argv, ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/kernelmode/ntoskrnl.py\", line 398, in IoCreateDevice\n    chars, tag='api.object')\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/kernel.py\", line 418, in create_device_object\n    self.get_object_from_addr(drv.object.NextDevice)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/struct.py\", line 328, in __getattribute__\n    return super(EmuStruct, self).__getattribute__(name)\nAttributeError: 'DRIVER_OBJECT' object has no attribute 'NextDevice'\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

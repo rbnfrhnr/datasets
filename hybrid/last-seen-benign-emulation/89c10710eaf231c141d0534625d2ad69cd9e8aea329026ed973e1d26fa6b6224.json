@@ -1,0 +1,156 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x140001810",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "12a71e17890b2d0279b5e67591e74e3f3f63f6b6434f76d3a8a7e14cf0c9b1f0",
+        "apis": [
+            {
+                "pc": "0x140002829",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x140008140"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x1400018d0",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140001125",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "83786db95c1d2302ff3f74085878792685f1811c620222642b5dbdc8a53a80d8",
+        "apis": [
+            {
+                "pc": "0x140001230",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x14000a018",
+                    "0x14000a028"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001263",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x14000a000",
+                    "0x14000a010"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400012d7",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x140002390"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400014a2",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x8"
+                ],
+                "ret_val": "0x4960"
+            },
+            {
+                "pc": "0x1400015fd",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "libgcc_s_dw2-1.dll"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14000159b",
+                "api_name": "msvcrt._onexit",
+                "args": [
+                    "0x140001690"
+                ],
+                "ret_val": "0x140001690"
+            },
+            {
+                "pc": "0x14000159b",
+                "api_name": "msvcrt._onexit",
+                "args": [
+                    "0x140001720"
+                ],
+                "ret_val": "0x140001720"
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf00c",
+            "address": "0xfeedf00c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211ef0",
+                "rbp": "0x0000000001211f68",
+                "rip": "0x00000000feedf00c",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000000000001",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000000000000",
+                "rdx": "0x0000000000004960",
+                "r8": "0x0000000000000000",
+                "r9": "0x0000000000004030",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140001340 -> emu.module.89c10710eaf231c141d0534625d2ad69cd9e8aea329026ed973e1d26fa6b6224.0x140000000",
+                "sp+0x08: 0x0000000100000000",
+                "sp+0x10: 0x0000000140008008 -> emu.module.89c10710eaf231c141d0534625d2ad69cd9e8aea329026ed973e1d26fa6b6224.0x140000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x00000001400081c8 -> emu.module.89c10710eaf231c141d0534625d2ad69cd9e8aea329026ed973e1d26fa6b6224.0x140000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000001212000",
+                "sp+0x48: 0x00000001400081c8 -> emu.module.89c10710eaf231c141d0534625d2ad69cd9e8aea329026ed973e1d26fa6b6224.0x140000000",
+                "sp+0x50: 0x0000000000003000 -> emu.segment.gs.0x3000",
+                "sp+0x58: 0x0000003000000000",
+                "sp+0x60: 0x0000000001212000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000001211fa8 -> emu.stack.0x1200000"
+            ],
+            "api_name": "perl538.RunPerl"
+        },
+        "dynamic_code_segments": []
+    }
+]

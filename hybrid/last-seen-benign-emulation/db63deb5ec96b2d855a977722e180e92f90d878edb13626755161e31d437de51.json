@@ -1,0 +1,430 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x140c4ef50",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x14014896c",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "9b1c69c2fc7b70b0e2f437690661e040497ec4b3086e8d3733bb64549b8be763",
+        "apis": [
+            {
+                "pc": "0x140149eae",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140149ebc",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x4524"
+            },
+            {
+                "pc": "0x140149ec8",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x4510"
+            },
+            {
+                "pc": "0x140149ed8",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14014941a",
+                "api_name": "KERNEL32.GetProcessHeap",
+                "args": [],
+                "ret_val": "0x4950"
+            },
+            {
+                "pc": "0x14014917a",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14014a2c1",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x14014a290"
+                ],
+                "ret_val": "0x14014a291"
+            },
+            {
+                "pc": "0x14014a4af",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x14014a4c2",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsAlloc"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x14014a4e0",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsFree"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x14014a4fe",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsGetValue"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x14014a51c",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsSetValue"
+                ],
+                "ret_val": "0xfeee0003"
+            },
+            {
+                "pc": "0x14014a53a",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "InitializeCriticalSectionEx"
+                ],
+                "ret_val": "0xfeee0004"
+            },
+            {
+                "pc": "0x14014a558",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CreateEventExW"
+                ],
+                "ret_val": "0xfeee0005"
+            },
+            {
+                "pc": "0x14014a576",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CreateSemaphoreExW"
+                ],
+                "ret_val": "0xfeee0006"
+            },
+            {
+                "pc": "0x14014a594",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetThreadStackGuarantee"
+                ],
+                "ret_val": "0xfeee0007"
+            },
+            {
+                "pc": "0x14014a5b2",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CreateThreadpoolTimer"
+                ],
+                "ret_val": "0xfeee0008"
+            },
+            {
+                "pc": "0x14014a5d0",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetThreadpoolTimer"
+                ],
+                "ret_val": "0xfeee0009"
+            },
+            {
+                "pc": "0x14014a5ee",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "WaitForThreadpoolTimerCallbacks"
+                ],
+                "ret_val": "0xfeee000a"
+            },
+            {
+                "pc": "0x14014a60c",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CloseThreadpoolTimer"
+                ],
+                "ret_val": "0xfeee000b"
+            },
+            {
+                "pc": "0x14014a62a",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CreateThreadpoolWait"
+                ],
+                "ret_val": "0xfeee000c"
+            },
+            {
+                "pc": "0x14014a648",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetThreadpoolWait"
+                ],
+                "ret_val": "0xfeee000d"
+            },
+            {
+                "pc": "0x14014a666",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CloseThreadpoolWait"
+                ],
+                "ret_val": "0xfeee000e"
+            },
+            {
+                "pc": "0x14014a684",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlushProcessWriteBuffers"
+                ],
+                "ret_val": "0xfeee000f"
+            },
+            {
+                "pc": "0x14014a6a2",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FreeLibraryWhenCallbackReturns"
+                ],
+                "ret_val": "0xfeee0010"
+            },
+            {
+                "pc": "0x14014a6c0",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetCurrentProcessorNumber"
+                ],
+                "ret_val": "0xfeee0011"
+            },
+            {
+                "pc": "0x14014a6de",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetLogicalProcessorInformation"
+                ],
+                "ret_val": "0xfeee0012"
+            },
+            {
+                "pc": "0x14014a6fc",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CreateSymbolicLinkW"
+                ],
+                "ret_val": "0xfeee0013"
+            },
+            {
+                "pc": "0x14014a71a",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetDefaultDllDirectories"
+                ],
+                "ret_val": "0xfeee0014"
+            },
+            {
+                "pc": "0x14014a738",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "EnumSystemLocalesEx"
+                ],
+                "ret_val": "0xfeee0015"
+            },
+            {
+                "pc": "0x14014a756",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CompareStringEx"
+                ],
+                "ret_val": "0xfeee0016"
+            },
+            {
+                "pc": "0x14014a774",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetDateFormatEx"
+                ],
+                "ret_val": "0xfeee0017"
+            },
+            {
+                "pc": "0x14014a792",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetLocaleInfoEx"
+                ],
+                "ret_val": "0xfeee0018"
+            },
+            {
+                "pc": "0x14014a7b0",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetTimeFormatEx"
+                ],
+                "ret_val": "0xfeee0019"
+            },
+            {
+                "pc": "0x14014a7ce",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetUserDefaultLocaleName"
+                ],
+                "ret_val": "0xfeee001a"
+            },
+            {
+                "pc": "0x14014a7ec",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "IsValidLocaleName"
+                ],
+                "ret_val": "0xfeee001b"
+            },
+            {
+                "pc": "0x14014a80a",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "LCMapStringEx"
+                ],
+                "ret_val": "0xfeee001c"
+            },
+            {
+                "pc": "0x14014a828",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetCurrentPackageId"
+                ],
+                "ret_val": "0xfeee001d"
+            },
+            {
+                "pc": "0x14014a846",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetTickCount64"
+                ],
+                "ret_val": "0xfeee001e"
+            },
+            {
+                "pc": "0x14014a864",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetFileInformationByHandleExW"
+                ],
+                "ret_val": "0xfeee001f"
+            },
+            {
+                "pc": "0x14014a882",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetFileInformationByHandleW"
+                ],
+                "ret_val": "0xfeee0020"
+            }
+        ],
+        "ret_val": "0xfeee0004",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0004",
+            "address": "0xfeee0004",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211f10",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feee0004",
+                "rsi": "0x0000000000000001",
+                "rdi": "0x0000000000000024",
+                "rax": "0x00000000feee0004",
+                "rbx": "0x000000014149c070",
+                "rcx": "0x0000000141b05290",
+                "rdx": "0x0000000000000fa0",
+                "r8": "0x0000000000000000",
+                "r9": "0x0000000000004030",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014014aab1 -> emu.module.db63deb5ec96b2d855a977722e180e92f90d878edb13626755161e31d437de51.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000001",
+                "sp+0x30: 0x0000000140148e90 -> emu.module.db63deb5ec96b2d855a977722e180e92f90d878edb13626755161e31d437de51.0x140000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000140148854 -> emu.module.db63deb5ec96b2d855a977722e180e92f90d878edb13626755161e31d437de51.0x140000000",
+                "sp+0x68: 0x0000000001211fd8 -> emu.stack.0x1200000",
+                "sp+0x70: 0x0000000140148975 -> emu.module.db63deb5ec96b2d855a977722e180e92f90d878edb13626755161e31d437de51.0x140000000",
+                "sp+0x78: 0x01dab5d9065ade34"
+            ],
+            "api_name": "USER32.RegisterRawInputDevices"
+        },
+        "dynamic_code_segments": []
+    }
+]
