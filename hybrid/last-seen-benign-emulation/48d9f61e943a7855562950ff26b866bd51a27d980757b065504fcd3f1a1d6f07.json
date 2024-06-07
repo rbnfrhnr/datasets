@@ -1,0 +1,107 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x14004aaf4",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "f090ec9cb1f49033a152a13f151dfa74f187fe6389801e9e3bfc4f53f066fe38",
+        "apis": [
+            {
+                "pc": "0x14004ab77",
+                "api_name": "ntoskrnl.RtlCopyUnicodeString",
+                "args": [
+                    "0x14035a9f8",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\48d9f61e943a7855562950ff26b866bd51a27d980757b065504fcd3f1a1d6f07"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14004ab94",
+                "api_name": "WDFLDR.WdfVersionBind",
+                "args": [
+                    "0x7eb870",
+                    "0x14035a9f8",
+                    "0x14032cad0",
+                    "0x14035a7e8"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400444c6",
+                "api_name": "ntoskrnl.RtlInitUnicodeString",
+                "args": [
+                    "0x1200f48",
+                    "vDbgPrintEx"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400444d1",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "vDbgPrintEx"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x140368022",
+                "api_name": "ntoskrnl.PsGetVersion",
+                "args": [
+                    "0x14032c8c4",
+                    "0x14032c8c8",
+                    "0x14032c8cc",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x6010000",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0cc",
+            "address": "0xfeedf0cc",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200e50",
+                "rbp": "0x0000000000000000",
+                "rip": "0x00000000feedf0cc",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x000000014032c0d8",
+                "rax": "0x0000000006010000",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000005010000",
+                "rdx": "0x000000014032c8c8",
+                "r8": "0x000000014032c8cc",
+                "r9": "0x0000000000000000",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000001200ea0",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000006010000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001403680a6 -> emu.module.48d9f61e943a7855562950ff26b866bd51a27d980757b065504fcd3f1a1d6f07.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000140368022 -> emu.module.48d9f61e943a7855562950ff26b866bd51a27d980757b065504fcd3f1a1d6f07.0x140000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x00000000007eb870 -> emu.object._Driver_48d9f61e943a7855562950ff26b866bd51a27d980757b065504fcd3f1a1d6f07.0x7eb870",
+                "sp+0x50: 0x000000014001f233 -> emu.module.48d9f61e943a7855562950ff26b866bd51a27d980757b065504fcd3f1a1d6f07.0x140000000",
+                "sp+0x58: 0x00000000007eba60 -> emu.object._Driver_48d9f61e943a7855562950ff26b866bd51a27d980757b065504fcd3f1a1d6f07.reg_path.0x7eba60",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x00000000007eb870 -> emu.object._Driver_48d9f61e943a7855562950ff26b866bd51a27d980757b065504fcd3f1a1d6f07.0x7eb870",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ntoskrnl.RtlIsNtDdiVersionAvailable"
+        },
+        "dynamic_code_segments": []
+    }
+]

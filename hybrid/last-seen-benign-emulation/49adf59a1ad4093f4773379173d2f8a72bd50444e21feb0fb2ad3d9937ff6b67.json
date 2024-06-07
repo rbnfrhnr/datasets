@@ -1,0 +1,79 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x1400011a0",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "f4dfc60c77bc6cbf657297a5263d5de1c6d15a9cc3616934bd34c8c8ca2fbc32",
+        "apis": [
+            {
+                "pc": "0x1400010d2",
+                "api_name": "ntoskrnl.RtlCopyUnicodeString",
+                "args": [
+                    "0x140051678",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\49adf59a1ad4093f4773379173d2f8a72bd50444e21feb0fb2ad3d9937ff6b67"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400010ef",
+                "api_name": "WDFLDR.WdfVersionBind",
+                "args": [
+                    "0x7eb870",
+                    "0x140051678",
+                    "0x140050170",
+                    "0x140051698"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x1400503d0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf290",
+            "address": "0xfeedf290",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200ed0",
+                "rbp": "0x0000000000000000",
+                "rip": "0x00000000feedf290",
+                "rsi": "0x00000000007eba60",
+                "rdi": "0x00000000007eb870",
+                "rax": "0x00000001400503d0",
+                "rbx": "0x0000000140050830",
+                "rcx": "0x0000000140050888",
+                "rdx": "0x00000000007eba60",
+                "r8": "0x0000000140050170",
+                "r9": "0x0000000140051698",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x00000000007eb870"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140033e26 -> emu.module.49adf59a1ad4093f4773379173d2f8a72bd50444e21feb0fb2ad3d9937ff6b67.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x000000014005603b -> emu.module.49adf59a1ad4093f4773379173d2f8a72bd50444e21feb0fb2ad3d9937ff6b67.0x140000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "FLTMGR.FltInitializePushLock"
+        },
+        "dynamic_code_segments": []
+    }
+]

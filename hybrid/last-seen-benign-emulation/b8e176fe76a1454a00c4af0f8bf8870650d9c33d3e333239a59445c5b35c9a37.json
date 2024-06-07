@@ -1,0 +1,101 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140001410",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "0528a4d35bc2f530ee3d2401f2723431a3e90abe4c12b834a33c7fb19c118e09",
+        "apis": [
+            {
+                "pc": "0x1400016bb",
+                "api_name": "api-ms-win-core-sysinfo-l1-1-0.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400016c9",
+                "api_name": "api-ms-win-core-processthreads-l1-1-0.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x1b10"
+            },
+            {
+                "pc": "0x1400016d5",
+                "api_name": "api-ms-win-core-processthreads-l1-1-0.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x1b24"
+            },
+            {
+                "pc": "0x1400016e1",
+                "api_name": "api-ms-win-core-sysinfo-l1-1-0.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x1400016f1",
+                "api_name": "api-ms-win-core-sysinfo-l1-1-0.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c28"
+            },
+            {
+                "pc": "0x14000170c",
+                "api_name": "api-ms-win-core-profile-l1-1-0.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf06c",
+            "address": "0xfeedf06c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211f10",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf06c",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000140002298",
+                "rax": "0x0000000000000000",
+                "rbx": "0x0000000000000001",
+                "rcx": "0x0000000000000000",
+                "rdx": "0x0000000000004010",
+                "r8": "0x0000000000004020",
+                "r9": "0x0000000000004030",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x00000001400022a8"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140001548 -> emu.module.b8e176fe76a1454a00c4af0f8bf8870650d9c33d3e333239a59445c5b35c9a37.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000001",
+                "sp+0x30: 0x0000000140001189 -> emu.module.b8e176fe76a1454a00c4af0f8bf8870650d9c33d3e333239a59445c5b35c9a37.0x140000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x000000014000170c -> emu.module.b8e176fe76a1454a00c4af0f8bf8870650d9c33d3e333239a59445c5b35c9a37.0x140000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x00000001400012e9 -> emu.module.b8e176fe76a1454a00c4af0f8bf8870650d9c33d3e333239a59445c5b35c9a37.0x140000000",
+                "sp+0x68: 0x0000000001211fd8 -> emu.stack.0x1200000",
+                "sp+0x70: 0x0000000140001419 -> emu.module.b8e176fe76a1454a00c4af0f8bf8870650d9c33d3e333239a59445c5b35c9a37.0x140000000",
+                "sp+0x78: 0x01df9144016f1b94"
+            ],
+            "api_name": "api-ms-win-core-libraryloader-l1-2-0.GetModuleHandleW"
+        },
+        "dynamic_code_segments": []
+    }
+]

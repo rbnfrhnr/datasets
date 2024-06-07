@@ -1,0 +1,222 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4177f4",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "b7525f88ffd8f01dc06e528cad67f519d5035addeb1ba5a858af38e0d7864f3f",
+        "apis": [
+            {
+                "pc": "0x408715",
+                "api_name": "kernel32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x4085b1",
+                "api_name": "kernel32.InitializeCriticalSection",
+                "args": [
+                    "0x41bc1c"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x406e2a",
+                "api_name": "kernel32.InitializeCriticalSection",
+                "args": [
+                    "0x41bb54"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x406e38",
+                "api_name": "kernel32.GetVersion",
+                "args": [],
+                "ret_val": "0x1db10106"
+            },
+            {
+                "pc": "0x406e5f",
+                "api_name": "kernel32.GetModuleHandleW",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x406e65",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetThreadPreferredUILanguages"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x406e79",
+                "api_name": "kernel32.GetModuleHandleW",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x406e7f",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetThreadUILanguage"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x406e93",
+                "api_name": "kernel32.GetModuleHandleW",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x406e99",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetThreadUILanguage"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x408159",
+                "api_name": "kernel32.GetSystemInfo",
+                "args": [
+                    "0x1211f20"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x417077",
+                "api_name": "kernel32.GetCommandLineW",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x401e1a",
+                "api_name": "kernel32.GetStartupInfoA",
+                "args": [
+                    "0x1211efc"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x41708b",
+                "api_name": "kernel32.GetACP",
+                "args": [],
+                "ret_val": "0x4e4"
+            },
+            {
+                "pc": "0x41709f",
+                "api_name": "kernel32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x9924"
+            },
+            {
+                "pc": "0x408169",
+                "api_name": "kernel32.GetVersion",
+                "args": [],
+                "ret_val": "0x1db10106"
+            },
+            {
+                "pc": "0x408a8f",
+                "api_name": "kernel32.GetVersionExW",
+                "args": [
+                    "0x1211e30"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4170fc",
+                "api_name": "kernel32.GetModuleHandleW",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x417103",
+                "api_name": "kernel32.GetVersion",
+                "args": [],
+                "ret_val": "0x1db10106"
+            },
+            {
+                "pc": "0x417118",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetDefaultDllDirectories"
+                ],
+                "ret_val": "0xfeee0003"
+            },
+            {
+                "pc": "0x417125",
+                "api_name": "kernel32.SetDefaultDllDirectories",
+                "args": [
+                    "0x800"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4172e5",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetSearchPathMode"
+                ],
+                "ret_val": "0xfeee0004"
+            }
+        ],
+        "ret_val": "0xfeee0004",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0004",
+            "address": "0xfeee0004",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211ef0",
+                "ebp": "0x01211f44",
+                "eip": "0xfeee0004",
+                "esi": "0xfeee0003",
+                "edi": "0x77000000",
+                "eax": "0xfeee0004",
+                "ebx": "0x00000001",
+                "ecx": "0x00000000",
+                "edx": "0x00000006"
+            },
+            "stack": [
+                "sp+0x00: 0x004172f0 -> emu.module.5f7c8ff4de6e6dd4bf0a269e71a6f11978524c87f56e0d4de6e29b5140da75c2.0x400000",
+                "sp+0x04: 0x00008001",
+                "sp+0x08: 0x01211f4c -> emu.stack.0x1200000",
+                "sp+0x0c: 0x0041731e -> emu.module.5f7c8ff4de6e6dd4bf0a269e71a6f11978524c87f56e0d4de6e29b5140da75c2.0x400000",
+                "sp+0x10: 0x01211f44 -> emu.stack.0x1200000",
+                "sp+0x14: 0x00000022",
+                "sp+0x18: 0x004170c4 -> emu.module.5f7c8ff4de6e6dd4bf0a269e71a6f11978524c87f56e0d4de6e29b5140da75c2.0x400000",
+                "sp+0x1c: 0x00000005",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "kernel32.SetSearchPathMode"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,128 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x57d93b",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "721341eb9155331249abc5d989bea1978532d3dfd381438acc945da6d516c82a",
+        "apis": [
+            {
+                "pc": "0x57dbdb",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x57dbea",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x4f8c"
+            },
+            {
+                "pc": "0x57dbf3",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x4f78"
+            },
+            {
+                "pc": "0x57dc00",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x57d840",
+                "api_name": "MSVCR120._initterm_e",
+                "args": [
+                    "0x59cd38",
+                    "0x59cd48"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x57d874",
+                "api_name": "MSVCR120._initterm",
+                "args": [
+                    "0x59cc88",
+                    "0x59cd34"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x535c14",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x535ac0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x535d1a",
+                "api_name": "ADVAPI32.StartServiceCtrlDispatcherW",
+                "args": [
+                    "lpServiceStartTable=[ { lpServiceName=caztpasvc, lpServiceProc=0x5359f0 } ]"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x57d8eb",
+                "api_name": "MSVCR120.exit",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "thread",
+        "start_addr": "0x5359f0",
+        "ep_args": [
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf250",
+            "address": "0xfeedf250",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211fdc",
+                "ebp": "0x01212000",
+                "eip": "0xfeedf250",
+                "esi": "0x00000001",
+                "edi": "0x00000000",
+                "eax": "0x00000000",
+                "ebx": "0x00000000",
+                "ecx": "0x6fc88591",
+                "edx": "0x01212000"
+            },
+            "stack": [
+                "sp+0x00: 0x00535a19 -> emu.module.caad1ac5192ea99382f8e6b5335655840ff9f3ceaf38aa609f65537ba4c5aed4.0x400000",
+                "sp+0x04: 0x005e23cc -> emu.module.caad1ac5192ea99382f8e6b5335655840ff9f3ceaf38aa609f65537ba4c5aed4.0x400000",
+                "sp+0x08: 0x00535970 -> emu.module.caad1ac5192ea99382f8e6b5335655840ff9f3ceaf38aa609f65537ba4c5aed4.0x400000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000001",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0xfeedf000",
+                "sp+0x20: 0x00000000"
+            ],
+            "api_name": "ADVAPI32.RegisterServiceCtrlHandlerExW"
+        },
+        "dynamic_code_segments": []
+    }
+]

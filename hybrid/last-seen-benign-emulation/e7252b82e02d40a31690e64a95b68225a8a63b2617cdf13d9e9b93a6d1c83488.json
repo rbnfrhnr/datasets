@@ -1,0 +1,193 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1400196fc",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "6e460b2c4161a52b50d248e0ada33cb4ccfee6bed756a5219b3b1fae09a7de63",
+        "apis": [
+            {
+                "pc": "0x140019bae",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140019bbc",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xa25c"
+            },
+            {
+                "pc": "0x140019bc8",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xa248"
+            },
+            {
+                "pc": "0x140019bd8",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400195e0",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x14001c738",
+                    "0x14001c750"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140019601",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x14001c718",
+                    "0x14001c730"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14001966f",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_narrow_environment",
+                "args": [],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x140019677",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argv",
+                "args": [],
+                "ret_val": "0x4b00"
+            },
+            {
+                "pc": "0x14001967f",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4b50"
+            },
+            {
+                "pc": "0x1400148ba",
+                "api_name": "VCRUNTIME140.memset",
+                "args": [
+                    "0x1211aa8",
+                    "0x0",
+                    "0x250"
+                ],
+                "ret_val": "0x1211aa8"
+            },
+            {
+                "pc": "0x140001b4d",
+                "api_name": "VCRUNTIME140.memcpy",
+                "args": [
+                    "0x1211aa8",
+                    "0x4b28",
+                    "0xb"
+                ],
+                "ret_val": "0x1211aa8"
+            },
+            {
+                "pc": "0x140015d67",
+                "api_name": "VCRUNTIME140.memset",
+                "args": [
+                    "0x12117a8",
+                    "0x0",
+                    "0x100"
+                ],
+                "ret_val": "0x12117a8"
+            },
+            {
+                "pc": "0x140001b4d",
+                "api_name": "VCRUNTIME140.memcpy",
+                "args": [
+                    "0x1211860",
+                    "0x4b37",
+                    "0x6"
+                ],
+                "ret_val": "0x1211860"
+            },
+            {
+                "pc": "0x140018e6f",
+                "api_name": "api-ms-win-crt-heap-l1-1-0.malloc",
+                "args": [
+                    "0x20"
+                ],
+                "ret_val": "0x4b60"
+            },
+            {
+                "pc": "0x14001841a",
+                "api_name": "VCRUNTIME140.memcpy",
+                "args": [
+                    "0x4b60",
+                    "0x14001ef50",
+                    "0xf"
+                ],
+                "ret_val": "0x4b60"
+            },
+            {
+                "pc": "0x140018429",
+                "api_name": "VCRUNTIME140.memcpy",
+                "args": [
+                    "0x4b6f",
+                    "0x1211860",
+                    "0x7"
+                ],
+                "ret_val": "0x4b6f"
+            }
+        ],
+        "ret_val": "0x14001c7d8",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf238",
+            "address": "0xfeedf238",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x00000000012117b0",
+                "rbp": "0x0000000000000001",
+                "rip": "0x00000000feedf238",
+                "rsi": "0x0000000000004b18",
+                "rdi": "0x0000000000000001",
+                "rax": "0x000000014001c7d8",
+                "rbx": "0x0000000001211828",
+                "rcx": "0x00000000012117d8",
+                "rdx": "0x0000000001211830",
+                "r8": "0x0000000000004b60",
+                "r9": "0x000000014001fbb0",
+                "r10": "0x0000000000004b37",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000001211aa8",
+                "r14": "0x0000000000000003",
+                "r15": "0x0000000000004b08"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140005e5e -> emu.module.e7252b82e02d40a31690e64a95b68225a8a63b2617cdf13d9e9b93a6d1c83488.0x140000000",
+                "sp+0x08: 0x0000000001211840 -> emu.stack.0x1200000",
+                "sp+0x10: 0x0000000001211860 -> emu.stack.0x1200000",
+                "sp+0x18: 0x000000014001ef50 -> emu.module.e7252b82e02d40a31690e64a95b68225a8a63b2617cdf13d9e9b93a6d1c83488.0x140000000",
+                "sp+0x20: 0x000000000000000f",
+                "sp+0x28: 0x0000000000004b60 -> api.heap.HeapAlloc.0x4b60",
+                "sp+0x30: 0x0000000000000001",
+                "sp+0x38: 0x0000e0434f5ee65b",
+                "sp+0x40: 0x0000000000000001",
+                "sp+0x48: 0x0000000001211a00 -> emu.stack.0x1200000",
+                "sp+0x50: 0x000000014000f274 -> emu.module.e7252b82e02d40a31690e64a95b68225a8a63b2617cdf13d9e9b93a6d1c83488.0x140000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000001211a00 -> emu.stack.0x1200000",
+                "sp+0x70: 0x0000000000000001",
+                "sp+0x78: 0x000000014001c7d8 -> emu.module.e7252b82e02d40a31690e64a95b68225a8a63b2617cdf13d9e9b93a6d1c83488.0x140000000"
+            ],
+            "api_name": "VCRUNTIME140.__std_exception_copy"
+        },
+        "dynamic_code_segments": []
+    }
+]

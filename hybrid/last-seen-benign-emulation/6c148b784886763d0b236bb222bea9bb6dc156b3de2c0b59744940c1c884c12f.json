@@ -1,0 +1,75 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x100041000",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "db0adc3d21d89c7e011719353affd9dda5573832a31d2c32fef71316f68985e1",
+        "apis": [
+            {
+                "pc": "0x100017513",
+                "api_name": "ntoskrnl.RtlGetVersion",
+                "args": [
+                    "0x1200e38"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x10001751e",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "NtQuerySystemInformation"
+                ],
+                "ret_val": "0xfeee0000"
+            }
+        ],
+        "ret_val": "0xfeee0000",
+        "error": {
+            "type": "Unsupported information class: 0xe3",
+            "pc": "0xfeee0000",
+            "address": "0xfeee0000",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200dd0",
+                "rbp": "0x0000000001200fd8",
+                "rip": "0x00000000feee0000",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x00000000007eba60",
+                "rax": "0x00000000feee0000",
+                "rbx": "0x00000000007eb870",
+                "rcx": "0x00000000000000e3",
+                "rdx": "0x0000000001200e18",
+                "r8": "0x0000000000000001",
+                "r9": "0x0000000000000000",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000010001753c -> emu.module.6c148b784886763d0b236bb222bea9bb6dc156b3de2c0b59744940c1c884c12f.0x100000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000320030",
+                "sp+0x58: 0x0000000100004dc0 -> emu.module.6c148b784886763d0b236bb222bea9bb6dc156b3de2c0b59744940c1c884c12f.0x100000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000600000114",
+                "sp+0x70: 0x00001db100000001",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 1169, in handle_import_func\n    rv = self.api.call_api_func(mod, func, argv, ctx=default_ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/winapi.py\", line 77, in call_api_func\n    return func(mod, self.emu, argv, ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/kernelmode/ntoskrnl.py\", line 637, in ZwQuerySystemInformation\n    % (sysclass))\nspeakeasy.errors.ApiEmuError: Unsupported information class: 0xe3\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

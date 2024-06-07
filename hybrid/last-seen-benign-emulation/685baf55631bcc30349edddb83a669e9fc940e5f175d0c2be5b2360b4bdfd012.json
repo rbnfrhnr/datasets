@@ -1,0 +1,184 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140115b80",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "5a3fa4e0abf14e36e4396ca9eb6cf03e032c5db567b96d125016a484658ee07d",
+        "apis": [
+            {
+                "pc": "0x14011655a",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140116568",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x4f9c"
+            },
+            {
+                "pc": "0x140116574",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x4fb0"
+            },
+            {
+                "pc": "0x140116580",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x140116590",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c28"
+            },
+            {
+                "pc": "0x1401165ab",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1401163e8",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x140000000"
+            },
+            {
+                "pc": "0x1401158f1",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140116361",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x140116300"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140115a93",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x14012f630",
+                    "0x14012f7e8"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1401145ef",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x28"
+                ],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x1401145ef",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": "0x4970"
+            },
+            {
+                "pc": "0x1401145ef",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x28"
+                ],
+                "ret_val": "0x4980"
+            },
+            {
+                "pc": "0x1401145ef",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": "0x49b0"
+            },
+            {
+                "pc": "0x14000e54c",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x0",
+                    "0x44"
+                ],
+                "ret_val": "0x49c0"
+            },
+            {
+                "pc": "0x14000e560",
+                "api_name": "KERNEL32.LocalAlloc",
+                "args": [
+                    "0x0",
+                    "0x44"
+                ],
+                "ret_val": "0x4a10"
+            }
+        ],
+        "ret_val": "0x4a10",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf024",
+            "address": "0xfeedf024",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211980",
+                "rbp": "0x0000000001211a08",
+                "rip": "0x00000000feedf024",
+                "rsi": "0x0000000000000035",
+                "rdi": "0x00000000000049c0",
+                "rax": "0x0000000000004a10",
+                "rbx": "0x0000000000004a10",
+                "rcx": "0x0000000000000016",
+                "rdx": "0x0000000000000000",
+                "r8": "0x00000000000049c0",
+                "r9": "0x0000000001211a48",
+                "r10": "0xd30527475e523070",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000035",
+                "r13": "0x0000000000000044",
+                "r14": "0x0000000001211ed8",
+                "r15": "0x0000000001211ef8"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014000e591 -> emu.module.685baf55631bcc30349edddb83a669e9fc940e5f175d0c2be5b2360b4bdfd012.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000004980 -> api.heap.HeapAlloc.0x4980",
+                "sp+0x20: 0x000000014001c91c -> emu.module.685baf55631bcc30349edddb83a669e9fc940e5f175d0c2be5b2360b4bdfd012.0x140000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000001211a90 -> emu.stack.0x1200000",
+                "sp+0x70: 0x0000000140018394 -> emu.module.685baf55631bcc30349edddb83a669e9fc940e5f175d0c2be5b2360b4bdfd012.0x140000000",
+                "sp+0x78: 0x0000000000004980 -> api.heap.HeapAlloc.0x4980"
+            ],
+            "api_name": "ADVAPI32.CreateWellKnownSid"
+        },
+        "dynamic_code_segments": []
+    }
+]

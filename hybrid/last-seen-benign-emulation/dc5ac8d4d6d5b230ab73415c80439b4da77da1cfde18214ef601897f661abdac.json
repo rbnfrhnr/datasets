@@ -1,0 +1,125 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x40fb50",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "ed313ba4e7d51d445181e0a9bef1e9c1f777b2375cfaf273c89fa25fcfa43e31",
+        "apis": [
+            {
+                "pc": "0x40ffb0",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x40ffbf",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x674"
+            },
+            {
+                "pc": "0x40ffc8",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x660"
+            },
+            {
+                "pc": "0x40ffd5",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x410329",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x40fa37",
+                "api_name": "ucrtbase_clr0400._initterm_e",
+                "args": [
+                    "0x40101c",
+                    "0x40102c"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40fa5d",
+                "api_name": "ucrtbase_clr0400._initterm",
+                "args": [
+                    "0x401000",
+                    "0x401018"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40fac3",
+                "api_name": "ucrtbase_clr0400.__p___wargv",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x40faca",
+                "api_name": "ucrtbase_clr0400.__p___argc",
+                "args": [],
+                "ret_val": "0x4650"
+            },
+            {
+                "pc": "0x40fad1",
+                "api_name": "ucrtbase_clr0400._get_initial_wide_environment",
+                "args": [],
+                "ret_val": "0x4660"
+            }
+        ],
+        "ret_val": "0x4134e0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf168",
+            "address": "0xfeedf168",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x0120fccc",
+                "ebp": "0x01211f20",
+                "eip": "0xfeedf168",
+                "esi": "0x01211f80",
+                "edi": "0x00000000",
+                "eax": "0x004134e0",
+                "ebx": "0x00000000",
+                "ecx": "0x00401268",
+                "edx": "0x01211f38"
+            },
+            "stack": [
+                "sp+0x00: 0x00409ceb -> emu.module.dc5ac8d4d6d5b230ab73415c80439b4da77da1cfde18214ef601897f661abdac.0x400000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x0120fd10 -> emu.stack.0x1200000",
+                "sp+0x10: 0x00001000 -> emu.gdt.0x1000",
+                "sp+0x14: 0xffffffff",
+                "sp+0x18: 0x00401268 -> emu.module.dc5ac8d4d6d5b230ab73415c80439b4da77da1cfde18214ef601897f661abdac.0x400000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x01211f38 -> emu.stack.0x1200000",
+                "sp+0x24: 0x0b636027",
+                "sp+0x28: 0x00401268 -> emu.module.dc5ac8d4d6d5b230ab73415c80439b4da77da1cfde18214ef601897f661abdac.0x400000",
+                "sp+0x2c: 0x01211f80 -> emu.stack.0x1200000",
+                "sp+0x30: 0x00000001",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "ucrtbase_clr0400.__stdio_common_vsnwprintf_s"
+        },
+        "dynamic_code_segments": []
+    }
+]

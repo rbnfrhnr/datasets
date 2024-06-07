@@ -1,0 +1,223 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4043c0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "fb9a0400a9a53f09b61fb18d0a72d679abee2ba993f117723bf4693adf6d4776",
+        "apis": [
+            {
+                "pc": "0x404719",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x404728",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x865c"
+            },
+            {
+                "pc": "0x404731",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x8648"
+            },
+            {
+                "pc": "0x40473e",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x404be4",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4042a7",
+                "api_name": "ucrtbase_clr0400._initterm_e",
+                "args": [
+                    "0x40100c",
+                    "0x40101c"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4042cd",
+                "api_name": "ucrtbase_clr0400._initterm",
+                "args": [
+                    "0x401000",
+                    "0x401008"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x404333",
+                "api_name": "ucrtbase_clr0400.__p___wargv",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x40433a",
+                "api_name": "ucrtbase_clr0400.__p___argc",
+                "args": [],
+                "ret_val": "0x4650"
+            },
+            {
+                "pc": "0x404341",
+                "api_name": "ucrtbase_clr0400._get_initial_wide_environment",
+                "args": [],
+                "ret_val": "0x4660"
+            },
+            {
+                "pc": "0x402f19",
+                "api_name": "ole32.CoInitializeEx",
+                "args": [
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x403e21",
+                "api_name": "VCRUNTIME140_CLR0400.memset",
+                "args": [
+                    "0x12111fc",
+                    "0x0",
+                    "0x114"
+                ],
+                "ret_val": "0x12111fc"
+            },
+            {
+                "pc": "0x403e37",
+                "api_name": "KERNEL32.GetVersionExW",
+                "args": [
+                    "0x12111fc"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x403e6b",
+                "api_name": "VCRUNTIME140_CLR0400.memset",
+                "args": [
+                    "0x1211310",
+                    "0x0",
+                    "0x20a"
+                ],
+                "ret_val": "0x1211310"
+            },
+            {
+                "pc": "0x403e80",
+                "api_name": "KERNEL32.GetSystemDirectoryW",
+                "args": [
+                    "C:\\Windows\\system32",
+                    "0x104"
+                ],
+                "ret_val": "0x14"
+            },
+            {
+                "pc": "0x403e95",
+                "api_name": "KERNEL32.lstrlenW",
+                "args": [
+                    "C:\\Windows\\system32"
+                ],
+                "ret_val": "0x13"
+            },
+            {
+                "pc": "0x403eab",
+                "api_name": "KERNEL32.lstrlenW",
+                "args": [
+                    "C:\\Windows\\system32"
+                ],
+                "ret_val": "0x13"
+            },
+            {
+                "pc": "0x403ef2",
+                "api_name": "KERNEL32.LoadLibraryW",
+                "args": [
+                    "C:\\Windows\\system32\\kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x403f05",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "HeapSetInformation"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x403f1a",
+                "api_name": "kernel32.HeapSetInformation",
+                "args": [
+                    "0x0",
+                    "0x1",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x403f21",
+                "api_name": "KERNEL32.FreeLibrary",
+                "args": [
+                    "0x77000000"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0x1211538",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf034",
+            "address": "0xfeedf034",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211510",
+                "ebp": "0x01211f9c",
+                "eip": "0xfeedf034",
+                "esi": "0x00000104",
+                "edi": "0x000045f4",
+                "eax": "0x01211538",
+                "ebx": "0x00405738",
+                "ecx": "0x000000f9",
+                "edx": "0x0040574e"
+            },
+            "stack": [
+                "sp+0x00: 0x00402f4f -> emu.module.ed99c2402ac2ccc1ca9ebf21f10c12ee27e8d33f1e67bea3cb34da9cd0b4b58c.0x400000",
+                "sp+0x04: 0x01211538 -> emu.stack.0x1200000",
+                "sp+0x08: 0x01211d54 -> emu.stack.0x1200000",
+                "sp+0x0c: 0x00000104",
+                "sp+0x10: 0x00405958 -> emu.module.ed99c2402ac2ccc1ca9ebf21f10c12ee27e8d33f1e67bea3cb34da9cd0b4b58c.0x400000",
+                "sp+0x14: 0x00000001",
+                "sp+0x18: 0x000045f4 -> api.argv.0x45f0",
+                "sp+0x1c: 0x00004650 -> api.argc.0x4650",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "webengine4.AspnetLoadResourceDLL"
+        },
+        "dynamic_code_segments": []
+    }
+]

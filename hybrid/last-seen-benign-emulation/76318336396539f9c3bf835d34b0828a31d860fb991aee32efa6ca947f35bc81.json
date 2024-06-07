@@ -1,0 +1,251 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x922ce0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "2eb0ef8acfac6505af7a10d95327280d7dc5c6ac63d8727ce7b46d785932fe19",
+        "apis": [
+            {
+                "pc": "0x407b21",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x40411a",
+                "api_name": "user32.GetKeyboardType",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x4"
+            },
+            {
+                "pc": "0x407a31",
+                "api_name": "kernel32.GetCommandLineA",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x4014a3",
+                "api_name": "kernel32.GetStartupInfoA",
+                "args": [
+                    "0x1211a88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x407a45",
+                "api_name": "kernel32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x4e90"
+            },
+            {
+                "pc": "0x407bb9",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "borlndmm.dll"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x407bc6",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x0",
+                    "@Borlndmm@SysGetMem$qqri"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x407bd4",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x0",
+                    "@Borlndmm@SysFreeMem$qqrpv"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x407be3",
+                "api_name": "kernel32.GetProcAddress",
+                "args": [
+                    "0x0",
+                    "@Borlndmm@SysReallocMem$qqrpvi"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x406def",
+                "api_name": "kernel32.GetModuleFileNameA",
+                "args": [
+                    "0x400000",
+                    "C:\\Windows\\system32\\76318336396539f9c3bf835d34b0828a31d860fb991aee32efa6ca947f35bc81",
+                    "0x105"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x407029",
+                "api_name": "kernel32.GetModuleFileNameA",
+                "args": [
+                    "0x0",
+                    "C:\\Windows\\system32\\76318336396539f9c3bf835d34b0828a31d860fb991aee32efa6ca947f35bc81",
+                    "0x105"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x407047",
+                "api_name": "advapi32.RegOpenKeyExA",
+                "args": [
+                    "HKEY_CURRENT_USER",
+                    "Software\\Borland\\Locales",
+                    "0x0",
+                    "0xf0019",
+                    "0x1211574"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x407065",
+                "api_name": "advapi32.RegOpenKeyExA",
+                "args": [
+                    "HKEY_LOCAL_MACHINE",
+                    "Software\\Borland\\Locales",
+                    "0x0",
+                    "0xf0019",
+                    "0x1211574"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x407083",
+                "api_name": "advapi32.RegOpenKeyExA",
+                "args": [
+                    "HKEY_CURRENT_USER",
+                    "Software\\Borland\\Delphi\\Locales",
+                    "0x0",
+                    "0xf0019",
+                    "0x1211574"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x407129",
+                "api_name": "kernel32.lstrcpynA",
+                "args": [
+                    "0x121145f",
+                    "C:\\Windows\\system32\\76318336396539f9c3bf835d34b0828a31d860fb991aee32efa6ca947f35bc81",
+                    "0x105"
+                ],
+                "ret_val": "0x121145f"
+            },
+            {
+                "pc": "0x407136",
+                "api_name": "kernel32.GetThreadLocale",
+                "args": [],
+                "ret_val": "0xc000"
+            },
+            {
+                "pc": "0x40713c",
+                "api_name": "kernel32.GetLocaleInfoA",
+                "args": [
+                    "0xc000",
+                    "0x3",
+                    "0x121156f",
+                    "0x5"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40794e",
+                "api_name": "user32.LoadStringA",
+                "args": [
+                    "0x400000",
+                    "0xffcd",
+                    "Exception in safecall method",
+                    "0x400"
+                ],
+                "ret_val": "0x1c"
+            }
+        ],
+        "ret_val": "0x26",
+        "error": {
+            "type": "Invalid memory fetch (UC_ERR_FETCH_UNMAPPED)",
+            "pc": "0x411754",
+            "address": "0x411754",
+            "instr": "jmp 0x404a6c",
+            "regs": {
+                "esp": "0x0121166c",
+                "ebp": "0x01211ad0",
+                "eip": "0x00411754",
+                "esi": "0x012116a8",
+                "edi": "0x0000001c",
+                "eax": "0x00000026",
+                "ebx": "0xffffffff",
+                "ecx": "0x0000001c",
+                "edx": "0x012116a8"
+            },
+            "stack": [
+                "sp+0x00: 0xfeedf004",
+                "sp+0x04: 0x000046a0 -> emu.struct.EXCEPTION_RECORD.0x46a0",
+                "sp+0x08: 0x01211ac4 -> emu.stack.0x1200000",
+                "sp+0x0c: 0x00004700 -> emu.struct.EXCEPTION_CONTEXT.0x4700",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00402843 -> emu.module.76318336396539f9c3bf835d34b0828a31d860fb991aee32efa6ca947f35bc81.0x400000",
+                "sp+0x18: 0x00925318 -> emu.module.76318336396539f9c3bf835d34b0828a31d860fb991aee32efa6ca947f35bc81.0x400000",
+                "sp+0x1c: 0x004052c1 -> emu.module.76318336396539f9c3bf835d34b0828a31d860fb991aee32efa6ca947f35bc81.0x400000",
+                "sp+0x20: 0x00000026",
+                "sp+0x24: 0x0000001c",
+                "sp+0x28: 0x004052ec -> emu.module.76318336396539f9c3bf835d34b0828a31d860fb991aee32efa6ca947f35bc81.0x400000",
+                "sp+0x2c: 0x0000001d",
+                "sp+0x30: 0x00925318 -> emu.module.76318336396539f9c3bf835d34b0828a31d860fb991aee32efa6ca947f35bc81.0x400000",
+                "sp+0x34: 0x0040916c -> emu.module.76318336396539f9c3bf835d34b0828a31d860fb991aee32efa6ca947f35bc81.0x400000",
+                "sp+0x38: 0x00407959 -> emu.module.76318336396539f9c3bf835d34b0828a31d860fb991aee32efa6ca947f35bc81.0x400000",
+                "sp+0x3c: 0x65637845"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 437, in start\n    count=self.max_instructions)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/engines/unicorn_eng.py\", line 203, in start\n    return self.emu.emu_start(addr, 0xFFFFFFFF, timeout=timeout, count=count)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/unicorn/unicorn.py\", line 318, in emu_start\n    raise UcError(status)\nunicorn.unicorn.UcError: Invalid memory fetch (UC_ERR_FETCH_UNMAPPED)\n"
+        },
+        "handled_exceptions": [
+            {
+                "pc": "0x0",
+                "instr": "disasm_failed",
+                "exception_code": "0xc0000005",
+                "handler_address": "0x411754",
+                "registers": {
+                    "esp": "0x0121166c",
+                    "ebp": "0x01211ad0",
+                    "eip": "0x00000000",
+                    "esi": "0x012116a8",
+                    "edi": "0x0000001c",
+                    "eax": "0x00000026",
+                    "ebx": "0x00925318",
+                    "ecx": "0x0000001c",
+                    "edx": "0x012116a8"
+                }
+            }
+        ],
+        "registry_access": [
+            {
+                "event": "open_key",
+                "path": "HKEY_CURRENT_USER\\Software\\Borland\\Locales"
+            },
+            {
+                "event": "open_key",
+                "path": "HKEY_LOCAL_MACHINE\\Software\\Borland\\Locales"
+            },
+            {
+                "event": "open_key",
+                "path": "HKEY_CURRENT_USER\\Software\\Borland\\Delphi\\Locales"
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

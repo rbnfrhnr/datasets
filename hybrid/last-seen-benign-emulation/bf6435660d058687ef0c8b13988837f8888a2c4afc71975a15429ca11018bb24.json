@@ -1,0 +1,121 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x14038f7c0",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140396a7c",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "751d5f3ce7fb42c7182106b65f29f464541eb7ce9e28b9dc51b180112701cf6d",
+        "apis": [
+            {
+                "pc": "0x140397022",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140397030",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x3b20"
+            },
+            {
+                "pc": "0x14039703c",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x3b0c"
+            },
+            {
+                "pc": "0x14039704c",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140396978",
+                "api_name": "MSVCR110._initterm_e",
+                "args": [
+                    "0x140406ec8",
+                    "0x140406ef0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1403969ae",
+                "api_name": "MSVCR110._initterm",
+                "args": [
+                    "0x140403368",
+                    "0x140406ec0"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0xe1af48ca32f3",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf8d4",
+            "address": "0xfeedf8d4",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211ec0",
+                "rbp": "0x0000000001211f21",
+                "rip": "0x00000000feedf8d4",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000e1af48ca32f3",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x00000000000000e8",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000000000000",
+                "r9": "0x0000000000004030",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001401725b2 -> emu.module.bf6435660d058687ef0c8b13988837f8888a2c4afc71975a15429ca11018bb24.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0xfffffffffffffffe",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "MSVCR110.??2@YAPEAX_K@Z"
+        },
+        "dynamic_code_segments": []
+    }
+]

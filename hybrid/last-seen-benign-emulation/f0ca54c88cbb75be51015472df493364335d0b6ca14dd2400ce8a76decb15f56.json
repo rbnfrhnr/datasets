@@ -1,0 +1,99 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4018b0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "ca39d892d3949e7e50dd6d0b82a3a264913690d1184471a1720f70e93601bc45",
+        "apis": [
+            {
+                "pc": "0x4018ba",
+                "api_name": "KERNEL32.GetCommandLineA",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x401915",
+                "api_name": "KERNEL32.GetStartupInfoA",
+                "args": [
+                    "0x1211fa4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4019e2",
+                "api_name": "KERNEL32.GetProcessHeap",
+                "args": [],
+                "ret_val": "0x4690"
+            },
+            {
+                "pc": "0x4019e9",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x4690",
+                    "0x8",
+                    "0x80"
+                ],
+                "ret_val": "0x46b0"
+            },
+            {
+                "pc": "0x40194a",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x4016bc",
+                "api_name": "KERNEL32.SetErrorMode",
+                "args": [
+                    "0x8001"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf018",
+            "address": "0xfeedf018",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f64",
+                "ebp": "0x01212000",
+                "eip": "0xfeedf018",
+                "esi": "0x000045fc",
+                "edi": "0x00000000",
+                "eax": "0x00000000",
+                "ebx": "0x00000000",
+                "ecx": "0x00000000",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x004016c7 -> emu.module.f0ca54c88cbb75be51015472df493364335d0b6ca14dd2400ce8a76decb15f56.0x400000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x000045fc -> api.command_line.KERNEL32.GetCommandLineA.0x45f0",
+                "sp+0x0c: 0x01212000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x004019e9 -> emu.module.f0ca54c88cbb75be51015472df493364335d0b6ca14dd2400ce8a76decb15f56.0x400000",
+                "sp+0x20: 0x00004690 -> emu.process_heap.0x4690",
+                "sp+0x24: 0x00000008",
+                "sp+0x28: 0x00401950 -> emu.module.f0ca54c88cbb75be51015472df493364335d0b6ca14dd2400ce8a76decb15f56.0x400000",
+                "sp+0x2c: 0x00400000 -> emu.module.f0ca54c88cbb75be51015472df493364335d0b6ca14dd2400ce8a76decb15f56.0x400000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x000045fc -> api.command_line.KERNEL32.GetCommandLineA.0x45f0",
+                "sp+0x38: 0x0000000a",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "COMCTL32.ordinal_17"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,59 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x2603e",
+        "ep_args": [
+            "0x7e5da0",
+            "0x7e5ee0"
+        ],
+        "apihash": "973cd6e1d11e1c336e4babe29a4277e16595f2bd18046f2c0649781fd4cd2bde",
+        "apis": [
+            {
+                "pc": "0x1ca86",
+                "api_name": "ntoskrnl.MmGetSystemRoutineAddress",
+                "args": [
+                    "ZwQueryInformationProcess"
+                ],
+                "ret_val": "0xfeee0000"
+            }
+        ],
+        "ret_val": "0x251f0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf0c0",
+            "address": "0xfeedf0c0",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01200fb0",
+                "ebp": "0x01200fdc",
+                "eip": "0xfeedf0c0",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x000251f0",
+                "ebx": "0xc0000001",
+                "ecx": "0x00000034",
+                "edx": "0x00007fe6"
+            },
+            "stack": [
+                "sp+0x00: 0x0001cab6 -> emu.module.5d26e9620dd474782a99b942489f68743236faaa305eac70dbf1af0f22a57089.0x10000",
+                "sp+0x04: 0x00025320 -> emu.module.5d26e9620dd474782a99b942489f68743236faaa305eac70dbf1af0f22a57089.0x10000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000010",
+                "sp+0x18: 0x33544c46",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0xc0000001",
+                "sp+0x24: 0x00340032",
+                "sp+0x28: 0x0001dd4e -> emu.module.5d26e9620dd474782a99b942489f68743236faaa305eac70dbf1af0f22a57089.0x10000",
+                "sp+0x2c: 0x01200ff0 -> emu.stack.0x1200000",
+                "sp+0x30: 0x000110f4 -> emu.module.5d26e9620dd474782a99b942489f68743236faaa305eac70dbf1af0f22a57089.0x10000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "ntoskrnl.ExInitializeNPagedLookasideList"
+        },
+        "dynamic_code_segments": []
+    }
+]

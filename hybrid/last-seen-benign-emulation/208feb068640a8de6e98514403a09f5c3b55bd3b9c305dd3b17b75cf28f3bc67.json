@@ -1,0 +1,221 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4043a5",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "fb66d362563d1f97aa621a4e12284b14648698d14791bbd4b0ada05e99589f79",
+        "apis": [
+            {
+                "pc": "0x4043be",
+                "api_name": "KERNEL32.SetErrorMode",
+                "args": [
+                    "0x8001"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4043c5",
+                "api_name": "KERNEL32.GetVersion",
+                "args": [],
+                "ret_val": "0x1db10106"
+            },
+            {
+                "pc": "0x40828d",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "KERNEL32"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x4082b9",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetDefaultDllDirectories"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x4043e5",
+                "api_name": "kernel32.SetDefaultDllDirectories",
+                "args": [
+                    "0xc00"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x408215",
+                "api_name": "KERNEL32.GetSystemDirectoryA",
+                "args": [
+                    "C:\\Windows\\system32",
+                    "0x104"
+                ],
+                "ret_val": "0x14"
+            },
+            {
+                "pc": "0x408261",
+                "api_name": "USER32.wsprintfA",
+                "args": [
+                    "\\UXTHEME.dll",
+                    "%s%s.dll"
+                ],
+                "ret_val": "0xc"
+            },
+            {
+                "pc": "0x40826a",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "C:\\Windows\\system32"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x408261",
+                "api_name": "USER32.wsprintfA",
+                "args": [
+                    "\\USERENV.dll",
+                    "%s%s.dll"
+                ],
+                "ret_val": "0xc"
+            },
+            {
+                "pc": "0x408215",
+                "api_name": "KERNEL32.GetSystemDirectoryA",
+                "args": [
+                    "C:\\Windows\\system32",
+                    "0x104"
+                ],
+                "ret_val": "0x14"
+            },
+            {
+                "pc": "0x408261",
+                "api_name": "USER32.wsprintfA",
+                "args": [
+                    "\\SETUPAPI.dll",
+                    "%s%s.dll"
+                ],
+                "ret_val": "0xd"
+            },
+            {
+                "pc": "0x40826a",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "C:\\Windows\\system32"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40828d",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "VERSION"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x408215",
+                "api_name": "KERNEL32.GetSystemDirectoryA",
+                "args": [
+                    "C:\\Windows\\system32",
+                    "0x104"
+                ],
+                "ret_val": "0x14"
+            },
+            {
+                "pc": "0x408261",
+                "api_name": "USER32.wsprintfA",
+                "args": [
+                    "\\VERSION.dll",
+                    "%s%s.dll"
+                ],
+                "ret_val": "0xc"
+            },
+            {
+                "pc": "0x40826a",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "C:\\Windows\\system32"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x40828d",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "SHFOLDER"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x408215",
+                "api_name": "KERNEL32.GetSystemDirectoryA",
+                "args": [
+                    "C:\\Windows\\system32",
+                    "0x104"
+                ],
+                "ret_val": "0x14"
+            },
+            {
+                "pc": "0x408261",
+                "api_name": "USER32.wsprintfA",
+                "args": [
+                    "\\SHFOLDER.dll",
+                    "%s%s.dll"
+                ],
+                "ret_val": "0xd"
+            },
+            {
+                "pc": "0x40826a",
+                "api_name": "KERNEL32.LoadLibraryA",
+                "args": [
+                    "C:\\Windows\\system32"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf040",
+            "address": "0xfeedf040",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211e28",
+                "ebp": "0x01211fe4",
+                "eip": "0xfeedf040",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x00000000",
+                "ebx": "0x00000000",
+                "ecx": "0x0040b50d",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00404432 -> emu.module.208feb068640a8de6e98514403a09f5c3b55bd3b9c305dd3b17b75cf28f3bc67.0x400000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "COMCTL32.InitCommonControls"
+        },
+        "dynamic_code_segments": []
+    }
+]

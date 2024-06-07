@@ -1,0 +1,129 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x1401473d0",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1401443f8",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "32038b5e85e485c689f53072f31dca3d9276acec7e133ee713bd1d8e8e590605",
+        "apis": [
+            {
+                "pc": "0x1401449c2",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1401449d0",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xf010"
+            },
+            {
+                "pc": "0x1401449dc",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xeffc"
+            },
+            {
+                "pc": "0x1401449ec",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1401442f4",
+                "api_name": "MSVCR110._initterm_e",
+                "args": [
+                    "0x140196118",
+                    "0x140196140"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14014432a",
+                "api_name": "MSVCR110._initterm",
+                "args": [
+                    "0x140195df0",
+                    "0x140196110"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400155e7",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x1211e28"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1401a2d98",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf5fc",
+            "address": "0xfeedf5fc",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211cd0",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf5fc",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000001211e18",
+                "rax": "0x00000001401a2d98",
+                "rbx": "0x0000000001211e20",
+                "rcx": "0x0000000000000050",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000000000000",
+                "r9": "0x0000000000004030",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000001211f80",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140006cdf -> emu.module.94e164739d5a0ff9623a38c88c06ba6be48012e6ff5430f680c599c47e393090.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x00000001400155f7 -> emu.module.94e164739d5a0ff9623a38c88c06ba6be48012e6ff5430f680c599c47e393090.0x140000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0xfffffffffffffffe",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000140002ee5 -> emu.module.94e164739d5a0ff9623a38c88c06ba6be48012e6ff5430f680c599c47e393090.0x140000000",
+                "sp+0x78: 0x0000000001211e18 -> emu.stack.0x1200000"
+            ],
+            "api_name": "MSVCR110.??2@YAPEAX_K@Z"
+        },
+        "dynamic_code_segments": []
+    }
+]

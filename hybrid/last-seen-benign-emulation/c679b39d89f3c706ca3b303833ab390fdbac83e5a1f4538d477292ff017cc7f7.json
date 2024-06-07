@@ -1,0 +1,145 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4062a0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "cb3b4ff6f534d5e2c398a679bc694df82a173c678d5fb7a8c8d871541f57f96e",
+        "apis": [
+            {
+                "pc": "0x414b61",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x414b70",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x9484"
+            },
+            {
+                "pc": "0x414b79",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x9498"
+            },
+            {
+                "pc": "0x414b82",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x414b97",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x406174",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x411f6c",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x416490"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x411f8a",
+                "api_name": "KERNEL32.GetVersionExA",
+                "args": [
+                    "0x1211f1c"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4120f7",
+                "api_name": "KERNEL32.GetUserDefaultLCID",
+                "args": [],
+                "ret_val": "0x400"
+            },
+            {
+                "pc": "0x412116",
+                "api_name": "KERNEL32.GetLocaleInfoW",
+                "args": [
+                    "LOCALE_USER_DEFAULT",
+                    "0x20000070",
+                    "0x12118dc",
+                    "0x2"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x411ef3",
+                "api_name": "KERNEL32.LoadLibraryW",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x411f05",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetThreadUILanguage"
+                ],
+                "ret_val": "0xfeee0000"
+            }
+        ],
+        "ret_val": "0xfeee0000",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0000",
+            "address": "0xfeee0000",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211eec",
+                "ebp": "0x01211f04",
+                "eip": "0xfeee0000",
+                "esi": "0x01211ef4",
+                "edi": "0x77000000",
+                "eax": "0xfeee0000",
+                "ebx": "0x00000000",
+                "ecx": "0xfeee0000",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00411f1a -> emu.module.c679b39d89f3c706ca3b303833ab390fdbac83e5a1f4538d477292ff017cc7f7.0x400000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0xfeee0000",
+                "sp+0x18: 0x01211fcc -> emu.stack.0x1200000",
+                "sp+0x1c: 0x00411fe1 -> emu.module.c679b39d89f3c706ca3b303833ab390fdbac83e5a1f4538d477292ff017cc7f7.0x400000",
+                "sp+0x20: 0xfb2670af",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000094",
+                "sp+0x34: 0x00000006",
+                "sp+0x38: 0x00000001",
+                "sp+0x3c: 0x00001db1 -> emu.gdt.0x1000"
+            ],
+            "api_name": "kernel32.SetThreadUILanguage"
+        },
+        "dynamic_code_segments": []
+    }
+]

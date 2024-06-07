@@ -1,0 +1,4132 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x41a610",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x469b1a",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "9a289297d8ce80239118c185fc8a1779e25f5d1f5a6c27b1e59222c631d74949",
+        "apis": [
+            {
+                "pc": "0x47b52a",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x47b539",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x1e10"
+            },
+            {
+                "pc": "0x47b542",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x1dfc"
+            },
+            {
+                "pc": "0x47b54f",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fd0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de4a",
+                "api_name": "KERNEL32.GetStartupInfoW",
+                "args": [
+                    "0x1211f68"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x470570",
+                "api_name": "KERNEL32.GetProcessHeap",
+                "args": [],
+                "ret_val": "0x46e0"
+            },
+            {
+                "pc": "0x46c32b",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x473026",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x472fd4"
+                ],
+                "ret_val": "0x472fd5"
+            },
+            {
+                "pc": "0x46deda",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x46deea",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsAlloc"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x46defd",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsFree"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x46df10",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsGetValue"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x46df23",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsSetValue"
+                ],
+                "ret_val": "0xfeee0003"
+            },
+            {
+                "pc": "0x46df36",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "InitializeCriticalSectionEx"
+                ],
+                "ret_val": "0xfeee0004"
+            },
+            {
+                "pc": "0x46df49",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CreateEventExW"
+                ],
+                "ret_val": "0xfeee0005"
+            },
+            {
+                "pc": "0x46df5c",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CreateSemaphoreExW"
+                ],
+                "ret_val": "0xfeee0006"
+            },
+            {
+                "pc": "0x46df6f",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetThreadStackGuarantee"
+                ],
+                "ret_val": "0xfeee0007"
+            },
+            {
+                "pc": "0x46df82",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CreateThreadpoolTimer"
+                ],
+                "ret_val": "0xfeee0008"
+            },
+            {
+                "pc": "0x46df95",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetThreadpoolTimer"
+                ],
+                "ret_val": "0xfeee0009"
+            },
+            {
+                "pc": "0x46dfa8",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "WaitForThreadpoolTimerCallbacks"
+                ],
+                "ret_val": "0xfeee000a"
+            },
+            {
+                "pc": "0x46dfbb",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CloseThreadpoolTimer"
+                ],
+                "ret_val": "0xfeee000b"
+            },
+            {
+                "pc": "0x46dfce",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CreateThreadpoolWait"
+                ],
+                "ret_val": "0xfeee000c"
+            },
+            {
+                "pc": "0x46dfe1",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetThreadpoolWait"
+                ],
+                "ret_val": "0xfeee000d"
+            },
+            {
+                "pc": "0x46dff4",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CloseThreadpoolWait"
+                ],
+                "ret_val": "0xfeee000e"
+            },
+            {
+                "pc": "0x46e007",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlushProcessWriteBuffers"
+                ],
+                "ret_val": "0xfeee000f"
+            },
+            {
+                "pc": "0x46e01a",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FreeLibraryWhenCallbackReturns"
+                ],
+                "ret_val": "0xfeee0010"
+            },
+            {
+                "pc": "0x46e02d",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetCurrentProcessorNumber"
+                ],
+                "ret_val": "0xfeee0011"
+            },
+            {
+                "pc": "0x46e040",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetLogicalProcessorInformation"
+                ],
+                "ret_val": "0xfeee0012"
+            },
+            {
+                "pc": "0x46e053",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CreateSymbolicLinkW"
+                ],
+                "ret_val": "0xfeee0013"
+            },
+            {
+                "pc": "0x46e066",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetDefaultDllDirectories"
+                ],
+                "ret_val": "0xfeee0014"
+            },
+            {
+                "pc": "0x46e079",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "EnumSystemLocalesEx"
+                ],
+                "ret_val": "0xfeee0015"
+            },
+            {
+                "pc": "0x46e08c",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "CompareStringEx"
+                ],
+                "ret_val": "0xfeee0016"
+            },
+            {
+                "pc": "0x46e09f",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetDateFormatEx"
+                ],
+                "ret_val": "0xfeee0017"
+            },
+            {
+                "pc": "0x46e0b2",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetLocaleInfoEx"
+                ],
+                "ret_val": "0xfeee0018"
+            },
+            {
+                "pc": "0x46e0c5",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetTimeFormatEx"
+                ],
+                "ret_val": "0xfeee0019"
+            },
+            {
+                "pc": "0x46e0d8",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetUserDefaultLocaleName"
+                ],
+                "ret_val": "0xfeee001a"
+            },
+            {
+                "pc": "0x46e0eb",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "IsValidLocaleName"
+                ],
+                "ret_val": "0xfeee001b"
+            },
+            {
+                "pc": "0x46e0fe",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "LCMapStringEx"
+                ],
+                "ret_val": "0xfeee001c"
+            },
+            {
+                "pc": "0x46e111",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetCurrentPackageId"
+                ],
+                "ret_val": "0xfeee001d"
+            },
+            {
+                "pc": "0x46e124",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetTickCount64"
+                ],
+                "ret_val": "0xfeee001e"
+            },
+            {
+                "pc": "0x46e137",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetFileInformationByHandleExW"
+                ],
+                "ret_val": "0xfeee001f"
+            },
+            {
+                "pc": "0x46e14a",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "SetFileInformationByHandleW"
+                ],
+                "ret_val": "0xfeee0020"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4abee8",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4abf00",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4abf18",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4abf30",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4abf48",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4abf60",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4abf78",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4abf90",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4abfa8",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4abfc0",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4abfd8",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4abff0",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4ac008",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4ac020",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46ddd1",
+                "api_name": "kernel32.FlsAlloc",
+                "args": [
+                    "0x472c48"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4755aa",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x46e0",
+                    "0x8",
+                    "0x3bc"
+                ],
+                "ret_val": "0x4700"
+            },
+            {
+                "pc": "0x46de30",
+                "api_name": "kernel32.FlsSetValue",
+                "args": [
+                    "0x0",
+                    "0x4700"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abfc0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4abfc0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abfa8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4abfa8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x472f19",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x1e10"
+            },
+            {
+                "pc": "0x465395",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x18"
+                ],
+                "ret_val": "0x4ac0"
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abf90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4ac0",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4abf90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4ac0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4755aa",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x46e0",
+                    "0x8",
+                    "0x800"
+                ],
+                "ret_val": "0x7000"
+            },
+            {
+                "pc": "0x47789a",
+                "api_name": "KERNEL32.GetStartupInfoW",
+                "args": [
+                    "0x1211f38"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x477a28",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffff6"
+                ],
+                "ret_val": "0xf001"
+            },
+            {
+                "pc": "0x477a3b",
+                "api_name": "KERNEL32.GetFileType",
+                "args": [
+                    "0xf001"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x700c",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x477a28",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffff5"
+                ],
+                "ret_val": "0xf002"
+            },
+            {
+                "pc": "0x477a3b",
+                "api_name": "KERNEL32.GetFileType",
+                "args": [
+                    "0xf002"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x704c",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x477a28",
+                "api_name": "KERNEL32.GetStdHandle",
+                "args": [
+                    "0xfffffff4"
+                ],
+                "ret_val": "0xf003"
+            },
+            {
+                "pc": "0x477a3b",
+                "api_name": "KERNEL32.GetFileType",
+                "args": [
+                    "0xf003"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x708c",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4ac0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x469a49",
+                "api_name": "KERNEL32.GetCommandLineW",
+                "args": [],
+                "ret_val": "0x78f0"
+            },
+            {
+                "pc": "0x47b5d7",
+                "api_name": "KERNEL32.GetEnvironmentStringsW",
+                "args": [],
+                "ret_val": "0x7930"
+            },
+            {
+                "pc": "0x465395",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x19a"
+                ],
+                "ret_val": "0x7ad0"
+            },
+            {
+                "pc": "0x47b620",
+                "api_name": "KERNEL32.FreeEnvironmentStringsW",
+                "args": [
+                    "0x7930"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x47b1a8",
+                "api_name": "KERNEL32.GetModuleFileNameW",
+                "args": [
+                    "0x0",
+                    "C:\\Windows\\system32\\3dc3906b4a66c547776d6e7111a30492a48a9d3000529933271dea0a8857edc4",
+                    "0x104"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x465395",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x44"
+                ],
+                "ret_val": "0x7c70"
+            },
+            {
+                "pc": "0x4755aa",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x46e0",
+                    "0x8",
+                    "0x8"
+                ],
+                "ret_val": "0x7cc0"
+            },
+            {
+                "pc": "0x4755aa",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x46e0",
+                    "0x8",
+                    "0x198"
+                ],
+                "ret_val": "0x7cd0"
+            },
+            {
+                "pc": "0x463b9a",
+                "api_name": "KERNEL32.HeapFree",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x7ad0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x473c39",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x473165"
+                ],
+                "ret_val": "0x473166"
+            },
+            {
+                "pc": "0x473c39",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x473a51"
+                ],
+                "ret_val": "0x473a52"
+            },
+            {
+                "pc": "0x473c39",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x473ae2"
+                ],
+                "ret_val": "0x473ae3"
+            },
+            {
+                "pc": "0x473c39",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x473b3c"
+                ],
+                "ret_val": "0x473b3d"
+            },
+            {
+                "pc": "0x473c39",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x473bc1"
+                ],
+                "ret_val": "0x473bc2"
+            },
+            {
+                "pc": "0x473c39",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x473165"
+                ],
+                "ret_val": "0x473166"
+            },
+            {
+                "pc": "0x473c39",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x473186"
+                ],
+                "ret_val": "0x473187"
+            },
+            {
+                "pc": "0x473c39",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x473afa"
+                ],
+                "ret_val": "0x473afb"
+            },
+            {
+                "pc": "0x473c39",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x473a62"
+                ],
+                "ret_val": "0x473a63"
+            },
+            {
+                "pc": "0x473c39",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x473b4d"
+                ],
+                "ret_val": "0x473b4e"
+            },
+            {
+                "pc": "0x4755aa",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x46e0",
+                    "0x8",
+                    "0x80"
+                ],
+                "ret_val": "0x7e70"
+            },
+            {
+                "pc": "0x4632e6",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x7e70"
+                ],
+                "ret_val": "0x7e71"
+            },
+            {
+                "pc": "0x4755aa",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x46e0",
+                    "0x8",
+                    "0x800"
+                ],
+                "ret_val": "0x8000"
+            },
+            {
+                "pc": "0x47040f",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x472d9d",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x46de0e",
+                "api_name": "kernel32.FlsGetValue",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x4700"
+            },
+            {
+                "pc": "0x472dff",
+                "api_name": "KERNEL32.SetLastError",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abfc0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4abfc0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x472d9d",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x46de0e",
+                "api_name": "kernel32.FlsGetValue",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x4700"
+            },
+            {
+                "pc": "0x472dff",
+                "api_name": "KERNEL32.SetLastError",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x474041",
+                "api_name": "KERNEL32.GetACP",
+                "args": [],
+                "ret_val": "0x4e4"
+            },
+            {
+                "pc": "0x465395",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x220"
+                ],
+                "ret_val": "0x8810"
+            },
+            {
+                "pc": "0x472d9d",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x46de0e",
+                "api_name": "kernel32.FlsGetValue",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x4700"
+            },
+            {
+                "pc": "0x472dff",
+                "api_name": "KERNEL32.SetLastError",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x474520",
+                "api_name": "KERNEL32.IsValidCodePage",
+                "args": [
+                    "0x4e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x474533",
+                "api_name": "KERNEL32.GetCPInfo",
+                "args": [
+                    "0x4e4",
+                    "0x1211f2c"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4740f1",
+                "api_name": "KERNEL32.GetCPInfo",
+                "args": [
+                    "0x4e4",
+                    "0x12119f4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x472d9d",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x46de0e",
+                "api_name": "kernel32.FlsGetValue",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x4700"
+            },
+            {
+                "pc": "0x472dff",
+                "api_name": "KERNEL32.SetLastError",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x475dcd",
+                "api_name": "KERNEL32.MultiByteToWideChar",
+                "args": [
+                    "0x4e4",
+                    "0x1",
+                    " \u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u001e\u001f !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~\u007f\u0080\u0081\u0082\u0083\u0084\u0085\u0086\u0087\u0088\u0089\u008a\u008b\u008c\u008d\u008e\u008f\u0090\u0091\u0092\u0093\u0094\u0095\u0096\u0097\u0098\u0099\u009a\u009b\u009c\u009d\u009e\u009f\u00a0\u00a1\u00a2\u00a3\u00a4\u00a5\u00a6\u00a7\u00a8\u00a9\u00aa\u00ab\u00ac\u00ad\u00ae\u00af\u00b0\u00b1\u00b2\u00b3\u00b4\u00b5\u00b6\u00b7\u00b8\u00b9\u00ba\u00bb\u00bc\u00bd\u00be\u00bf\u00c0\u00c1\u00c2\u00c3\u00c4\u00c5\u00c6\u00c7\u00c8\u00c9\u00ca\u00cb\u00cc\u00cd\u00ce\u00cf\u00d0\u00d1\u00d2\u00d3\u00d4\u00d5\u00d6\u00d7\u00d8\u00d9\u00da\u00db\u00dc\u00dd\u00de\u00df\u00e0\u00e1\u00e2\u00e3\u00e4\u00e5\u00e6\u00e7\u00e8\u00e9\u00ea\u00eb\u00ec\u00ed\u00ee\u00ef\u00f0\u00f1\u00f2\u00f3\u00f4\u00f5\u00f6\u00f7\u00f8\u00f9\u00fa\u00fb\u00fc\u00fd\u00fe\u00ff\u00b2\u001d\u00b0}D\u001f!\u0001\u007fFG",
+                    "0x100",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x10c"
+            },
+            {
+                "pc": "0x475e4e",
+                "api_name": "KERNEL32.MultiByteToWideChar",
+                "args": [
+                    "0x4e4",
+                    "0x1",
+                    "0x1211e08",
+                    "0x100",
+                    "0x1211758",
+                    "0x10c"
+                ],
+                "ret_val": "0x100"
+            },
+            {
+                "pc": "0x475e60",
+                "api_name": "KERNEL32.GetStringTypeW",
+                "args": [
+                    "0x1",
+                    "0x1211758",
+                    "0x100",
+                    "0x1211a08"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x472d9d",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x46de0e",
+                "api_name": "kernel32.FlsGetValue",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x4700"
+            },
+            {
+                "pc": "0x472dff",
+                "api_name": "KERNEL32.SetLastError",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46dbe1",
+                "api_name": "KERNEL32.MultiByteToWideChar",
+                "args": [
+                    "0x4e4",
+                    "0x1",
+                    " \u0001\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u001e\u001f !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~\u007f\u0080\u0081\u0082\u0083\u0084\u0085\u0086\u0087\u0088\u0089\u008a\u008b\u008c\u008d\u008e\u008f\u0090\u0091\u0092\u0093\u0094\u0095\u0096\u0097\u0098\u0099\u009a\u009b\u009c\u009d\u009e\u009f\u00a0\u00a1\u00a2\u00a3\u00a4\u00a5\u00a6\u00a7\u00a8\u00a9\u00aa\u00ab\u00ac\u00ad\u00ae\u00af\u00b0\u00b1\u00b2\u00b3\u00b4\u00b5\u00b6\u00b7\u00b8\u00b9\u00ba\u00bb\u00bc\u00bd\u00be\u00bf\u00c0\u00c1\u00c2\u00c3\u00c4\u00c5\u00c6\u00c7\u00c8\u00c9\u00ca\u00cb\u00cc\u00cd\u00ce\u00cf\u00d0\u00d1\u00d2\u00d3\u00d4\u00d5\u00d6\u00d7\u00d8\u00d9\u00da\u00db\u00dc\u00dd\u00de\u00df\u00e0\u00e1\u00e2\u00e3\u00e4\u00e5\u00e6\u00e7\u00e8\u00e9\u00ea\u00eb\u00ec\u00ed\u00ee\u00ef\u00f0\u00f1\u00f2\u00f3\u00f4\u00f5\u00f6\u00f7\u00f8\u00f9\u00fa\u00fb\u00fc\u00fd\u00fe\u00ff\u00b2\u001d\u00b0}D\u001f!\u0001\u007fFG",
+                    "0x100",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x10c"
+            },
+            {
+                "pc": "0x46dc61",
+                "api_name": "KERNEL32.MultiByteToWideChar",
+                "args": [
+                    "0x4e4",
+                    "0x1",
+                    "0x1211e08",
+                    "0x100",
+                    "0x1211728",
+                    "0x10c"
+                ],
+                "ret_val": "0x100"
+            },
+            {
+                "pc": "0x46fff1",
+                "api_name": "kernel32.LCMapStringEx",
+                "args": [
+                    "0x0",
+                    "0x100",
+                    "0x1211728",
+                    "0x10c",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x10c"
+            },
+            {
+                "pc": "0x46fff1",
+                "api_name": "kernel32.LCMapStringEx",
+                "args": [
+                    "0x0",
+                    "0x100",
+                    "0x1211728",
+                    "0x10c",
+                    "0x1211508",
+                    "0x10c",
+                    "0x0",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x10c"
+            },
+            {
+                "pc": "0x46dd50",
+                "api_name": "KERNEL32.WideCharToMultiByte",
+                "args": [
+                    "0x4e4",
+                    "0x0",
+                    "0x1211508",
+                    "0x10c",
+                    "0x1211d08",
+                    "0x100",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x100"
+            },
+            {
+                "pc": "0x472d9d",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x46de0e",
+                "api_name": "kernel32.FlsGetValue",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x4700"
+            },
+            {
+                "pc": "0x472dff",
+                "api_name": "KERNEL32.SetLastError",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46dbe1",
+                "api_name": "KERNEL32.MultiByteToWideChar",
+                "args": [
+                    "0x4e4",
+                    "0x1",
+                    "",
+                    "0x1",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46dc61",
+                "api_name": "KERNEL32.MultiByteToWideChar",
+                "args": [
+                    "0x4e4",
+                    "0x1",
+                    "0x1211e08",
+                    "0x1",
+                    "0x1211958",
+                    "0x1"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46fff1",
+                "api_name": "kernel32.LCMapStringEx",
+                "args": [
+                    "0x0",
+                    "0x200",
+                    "0x1211958",
+                    "0x1",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46fff1",
+                "api_name": "kernel32.LCMapStringEx",
+                "args": [
+                    "0x0",
+                    "0x200",
+                    "0x1211958",
+                    "0x1",
+                    "0x1211948",
+                    "0x1",
+                    "0x0",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46dd50",
+                "api_name": "KERNEL32.WideCharToMultiByte",
+                "args": [
+                    "0x4e4",
+                    "0x0",
+                    "0x1211948",
+                    "0x1",
+                    "0x1211c08",
+                    "0x100",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x100"
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abfc0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4abfc0"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x483aa7",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46e164",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x47b135"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x463359",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e71"
+                ],
+                "ret_val": "0x7e70"
+            },
+            {
+                "pc": "0x463364",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e71"
+                ],
+                "ret_val": "0x7e70"
+            },
+            {
+                "pc": "0x4703ef",
+                "api_name": "KERNEL32.HeapSize",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x7e70"
+                ],
+                "ret_val": "0x90"
+            },
+            {
+                "pc": "0x4633dd",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x47b5ac"
+                ],
+                "ret_val": "0x47b5ad"
+            },
+            {
+                "pc": "0x4633e9",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x7e74"
+                ],
+                "ret_val": "0x7e75"
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4ab908",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4ab920",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4ab938",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46de78",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4ab950",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x463359",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e71"
+                ],
+                "ret_val": "0x7e70"
+            },
+            {
+                "pc": "0x463364",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e75"
+                ],
+                "ret_val": "0x7e74"
+            },
+            {
+                "pc": "0x4703ef",
+                "api_name": "KERNEL32.HeapSize",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x7e70"
+                ],
+                "ret_val": "0x90"
+            },
+            {
+                "pc": "0x4633dd",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x48acb6"
+                ],
+                "ret_val": "0x48acb7"
+            },
+            {
+                "pc": "0x4633e9",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x7e78"
+                ],
+                "ret_val": "0x7e79"
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x463359",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e71"
+                ],
+                "ret_val": "0x7e70"
+            },
+            {
+                "pc": "0x463364",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e79"
+                ],
+                "ret_val": "0x7e78"
+            },
+            {
+                "pc": "0x4703ef",
+                "api_name": "KERNEL32.HeapSize",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x7e70"
+                ],
+                "ret_val": "0x90"
+            },
+            {
+                "pc": "0x4633dd",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x48acde"
+                ],
+                "ret_val": "0x48acdf"
+            },
+            {
+                "pc": "0x4633e9",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x7e7c"
+                ],
+                "ret_val": "0x7e7d"
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x463359",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e71"
+                ],
+                "ret_val": "0x7e70"
+            },
+            {
+                "pc": "0x463364",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e7d"
+                ],
+                "ret_val": "0x7e7c"
+            },
+            {
+                "pc": "0x4703ef",
+                "api_name": "KERNEL32.HeapSize",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x7e70"
+                ],
+                "ret_val": "0x90"
+            },
+            {
+                "pc": "0x4633dd",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x48acd4"
+                ],
+                "ret_val": "0x48acd5"
+            },
+            {
+                "pc": "0x4633e9",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x7e80"
+                ],
+                "ret_val": "0x7e81"
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x41df45",
+                "api_name": "KERNEL32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4ab8cc",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x463359",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e71"
+                ],
+                "ret_val": "0x7e70"
+            },
+            {
+                "pc": "0x463364",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e81"
+                ],
+                "ret_val": "0x7e80"
+            },
+            {
+                "pc": "0x4703ef",
+                "api_name": "KERNEL32.HeapSize",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x7e70"
+                ],
+                "ret_val": "0x90"
+            },
+            {
+                "pc": "0x4633dd",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x48acac"
+                ],
+                "ret_val": "0x48acad"
+            },
+            {
+                "pc": "0x4633e9",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x7e84"
+                ],
+                "ret_val": "0x7e85"
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x463359",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e71"
+                ],
+                "ret_val": "0x7e70"
+            },
+            {
+                "pc": "0x463364",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e85"
+                ],
+                "ret_val": "0x7e84"
+            },
+            {
+                "pc": "0x4703ef",
+                "api_name": "KERNEL32.HeapSize",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x7e70"
+                ],
+                "ret_val": "0x90"
+            },
+            {
+                "pc": "0x4633dd",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x48acc0"
+                ],
+                "ret_val": "0x48acc1"
+            },
+            {
+                "pc": "0x4633e9",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x7e88"
+                ],
+                "ret_val": "0x7e89"
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x463359",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e71"
+                ],
+                "ret_val": "0x7e70"
+            },
+            {
+                "pc": "0x463364",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e89"
+                ],
+                "ret_val": "0x7e88"
+            },
+            {
+                "pc": "0x4703ef",
+                "api_name": "KERNEL32.HeapSize",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x7e70"
+                ],
+                "ret_val": "0x90"
+            },
+            {
+                "pc": "0x4633dd",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x48acca"
+                ],
+                "ret_val": "0x48accb"
+            },
+            {
+                "pc": "0x4633e9",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x7e8c"
+                ],
+                "ret_val": "0x7e8d"
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x465395",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x30"
+                ],
+                "ret_val": "0x8a40"
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x463359",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e71"
+                ],
+                "ret_val": "0x7e70"
+            },
+            {
+                "pc": "0x463364",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e8d"
+                ],
+                "ret_val": "0x7e8c"
+            },
+            {
+                "pc": "0x4703ef",
+                "api_name": "KERNEL32.HeapSize",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x7e70"
+                ],
+                "ret_val": "0x90"
+            },
+            {
+                "pc": "0x4633dd",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x48ab53"
+                ],
+                "ret_val": "0x48ab54"
+            },
+            {
+                "pc": "0x4633e9",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x7e90"
+                ],
+                "ret_val": "0x7e91"
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x463359",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e71"
+                ],
+                "ret_val": "0x7e70"
+            },
+            {
+                "pc": "0x463364",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e91"
+                ],
+                "ret_val": "0x7e90"
+            },
+            {
+                "pc": "0x4703ef",
+                "api_name": "KERNEL32.HeapSize",
+                "args": [
+                    "0x46e0",
+                    "0x0",
+                    "0x7e70"
+                ],
+                "ret_val": "0x90"
+            },
+            {
+                "pc": "0x4633dd",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x48ab49"
+                ],
+                "ret_val": "0x48ab4a"
+            },
+            {
+                "pc": "0x4633e9",
+                "api_name": "KERNEL32.EncodePointer",
+                "args": [
+                    "0x7e94"
+                ],
+                "ret_val": "0x7e95"
+            },
+            {
+                "pc": "0x46c9b0",
+                "api_name": "KERNEL32.LeaveCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2128"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2128"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x212c"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x212c"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2130"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2130"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2134"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2134"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2138"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2138"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x213c"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x213c"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2140"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2140"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2144"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2144"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2148"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2148"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x214c"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x214c"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2150"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2150"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2154"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2154"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2158"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2158"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x215c"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x215c"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2160"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2160"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2164"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2164"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2168"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2168"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x216c"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x216c"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2170"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2170"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2174"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2174"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2178"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2178"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x217c"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x217c"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2180"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2180"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2184"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2184"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2188"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2188"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x218c"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x218c"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2190"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2190"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2194"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2194"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2198"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2198"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x219c"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x219c"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21a0"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21a0"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21a4"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21a4"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21a8"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21a8"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21ac"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21ac"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21b0"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21b0"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21b4"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21b4"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21b8"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21b8"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21bc"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21bc"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21c0"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21c0"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21c4"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21c4"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21c8"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21c8"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21cc"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21cc"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21d0"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21d0"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21d4"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21d4"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21d8"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21d8"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21dc"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21dc"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21e0"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21e0"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21e4"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21e4"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21e8"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21e8"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21ec"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21ec"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21f0"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21f0"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21f4"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21f4"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21f8"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21f8"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x21fc"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x21fc"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2200"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2200"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2204"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2204"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2208"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2208"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x220c"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x220c"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2210"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2210"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2214"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2214"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2218"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2218"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x221c"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x221c"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2220"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2220"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2224"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2224"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2228"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2228"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x222c"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x222c"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2230"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2230"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2234"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2234"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x2238"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x2238"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x432a16",
+                "api_name": "USER32.GetDesktopWindow",
+                "args": [],
+                "ret_val": "0x223c"
+            },
+            {
+                "pc": "0x432a1d",
+                "api_name": "USER32.GetDC",
+                "args": [
+                    "0x223c"
+                ],
+                "ret_val": "0x20e4"
+            },
+            {
+                "pc": "0x432a28",
+                "api_name": "GDI32.GetDeviceCaps",
+                "args": [
+                    "0x20e4",
+                    "0x58"
+                ],
+                "ret_val": "0x10"
+            },
+            {
+                "pc": "0x432a31",
+                "api_name": "GDI32.DeleteObject",
+                "args": [
+                    "0x20e4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x41df45",
+                "api_name": "KERNEL32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x4ab274",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x46c864",
+                "api_name": "KERNEL32.EnterCriticalSection",
+                "args": [
+                    "0x4abf78"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x463359",
+                "api_name": "KERNEL32.DecodePointer",
+                "args": [
+                    "0x7e71"
+                ],
+                "ret_val": "0x7e70"
+            }
+        ],
+        "ret_val": "0x7e70",
+        "error": {
+            "type": "max_api_count",
+            "count": 500,
+            "pc": "0x463359",
+            "last_api": "KERNEL32.DecodePointer"
+        },
+        "dynamic_code_segments": []
+    }
+]

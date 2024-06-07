@@ -1,0 +1,87 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x403a90",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "1e6c3a8a822ed9b7117c8aaa7c1e36c442a54fb9e0385bd9713794df46983a0f",
+        "apis": [
+            {
+                "pc": "0x404008",
+                "api_name": "api-ms-win-core-sysinfo-l1-1-0.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fd4"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x404017",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x77cc"
+            },
+            {
+                "pc": "0x404020",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x77e0"
+            },
+            {
+                "pc": "0x404029",
+                "api_name": "api-ms-win-core-sysinfo-l1-1-0.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x40403e",
+                "api_name": "api-ms-win-core-profile-l1-1-0.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0x1211f7c",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf128",
+            "address": "0xfeedf128",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f64",
+                "ebp": "0x01211fe4",
+                "eip": "0xfeedf128",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x01211f7c",
+                "ebx": "0x00000000",
+                "ecx": "0xa40fc3d0",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0040382e -> emu.module.e3f8c10ee5fe36cbfeed2af0eda485059459c5696ed0b54ea24ba6b7697f4589.0x400000",
+                "sp+0x04: 0x01211f7c -> emu.stack.0x1200000",
+                "sp+0x08: 0xa52edc34",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "api-ms-win-core-processthreads-l1-1-0.GetStartupInfoW"
+        },
+        "dynamic_code_segments": []
+    }
+]

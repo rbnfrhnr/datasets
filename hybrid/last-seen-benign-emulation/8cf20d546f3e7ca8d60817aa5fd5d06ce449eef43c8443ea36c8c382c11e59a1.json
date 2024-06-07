@@ -1,0 +1,134 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140012128",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "0107f7c0e3ef24963f1ce892089ee3a69c4163857e49d70cc70a40e572a77e16",
+        "apis": [
+            {
+                "pc": "0x14001143a",
+                "api_name": "KERNEL32.GetProcessHeap",
+                "args": [],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x14001144d",
+                "api_name": "KERNEL32.HeapSetInformation",
+                "args": [
+                    "0x4940",
+                    "0x1",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140011458",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140011463",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xbf0c"
+            },
+            {
+                "pc": "0x14001146e",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xbf20"
+            },
+            {
+                "pc": "0x140011479",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x140011489",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400114a9",
+                "api_name": "KERNEL32.VirtualProtect",
+                "args": [
+                    "0x14001d858",
+                    "0x8",
+                    "0x40",
+                    "0x1211f88"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400114d3",
+                "api_name": "KERNEL32.VirtualProtect",
+                "args": [
+                    "0x14001d858",
+                    "0x8",
+                    "0x40",
+                    "0x1211f88"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf1dc",
+            "address": "0xfeedf1dc",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211f50",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf1dc",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x01dab75d44168da7",
+                "rax": "0x0000000000000001",
+                "rbx": "0x01dab75d44168da7",
+                "rcx": "0x000000014001d858",
+                "rdx": "0x0000000000000008",
+                "r8": "0x0000000000000040",
+                "r9": "0x0000000001211f88",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001400114e4 -> emu.module.8cf20d546f3e7ca8d60817aa5fd5d06ce449eef43c8443ea36c8c382c11e59a1.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000140012131 -> emu.module.8cf20d546f3e7ca8d60817aa5fd5d06ce449eef43c8443ea36c8c382c11e59a1.0x140000000",
+                "sp+0x38: 0x0000000000000040",
+                "sp+0x40: 0x01dab702934d8680",
+                "sp+0x48: 0x0000005fd27d571f",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x00000000feedf000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "KERNEL32.WerRegisterMemoryBlock"
+        },
+        "dynamic_code_segments": []
+    }
+]

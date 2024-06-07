@@ -1,0 +1,78 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401650",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "9851afabd53a81a2563f54ee6f96b24359be32c0f6df87cbf2cd463480438be8",
+        "apis": [
+            {
+                "pc": "0x401669",
+                "api_name": "KERNEL32.CreateMutexA",
+                "args": [
+                    "0x0",
+                    "0x1",
+                    "4a2e65301dab69a"
+                ],
+                "ret_val": "0x2cc"
+            },
+            {
+                "pc": "0x401671",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4016a6",
+                "api_name": "USER32.LoadCursorA",
+                "args": [
+                    "0x0",
+                    "0x7f02"
+                ],
+                "ret_val": "0x4"
+            }
+        ],
+        "ret_val": "0x4",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf050",
+            "address": "0xfeedf050",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211bc4",
+                "ebp": "0x01212000",
+                "eip": "0xfeedf050",
+                "esi": "0x000002cc",
+                "edi": "0x00000000",
+                "eax": "0x00000004",
+                "ebx": "0x00000000",
+                "ecx": "0x00000100",
+                "edx": "0x00000001"
+            },
+            "stack": [
+                "sp+0x00: 0x004016ad -> emu.module.26b6a5e49bace140fc57678d821b7edc2ff9bc5566096b513c686ad9200202f9.0x400000",
+                "sp+0x04: 0x00000004",
+                "sp+0x08: 0x01212000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "USER32.SetCursor"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,111 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x14002e4f0",
+        "ep_args": [
+            "0x4030",
+            "0x4040",
+            "0x4050",
+            "0x4060"
+        ],
+        "apihash": "89f07b35a2fd3d9212a647a3f63f4679a72bff32f6291799ec7189eb4d3c5257",
+        "apis": [
+            {
+                "pc": "0x14002ee7f",
+                "api_name": "api-ms-win-core-sysinfo-l1-1-0.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14002ee8d",
+                "api_name": "api-ms-win-core-processthreads-l1-1-0.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xf29c"
+            },
+            {
+                "pc": "0x14002ee99",
+                "api_name": "api-ms-win-core-processthreads-l1-1-0.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xf2b0"
+            },
+            {
+                "pc": "0x14002eea5",
+                "api_name": "api-ms-win-core-sysinfo-l1-1-0.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x14002eeb5",
+                "api_name": "api-ms-win-core-sysinfo-l1-1-0.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c28"
+            },
+            {
+                "pc": "0x14002eed0",
+                "api_name": "api-ms-win-core-profile-l1-1-0.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14002e531",
+                "api_name": "msvcrt.memset",
+                "args": [
+                    "0x1211f38",
+                    "0x0",
+                    "0x64"
+                ],
+                "ret_val": "0x1211f38"
+            }
+        ],
+        "ret_val": "0x1211f38",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf194",
+            "address": "0xfeedf194",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211ef0",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf194",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000001211f38",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000001211f38",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000000000064",
+                "r9": "0x0000000000004060",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014002e541 -> emu.module.a926dfd215fb50b506c283b5a2277569bf5f653b16364633bec6617366c3358c.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "api-ms-win-core-processthreads-l1-1-0.GetStartupInfoW"
+        },
+        "dynamic_code_segments": []
+    }
+]

@@ -1,0 +1,233 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x100007654",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "40149908199c66c6583345ae9ff7b548e22ad2dad7450e19865a62a89c49ab05",
+        "apis": [
+            {
+                "pc": "0x1000079ad",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1000079b8",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xfe4"
+            },
+            {
+                "pc": "0x1000079c4",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xff8"
+            },
+            {
+                "pc": "0x1000079d0",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x1000079e1",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x100007934",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x100000000"
+            },
+            {
+                "pc": "0x1000075f9",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1000077a9",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x100007750"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1000074ab",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x100001458",
+                    "0x100001468"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x100002c8d",
+                "api_name": "KERNEL32.lstrcpyW",
+                "args": [
+                    "0x10000ac60",
+                    "Digital Signature Not Found"
+                ],
+                "ret_val": "0x10000ac60"
+            },
+            {
+                "pc": "0x100002c9a",
+                "api_name": "KERNEL32.LoadLibraryW",
+                "args": [
+                    "setupapi.dll"
+                ],
+                "ret_val": "0x55500000"
+            },
+            {
+                "pc": "0x100002cb6",
+                "api_name": "KERNEL32.FindResourceW",
+                "args": [
+                    "0x55500000",
+                    "0x14c2",
+                    "0x5"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x100002d08",
+                "api_name": "KERNEL32.FreeLibrary",
+                "args": [
+                    "0x55500000"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x100002d18",
+                "api_name": "KERNEL32.CreateEventW",
+                "args": [
+                    "0x0",
+                    "0x0",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x224"
+            },
+            {
+                "pc": "0x100002d47",
+                "api_name": "KERNEL32.CreateThread",
+                "args": [
+                    "0x0",
+                    "0x0",
+                    "0x100001b08",
+                    "0x0",
+                    "0x0",
+                    "0x1211f88"
+                ],
+                "ret_val": "0x228"
+            }
+        ],
+        "ret_val": "0x228",
+        "error": {
+            "type": "Invalid memory read (UC_ERR_READ_UNMAPPED)",
+            "pc": "0x100007750",
+            "address": "0x100007750",
+            "instr": "sub rsp, 0x28",
+            "regs": {
+                "rsp": "0x0000000001211ea0",
+                "rbp": "0x0000000000000000",
+                "rip": "0x0000000100007750",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000055500000",
+                "rax": "0x0000000000000228",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000000004940",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000100001b08",
+                "r9": "0x0000000000000000",
+                "r10": "0x0000000000000000",
+                "r11": "0xffffffffffffffff",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000000feedf000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000100001488 -> emu.module.e777aa82d620f07b2fcc65ed9d2e29d0220b7c6d6638e82b36d0da2a8d58375e.0x100000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000055500000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 437, in start\n    count=self.max_instructions)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/engines/unicorn_eng.py\", line 203, in start\n    return self.emu.emu_start(addr, 0xFFFFFFFF, timeout=timeout, count=count)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/unicorn/unicorn.py\", line 318, in emu_start\n    raise UcError(status)\nunicorn.unicorn.UcError: Invalid memory read (UC_ERR_READ_UNMAPPED)\n"
+        },
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "thread",
+        "start_addr": "0x100001b08",
+        "ep_args": [
+            "0x0"
+        ],
+        "apihash": "1182a7258598df3d16be6cfe1d781636556377523bca0bab0a2d1eac127b2fea",
+        "apis": [
+            {
+                "pc": "0x100001b12",
+                "api_name": "KERNEL32.GetCurrentThread",
+                "args": [],
+                "ret_val": "0x22c"
+            },
+            {
+                "pc": "0x100001b20",
+                "api_name": "KERNEL32.SetThreadPriority",
+                "args": [
+                    "0x22c",
+                    "0xfffffffe"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x100001b2f",
+                "api_name": "USER32.FindWindowW",
+                "args": [
+                    "0x0",
+                    "Digital Signature Not Found"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x100001b5d",
+                "api_name": "KERNEL32.WaitForSingleObject",
+                "args": [
+                    "0x224",
+                    "0xa"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0xdead",
+        "error": {},
+        "dynamic_code_segments": []
+    }
+]

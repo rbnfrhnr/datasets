@@ -1,0 +1,80 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x34c80",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "9c8160db297468b7944da2947e9f8ffa93ddb95d1f825b3598510bb01e3082f3",
+        "apis": [
+            {
+                "pc": "0x11e5f",
+                "api_name": "ntdll.RtlInitAnsiString",
+                "args": [
+                    "0x1211648",
+                    "\nIntel(R) Optane(TM) Memory\n\n"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x11e71",
+                "api_name": "ntdll.RtlAnsiStringToUnicodeString",
+                "args": [
+                    "0x1211638",
+                    "\nIntel(R) Optane(TM) Memory\n\n",
+                    "0x401"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf01c",
+            "address": "0xfeedf01c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x00000000012115e0",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf01c",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000000000000",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000001211638",
+                "rdx": "0x0000000001211648",
+                "r8": "0x0000000000000401",
+                "r9": "0x0000000001211620",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000000011e7f -> emu.module.99bd7546bfe6daec003062c7888d560375a5d33dbc2e2f9e9a9f7c6bb6f658ca.0x10000",
+                "sp+0x08: 0x0000000001211a78 -> emu.stack.0x1200000",
+                "sp+0x10: 0x0000000001211658 -> emu.stack.0x1200000",
+                "sp+0x18: 0xffffffffffffffff",
+                "sp+0x20: 0x0000000001211620 -> emu.stack.0x1200000",
+                "sp+0x28: 0x000000000003b830 -> emu.module.99bd7546bfe6daec003062c7888d560375a5d33dbc2e2f9e9a9f7c6bb6f658ca.0x10000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000002",
+                "sp+0x40: 0x00000000000003e2",
+                "sp+0x48: 0x0000000001211696 -> emu.stack.0x1200000",
+                "sp+0x50: 0x0000000001211a78 -> emu.stack.0x1200000",
+                "sp+0x58: 0x00000000003a003a",
+                "sp+0x60: 0x0000000000004940 -> api.struct.STRING.\nIntel(R) Optane(TM) Memory\n\n.0x4940",
+                "sp+0x68: 0x00000000001d001d",
+                "sp+0x70: 0x0000000001211a78 -> emu.stack.0x1200000",
+                "sp+0x78: 0x0000000000000001"
+            ],
+            "api_name": "ntdll.NtDisplayString"
+        },
+        "dynamic_code_segments": []
+    }
+]

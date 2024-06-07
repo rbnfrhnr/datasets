@@ -1,0 +1,191 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x410bd0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "6dcf69397e257bf4acb7bf17fa9922c307c151522f2dda2bd78bf3f7e9bec536",
+        "apis": [
+            {
+                "pc": "0x403f1c",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x403ee4",
+                "api_name": "kernel32.GetModuleFileNameA",
+                "args": [
+                    "0x400000",
+                    "C:\\Windows\\system32\\068f2ee5ce93ed1e907272fb1075c988cc5aa3ae94ce1c076ca1d80526f04862",
+                    "0x105"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x4035b5",
+                "api_name": "kernel32.GetModuleFileNameA",
+                "args": [
+                    "0x0",
+                    "C:\\Windows\\system32\\068f2ee5ce93ed1e907272fb1075c988cc5aa3ae94ce1c076ca1d80526f04862",
+                    "0x105"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x4035d3",
+                "api_name": "advapi32.RegOpenKeyExA",
+                "args": [
+                    "HKEY_CURRENT_USER",
+                    "Software\\Borland\\Delphi\\Locales",
+                    "0x0",
+                    "0xf003f",
+                    "0x1211eac"
+                ],
+                "ret_val": "0x3"
+            },
+            {
+                "pc": "0x403654",
+                "api_name": "kernel32.lstrcpyA",
+                "args": [
+                    "0x1211d97",
+                    "C:\\Windows\\system32\\068f2ee5ce93ed1e907272fb1075c988cc5aa3ae94ce1c076ca1d80526f04862"
+                ],
+                "ret_val": "0x1211d97"
+            },
+            {
+                "pc": "0x403661",
+                "api_name": "kernel32.GetThreadLocale",
+                "args": [],
+                "ret_val": "0xc000"
+            },
+            {
+                "pc": "0x403667",
+                "api_name": "kernel32.GetLocaleInfoA",
+                "args": [
+                    "0xc000",
+                    "0x3",
+                    "0x1211ea7",
+                    "0x5"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4026d6",
+                "api_name": "user32.GetKeyboardType",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x4"
+            },
+            {
+                "pc": "0x403de0",
+                "api_name": "kernel32.GetCommandLineA",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x40114b",
+                "api_name": "kernel32.GetStartupInfoA",
+                "args": [
+                    "0x1211f50"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x40436e",
+                "api_name": "kernel32.GetThreadLocale",
+                "args": [],
+                "ret_val": "0xc000"
+            },
+            {
+                "pc": "0x404358",
+                "api_name": "kernel32.GetLocaleInfoA",
+                "args": [
+                    "0xc000",
+                    "0xf",
+                    "0x1211f80",
+                    "0x2"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x404358",
+                "api_name": "kernel32.GetLocaleInfoA",
+                "args": [
+                    "0xc000",
+                    "0xe",
+                    "0x1211f80",
+                    "0x2"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4043ab",
+                "api_name": "kernel32.GetVersionExA",
+                "args": [
+                    "0x1211f04"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x409dc7",
+                "api_name": "gdi32.GetStockObject",
+                "args": [
+                    "0xd"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf22c",
+            "address": "0xfeedf22c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211fa4",
+                "ebp": "0x01211fc8",
+                "eip": "0xfeedf22c",
+                "esi": "0x00000020",
+                "edi": "0x00410ad0",
+                "eax": "0x00000000",
+                "ebx": "0x0000000e",
+                "ecx": "0x01211fa8",
+                "edx": "0x01211fb0"
+            },
+            "stack": [
+                "sp+0x00: 0x00409dcc -> emu.module.068f2ee5ce93ed1e907272fb1075c988cc5aa3ae94ce1c076ca1d80526f04862.0x400000",
+                "sp+0x04: 0x0000000e",
+                "sp+0x08: 0x00402db0 -> emu.module.068f2ee5ce93ed1e907272fb1075c988cc5aa3ae94ce1c076ca1d80526f04862.0x400000",
+                "sp+0x0c: 0x01211fd8 -> emu.stack.0x1200000",
+                "sp+0x10: 0x00402dbe -> emu.module.068f2ee5ce93ed1e907272fb1075c988cc5aa3ae94ce1c076ca1d80526f04862.0x400000",
+                "sp+0x14: 0x01211fc8 -> emu.stack.0x1200000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x01211fe4 -> emu.stack.0x1200000",
+                "sp+0x28: 0x00402e06 -> emu.module.068f2ee5ce93ed1e907272fb1075c988cc5aa3ae94ce1c076ca1d80526f04862.0x400000",
+                "sp+0x2c: 0x00403f37 -> emu.module.068f2ee5ce93ed1e907272fb1075c988cc5aa3ae94ce1c076ca1d80526f04862.0x400000",
+                "sp+0x30: 0x00410be0 -> emu.module.068f2ee5ce93ed1e907272fb1075c988cc5aa3ae94ce1c076ca1d80526f04862.0x400000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00402c54 -> emu.module.068f2ee5ce93ed1e907272fb1075c988cc5aa3ae94ce1c076ca1d80526f04862.0x400000",
+                "sp+0x3c: 0x01211fe4 -> emu.stack.0x1200000"
+            ],
+            "api_name": "user32.GetDialogBaseUnits"
+        },
+        "registry_access": [
+            {
+                "event": "open_key",
+                "path": "HKEY_CURRENT_USER\\Software\\Borland\\Delphi\\Locales"
+            }
+        ],
+        "dynamic_code_segments": []
+    }
+]

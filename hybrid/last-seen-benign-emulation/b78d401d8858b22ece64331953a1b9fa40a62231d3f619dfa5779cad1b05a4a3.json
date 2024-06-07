@@ -1,0 +1,139 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x53f260",
+        "ep_args": [
+            "0x400000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4fec7f",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "8ddb5cd3bc1e799a6f5243d458011b4c8e376854a729791a7efbb4f0e7faaa3b",
+        "apis": [
+            {
+                "pc": "0x4ff76d",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fcc"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x4ff77c",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x5a18"
+            },
+            {
+                "pc": "0x4ff785",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x5a04"
+            },
+            {
+                "pc": "0x4ff792",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fc4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4ff590",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4feb14",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x6a9090",
+                    "0x6a90a4"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4feb3a",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x6a8d3c",
+                    "0x6a908c"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4ff49e",
+                "api_name": "VCRUNTIME140.memset",
+                "args": [
+                    "0x1211f68",
+                    "0x0",
+                    "0x44"
+                ],
+                "ret_val": "0x1211f68"
+            },
+            {
+                "pc": "0x4ff4ab",
+                "api_name": "KERNEL32.GetStartupInfoW",
+                "args": [
+                    "0x1211f68"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0xa",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedfb2c",
+            "address": "0xfeedfb2c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211fb0",
+                "ebp": "0x01211fe8",
+                "eip": "0xfeedfb2c",
+                "esi": "0x0000000a",
+                "edi": "0x00000000",
+                "eax": "0x0000000a",
+                "ebx": "0x00000000",
+                "ecx": "0xd27d5700",
+                "edx": "0x01212000"
+            },
+            "stack": [
+                "sp+0x00: 0x004feba9 -> emu.module.b78d401d8858b22ece64331953a1b9fa40a62231d3f619dfa5779cad1b05a4a3.0x400000",
+                "sp+0x04: 0x814ceb9c",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0xd27d5700",
+                "sp+0x18: 0x0000005f",
+                "sp+0x1c: 0x00eb0a00",
+                "sp+0x20: 0x01211fb4 -> emu.stack.0x1200000",
+                "sp+0x24: 0x5331bce0",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x004fe57b -> emu.module.b78d401d8858b22ece64331953a1b9fa40a62231d3f619dfa5779cad1b05a4a3.0x400000",
+                "sp+0x30: 0x8002a1cc",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x01212000",
+                "sp+0x3c: 0xfeedf000"
+            ],
+            "api_name": "api-ms-win-crt-runtime-l1-1-0._get_narrow_winmain_command_line"
+        },
+        "dynamic_code_segments": []
+    }
+]

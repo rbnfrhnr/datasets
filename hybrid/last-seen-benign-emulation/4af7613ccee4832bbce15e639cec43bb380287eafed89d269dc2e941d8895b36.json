@@ -1,0 +1,59 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401000",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "18655aba3bfcd50592e5a12fe7584263f3e7c3415d1aeed52057a2692ae34a4f",
+        "apis": [
+            {
+                "pc": "0x40100f",
+                "api_name": "KERNEL32.GetCommandLineW",
+                "args": [],
+                "ret_val": "0x45f0"
+            }
+        ],
+        "ret_val": "0x6d",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf02c",
+            "address": "0xfeedf02c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f30",
+                "ebp": "0x01211fe4",
+                "eip": "0xfeedf02c",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x0000006d",
+                "ebx": "0x00000000",
+                "ecx": "0x00004608",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x004010d2 -> emu.module.4af7613ccee4832bbce15e639cec43bb380287eafed89d269dc2e941d8895b36.0x400000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x000045f0 -> api.command_line.KERNEL32.GetCommandLineW.0x45f0"
+            ],
+            "api_name": "KERNEL32.CreateJobObjectW"
+        },
+        "dynamic_code_segments": []
+    }
+]

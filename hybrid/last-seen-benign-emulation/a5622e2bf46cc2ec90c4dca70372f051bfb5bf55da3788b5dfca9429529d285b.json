@@ -1,0 +1,81 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4185f9",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "b33bc9b859cf233baa6d49c006c3d4094e300161a34f43cf456d1693478c49e7",
+        "apis": [
+            {
+                "pc": "0x43f193",
+                "api_name": "KERNEL32.GetModuleHandleA",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x400000"
+            },
+            {
+                "pc": "0x43f1f0",
+                "api_name": "MSVCR71.__set_app_type",
+                "args": [
+                    "0x2"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x43f205",
+                "api_name": "MSVCR71.__p__fmode",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x43f213",
+                "api_name": "MSVCR71.__p__commode",
+                "args": [],
+                "ret_val": "0x4600"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf484",
+            "address": "0xfeedf484",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211f08",
+                "ebp": "0x01211f4c",
+                "eip": "0xfeedf484",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x00000000",
+                "ebx": "0xfeedf110",
+                "ecx": "0x00000000",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0043ee77 -> emu.module.a5622e2bf46cc2ec90c4dca70372f051bfb5bf55da3788b5dfca9429529d285b.0x400000",
+                "sp+0x04: 0x00000000",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000001",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x0043fdf5 -> emu.module.a5622e2bf46cc2ec90c4dca70372f051bfb5bf55da3788b5dfca9429529d285b.0x400000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0xfeedf110",
+                "sp+0x28: 0x0044b2ec -> emu.module.a5622e2bf46cc2ec90c4dca70372f051bfb5bf55da3788b5dfca9429529d285b.0x400000",
+                "sp+0x2c: 0x01211f24 -> emu.stack.0x1200000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x01211fd4 -> emu.stack.0x1200000",
+                "sp+0x38: 0x0041769a -> emu.module.a5622e2bf46cc2ec90c4dca70372f051bfb5bf55da3788b5dfca9429529d285b.0x400000",
+                "sp+0x3c: 0x0044a8a8 -> emu.module.a5622e2bf46cc2ec90c4dca70372f051bfb5bf55da3788b5dfca9429529d285b.0x400000"
+            ],
+            "api_name": "MSVCR71._CRT_RTC_INIT"
+        },
+        "dynamic_code_segments": []
+    }
+]

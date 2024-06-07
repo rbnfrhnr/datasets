@@ -1,0 +1,113 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x14005a100",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "90d5c2361346436209b66b94fa13823dc5de0e05a56c69763cf390bcb0c23d07",
+        "apis": [
+            {
+                "pc": "0x14005a595",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14005a5a0",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x20c4"
+            },
+            {
+                "pc": "0x14005a5ac",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x20d8"
+            },
+            {
+                "pc": "0x14005a5b8",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x14005a5c9",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140059ee2",
+                "api_name": "MSVCR80._initterm_e",
+                "args": [
+                    "0x14005c1f8",
+                    "0x14005c210"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140059f18",
+                "api_name": "MSVCR80._initterm",
+                "args": [
+                    "0x14005c1e0",
+                    "0x14005c1f0"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf27c",
+            "address": "0xfeedf27c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211f50",
+                "rbp": "0x0000000000000000",
+                "rip": "0x00000000feedf27c",
+                "rsi": "0x0000000001212000",
+                "rdi": "0x0000000000000000",
+                "rax": "0x0000000000000000",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x00000000ffffffff",
+                "rdx": "0x0000000000000000",
+                "r8": "0x0000000000000000",
+                "r9": "0x0000000000004030",
+                "r10": "0x0000000000000000",
+                "r11": "0xffff497772ef1868",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140059377 -> emu.module.930298968eefa422428f5d401c3322e3df5d650bb281a382d81403fcd294b171.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000001211fd8 -> emu.stack.0x1200000",
+                "sp+0x30: 0x0000000140059f80 -> emu.module.930298968eefa422428f5d401c3322e3df5d650bb281a382d81403fcd294b171.0x140000000",
+                "sp+0x38: 0x01dab6d75a4bec80",
+                "sp+0x40: 0x0000005fd27d571f",
+                "sp+0x48: 0x0000000001212000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x00000000feedf000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "libpal.?SCA_InitSystem@@YAHK@Z"
+        },
+        "dynamic_code_segments": []
+    }
+]

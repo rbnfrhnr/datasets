@@ -1,0 +1,49 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x1400011a0",
+        "ep_args": [
+            "0x7eb870",
+            "0x7eba60"
+        ],
+        "apihash": "bdeeb9170cb9f0b3d77998e0da157037df13c25aaddcbb2c4976cae63b17fee0",
+        "apis": [
+            {
+                "pc": "0x14000122c",
+                "api_name": "ntoskrnl.RtlCopyUnicodeString",
+                "args": [
+                    "0x140003348",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\8bbba92cf187cbbddaa0d972118a9ee0c81f287dba0a1b56fff93ff2e2e3dd1f"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x14000124a",
+                "api_name": "WDFLDR.WdfVersionBind",
+                "args": [
+                    "0x7eb870",
+                    "0x140003348",
+                    "0x140003070",
+                    "0x140003358"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400060de",
+                "api_name": "wdfldr.WdfDriverCreate",
+                "args": [
+                    "0xbd4d40",
+                    "0x7eb870",
+                    "0x7eba60",
+                    "0x1200ef8",
+                    "0x1200ed8",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    }
+]

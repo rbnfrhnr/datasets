@@ -1,0 +1,172 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140007d10",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "63af0fb4fc8beaffd685418923648376ae7f9eaa5bdfa5c052245e95ace1674f",
+        "apis": [
+            {
+                "pc": "0x140007fca",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140007fd8",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xc7d4"
+            },
+            {
+                "pc": "0x140007fe4",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xc7e8"
+            },
+            {
+                "pc": "0x140007ff0",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c14"
+            },
+            {
+                "pc": "0x140008000",
+                "api_name": "KERNEL32.GetTickCount",
+                "args": [],
+                "ret_val": "0x5265c28"
+            },
+            {
+                "pc": "0x14000801b",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140007e58",
+                "api_name": "KERNEL32.GetModuleHandleW",
+                "args": [
+                    "0x0"
+                ],
+                "ret_val": "0x140000000"
+            },
+            {
+                "pc": "0x140007a91",
+                "api_name": "msvcrt.__set_app_type",
+                "args": [
+                    "0x1"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140007dd1",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x140007d80"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140007c29",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x14000c100",
+                    "0x14000c110"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140002979",
+                "api_name": "KERNEL32.GetModuleFileNameW",
+                "args": [
+                    "0x0",
+                    "C:\\Windows\\system32\\2d7ce2dd4a9ce5fbed2c150720280cf50808b0cd5d7d988cdaaf5bd1e9e292f3",
+                    "0x106"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x140004609",
+                "api_name": "msvcrt.memset",
+                "args": [
+                    "0x121162c",
+                    "0x0",
+                    "0x118"
+                ],
+                "ret_val": "0x121162c"
+            },
+            {
+                "pc": "0x14000461d",
+                "api_name": "KERNEL32.GetVersionExW",
+                "args": [
+                    "0x1211628"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140004bbb",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "C:\\Windows\\system32\\2d7ce2dd4a9ce5fbed2c150720280cf50808b0cd5d7d988cdaaf5bd1e9e292f3",
+                    "0x0",
+                    "LOAD_LIBRARY_AS_DATAFILE | LOAD_LIBRARY_AS_IMAGE_RESOURCE"
+                ],
+                "ret_val": "0x140000000"
+            }
+        ],
+        "ret_val": "0x1211be8",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf04c",
+            "address": "0xfeedf04c",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211ba0",
+                "rbp": "0x0000000000000000",
+                "rip": "0x00000000feedf04c",
+                "rsi": "0x0000000001211c30",
+                "rdi": "0x0000000000000003",
+                "rax": "0x0000000001211be8",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000000000900",
+                "rdx": "0x0000000140000000",
+                "r8": "0x0000000000001021",
+                "r9": "0x0000000000000000",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000001211c40",
+                "r12": "0x000000014000c184",
+                "r13": "0x000000014000c184",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014000327d -> emu.module.2d7ce2dd4a9ce5fbed2c150720280cf50808b0cd5d7d988cdaaf5bd1e9e292f3.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000001211be8 -> emu.stack.0x1200000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000001211c28 -> emu.stack.0x1200000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000003",
+                "sp+0x60: 0x000000014000343b -> emu.module.2d7ce2dd4a9ce5fbed2c150720280cf50808b0cd5d7d988cdaaf5bd1e9e292f3.0x140000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000001211d48 -> emu.stack.0x1200000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "KERNEL32.FormatMessageW"
+        },
+        "dynamic_code_segments": []
+    }
+]

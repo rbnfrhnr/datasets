@@ -1,0 +1,151 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x100d9c0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "d44a1f9839bc17e9c6c33a024fb0d0c717b6087092197c6a5c6157c634040b38",
+        "apis": [
+            {
+                "pc": "0x100d9c9",
+                "api_name": "KERNEL32.GetCommandLineW",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x100dac0",
+                "api_name": "KERNEL32.GetVersionExW",
+                "args": [
+                    "0x1011880"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x100f10b",
+                "api_name": "KERNEL32.QueryPerformanceFrequency",
+                "args": [
+                    "0x1211bf4"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x100db15",
+                "api_name": "KERNEL32.GetSystemInfo",
+                "args": [
+                    "0x101185c"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x100f2b0",
+                "api_name": "KERNEL32.LoadLibraryW",
+                "args": [
+                    "ntdll"
+                ],
+                "ret_val": "0x7c000000"
+            },
+            {
+                "pc": "0x100f2be",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x7c000000",
+                    "ZwQuerySystemInformation"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x100f2be",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x7c000000",
+                    "RtlNtStatusToDosError"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x100f2b0",
+                "api_name": "KERNEL32.LoadLibraryW",
+                "args": [
+                    "kernel32"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x100f2be",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetCurrentProcessorNumber"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x100f2be",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "GetLogicalProcessorInformation"
+                ],
+                "ret_val": "0xfeee0003"
+            },
+            {
+                "pc": "0x100f26b",
+                "api_name": "KERNEL32.GetProcessHeap",
+                "args": [],
+                "ret_val": "0x4630"
+            },
+            {
+                "pc": "0x100f272",
+                "api_name": "KERNEL32.HeapAlloc",
+                "args": [
+                    "0x4630",
+                    "0x0",
+                    "0xc"
+                ],
+                "ret_val": "0x4650"
+            }
+        ],
+        "ret_val": "0x4601",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf1b0",
+            "address": "0xfeedf1b0",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211c04",
+                "ebp": "0x01211fd4",
+                "eip": "0xfeedf1b0",
+                "esi": "0x000045f0",
+                "edi": "0x00000000",
+                "eax": "0x00004601",
+                "ebx": "0x00000000",
+                "ecx": "0x00000000",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x01007903 -> emu.module.50e76e025aac953b76080ed1887933512ca7ebc05bdb053a0e37c9382769debd.0x1000000",
+                "sp+0x04: 0x000045f0 -> api.command_line.KERNEL32.GetCommandLineW.0x45f0",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x00000000",
+                "sp+0x10: 0x00000000",
+                "sp+0x14: 0x00000000",
+                "sp+0x18: 0x00000000",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x00000000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "api_name": "COMCTL32.ordinal_17"
+        },
+        "dynamic_code_segments": []
+    }
+]

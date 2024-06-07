@@ -1,0 +1,92 @@
+[
+    {
+        "ep_type": "entry_point",
+        "start_addr": "0x140023000",
+        "ep_args": [
+            "0x7eb980",
+            "0x7ebb70"
+        ],
+        "apihash": "453e1cfbaf74e1b06314563c8e72559b7eb7ba3df16a46c3f7eaaf05ecf9b648",
+        "apis": [
+            {
+                "pc": "0x1400043be",
+                "api_name": "ntoskrnl.RtlGetVersion",
+                "args": [
+                    "0x1200e48"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400161ca",
+                "api_name": "ntoskrnl.IoGetCurrentProcess",
+                "args": [],
+                "ret_val": "0xe0000000"
+            },
+            {
+                "pc": "0x1400044a4",
+                "api_name": "ntoskrnl.ExAllocatePoolWithTag",
+                "args": [
+                    "0x600",
+                    "0x10a",
+                    "MSSB"
+                ],
+                "ret_val": "0x7ebd90"
+            },
+            {
+                "pc": "0x1400044f4",
+                "api_name": "ntoskrnl.RtlCopyUnicodeString",
+                "args": [
+                    "0x140021198",
+                    "\\Registry\\Machine\\System\\CurrentControlSet\\Services\\1b86e404f0503549dfcfced5770a9f28d6f1815fe491a7b182e878e821229bdc"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x7ebd90",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf028",
+            "address": "0xfeedf028",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001200df0",
+                "rbp": "0x0000000001200fd8",
+                "rip": "0x00000000feedf028",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x00000000007eb980",
+                "rax": "0x00000000007ebd90",
+                "rbx": "0x00000000007ebb70",
+                "rcx": "0x0000000140021198",
+                "rdx": "0x000000014001ad30",
+                "r8": "0x000000004253534d",
+                "r9": "0x0000000000000053",
+                "r10": "0x0000000000000005",
+                "r11": "0x00000000e0003000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0000000140004508 -> emu.module.1b86e404f0503549dfcfced5770a9f28d6f1815fe491a7b182e878e821229bdc.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000100000006",
+                "sp+0x30: 0x0000000000000001",
+                "sp+0x38: 0x0000000000001db1 -> emu.gdt.0x1000",
+                "sp+0x40: 0x000000000000010a",
+                "sp+0x48: 0x00000000007ebd90 -> api.pool.unk.MSSB.0x7ebd90",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000600000114",
+                "sp+0x60: 0x00001db100000001",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ntoskrnl.RtlAppendUnicodeToString"
+        },
+        "dynamic_code_segments": []
+    }
+]

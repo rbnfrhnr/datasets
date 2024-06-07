@@ -1,0 +1,4583 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140069148",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "6b706f15f5071a0384e19a3a0ebc27cbf848b4b8e7fc5abd6a504589058b1b66",
+        "apis": [
+            {
+                "pc": "0x1400696be",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f88"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x1400696cc",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x5750"
+            },
+            {
+                "pc": "0x1400696d8",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x573c"
+            },
+            {
+                "pc": "0x1400696e8",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14006daf3",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "api-ms-win-core-synch-l1-2-0",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x14006dba5",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "InitializeCriticalSectionEx"
+                ],
+                "ret_val": "0xfeee0000"
+            },
+            {
+                "pc": "0x14006dd2d",
+                "api_name": "kernel32.InitializeCriticalSectionEx",
+                "args": [
+                    "0x140c40670",
+                    "0xfa0",
+                    "0x0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14006daf3",
+                "api_name": "KERNEL32.LoadLibraryExW",
+                "args": [
+                    "api-ms-win-core-fibers-l1-1-1",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0x14006dba5",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsAlloc"
+                ],
+                "ret_val": "0xfeee0001"
+            },
+            {
+                "pc": "0x14006acc8",
+                "api_name": "kernel32.FlsAlloc",
+                "args": [
+                    "0x14006abbc"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14006dba5",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x77000000",
+                    "FlsSetValue"
+                ],
+                "ret_val": "0xfeee0002"
+            },
+            {
+                "pc": "0x14006dcce",
+                "api_name": "kernel32.FlsSetValue",
+                "args": [
+                    "0x0",
+                    "0x140c405f0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14006902c",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x1407c2ac8",
+                    "0x1407c2ae0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14006904d",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x1407c2a38",
+                    "0x1407c2ac0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400690bb",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_wide_environment",
+                "args": [],
+                "ret_val": "0x4940"
+            },
+            {
+                "pc": "0x1400690c3",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___wargv",
+                "args": [],
+                "ret_val": "0x4b30"
+            },
+            {
+                "pc": "0x1400690cb",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4ba0"
+            },
+            {
+                "pc": "0x140014701",
+                "api_name": "KERNEL32.FlsAlloc",
+                "args": [
+                    "0x140014260"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140014fb4",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "gcServer",
+                    "gcConservative"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_gcServer",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Server",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140014fb4",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "gcConcurrent",
+                    "gcConservative"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_gcConcurrent",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.Concurrent",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140014fb4",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "gcConservative",
+                    "gcConservative"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140014fb4",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "gcForceCompact",
+                    "gcConservative"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_gcForceCompact",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140014fb4",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "GCRetainVM",
+                    "gcConservative"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCRetainVM",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.RetainVM",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140014fb4",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "GCBreakOnOOM",
+                    "gcConservative"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCBreakOnOOM",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140014fb4",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "GCNoAffinitize",
+                    "gcConservative"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCNoAffinitize",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.NoAffinitize",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140014fb4",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "GCLogEnabled",
+                    "gcConservative"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCLogEnabled",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140014fb4",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "GCConfigLogEnabled",
+                    "gcConservative"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCConfigLogEnabled",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140014fb4",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "GCNumaAware",
+                    "gcConservative"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCNumaAware",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140014fb4",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "GCCpuGroup",
+                    "gcConservative"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCCpuGroup",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.CpuGroup",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140014fb4",
+                "api_name": "api-ms-win-crt-string-l1-1-0.strcmp",
+                "args": [
+                    "GCLargePages",
+                    "gcConservative"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCLargePages",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018360",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.LargePages",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_HeapVerify",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCLOHCompact",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCLOHThreshold",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCSpinCount",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCSpin",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCHeapCount",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapCount",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCMaxHeapCount",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.MaxHeapCount",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCgen0size",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCSegmentSize",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCLatencyMode",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCLatencyLevel",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCLogFileSize",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCCompactRatio",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCHeapAffinitizeMask",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapAffinitizeMask",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCHighMemPercent",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HighMemoryPercent",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCProvModeStress",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCGen0MaxBudget",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCGen1MaxBudget",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCLowSkipRatio",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCHeapHardLimit",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimit",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCHeapHardLimitPercent",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPercent",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCTotalPhysicalMemory",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCRegionRange",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCRegionSize",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCEnableSpecialRegions",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCFLTuningEnabled",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCMemGoal",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCMemGoalSlack",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCFLSweepGoal",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCFLSweepGoalLOH",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCFLkp",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCFLki",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCFLkd",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCFLff",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCFLSmoothFactor",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCFLGradualD",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCMLkp",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCMLki",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCFLEnableKi",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCFLEnableKd",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCFLEnableSmooth",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCFLEnableTBH",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCFLEnableFF",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_BGCG2RatioStep",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCHeapHardLimitSOH",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOH",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCHeapHardLimitLOH",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOH",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCHeapHardLimitPOH",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOH",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCHeapHardLimitSOHPercent",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitSOHPercent",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCHeapHardLimitLOHPercent",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitLOHPercent",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCHeapHardLimitPOHPercent",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.HeapHardLimitPOHPercent",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCEnabledInstructionSets",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCConserveMemory",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.ConserveMemory",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCWriteBarrier",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCSpinCountUnit",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400184ab",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "DOTNET_GCDynamicAdaptationMode",
+                    "0x1211d28",
+                    "0x11"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.ComponentModel.TypeConverter.EnableUnsafeBinaryFormatterInDesigntimeLicenseContextSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Diagnostics.Tracing.EventSource.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Globalization.Invariant"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Globalization.PredefinedCulturesOnly"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Reflection.Metadata.MetadataUpdater.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Resources.ResourceManager.AllowCustomResourceTypes"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Runtime.InteropServices.BuiltInComInterop.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Runtime.InteropServices.EnableConsumingManagedCodeFromNativeHosting"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Runtime.InteropServices.EnableCppCLIHostActivation"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Runtime.InteropServices.Marshalling.EnableGeneratedComInterfaceComImportInterop"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.StartupHookProvider.IsSupported"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Text.Encoding.EnableUnsafeUTF7Encoding"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Text.Json.JsonSerializer.IsReflectionEnabledByDefault"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Threading.Thread.EnableAutoreleasePool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Threading.ThreadPool.UseWindowsThreadPool"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "System.Linq.Expressions.CanEmitObjectArrayDelegate"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x140018410",
+                "api_name": "api-ms-win-crt-string-l1-1-0._stricmp",
+                "args": [
+                    "System.GC.DynamicAdaptationMode",
+                    "RUNTIME_IDENTIFIER"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14001a355",
+                "api_name": "KERNEL32.GetSystemInfo",
+                "args": [
+                    "0x1211e48"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf380",
+            "address": "0xfeedf380",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211e20",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf380",
+                "rsi": "0x0000000000000000",
+                "rdi": "0x0000000000000003",
+                "rax": "0x0000000000000001",
+                "rbx": "0x0000000000000000",
+                "rcx": "0x0000000001211e88",
+                "rdx": "0x00000001409a7ced",
+                "r8": "0x0000000001211e70",
+                "r9": "0x0000000140b4b9c0",
+                "r10": "0x0000000000000000",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000000000",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014001a393 -> emu.module.500d7fed11407bb06e3640336a1fcc1176fdd267f28dee646d2d3314705cb358.0x140000000",
+                "sp+0x08: 0x0000000140c3ad30 -> emu.module.500d7fed11407bb06e3640336a1fcc1176fdd267f28dee646d2d3314705cb358.0x140000000",
+                "sp+0x10: 0x0000000140b4b9a0 -> emu.module.500d7fed11407bb06e3640336a1fcc1176fdd267f28dee646d2d3314705cb358.0x140000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000140b4b4b8 -> emu.module.500d7fed11407bb06e3640336a1fcc1176fdd267f28dee646d2d3314705cb358.0x140000000",
+                "sp+0x28: 0x0000100000000009",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000003",
+                "sp+0x60: 0x000000014001471a -> emu.module.500d7fed11407bb06e3640336a1fcc1176fdd267f28dee646d2d3314705cb358.0x140000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "KERNEL32.GetNumaHighestNodeNumber"
+        },
+        "dynamic_code_segments": []
+    }
+]

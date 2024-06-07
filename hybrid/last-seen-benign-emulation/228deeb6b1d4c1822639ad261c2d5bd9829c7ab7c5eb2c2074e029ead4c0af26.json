@@ -1,0 +1,195 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x4141f0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "8b168ac2d701f76195bc9714c71c5e1ca38c1134c6b084eaeeb0e426cce4152d",
+        "apis": [
+            {
+                "pc": "0x41465b",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211fc8"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x41466a",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x16d4"
+            },
+            {
+                "pc": "0x414673",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0x16c0"
+            },
+            {
+                "pc": "0x414680",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211fc0"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x41424b",
+                "api_name": "KERNEL32.IsProcessorFeaturePresent",
+                "args": [
+                    "PF_XMMI64_INSTRUCTIONS_AVAILABLE"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x4140b8",
+                "api_name": "MSVCR14X._initterm_e",
+                "args": [
+                    "0x416338",
+                    "0x416344"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x4140de",
+                "api_name": "MSVCR14X._initterm",
+                "args": [
+                    "0x416304",
+                    "0x416334"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x414145",
+                "api_name": "MSVCR14X._get_initial_wide_environment",
+                "args": [],
+                "ret_val": "0x45f0"
+            },
+            {
+                "pc": "0x41414c",
+                "api_name": "MSVCR14X.__p___wargv",
+                "args": [],
+                "ret_val": "0x47b0"
+            },
+            {
+                "pc": "0x414153",
+                "api_name": "MSVCR14X.__p___argc",
+                "args": [],
+                "ret_val": "0x4810"
+            },
+            {
+                "pc": "0x409eba",
+                "api_name": "KERNEL32.GetEnvironmentVariableW",
+                "args": [
+                    "COREHOST_TRACE",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x409eee",
+                "api_name": "KERNEL32.GetLastError",
+                "args": [],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x413b86",
+                "api_name": "MSVCR14X.malloc",
+                "args": [
+                    "0x210"
+                ],
+                "ret_val": "0x4820"
+            },
+            {
+                "pc": "0x40ab26",
+                "api_name": "MSVCR14X.memcpy",
+                "args": [
+                    "0x4820",
+                    "0x1211e24",
+                    "0x0"
+                ],
+                "ret_val": "0x4820"
+            },
+            {
+                "pc": "0x408ef2",
+                "api_name": "KERNEL32.GetModuleFileNameW",
+                "args": [
+                    "0x0",
+                    "C:\\Windows\\system32\\228deeb6b1d4c1822639ad261c2d5bd9829c7ab7c5eb2c2074e029ead4c0af26",
+                    "0x104"
+                ],
+                "ret_val": "0x54"
+            },
+            {
+                "pc": "0x413b86",
+                "api_name": "MSVCR14X.malloc",
+                "args": [
+                    "0xb0"
+                ],
+                "ret_val": "0x4a40"
+            },
+            {
+                "pc": "0x4036a6",
+                "api_name": "MSVCR14X.memcpy",
+                "args": [
+                    "0x4a40",
+                    "0x4820",
+                    "0xa8"
+                ],
+                "ret_val": "0x4a40"
+            },
+            {
+                "pc": "0x413b69",
+                "api_name": "MSVCR14X.free",
+                "args": [
+                    "0x4820"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x4a40",
+        "error": {
+            "type": "'int' object has no attribute 'get_size'",
+            "pc": "0xfeedf04c",
+            "address": "0xfeedf04c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211b9c",
+                "ebp": "0x01211e50",
+                "eip": "0xfeedf04c",
+                "esi": "0x01211f34",
+                "edi": "0x00000003",
+                "eax": "0x00004a40",
+                "ebx": "0x01211e5c",
+                "ecx": "0x01211bf4",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x0040a068 -> emu.module.228deeb6b1d4c1822639ad261c2d5bd9829c7ab7c5eb2c2074e029ead4c0af26.0x400000",
+                "sp+0x04: 0x00004a40 -> api.heap.HeapAlloc.0x4a40",
+                "sp+0x08: 0x00000000",
+                "sp+0x0c: 0x01211bf4 -> emu.stack.0x1200000",
+                "sp+0x10: 0x42706b45",
+                "sp+0x14: 0x00000003",
+                "sp+0x18: 0x000047b4 -> api.argv.0x47b0",
+                "sp+0x1c: 0x00000000",
+                "sp+0x20: 0x00000000",
+                "sp+0x24: 0x00000000",
+                "sp+0x28: 0x00000000",
+                "sp+0x2c: 0x01211f34 -> emu.stack.0x1200000",
+                "sp+0x30: 0x00000000",
+                "sp+0x34: 0x00000000",
+                "sp+0x38: 0x00000000",
+                "sp+0x3c: 0x00000000"
+            ],
+            "traceback": "Traceback (most recent call last):\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/windows/winemu.py\", line 1169, in handle_import_func\n    rv = self.api.call_api_func(mod, func, argv, ctx=default_ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/winapi.py\", line 77, in call_api_func\n    return func(mod, self.emu, argv, ctx)\n  File \"/home/robin/venvs/ember-venv/lib/python3.7/site-packages/speakeasy/winenv/api/usermode/kernel32.py\", line 3312, in GetFileAttributesEx\n    full_size = fHandle.get_size()\nAttributeError: 'int' object has no attribute 'get_size'\n"
+        },
+        "dynamic_code_segments": []
+    }
+]

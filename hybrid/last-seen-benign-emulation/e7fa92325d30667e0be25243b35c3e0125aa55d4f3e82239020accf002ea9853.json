@@ -1,0 +1,177 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x1401b37b0",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "12a71e17890b2d0279b5e67591e74e3f3f63f6b6434f76d3a8a7e14cf0c9b1f0",
+        "apis": [
+            {
+                "pc": "0x1401b42fd",
+                "api_name": "KERNEL32.InitializeCriticalSection",
+                "args": [
+                    "0x140295740"
+                ],
+                "ret_val": null
+            }
+        ],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x1401b3780",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x1",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x1400014f0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "338c56c822acff0dc9efe9819f5bf3244916d1f0cff2d562193561d90716e4ba",
+        "apis": [
+            {
+                "pc": "0x1400014bb",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x14029b018",
+                    "0x14029b028"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x140001463",
+                "api_name": "msvcrt._initterm",
+                "args": [
+                    "0x14029b000",
+                    "0x14029b010"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1401b3a91",
+                "api_name": "KERNEL32.VirtualQuery",
+                "args": [
+                    "0x1401c0000",
+                    "0x1211bd8",
+                    "0x30"
+                ],
+                "ret_val": "0x30"
+            },
+            {
+                "pc": "0x14000125e",
+                "api_name": "KERNEL32.SetUnhandledExceptionFilter",
+                "args": [
+                    "0x1401b3f00"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14000132f",
+                "api_name": "msvcrt.malloc",
+                "args": [
+                    "0x8"
+                ],
+                "ret_val": "0x4960"
+            },
+            {
+                "pc": "0x140001519",
+                "api_name": "msvcrt._onexit",
+                "args": [
+                    "0x140001540"
+                ],
+                "ret_val": "0x140001540"
+            },
+            {
+                "pc": "0x1400db805",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211df8"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x1400dc066",
+                "api_name": "KERNEL32.LoadLibraryExA",
+                "args": [
+                    "bcrypt",
+                    "0x0",
+                    "LOAD_LIBRARY_SEARCH_SYSTEM32"
+                ],
+                "ret_val": "0x5f900000"
+            },
+            {
+                "pc": "0x1400dc084",
+                "api_name": "KERNEL32.GetProcAddress",
+                "args": [
+                    "0x5f900000",
+                    "BCryptGenRandom"
+                ],
+                "ret_val": "0xfeee0000"
+            }
+        ],
+        "ret_val": "0xfeee0000",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeee0000",
+            "address": "0xfeee0000",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211d50",
+                "rbp": "0x0000000000004960",
+                "rip": "0x00000000feee0000",
+                "rsi": "0x00000001401bc120",
+                "rdi": "0x0000000001211d78",
+                "rax": "0x00000000feee0000",
+                "rbx": "0x00000000feedf5b0",
+                "rcx": "0x0000000000000000",
+                "rdx": "0x0000000001211d78",
+                "r8": "0x0000000000000020",
+                "r9": "0x0000000000000002",
+                "r10": "0xbf58476d1ce4e5b9",
+                "r11": "0x302b8631721c51be",
+                "r12": "0x0000000000000008",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00000001400dbd60 -> emu.module.e7fa92325d30667e0be25243b35c3e0125aa55d4f3e82239020accf002ea9853.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000000000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "bcrypt.BCryptGenRandom"
+        },
+        "dynamic_code_segments": []
+    }
+]

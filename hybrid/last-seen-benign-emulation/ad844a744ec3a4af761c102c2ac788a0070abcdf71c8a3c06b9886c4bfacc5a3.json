@@ -1,0 +1,52 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x401bb0",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "198ff0463fadd4f187046974c95282e83e621f870ccf0506f69202f84d8ab38f",
+        "apis": [
+            {
+                "pc": "0x401bbb",
+                "api_name": "KERNEL32.SetThreadLocale",
+                "args": [
+                    "0x419"
+                ],
+                "ret_val": "0x419"
+            }
+        ],
+        "ret_val": "0x419",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf00c",
+            "address": "0xfeedf00c",
+            "instr": "disasm_failed",
+            "regs": {
+                "esp": "0x01211fe4",
+                "ebp": "0x01212000",
+                "eip": "0xfeedf00c",
+                "esi": "0x00000000",
+                "edi": "0x00000000",
+                "eax": "0x00000419",
+                "ebx": "0x00000000",
+                "ecx": "0x00000000",
+                "edx": "0x00000000"
+            },
+            "stack": [
+                "sp+0x00: 0x00401bc1 -> emu.module.ad844a744ec3a4af761c102c2ac788a0070abcdf71c8a3c06b9886c4bfacc5a3.0x400000",
+                "sp+0x04: 0xfeedf000",
+                "sp+0x08: 0x00004000 -> emu.module_arg_0.0x4000",
+                "sp+0x0c: 0x00004010 -> emu.module_arg_1.0x4010",
+                "sp+0x10: 0x00004020 -> emu.module_arg_2.0x4020",
+                "sp+0x14: 0x00004030 -> emu.module_arg_3.0x4030",
+                "sp+0x18: 0xfeedf000"
+            ],
+            "api_name": "COMCTL32.ordinal_17"
+        },
+        "dynamic_code_segments": []
+    }
+]

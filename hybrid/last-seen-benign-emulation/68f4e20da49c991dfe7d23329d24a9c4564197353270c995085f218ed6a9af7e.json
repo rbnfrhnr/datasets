@@ -1,0 +1,163 @@
+[
+    {
+        "ep_type": "tls_callback_0",
+        "start_addr": "0x1400016a0",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "tls_callback_1",
+        "start_addr": "0x14002f890",
+        "ep_args": [
+            "0x140000000",
+            "0x1",
+            "0x0"
+        ],
+        "apihash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "apis": [],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    },
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0x140030540",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "53bf07e3df4603d3455c16052ff1ad5fbfe8f0d6268406f96dfafff254cc2103",
+        "apis": [
+            {
+                "pc": "0x140030586",
+                "api_name": "KERNEL32.GetSystemTimeAsFileTime",
+                "args": [
+                    "0x1211f90"
+                ],
+                "ret_val": null
+            },
+            {
+                "pc": "0x140030594",
+                "api_name": "KERNEL32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0xc1c8"
+            },
+            {
+                "pc": "0x1400305a0",
+                "api_name": "KERNEL32.GetCurrentProcessId",
+                "args": [],
+                "ret_val": "0xc1b4"
+            },
+            {
+                "pc": "0x1400305b0",
+                "api_name": "KERNEL32.QueryPerformanceCounter",
+                "args": [
+                    "0x1211f98"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0x14003041c",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm_e",
+                "args": [
+                    "0x14005c160",
+                    "0x14005c180"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x14003043d",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._initterm",
+                "args": [
+                    "0x14005c120",
+                    "0x14005c148"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0x1400304ab",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0._get_initial_wide_environment",
+                "args": [],
+                "ret_val": "0x4960"
+            },
+            {
+                "pc": "0x1400304b3",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___wargv",
+                "args": [],
+                "ret_val": "0x4c30"
+            },
+            {
+                "pc": "0x1400304bb",
+                "api_name": "api-ms-win-crt-runtime-l1-1-0.__p___argc",
+                "args": [],
+                "ret_val": "0x4ca0"
+            },
+            {
+                "pc": "0x14001ecbc",
+                "api_name": "ntdll.memset",
+                "args": [
+                    "0x1211df4",
+                    "0x0",
+                    "0x110"
+                ],
+                "ret_val": "0x1211df4"
+            }
+        ],
+        "ret_val": "0x1211df4",
+        "error": {
+            "type": "unsupported_api",
+            "pc": "0xfeedf140",
+            "address": "0xfeedf140",
+            "instr": "disasm_failed",
+            "regs": {
+                "rsp": "0x0000000001211d40",
+                "rbp": "0x0000000001211fd8",
+                "rip": "0x00000000feedf140",
+                "rsi": "0x0000000001211df4",
+                "rdi": "0x0000000000004960",
+                "rax": "0x0000000001211df4",
+                "rbx": "0x00000000feedf140",
+                "rcx": "0x0000000000000000",
+                "rdx": "0x0000000000000002",
+                "r8": "0x0000000000000103",
+                "r9": "0x0000000140000338",
+                "r10": "0x000000002011000c",
+                "r11": "0x0000000000000000",
+                "r12": "0x0000000000004c38",
+                "r13": "0x0000000000000000",
+                "r14": "0x0000000000000000",
+                "r15": "0x0000000000000000"
+            },
+            "stack": [
+                "sp+0x00: 0x000000014001ecd6 -> emu.module.68f4e20da49c991dfe7d23329d24a9c4564197353270c995085f218ed6a9af7e.0x140000000",
+                "sp+0x08: 0x0000000000000000",
+                "sp+0x10: 0x0000000000000000",
+                "sp+0x18: 0x0000000000000000",
+                "sp+0x20: 0x0000000000000000",
+                "sp+0x28: 0x0000000000000000",
+                "sp+0x30: 0x0000000000000000",
+                "sp+0x38: 0x0000000000000000",
+                "sp+0x40: 0x0000000000000000",
+                "sp+0x48: 0x0000000000000000",
+                "sp+0x50: 0x0000000000000000",
+                "sp+0x58: 0x0000000000000000",
+                "sp+0x60: 0x0000000300000000",
+                "sp+0x68: 0x0000000000000000",
+                "sp+0x70: 0x0000000000000000",
+                "sp+0x78: 0x0000000000000000"
+            ],
+            "api_name": "ntdll.VerSetConditionMask"
+        },
+        "dynamic_code_segments": []
+    }
+]

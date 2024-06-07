@@ -1,0 +1,144 @@
+[
+    {
+        "ep_type": "module_entry",
+        "start_addr": "0xbd8430",
+        "ep_args": [
+            "0x4000",
+            "0x4010",
+            "0x4020",
+            "0x4030"
+        ],
+        "apihash": "171bb8a7123f8d9d247c6b6f688232e842ec775c749d6ec373dc011e6e39f296",
+        "apis": [
+            {
+                "pc": "0xbeb2c4",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "kernel32.dll"
+                ],
+                "ret_val": "0x77000000"
+            },
+            {
+                "pc": "0xbeb315",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "user32.dll"
+                ],
+                "ret_val": "0x77d10000"
+            },
+            {
+                "pc": "0xbeb375",
+                "api_name": "kernel32.GetModuleHandleA",
+                "args": [
+                    "advapi32.dll"
+                ],
+                "ret_val": "0x78000000"
+            },
+            {
+                "pc": "0xbeb544",
+                "api_name": "kernel32.GetModuleHandleW",
+                "args": [
+                    "ntdll"
+                ],
+                "ret_val": "0x7c000000"
+            },
+            {
+                "pc": "0xbeb5f4",
+                "api_name": "kernel32.GetCurrentProcess",
+                "args": [],
+                "ret_val": "0xffffffffffffffff"
+            },
+            {
+                "pc": "0xbeb657",
+                "api_name": "ntdll.NtQueryInformationProcess",
+                "args": [
+                    "0xffffffffffffffff",
+                    "0x7",
+                    "0x1211e68",
+                    "0x8",
+                    "0x1211e80"
+                ],
+                "ret_val": "0xc0000024"
+            },
+            {
+                "pc": "0xbeb6f0",
+                "api_name": "ntdll.NtQueryInformationProcess",
+                "args": [
+                    "0xffffffffffffffff",
+                    "0x1e",
+                    "0x1211e70",
+                    "0x8",
+                    "0x1211e80"
+                ],
+                "ret_val": "0xc0000353"
+            },
+            {
+                "pc": "0xbeb77c",
+                "api_name": "ntdll.NtQueryInformationProcess",
+                "args": [
+                    "0xffffffffffffffff",
+                    "0x1f",
+                    "0x1211e84",
+                    "0x4",
+                    "0x1211e80"
+                ],
+                "ret_val": "0xc0000024"
+            },
+            {
+                "pc": "0xbeb8da",
+                "api_name": "ntdll.NtQuerySystemInformation",
+                "args": [
+                    "0x23",
+                    "0x1211e88",
+                    "0x2",
+                    "0x1211e80"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0xbeb953",
+                "api_name": "kernel32.GetCurrentThreadId",
+                "args": [],
+                "ret_val": "0x6840"
+            },
+            {
+                "pc": "0xbeb9ee",
+                "api_name": "ntdll.NtSetInformationThread",
+                "args": [
+                    "0x6840",
+                    "0x11",
+                    "0x0",
+                    "0x0"
+                ],
+                "ret_val": "0x0"
+            },
+            {
+                "pc": "0xbebb27",
+                "api_name": "kernel32.GetCurrentProcess",
+                "args": [],
+                "ret_val": "0xffffffffffffffff"
+            },
+            {
+                "pc": "0xbebb54",
+                "api_name": "kernel32.CheckRemoteDebuggerPresent",
+                "args": [
+                    "0xffffffffffffffff",
+                    "0x1211e88"
+                ],
+                "ret_val": "0x1"
+            },
+            {
+                "pc": "0xbebbc1",
+                "api_name": "kernel32.CheckRemoteDebuggerPresent",
+                "args": [
+                    "0x0",
+                    "0x1211e88"
+                ],
+                "ret_val": "0x1"
+            }
+        ],
+        "ret_val": "0x0",
+        "error": {},
+        "dynamic_code_segments": []
+    }
+]
